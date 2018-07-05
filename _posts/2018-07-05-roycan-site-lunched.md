@@ -1,7 +1,6 @@
 ---
-layout: post
-title: "Hank Quinlan, Horrible Cop, Launches Site"
-date: 2014-04-30
+title: "~roycan~ Launches Site"
+date: 2018-07-05	
 ---
-
-Well. Finally got around to putting this old website together. Neat thing about it - powered by [Jekyll](http://jekyllrb.com) and I can use Markdown to author my posts. It actually is a lot easier than I thought it was going to be.
+ 	 
+-I'm glad that I'm publishing. The site is powered by [Jekyll](http://jekyllrb.com). Things are a lot easier than I thought they were going to be. 
