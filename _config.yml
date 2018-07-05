@@ -1,3 +1,5 @@
 name: Roy Canseco
 markdown: kramdown
+plugins:
+  - jekyll-feed
 permalink: /blog/:year/:month/:day/:title
