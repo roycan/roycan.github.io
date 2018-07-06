@@ -1,5 +1,7 @@
 name: Roy Canseco
+title: "roycan pub"
 markdown: kramdown
+description: a blog
 plugins:
   - jekyll-feed
 permalink: /blog/:year/:month/:day/:title
