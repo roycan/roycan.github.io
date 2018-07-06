@@ -3,3 +3,5 @@ markdown: kramdown
 plugins:
   - jekyll-feed
 permalink: /blog/:year/:month/:day/:title
+
+google_analytics: UA-42819599-2
