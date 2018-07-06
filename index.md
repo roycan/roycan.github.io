@@ -8,3 +8,20 @@ title: roycan
 </div><!-- /.blurb -->
 
 #### hope, dream, love...
+
+<hr>
+
+
+<h2 class="post_title">Tags</h2>
+<ul>
+  {% for post in site.posts %}
+  {% for tag in post.tags %}
+
+
+   
+      <li class="inline archive_list"><a class="tag_list_link" href="/tag/{{ tag }}">{{ tag }}</a></li>
+
+
+  {% endfor %}
+  {% endfor %}
+</ul>
