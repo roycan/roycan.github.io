@@ -2,6 +2,7 @@
 layout: post
 title: "End-User Software Engineering"	
 remarks: "seminar notes"
+categories: Research
 tags: 
 - PhD
 - EUD
@@ -10,7 +11,6 @@ tags:
 
 February 18 – 23 , 2007, Dagstuhl Seminar 07081
 
-# End-User Software Engineering
 
 #### Organizers: 
 * Margaret M. Burnett (Oregon State University, US)

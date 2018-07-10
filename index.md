@@ -13,16 +13,17 @@ title: roycan
 <hr>
 
 
-<h2 class="post_title">Tags</h2>
-<ul>
-  {% for post in site.posts %}
-  {% for tag in post.tags %}
+<h2 class="post_title">Categories</h2>
 
-
-   
-      <li class="inline archive_list"><a class="tag_list_link" href="/tag/{{ tag }}">{{ tag }}</a></li>
-
-
-  {% endfor %}
-  {% endfor %}
-</ul>
+<div id="archives">
+{% for category in site.categories %}
+  <div class="archive-group">
+    {% capture category_name %}{{ category | first }}{% endcapture %}
+    <div id="#{{ category_name | slugize }}"></div>
+    <p></p>
+    
+    <h3 class="category-head"> <a href="/my_categories/{{ category_name }}.html" > {{ category_name }} </a></h3>
+    
+  </div>
+{% endfor %}
+</div>

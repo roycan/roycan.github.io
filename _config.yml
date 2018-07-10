@@ -7,3 +7,9 @@ plugins:
 permalink: /blog/:year/:month/:day/:title
 
 google_analytics: UA-42819599-2
+
+collections:
+  my_categories:
+    output: true
+    permalink: /blog/category/:name/
+

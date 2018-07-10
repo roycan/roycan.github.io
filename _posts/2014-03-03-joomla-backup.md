@@ -3,6 +3,7 @@ layout: post
 title: "Backing up a Joomla Site"
 date: 2014-03-03	
 remarks: "recipe"
+categories: Skills
 tags: 
 - webdev
 - Joomla

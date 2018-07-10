@@ -3,6 +3,7 @@ layout: post
 title: " Quickly relearning Maple "
 date: 2014-01-01	
 remarks: "steps"
+categories: Skills
 tags: 
 - Maple
 - "symbolic math"
