@@ -226,14 +226,115 @@ Assoc Professor Peter Bertok
 ------------
 
 
+## day 7
+
+I'm still in the process of reading about different Australian University PhD offerings related to End-User Development. 
+
+Feeling a bit tired, but then again, it's Friday and I did stay up late last night slowly doing a report I just passed for the Cash Office project. I'm grateful. I feel the guidance. At the same time I feel the weaknesses. I feel the power of habit and the energy the some how feeds to the attainment of the comfort provided by the exercise of habits. Nasanay na kung baga. It's like an analog to my gastronomic love for rice. When I feel weak, I'd like to have good habits to tide me through. I think the way to do that is to exercise good habits as much as I can... such as sitting down and doing something for research in the morning.  :D
+
+Ok, so lets have the loop for this OZ PhD search:
+1. go to the school's website
+2. look for a PhD program on EUD, SE, IS or HCL
+3. look for a prof working on what you want to work on. 
+
+----------------
 
 
-8. *University of Technology Sydney*
-9. Curtin University
-10. **Queensland University of Technolgy**
-11. Deakin University
-12. University of South Australia
-13. University of Wollongong
+# *University of Technology Sydney*
+
+
+## Open Scholarshipt Opportunity
+Risk:
+I might forever lose the dream of Inclusive Programming for Information Systems depending on the ideas of the research supervisor 
+
+Opportunity: 
+There's a scholarship offering here that does initial software creation for bacterial outbreaks. 
+
+Advantages:
+Sydney familiarity. Close to family. 
+
+Disadvantages:
+The project's topic isn't exactly what I want, though what I want to do may be useful for the funded research project.
+
+Project Heads: 
+https://www.uts.edu.au/staff/aaron.darling
+https://www.uts.edu.au/staff/mathieu.fourment
+
+
+
+## Professors I'd like to learn from : 
+https://www.uts.edu.au/staff/mao.huang
+
+https://www.uts.edu.au/staff/eng.chew
+
+I like the professors here!   :D 
+
+-------------------
+
+
+# Curtin University
+
+Possible PhD in 2 years!  :)
+
+## Supervisors:
+https://research.curtin.edu.au/supervisor/dr-eleanor-sandry-2/
+
+https://research.curtin.edu.au/supervisor/dr-shirlee-ann-knight/
+
+https://research.curtin.edu.au/supervisor/dr-torsten-reiners/
+
+--------------------
+
+# **Queensland University of Technology**
+
+I think this is a great place too  :)
+
+details: https://www.qut.edu.au/study/courses/doctor-of-philosophy/doctor-of-philosophy-science-engineering
+
+## Disciplines
+[Service science](https://www.qut.edu.au/science-engineering/our-schools/school-of-information-systems/service-science)
+[Information science](https://www.qut.edu.au/science-engineering/our-schools/school-of-information-systems/information-science)
+
+## Profs
+http://staff.qut.edu.au/staff/breretom/  
+http://staff.qut.edu.au/staff/johnsodm/  
+http://staff.qut.edu.au/staff/roe/  
+http://staff.qut.edu.au/staff/wyethp/  
+
+---------------
+
+
+# University of South Australia
+http://study.unisa.edu.au/degrees/doctor-of-philosophy-lphd/int
+
+[**allows for a Collaborative PhD!!**](http://unisa.edu.au/research/degrees/our-research-degrees/)
+
+We have collaborative PhD programs with high quality Australian and international universities in a range of disciplines, including (but not limited to) marketing, public health, engineering and sociology.
+
+## Prof of choice
+http://people.unisa.edu.au/Mark.Billinghurst
+
+--------------
+
+# University of Wollongong
+
+Very interesting!   
+[**Higher degree research by distance learning!**](https://www.uow.edu.au/research/UOW215694.html)
+
+Laboratory:
+[centre for IT-enabled transformation ](https://eis.uow.edu.au/scit/citt/overview/index.html)
+
+[Research Themes](https://eis.uow.edu.au/scit/citt/research-themes/index.html)
+
+Professors: 
+
+[Shen, Jun Associate Professor](https://scholars.uow.edu.au/display/jun_shen)   
+[Lau, S K. Dr.](https://scholars.uow.edu.au/display/sim_kim_lau)
+[Cui, Tingru Dr](https://scholars.uow.edu.au/display/tingru_cui)
+
+---------------
+
+
 14. Australian National University
 15. Western Sydney University
 16. University of Canberra
