@@ -243,7 +243,7 @@ Ok, so lets have the loop for this OZ PhD search:
 # *University of Technology Sydney*
 
 
-## Open Scholarshipt Opportunity
+## Open Scholarship Opportunity
 Risk:
 I might forever lose the dream of Inclusive Programming for Information Systems depending on the ideas of the research supervisor 
 
@@ -335,18 +335,51 @@ Professors:
 ---------------
 
 
-14. Australian National University
-15. Western Sydney University
-16. University of Canberra
-17. Murdoch University
-18. Central Queensland University
-19. The University of Melbourne
-20. Monash University
-21. University of Tasmania
-22. Swinburne University of Technology
-23. La Trobe University
-24. Victoria University
-25. University of New England Australia
-26. Carnegie Mellon University Australia
-27. Australian Catholic University
-28. Federation University, Australia
+## day 8
+
+
+# Australian National University
+
+This looks like a fun university based on the website.
+
+[General PhD Program](http://www.anu.edu.au/study/study-options/doctor-of-philosophy-phd)
+
+[ComSci Program](https://cecs.anu.edu.au/study/phd-mphil)
+
+## Professors:
+:)  [Cool Prof!](https://cecs.anu.edu.au/people/lynette-johns-boast) 
+
+[Prof with ready related project](https://cecs.anu.edu.au/people/ramesh-sankaranarayana)
+
+[**Prof with the Skill I want**](https://cecs.anu.edu.au/people/shayne-flint)
+
+------------
+
+
+# The University of Melbourne
+
+* [Is the top-ranked university in Australia](https://about.unimelb.edu.au/facts-and-figures)
+* [Offers generous scholarship programs](https://scholarships.unimelb.edu.au/)
+* [Offers a comprehensive support network](http://services.unimelb.edu.au/finder)
+
+## Research in Engg and IT
+
+http://www.eng.unimelb.edu.au/research/graduate-research
+
+## Prof
+Assoc Prof Reeva Lederman
+Email
+reeva.lederman@unimelb.edu.au
+Telephone:  +61 3 8344 1535
+
+
+-------------------
+
+# La Trobe University
+
+https://www.latrobe.edu.au/courses/doctor-of-philosophy2
+
+Prof:
+https://www.latrobe.edu.au/business/about/staff/profile?uname=RKhosla
+
+-------------
