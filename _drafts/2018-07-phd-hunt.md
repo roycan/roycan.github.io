@@ -397,4 +397,13 @@ Here it is in order of preference:
 
 Next would be to go deeper in their offerings and actually start emailing perspective advisers. 
 
-I'm excited!  
+I'm excited!
+
+
+## day 10
+
+I was able to talk to Lyn at the faculty lounge during lunch. She asked me how I was and I told her I submitted my resignation letter and am currently prof-finding. I told her about the research area I want and about Univ of Melbourne and Dr. Laderman. She got me to realize that it was only a half fit and I ought to look for a professor that fits the research I want to do better. So now I'm doing an exhaustive search for better-fitting profs in the univ of melbourne. 
+
+And after going through everyone there, I think I found the one who fits with the end goal of eventually bring enterprise-grade information system to government and other institutions in the Philippines. I think I can contribute by developing a process that increases project success rate and long term adaption of information systems in the Philippines.
+
+I found you Dr. Kurnia, I hope you respond very positively. 
