@@ -43,3 +43,93 @@ I'm glad that I'm able to separate myself a bit from the IC work today. I pray f
 3. run through the labs
 
 **take the mock exam on Thursday**
+
+----------------------------
+
+## August 26
+
+[The 10 Principles of Self-Made Billionaires](https://www.success.com/the-10-principles-of-self-made-billionaires/?utm_term=inside&utm_source=Maropost&utm_campaign=Inside&utm_medium=email&mpweb=574-7261074-742150499
+) 
+
+1. Simplicity of Purpose
+2. Simplicity of Plan
+3. Limit what you tolerate
+4. Absolute reliance on people
+5. Absolute dedication to people
+6. Rely on Communication Systems
+7. Require Push Communications
+8. Intentional with what you consume
+9. Make Decisions based on Data *and* Narrative
+10. Be proactively transparent
+
+
+Combining 1 and 2:
+  Simplify both Purpose and Plan
+
+  Limit what you tolerate
+
+Combine 4 and 5:
+  Absolute dependence on and dedication to People
+
+  Be Proactively Transparent
+
+Combine 6 and 7:
+  Rely on Communications Systems with Push Communications
+
+  Intentional with what you consume
+
+  Make Decisions based on both Data *and* Narrative
+
+
+From Bryan Treacy's book (thank you Rap), I see that Leaders have Priorities and most of the time can be found executing on their priorities. They have no excuses. 
+
+From the medium article, I'm seeing humanities' self-made Billionaires seem to treat themselves to **Clarity and Discipline** through 
+
+1. **Simplifying Purpose and Plans** for whatever they're working on
+2. **Limiting what they Tolerate** in things, others and especially themselves.
+
+Self-made Billionaires seem to treat others in a special way too. They really depend on people, but at the same time they are very dedicated to them too. They choose to proactively with their wishes when they communicate. They do this through
+
+3. **Being dependent on and dedicated to People**
+4. **Being Proactively Transparent** with their intensions
+
+Self-made Billionaires seem to be efficient and focused when dealing with the world around them. They do this through
+
+5. **Relying on Communication Systems with Push Communications** for making sure that messages are clear among parties and information gets to me in a timely manner. 
+6. **Being intentional with what I consume** , whether it's TV, radio, print and conversation. 
+7. **Deciding based on Data and Narrative** 
+
+
+I can take lessons from this and etch it in my body. Whenever I undertake something, I make sure to be simple and clear as to what I want from it. I make plans that are easy to communicate, remember and used. I make clear on what results are acceptable too. I will use user stories and definitions of done.
+
+Whenever I communicate with others, I appreciate what they do for me and make sure they understand that I am interested in them and their success as much as I appreciate them. I iterate and reiterate my intentions and principles in a manner much like that of tending a garden I love.
+
+When I interact with the world, I choose to take in what helps. Same with my body. I setup communication systems so that information flows with minimal friction. I open push communications so that important news come in as fast as possible too. When I decide, it will be on the basis the hard numbers and the stories that back it up. When both are reconciled, then a decision is to be made fast.
+
+````graphviz
+digraph G{
+
+  rankdir = "LR"
+
+  "purpose and plans" -> simple;
+  "expectations" -> clear;
+
+  consumption -> intentional;
+
+  decision -> data [label="based on"];
+  decision -> narrative [label="based on"];
+
+  communication -> "systemized";
+  communication -> "pushed";
+
+  communication -> "proactively transparent";
+  people -> "loved";
+  people -> "depended on";
+
+
+}
+````
+
+
+
+
