@@ -13,3 +13,5 @@ collections:
     output: true
     permalink: /blog/category/:name/
 
+
+theme: jekyll-theme-architect
