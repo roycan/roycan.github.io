@@ -133,3 +133,8 @@ digraph G{
 
 
 
+----------------------------
+
+## September 11
+
+* tell Romeo to put the investment documents to the Design (2) folder 
