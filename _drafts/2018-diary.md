@@ -135,6 +135,16 @@ digraph G{
 
 ----------------------------
 
-## September 11
+## September 14
 
-* tell Romeo to put the investment documents to the Design (2) folder 
+I'm in CBTL with Monette and she shows me an awesome thing. Her Prof has powerpoint slides that read the notes automatically. I was thinking, how do I achieve this with Google Slides.
+
+1. record audio. I think this can be done on a per slide basis. 
+2. convert audio to video. Use audacity or ffmpeg. Google slides can embed video, not audio.
+3. upload to google drive. youtube will work too, but you'll have ads. 
+4. share the video as a presentation. well, the video has got to be shared.
+5. embed the video to the right slide. manage the size and drag past the slide borders so that it doesn't show.
+6. set to autoplay. you can fix up the timing also. 
+7. test that everything works
+
+This can be for the instructional materials that I'll be authoring. Any updates can be done piece-meal. 
