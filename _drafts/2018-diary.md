@@ -148,3 +148,29 @@ I'm in CBTL with Monette and she shows me an awesome thing. Her Prof has powerpo
 7. test that everything works
 
 This can be for the instructional materials that I'll be authoring. Any updates can be done piece-meal. 
+
+
+## Sept 16
+
+# OVCAIS vision
+
+I know what to do. Let's see the vision for HRDO
+
+The end goal is to have them in an upward spiral of technical savvyness with very stable and strong foundations. 
+
+The is state has a web application with proper tests and is setup for continuous integration. It uses up to date security through a stable web framework. 
+
+Functionality is then added safely through a efficient design generation process.
+
+Development is conducted through an engaging atmosphere of mutual development.
+
+As a developer, I do not want to hold the prerequisite knowledge of the intricacies of the system that I am developing, chances are, I may not be able to grasp it within an acceptable amount of time anyway. I'll have end-users (EU) and subject area experts (SME) for that. 
+
+My job then is to 
+1. roll out the design generation process
+1. bring the development process up to a stage that I am certain
+2. teach EU/SME enough programming to communicate clearly the processes that they are certain
+3. merge the Dev and EU output in visual manner
+4. use and refine
+5. teach maintenance and move on
+
