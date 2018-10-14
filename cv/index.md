@@ -8,7 +8,7 @@ layout: default
 
 ![FLL Judge pic]({{ "/assets/FLLJudge.jpg" | absolute_url }})
 
-[Curriculum Vitae](https://docs.google.com/viewer?a=v&pid=sites&srcid=ZGNzLnVwZC5lZHUucGh8c2NsfGd4OjdiYmUyNDA4MDZiMWQ4Y2U)
+[Curriculum Vitae]()
 
 
 ### Recent work
