@@ -101,7 +101,9 @@ The basic architectdure will look like this:
 
 
 
-<img src="../assets/mvc.png"> (https://medium.freecodecamp.org/understanding-the-basics-of-ruby-on-rails-http-mvc-and-routes-359b8d809c7a)
+<img src="../assets/mvc.png" alt="MVC"> 
+![mvc]({{ "/assets/mvc.png" | absolute_url }})
+(https://medium.freecodecamp.org/understanding-the-basics-of-ruby-on-rails-http-mvc-and-routes-359b8d809c7a)
 
 
 ## Client-Server Pattern
