@@ -102,7 +102,7 @@ The basic architectdure will look like this:
 
 
 <img src="../assets/mvc.png" alt="MVC"> 
-![mvc]({{ site.url }}/assets/mvc.png)
+![mvc]({{ site.url }}assets/mvc.png)
 (https://medium.freecodecamp.org/understanding-the-basics-of-ruby-on-rails-http-mvc-and-routes-359b8d809c7a)
 
 
@@ -184,7 +184,10 @@ digraph G{
 }
 ```
 
+
 The software is recommended to be initially cloud developed with the choice of moving on-premise after development. This will allow maximum flexibility in efficient adding of security and reliability to the system during development that can more-readily be translated to on-premise at a future point.  
+
+Development and Testing will be done on local machines and not on the server.
 
 
 # Deployment View
