@@ -7,7 +7,7 @@ tags:
 - soft_engg
 ---
 
-![FLL Judge pic]({{ "/assets/MVC.png" | absolute_url }})
+![MVC]({{ "/assets/MVC.png" | absolute_url }})
 
 ## Definitions
 
@@ -103,7 +103,7 @@ The basic architectdure will look like this:
 
 
 <img src="../assets/mvc.png" alt="MVC"> 
-![mvc]({{ site.url }}assets/mvc.png)
+![MVC]({{ "/assets/MVC.png" | absolute_url }})
 (https://medium.freecodecamp.org/understanding-the-basics-of-ruby-on-rails-http-mvc-and-routes-359b8d809c7a)
 
 
