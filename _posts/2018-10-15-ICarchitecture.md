@@ -7,7 +7,6 @@ tags:
 - soft_engg
 ---
 
-![MVC]({{ "/assets/MVC.png" | absolute_url }})
 
 ## Definitions
 
