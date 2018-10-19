@@ -7,6 +7,7 @@ tags:
 - soft_engg
 ---
 
+![FLL Judge pic]({{ "/assets/FLLJudge.jpg" | absolute_url }})
 
 ## Definitions
 
