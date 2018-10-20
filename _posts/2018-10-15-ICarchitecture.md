@@ -79,8 +79,8 @@ The main interfaces are a insurance company interface and an IC interface per di
 # Architecture
 
 The relevant architectures used in this design are 
-1. Client-Server 
-2. Model-View-Controller (MVC)
+
+1. Model-View-Controller (MVC)
 3. Representational State Transfer (REST)
 4. Active Record Architectural Pattern
 
@@ -105,10 +105,6 @@ The basic architectdure will look like this:
 ![MVC]({{ "/assets/MVC.png" | absolute_url }})
 (https://medium.freecodecamp.org/understanding-the-basics-of-ruby-on-rails-http-mvc-and-routes-359b8d809c7a)
 
-
-## Client-Server Pattern
-
-The services are provided by the server. The server, whether on-premise or in-cloud, will be provisioned and maintained with standard performance parameters of within ~70 percent of average capacity for bandwith, memory and processing. The clients will be nodes within the network with applicable access rights. The server actions in response to logged client requests.
 
 
 ## Model-View-Controller
@@ -192,6 +188,7 @@ Development and Testing will be done on local machines and not on the server.
 
 # Deployment View
 
+
 I suggest to use a Platform as a Service (PAAS) for the first deployment of the system. This is a middle layer to Cloud Infrastructure. 
 
 Spefically, I suggest using Heroku PAAS that is built on top of the AWS cloud. I find this as a best-practice intermediate step going to a direct cloud Infrastructure as a Service.
@@ -199,6 +196,9 @@ Spefically, I suggest using Heroku PAAS that is built on top of the AWS cloud. I
 For file storage, we recommend the AWS Simple Storage Service (S3) for the security and reliability it provides. It also has a stable and well developed API for use with the recommended framework.
 
 By doing the above, we will be able to capture, real-time bandwith, redundancy and security requirements for the system that will guide any future deployment and expansion.
+
+Should on-premise deployment be pursued:
+The services are provided by the local server. The server, whether on-premise will be provisioned and maintained with standard performance parameters of within ~70 percent of average capacity for bandwith, memory and processing. The clients will be nodes within the network with applicable access rights. The server actions in response to logged client requests.
 
 
 # Implementation View
