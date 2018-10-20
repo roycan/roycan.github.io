@@ -1,2 +1,0 @@
-# Install rails in Ubuntu
-
