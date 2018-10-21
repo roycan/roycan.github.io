@@ -7,7 +7,10 @@ tags:
 - Mother Mary
 ---
 
-# PRAYERS
+
+<img src="../assets/fatima.jpg" alt="Our Lady"> 
+![Our Lady]({{ "/assets/fatima.jpg" | absolute_url }})
+
 
 # ON THE ARRIVAL OF THE IMAGE
 
@@ -109,7 +112,7 @@ O my Jesus, forgive us our sins, save us from the fires of hell and bring all so
 
 Hail Holy Queen, Mother of Mercy, hail our life, our sweetness and our hope. To you do we cry, poor banished children of Eve, to you do we send up our sighs, mourning and weeping in this valley of tears. Turn then, most gracious advocate, your eyes of mercy towards us; and after this our exile, show unto us the blessed fruit of your womb, Jesus. O clement, o loving, o sweet Virgin Mary.
 
-V. Pray for us, O Holy Mother of God
+V. Pray for us, O Holy Mother of God  
 R. That we may be made worthy of the promises of Christ.
 
 **LET US PRAY:**
@@ -204,14 +207,14 @@ Queen of the Most Holy Rosary, refuge of the human race, we are confident in obt
     One (1) Glory be
     Our Lady of Fatima, Pray for us
 
-V. Eternal rest give unto them, O Lord
-R. And let your perpetual light shine upon them
-V. May the rest in peace
-R. AMEN.
-V. Most Sacred Heart of Jesus (3x)
-R. Have mercy on us (3x)
-V. Immaculate Heart of Mary
-R. Pray for us
+V. Eternal rest give unto them, O Lord  
+R. And let your perpetual light shine upon them  
+V. May the rest in peace  
+R. AMEN.  
+V. Most Sacred Heart of Jesus (3x)  
+R. Have mercy on us (3x)  
+V. Immaculate Heart of Mary  
+R. Pray for us  
 
 **KEEP SILENT AND ASK WHATEVER FAVOR YOU WISH FROM OUR BLESSED MOTHER.**
 
