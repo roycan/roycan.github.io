@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Setup Git and Github"	
-remarks: quick guide
+remarks: "quick guide"
 categories: Teaching
 tags: 
 - soft_engg

@@ -62,7 +62,7 @@ The information system needs of IC is large. It will force the files to be split
 
 Policy changes seem to be a fairly regular occurence in IC. It would be great if End-Users confident that particular link will give them what they need and failing that, will return empty and not give them anything else that may cause confusion. It would be great if End-users are confident that new features will mean new links and would simply expect those to be available in response to policy. These benefits are part of implementing a RESTful architecture pattern through the uniform interface constraint. 
 
-There would be two (2) main environements for system usage. The first is within the IC for data access needs in support of analysis and reportorial requirements. The second environment in insurance companies, as a means to submit data and obtain feedback from IC.
+There would be two (2) main environments for system usage. The first is within the IC for data access needs in support of analysis and reportorial requirements. The second environment in insurance companies, as a means to submit data and obtain feedback from IC.
 
 The users for the first environment are IC staff for data access and report generation and IC heads for report consumption. The users for the second environement are the insurance company staff to prepare and update requirements as draft submissions and the insurance company head to authorize submissions.
 
@@ -91,13 +91,13 @@ I recommend one of the following actions to better ensure that the overall archi
 Please choose 1:
 1. Get the same team who designed to develop the system
 2. Get at least part of the design team to be part of the development team
-3. Take a software architect from the design team as design consultant in the development phase and resolve each development obstacle inkeeping with the principles of the architecture
+3. Take a software architect from the design team as design consultant in the development phase and resolve each development obstacle in keeping with the principles of the architecture
 4. Make sure that a software architect, who understands the design, guides the development and inspects if the architectural constraints in the design document are observed.
 
 This is like in making a building. Every great and large building has an architect all the way from its start to the end. 
 
 
-The basic architectdure will look like this:
+The basic architecture will look like this:
 
 
 
@@ -126,7 +126,7 @@ We recommend the MVC framework Laravel for the purpose of IC, where there are I.
 
 Implementing the web application using the framework of Representational State Transfer maximizes scalability of multi-developer multi-group contribution and access. It makes the system resilient with respect to changes in the services requested by the Clients , while having the Server keep assumptions about Clients at a minimum.
 
-The REST patternv allows expansion in complexity through adding layers between the Client and the Server with each layer only interacting with the one immediately above or below it. This makes it easier for the system to work with proxy servers and network gateways.
+The REST pattern allows expansion in complexity through adding layers between the Client and the Server with each layer only interacting with the one immediately above or below it. This makes it easier for the system to work with proxy servers and network gateways.
 
 The REST patterns imposes some other important constraints such as being stateless and having a uniform interface. Using Laravel's resource controller route allows automatically generated and thus, uniform interfaces, so that other developers can safely and easily request for server resources. This will allow multiple IC or non-IC developers to work on a single project together. This will also allow future developers to continue the work of former developers that may have left the service of IC. 
 
@@ -158,7 +158,7 @@ Common workflows among processes include User Administration, Data Monitoring an
 
 # Environment and Network
 
-The following Evironment diagram can be supported by the Heroku PAAS on top of the AWS cloud service. This is what I recommend for the next phase of development.
+The following Environment diagram can be supported by the Heroku PAAS on top of the AWS cloud service. This is what I recommend for the next phase of development.
 
 The current on-premise servers in IC also capable of hosting the servers according to the diagram.
 
@@ -191,14 +191,14 @@ Development and Testing will be done on local machines and not on the server.
 
 I suggest to use a Platform as a Service (PAAS) for the first deployment of the system. This is a middle layer to Cloud Infrastructure. 
 
-Spefically, I suggest using Heroku PAAS that is built on top of the AWS cloud. I find this as a best-practice intermediate step going to a direct cloud Infrastructure as a Service.
+Specifically, I suggest using Heroku PAAS that is built on top of the AWS cloud. I find this as a best-practice intermediate step going to a direct cloud Infrastructure as a Service.
 
 For file storage, we recommend the AWS Simple Storage Service (S3) for the security and reliability it provides. It also has a stable and well developed API for use with the recommended framework.
 
-By doing the above, we will be able to capture, real-time bandwith, redundancy and security requirements for the system that will guide any future deployment and expansion.
+By doing the above, we will be able to capture, real-time bandwidth, redundancy and security requirements for the system that will guide any future deployment and expansion.
 
 Should on-premise deployment be pursued:
-The services are provided by the local server. The server, whether on-premise will be provisioned and maintained with standard performance parameters of within ~70 percent of average capacity for bandwith, memory and processing. The clients will be nodes within the network with applicable access rights. The server actions in response to logged client requests.
+The services are provided by the local server. The server, whether on-premise will be provisioned and maintained with standard performance parameters of within ~70 percent of average capacity for bandwidth, memory and processing. The clients will be nodes within the network with applicable access rights. The server actions in response to logged client requests.
 
 
 # Implementation View
@@ -216,7 +216,7 @@ Data conversion and migration would be through Excel or similar spreadsheets and
 
 Authentication would be through login accounts set per division or per insurance company access rights. 
 
-Authorization would on the company side, would rely on the accoount given to the company head. Authorization on the IC side may be designated to each Division Head for each division. Deputy Commissioners would have authority over all their divisions. 
+Authorization would on the company side, would rely on the account given to the company head. Authorization on the IC side may be designated to each Division Head for each division. Deputy Commissioners would have authority over all their divisions. 
 
 All actions will be logged by the system. For actions that impact the database, the logs will include enough data to reverse the change being done.
 
