@@ -54,11 +54,11 @@ rbenv users need to run rbenv rehash after installing bundler.
 
 # Getting Git
 
-*see the article on [Configuring Git](2018-10-19-configure_git.md)
+*see the article on [Configuring Git]({{ site.baseurl }}{% link _posts/2018-10-19-configure_git.md %})
 
 # Setting Up MySQL
 
-*see the article on [Setting Up MySQL](2018-10-19-setup_mysql.md)
+*see the article on [Setting Up MySQL]({{ site.baseurl }}{% link _posts/2018-10-19-setup_mysql.md %})
 
 Rails ships with sqlite3 as the default database. This is good only for simple and small databases. 
 
@@ -69,7 +69,7 @@ Use the software repo to install and take note of the password you set and updat
 
 # Setting Up PostgreSQL
 
-*see the article on [Setting Up PostgreSQL](2018-10-19-setup_postgresql.md)
+*see the article on [Setting Up PostgreSQL]({{ site.baseurl }}{% link _posts/2018-10-19-setup_postgresql.md %})
 
 PostgreSQL is even better than MySQL for normal implementations of Rails Web applications.
 
