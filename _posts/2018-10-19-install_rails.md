@@ -46,6 +46,7 @@ ruby -v
 install Bundler
 
     gem install bundler
+    bundle update
 
 rbenv users need to run rbenv rehash after installing bundler.
 
