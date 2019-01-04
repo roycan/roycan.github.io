@@ -1,0 +1,109 @@
+{
+    "docs": [
+        {
+            "location": "/",
+            "text": "Welcome to MkDocs\n\n\nThis is a test site hosted on \nGitLab Pages\n. You can\n\nbrowse its source code\n, fork it and start\nusing it on your projects.\n\n\nFor full documentation visit \nmkdocs.org\n.\n\n\nCommands\n\n\n\n\nmkdocs new [dir-name]\n - Create a new project.\n\n\nmkdocs serve\n - Start the live-reloading docs server.\n\n\nmkdocs build\n - Build the documentation site.\n\n\nmkdocs help\n - Print this help message.\n\n\n\n\nProject layout\n\n\nmkdocs.yml    # The configuration file.\ndocs/\n    index.md  # The documentation homepage.\n    ...       # Other markdown pages, images and other files.",
+            "title": "Foo"
+        },
+        {
+            "location": "/#welcome-to-mkdocs",
+            "text": "This is a test site hosted on  GitLab Pages . You can browse its source code , fork it and start\nusing it on your projects.  For full documentation visit  mkdocs.org .",
+            "title": "Welcome to MkDocs"
+        },
+        {
+            "location": "/#commands",
+            "text": "mkdocs new [dir-name]  - Create a new project.  mkdocs serve  - Start the live-reloading docs server.  mkdocs build  - Build the documentation site.  mkdocs help  - Print this help message.",
+            "title": "Commands"
+        },
+        {
+            "location": "/#project-layout",
+            "text": "mkdocs.yml    # The configuration file.\ndocs/\n    index.md  # The documentation homepage.\n    ...       # Other markdown pages, images and other files.",
+            "title": "Project layout"
+        },
+        {
+            "location": "/bar/",
+            "text": "Welcome to MkDocs\n\n\nThis is a test site hosted on \nGitLab Pages\n. You can\n\nbrowse its source code\n, fork it and start\nusing it on your projects.\n\n\nFor full documentation visit \nmkdocs.org\n.\n\n\nCommands\n\n\n\n\nmkdocs new [dir-name]\n - Create a new project.\n\n\nmkdocs serve\n - Start the live-reloading docs server.\n\n\nmkdocs build\n - Build the documentation site.\n\n\nmkdocs help\n - Print this help message.\n\n\n\n\nProject layout\n\n\nmkdocs.yml    # The configuration file.\ndocs/\n    index.md  # The documentation homepage.\n    ...       # Other markdown pages, images and other files.",
+            "title": "Baz"
+        },
+        {
+            "location": "/bar/#welcome-to-mkdocs",
+            "text": "This is a test site hosted on  GitLab Pages . You can browse its source code , fork it and start\nusing it on your projects.  For full documentation visit  mkdocs.org .",
+            "title": "Welcome to MkDocs"
+        },
+        {
+            "location": "/bar/#commands",
+            "text": "mkdocs new [dir-name]  - Create a new project.  mkdocs serve  - Start the live-reloading docs server.  mkdocs build  - Build the documentation site.  mkdocs help  - Print this help message.",
+            "title": "Commands"
+        },
+        {
+            "location": "/bar/#project-layout",
+            "text": "mkdocs.yml    # The configuration file.\ndocs/\n    index.md  # The documentation homepage.\n    ...       # Other markdown pages, images and other files.",
+            "title": "Project layout"
+        },
+        {
+            "location": "/quux/",
+            "text": "Welcome to MkDocs\n\n\nThis is a test site hosted on \nGitLab Pages\n. You can\n\nbrowse its source code\n, fork it and start\nusing it on your projects.\n\n\nFor full documentation visit \nmkdocs.org\n.\n\n\nCommands\n\n\n\n\nmkdocs new [dir-name]\n - Create a new project.\n\n\nmkdocs serve\n - Start the live-reloading docs server.\n\n\nmkdocs build\n - Build the documentation site.\n\n\nmkdocs help\n - Print this help message.\n\n\n\n\nProject layout\n\n\nmkdocs.yml    # The configuration file.\ndocs/\n    index.md  # The documentation homepage.\n    ...       # Other markdown pages, images and other files.",
+            "title": "Quux"
+        },
+        {
+            "location": "/quux/#welcome-to-mkdocs",
+            "text": "This is a test site hosted on  GitLab Pages . You can browse its source code , fork it and start\nusing it on your projects.  For full documentation visit  mkdocs.org .",
+            "title": "Welcome to MkDocs"
+        },
+        {
+            "location": "/quux/#commands",
+            "text": "mkdocs new [dir-name]  - Create a new project.  mkdocs serve  - Start the live-reloading docs server.  mkdocs build  - Build the documentation site.  mkdocs help  - Print this help message.",
+            "title": "Commands"
+        },
+        {
+            "location": "/quux/#project-layout",
+            "text": "mkdocs.yml    # The configuration file.\ndocs/\n    index.md  # The documentation homepage.\n    ...       # Other markdown pages, images and other files.",
+            "title": "Project layout"
+        },
+        {
+            "location": "/pcari-site-proposal/",
+            "text": "PCARI Project Website\n\n\nRoy Canseco  with  Romeo Ramos Jr. and James Karl Qui\u00f1o\n\n\nDecember 2018\n\n\n\n\nPCARI Website Project\n\n\nPurpose\n\n\nWe propose to create a blog-styled technical project website for the purpose of sharing research results and data with the general public according to the guidelines of PCARI. \n\n\nPlan\n\n\nUse Wordpress as the content management system (CMS). Host the site in Wordpress.com using a subdomain of the client's choosing.  \n\n\nDuties\n\n\n\n\nTo setup the project website locally \n\n\nTo seed the website with initial project content\n\n\nTo host the project website on the cloud\n\n\nTo train users in using, updating and managing the website\n\n\n\n\nDeliverables\n\n\n\n\nsource code for the project website \n\n\nSQL export of the website database\n\n\nWeb access to the host server account \n\n\nWebsite administration account\n\n\nList of plugins and software versions\n\n\n\n\nSample pages",
+            "title": "PCARI"
+        },
+        {
+            "location": "/pcari-site-proposal/#pcari-website-project",
+            "text": "",
+            "title": "PCARI Website Project"
+        },
+        {
+            "location": "/pcari-site-proposal/#purpose",
+            "text": "We propose to create a blog-styled technical project website for the purpose of sharing research results and data with the general public according to the guidelines of PCARI.",
+            "title": "Purpose"
+        },
+        {
+            "location": "/pcari-site-proposal/#plan",
+            "text": "Use Wordpress as the content management system (CMS). Host the site in Wordpress.com using a subdomain of the client's choosing.",
+            "title": "Plan"
+        },
+        {
+            "location": "/pcari-site-proposal/#duties",
+            "text": "To setup the project website locally   To seed the website with initial project content  To host the project website on the cloud  To train users in using, updating and managing the website",
+            "title": "Duties"
+        },
+        {
+            "location": "/pcari-site-proposal/#deliverables",
+            "text": "source code for the project website   SQL export of the website database  Web access to the host server account   Website administration account  List of plugins and software versions",
+            "title": "Deliverables"
+        },
+        {
+            "location": "/pcari-site-proposal/#sample-pages",
+            "text": "",
+            "title": "Sample pages"
+        },
+        {
+            "location": "/UP-IC/",
+            "text": "People\n\n\n\n\n\n\n\n\nName\n\n\nemail\n\n\n\n\n\n\n\n\n\n\nRoy Canseco\n\n\nrlcanseco@up.edu.ph\n\n\n\n\n\n\nPaulo Santiago\n\n\npaulo64santaigo@gmail.com\n\n\n\n\n\n\nAnthony Cornell Dacoco\n\n\namdacoco@up.edu.ph\n\n\n\n\n\n\nBlaine Corwyn Aboy\n\n\nbdaboy@up.edu.ph\n\n\n\n\n\n\nDaisyree D. Viscaya\n\n\ndaisyreeviscaya@gmail.com\n\n\n\n\n\n\nDianne Pauline Urban\n\n\ndiannepauline.urban@gmail.com\n\n\n\n\n\n\nLoren Anne Lacanilao\n\n\nlorenannelacanilao@gmail.com",
+            "title": "UP-IC"
+        },
+        {
+            "location": "/UP-IC/#people",
+            "text": "Name  email      Roy Canseco  rlcanseco@up.edu.ph    Paulo Santiago  paulo64santaigo@gmail.com    Anthony Cornell Dacoco  amdacoco@up.edu.ph    Blaine Corwyn Aboy  bdaboy@up.edu.ph    Daisyree D. Viscaya  daisyreeviscaya@gmail.com    Dianne Pauline Urban  diannepauline.urban@gmail.com    Loren Anne Lacanilao  lorenannelacanilao@gmail.com",
+            "title": "People"
+        }
+    ]
+}
