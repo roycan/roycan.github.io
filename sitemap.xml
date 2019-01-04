@@ -4,12 +4,6 @@
     
         
     <url>
-     <loc>https://roycan.gitlab.io/mkdocs/</loc>
-     <lastmod>2018-12-18</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
      <loc>https://roycan.gitlab.io/mkdocs</loc>
      <lastmod></lastmod>
      <changefreq>daily</changefreq>
@@ -20,17 +14,25 @@
     
     <url>
      <loc>https://roycan.gitlab.io/mkdocs/pcari-site-proposal/</loc>
-     <lastmod>2018-12-18</lastmod>
+     <lastmod>2019-01-04</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
 
     
+        
     <url>
      <loc>https://roycan.gitlab.io/mkdocs/UP-IC/</loc>
-     <lastmod>2018-12-18</lastmod>
+     <lastmod>2019-01-04</lastmod>
      <changefreq>daily</changefreq>
     </url>
+        
+    <url>
+     <loc>https://roycan.gitlab.io/mkdocs/sample_readme/</loc>
+     <lastmod>2019-01-04</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
     
 
 </urlset>

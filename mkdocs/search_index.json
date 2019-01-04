@@ -2,8 +2,8 @@
     "docs": [
         {
             "location": "/",
-            "text": "Welcome to MkDocs\n\n\nThis is a test site hosted on \nGitLab Pages\n. You can\n\nbrowse its source code\n, fork it and start\nusing it on your projects.\n\n\nFor full documentation visit \nmkdocs.org\n.\n\n\nCommands\n\n\n\n\nmkdocs new [dir-name]\n - Create a new project.\n\n\nmkdocs serve\n - Start the live-reloading docs server.\n\n\nmkdocs build\n - Build the documentation site.\n\n\nmkdocs help\n - Print this help message.\n\n\n\n\nProject layout\n\n\nmkdocs.yml    # The configuration file.\ndocs/\n    index.md  # The documentation homepage.\n    ...       # Other markdown pages, images and other files.",
-            "title": "Foo"
+            "text": "Welcome to MkDocs\n\n\nThis is a test site hosted on \nGitLab Pages\n. You can\n\nbrowse its source code\n, fork it and start\nusing it on your projects.\n\n\nFor full documentation visit \nmkdocs.org\n.\n\n\nCommands\n\n\n\n\nmkdocs new [dir-name]\n - Create a new project.\n\n\nmkdocs serve\n - Start the live-reloading docs server.\n\n\nmkdocs build\n - Build the documentation site.\n\n\nmkdocs help\n - Print this help message.\n\n\n\n\nProject layout\n\n\nmkdocs.yml    # The configuration file.\ndocs/\n    index.md  # The documentation homepage.\n    ...       # Other markdown pages, images and other files.\n\n\n\nhello",
+            "title": "Home"
         },
         {
             "location": "/#welcome-to-mkdocs",
@@ -17,13 +17,13 @@
         },
         {
             "location": "/#project-layout",
-            "text": "mkdocs.yml    # The configuration file.\ndocs/\n    index.md  # The documentation homepage.\n    ...       # Other markdown pages, images and other files.",
+            "text": "mkdocs.yml    # The configuration file.\ndocs/\n    index.md  # The documentation homepage.\n    ...       # Other markdown pages, images and other files.  hello",
             "title": "Project layout"
         },
         {
             "location": "/bar/",
             "text": "Welcome to MkDocs\n\n\nThis is a test site hosted on \nGitLab Pages\n. You can\n\nbrowse its source code\n, fork it and start\nusing it on your projects.\n\n\nFor full documentation visit \nmkdocs.org\n.\n\n\nCommands\n\n\n\n\nmkdocs new [dir-name]\n - Create a new project.\n\n\nmkdocs serve\n - Start the live-reloading docs server.\n\n\nmkdocs build\n - Build the documentation site.\n\n\nmkdocs help\n - Print this help message.\n\n\n\n\nProject layout\n\n\nmkdocs.yml    # The configuration file.\ndocs/\n    index.md  # The documentation homepage.\n    ...       # Other markdown pages, images and other files.",
-            "title": "Baz"
+            "title": "Bar"
         },
         {
             "location": "/bar/#welcome-to-mkdocs",
@@ -104,6 +104,31 @@
             "location": "/UP-IC/#people",
             "text": "Name  email      Roy Canseco  rlcanseco@up.edu.ph    Paulo Santiago  paulo64santaigo@gmail.com    Anthony Cornell Dacoco  amdacoco@up.edu.ph    Blaine Corwyn Aboy  bdaboy@up.edu.ph    Daisyree D. Viscaya  daisyreeviscaya@gmail.com    Dianne Pauline Urban  diannepauline.urban@gmail.com    Loren Anne Lacanilao  lorenannelacanilao@gmail.com",
             "title": "People"
+        },
+        {
+            "location": "/sample_readme/",
+            "text": "Palindrome Detector\n\n\nrlcanseco_palindrome\n is a sample Ruby gem created in \nLean Enough Ruby to be\nDangerous\n Michael Hartl.\n\n\nInstallation\n\n\nTo install \n`rlcanseco_palindrome\n , add this line to your application's Gemfile:\n\n\ngem 'rlcanseco_palindrome'\n\n\n\n\nAnd then install as follows:\n\n\n$ bundle install\n\n\n\nOr install it directly using gem :\n\n\n$ gem install rlcanseco_palindrome\n\n\n\nUsage\n\n\nrlcanseco_parlindrome\n adds a \npalindrom?\n method to the \nString\n class, and can be used as follows:\n\n\n$ irb\n>> require 'mhartl_palindrome'\n>> \"honey badger\".palindrome?\n=> false\n>> \"deified\".palindrome?\n=> true\n>> \"Able was I, ere I saw Elba.\".palindrome?\n=> true\n>> phrase = \"Madam, I'm Adam.\"\n>> phrase.palindrome?\n=> true\n\n\n\n\nLicense\n\n\nThe gem is available as open source under the terms of the \nMIT License\n.",
+            "title": "readme"
+        },
+        {
+            "location": "/sample_readme/#palindrome-detector",
+            "text": "rlcanseco_palindrome  is a sample Ruby gem created in  Lean Enough Ruby to be\nDangerous  Michael Hartl.",
+            "title": "Palindrome Detector"
+        },
+        {
+            "location": "/sample_readme/#installation",
+            "text": "To install  `rlcanseco_palindrome  , add this line to your application's Gemfile:  gem 'rlcanseco_palindrome'  And then install as follows:  $ bundle install  Or install it directly using gem :  $ gem install rlcanseco_palindrome",
+            "title": "Installation"
+        },
+        {
+            "location": "/sample_readme/#usage",
+            "text": "rlcanseco_parlindrome  adds a  palindrom?  method to the  String  class, and can be used as follows:  $ irb\n>> require 'mhartl_palindrome'\n>> \"honey badger\".palindrome?\n=> false\n>> \"deified\".palindrome?\n=> true\n>> \"Able was I, ere I saw Elba.\".palindrome?\n=> true\n>> phrase = \"Madam, I'm Adam.\"\n>> phrase.palindrome?\n=> true",
+            "title": "Usage"
+        },
+        {
+            "location": "/sample_readme/#license",
+            "text": "The gem is available as open source under the terms of the  MIT License .",
+            "title": "License"
         }
     ]
 }
