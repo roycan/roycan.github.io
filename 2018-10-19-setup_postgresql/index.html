@@ -6,9 +6,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
         <meta name="author" content="Roy Canseco">
-        <link rel="canonical" href="https://roycan.gitlab.io/mkdocs/UP-IC/">
+        <link rel="canonical" href="https://roycan.gitlab.io/mkdocs/2018-10-19-setup_postgresql/">
         <link rel="shortcut icon" href="../img/favicon.ico">
-        <title>UP-IC - roycan docs</title>
+        <title>2018 10 19 setup postgresql - roycan docs</title>
         <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
         <link href="../css/font-awesome-4.5.0.css" rel="stylesheet">
         <link href="../css/base.css" rel="stylesheet">
@@ -71,12 +71,12 @@
                     <li >
                         <a href="../pcari-site-proposal/">PCARI</a>
                     </li>
-                    <li class="dropdown active">
+                    <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">UP-IC <b class="caret"></b></a>
                         <ul class="dropdown-menu">
                             
-<li class="active">
-    <a href="./">UP-IC</a>
+<li >
+    <a href="../UP-IC/">UP-IC</a>
 </li>
                             
 <li >
@@ -167,7 +167,7 @@
 </li>
                         </ul>
                     </li>
-                    <li class="dropdown">
+                    <li class="dropdown active">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">teaching <b class="caret"></b></a>
                         <ul class="dropdown-menu">
                             
@@ -211,8 +211,8 @@
     <a href="../2018-10-19-setup_mysql/">2018 10 19 setup mysql</a>
 </li>
                             
-<li >
-    <a href="../2018-10-19-setup_postgresql/">2018 10 19 setup postgresql</a>
+<li class="active">
+    <a href="./">2018 10 19 setup postgresql</a>
 </li>
                             
 <li >
@@ -238,12 +238,12 @@
                     </a>
                 </li>
                     <li >
-                        <a rel="next" href="../pcari-site-proposal/">
+                        <a rel="next" href="../2018-10-19-setup_mysql/">
                             <i class="fa fa-arrow-left"></i> Previous
                         </a>
                     </li>
                     <li >
-                        <a rel="prev" href="../sample_readme/">
+                        <a rel="prev" href="../2018-11-01-aws_upkeep/">
                             Next <i class="fa fa-arrow-right"></i>
                         </a>
                     </li>
@@ -255,50 +255,32 @@
         <div class="container">
                 <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
-        <li class="main active"><a href="#people">People</a></li>
+        <li class="main active"><a href="#-soft_engg">- soft_engg</a></li>
     </ul>
 </div></div>
                 <div class="col-md-9" role="main">
 
-<h2 id="people">People</h2>
-<table>
-<thead>
-<tr>
-<th>Name</th>
-<th>email</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Roy Canseco</td>
-<td>rlcanseco@up.edu.ph</td>
-</tr>
-<tr>
-<td>Paulo Santiago</td>
-<td>paulo64santaigo@gmail.com</td>
-</tr>
-<tr>
-<td>Anthony Cornell Dacoco</td>
-<td>amdacoco@up.edu.ph</td>
-</tr>
-<tr>
-<td>Blaine Corwyn Aboy</td>
-<td>bdaboy@up.edu.ph</td>
-</tr>
-<tr>
-<td>Daisyree D. Viscaya</td>
-<td>daisyreeviscaya@gmail.com</td>
-</tr>
-<tr>
-<td>Dianne Pauline Urban</td>
-<td>diannepauline.urban@gmail.com</td>
-</tr>
-<tr>
-<td>Loren Anne Lacanilao</td>
-<td>lorenannelacanilao@gmail.com</td>
-</tr>
-</tbody>
-</table></div>
+<h2 id="-soft_engg">- soft_engg</h2>
+<p>add a new repository to easily install a recent version of Postgres</p>
+<pre><code class="bash">sudo sh -c &quot;echo 'deb http://apt.postgresql.org/pub/repos/apt/ xenial-pgdg main' &gt; /etc/apt/sources.list.d/pgdg.list&quot;
+wget --quiet -O - http://apt.postgresql.org/pub/repos/apt/ACCC4CF8.asc | sudo apt-key add -
+sudo apt-get update
+sudo apt-get install postgresql-common
+sudo apt-get install postgresql-9.5 libpq-dev
+</code></pre>
+
+<p>You will now have a user named postgres with no password</p>
+<pre><code class="bash">sudo -u postgres psql
+\q
+</code></pre>
+
+<p>create a user with permission to create databases</p>
+<pre><code class="bash">sudo -u postgres createuser roycan -s
+
+# If you would like to set a password for the user, you can do the following
+sudo -u postgres psql
+postgres=# \password roycan
+</code></pre></div>
         </div>
 
         <footer class="col-md-12">

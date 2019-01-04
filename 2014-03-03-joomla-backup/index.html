@@ -6,9 +6,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
         <meta name="author" content="Roy Canseco">
-        <link rel="canonical" href="https://roycan.gitlab.io/mkdocs/UP-IC/">
+        <link rel="canonical" href="https://roycan.gitlab.io/mkdocs/2014-03-03-joomla-backup/">
         <link rel="shortcut icon" href="../img/favicon.ico">
-        <title>UP-IC - roycan docs</title>
+        <title>2014 03 03 joomla backup - roycan docs</title>
         <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
         <link href="../css/font-awesome-4.5.0.css" rel="stylesheet">
         <link href="../css/base.css" rel="stylesheet">
@@ -71,12 +71,12 @@
                     <li >
                         <a href="../pcari-site-proposal/">PCARI</a>
                     </li>
-                    <li class="dropdown active">
+                    <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">UP-IC <b class="caret"></b></a>
                         <ul class="dropdown-menu">
                             
-<li class="active">
-    <a href="./">UP-IC</a>
+<li >
+    <a href="../UP-IC/">UP-IC</a>
 </li>
                             
 <li >
@@ -84,7 +84,7 @@
 </li>
                         </ul>
                     </li>
-                    <li class="dropdown">
+                    <li class="dropdown active">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">skills <b class="caret"></b></a>
                         <ul class="dropdown-menu">
                             
@@ -92,8 +92,8 @@
     <a href="../2014-01-15-maple-review/">2014 01 15 maple review</a>
 </li>
                             
-<li >
-    <a href="../2014-03-03-joomla-backup/">2014 03 03 joomla backup</a>
+<li class="active">
+    <a href="./">2014 03 03 joomla backup</a>
 </li>
                             
 <li >
@@ -238,12 +238,12 @@
                     </a>
                 </li>
                     <li >
-                        <a rel="next" href="../pcari-site-proposal/">
+                        <a rel="next" href="../2014-01-15-maple-review/">
                             <i class="fa fa-arrow-left"></i> Previous
                         </a>
                     </li>
                     <li >
-                        <a rel="prev" href="../sample_readme/">
+                        <a rel="prev" href="../2018-07-13-aws-jasperreports/">
                             Next <i class="fa fa-arrow-right"></i>
                         </a>
                     </li>
@@ -255,50 +255,51 @@
         <div class="container">
                 <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
-        <li class="main active"><a href="#people">People</a></li>
+        <li class="main active"><a href="#objectives">Objectives:</a></li>
+        <li class="main "><a href="#steps">steps:</a></li>
+        <li class="main "><a href="#afterwards">afterwards:</a></li>
     </ul>
 </div></div>
                 <div class="col-md-9" role="main">
 
-<h2 id="people">People</h2>
-<table>
-<thead>
-<tr>
-<th>Name</th>
-<th>email</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Roy Canseco</td>
-<td>rlcanseco@up.edu.ph</td>
-</tr>
-<tr>
-<td>Paulo Santiago</td>
-<td>paulo64santaigo@gmail.com</td>
-</tr>
-<tr>
-<td>Anthony Cornell Dacoco</td>
-<td>amdacoco@up.edu.ph</td>
-</tr>
-<tr>
-<td>Blaine Corwyn Aboy</td>
-<td>bdaboy@up.edu.ph</td>
-</tr>
-<tr>
-<td>Daisyree D. Viscaya</td>
-<td>daisyreeviscaya@gmail.com</td>
-</tr>
-<tr>
-<td>Dianne Pauline Urban</td>
-<td>diannepauline.urban@gmail.com</td>
-</tr>
-<tr>
-<td>Loren Anne Lacanilao</td>
-<td>lorenannelacanilao@gmail.com</td>
-</tr>
-</tbody>
-</table></div>
+<ul>
+<li>webdev</li>
+<li>Joomla</li>
+</ul>
+<hr />
+<p>MAKING A BACKUP/ TEST SITE FOR (e.g. JOBSANNEX.COM)</p>
+<h2 id="objectives">Objectives:</h2>
+<p>make a production site out of the finalized development site. <br />
+Turn the development site into a testing site
+make the old website into an    archived website</p>
+<h2 id="steps">steps:</h2>
+<p>Copy the joomla files into the production folder using the host's (e.g. fatcow) filemanager<br />
+Try opening the website from the new folder to see if the files work<br />
+Create a new database using the name of the new folder<br />
+Export the contents of the old database and download as a zip file and unzip<br />
+Import the contents as an sql file<br />
+Update db detials in the configuration.php file in the joomla root directory of the production site
+Check the websites if they work<br />
+Create a subdomain for the old website<br />
+Redirect the URL to the new production site folder</p>
+<h2 id="afterwards">afterwards:</h2>
+<ol>
+<li>check that the old version 1.7 still works.
+the website is viewable and navigatable
+the control dashboard login works
+changes made are saved</li>
+<li>check that the production site works
+the website is viewable and navigatable
+the control dashboard login works
+changes made are saved</li>
+<li>check that the new testing site works
+the website is viewable and navigatable
+the control dashboard login works
+changes made are saved</li>
+<li>make sure that the changes in the test site does not affect the production site</li>
+<li>create and replace the old zip archive files in the fatcow host</li>
+<li>remove unused subdomains.</li>
+</ol></div>
         </div>
 
         <footer class="col-md-12">

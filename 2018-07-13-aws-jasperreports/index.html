@@ -6,9 +6,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
         <meta name="author" content="Roy Canseco">
-        <link rel="canonical" href="https://roycan.gitlab.io/mkdocs/UP-IC/">
+        <link rel="canonical" href="https://roycan.gitlab.io/mkdocs/2018-07-13-aws-jasperreports/">
         <link rel="shortcut icon" href="../img/favicon.ico">
-        <title>UP-IC - roycan docs</title>
+        <title>2018 07 13 aws jasperreports - roycan docs</title>
         <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
         <link href="../css/font-awesome-4.5.0.css" rel="stylesheet">
         <link href="../css/base.css" rel="stylesheet">
@@ -71,12 +71,12 @@
                     <li >
                         <a href="../pcari-site-proposal/">PCARI</a>
                     </li>
-                    <li class="dropdown active">
+                    <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">UP-IC <b class="caret"></b></a>
                         <ul class="dropdown-menu">
                             
-<li class="active">
-    <a href="./">UP-IC</a>
+<li >
+    <a href="../UP-IC/">UP-IC</a>
 </li>
                             
 <li >
@@ -84,7 +84,7 @@
 </li>
                         </ul>
                     </li>
-                    <li class="dropdown">
+                    <li class="dropdown active">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">skills <b class="caret"></b></a>
                         <ul class="dropdown-menu">
                             
@@ -96,8 +96,8 @@
     <a href="../2014-03-03-joomla-backup/">2014 03 03 joomla backup</a>
 </li>
                             
-<li >
-    <a href="../2018-07-13-aws-jasperreports/">2018 07 13 aws jasperreports</a>
+<li class="active">
+    <a href="./">2018 07 13 aws jasperreports</a>
 </li>
                             
 <li >
@@ -238,12 +238,12 @@
                     </a>
                 </li>
                     <li >
-                        <a rel="next" href="../pcari-site-proposal/">
+                        <a rel="next" href="../2014-03-03-joomla-backup/">
                             <i class="fa fa-arrow-left"></i> Previous
                         </a>
                     </li>
                     <li >
-                        <a rel="prev" href="../sample_readme/">
+                        <a rel="prev" href="../2018-08-10-laravel/">
                             Next <i class="fa fa-arrow-right"></i>
                         </a>
                     </li>
@@ -255,50 +255,38 @@
         <div class="container">
                 <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
-        <li class="main active"><a href="#people">People</a></li>
+        <li class="main active"><a href="#step-1-register-with-amazon-web-services-aws">Step 1: Register With Amazon Web Services (AWS)</a></li>
+        <li class="main "><a href="#aws-market-place-for-jasperreports">AWS Market Place for JasperReports</a></li>
+            <li><a href="#quote-of-the-day">Quote of the day</a></li>
     </ul>
 </div></div>
                 <div class="col-md-9" role="main">
 
-<h2 id="people">People</h2>
-<table>
-<thead>
-<tr>
-<th>Name</th>
-<th>email</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Roy Canseco</td>
-<td>rlcanseco@up.edu.ph</td>
-</tr>
-<tr>
-<td>Paulo Santiago</td>
-<td>paulo64santaigo@gmail.com</td>
-</tr>
-<tr>
-<td>Anthony Cornell Dacoco</td>
-<td>amdacoco@up.edu.ph</td>
-</tr>
-<tr>
-<td>Blaine Corwyn Aboy</td>
-<td>bdaboy@up.edu.ph</td>
-</tr>
-<tr>
-<td>Daisyree D. Viscaya</td>
-<td>daisyreeviscaya@gmail.com</td>
-</tr>
-<tr>
-<td>Dianne Pauline Urban</td>
-<td>diannepauline.urban@gmail.com</td>
-</tr>
-<tr>
-<td>Loren Anne Lacanilao</td>
-<td>lorenannelacanilao@gmail.com</td>
-</tr>
-</tbody>
-</table></div>
+<ul>
+<li>AWS</li>
+<li>jasperserver</li>
+</ul>
+<hr />
+<p>I was supposed to take a mock exam for AWS CPE today with Edgar. He asked to have it move to next week. That's fine with me because I'm still listening to the Udemy videos anyway and I expect to finish that part by this weekend. </p>
+<p>Anyway, I want to get my feet wet with Amazon Web Services, so I've decided to go get Jasper Reports running on it. Let's see this adventure play out. </p>
+<h2 id="step-1-register-with-amazon-web-services-aws">Step 1: Register With Amazon Web Services (AWS)</h2>
+<p>By all means, this should be the official UP email. I would have thought of using dcs email, but that's probably not a good idea. I have gmail, but that's personal-technical. My yahoo is personal-relational. </p>
+<p>rlcanseco
+rcaw8
+roycan</p>
+<h2 id="aws-market-place-for-jasperreports">AWS Market Place for JasperReports</h2>
+<p>I went cheap and took the t2.small ec2 instance. This is expected to bill at Php500/mo if I leave it on. I'm not sure how fast it will be. The recommended infrastructure costs 3 times that. Let's try it out like this first.</p>
+<p>vpc-92ca23ea
+subnet-80acebf9 (172.31.16.0/20)</p>
+<p>created a key pair: jasperkey.pem 
+placed in SAFS-AWS</p>
+<p>Hehehe... it didn't work out in the end. The free tier is not enough to support a Jasper Server Instance. And I'm hesitant to do $50/mo deal with AWS at this point. </p>
+<p>I think I'll try other cloud providers now.  I'm sure I'll find analogs to the lessons I learned through the AWS cloud. </p>
+<hr />
+<h3 id="quote-of-the-day">Quote of the day</h3>
+<p>If you want to be happy, set a goal that commands your thoughts, liberates your energy and inspires your hopes.  <br />
+<em>Andrew Carnegie - 1835-1919, American Industrialist, Philanthropist</em></p>
+<hr /></div>
         </div>
 
         <footer class="col-md-12">

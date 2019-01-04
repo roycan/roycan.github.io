@@ -6,9 +6,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
         <meta name="author" content="Roy Canseco">
-        <link rel="canonical" href="https://roycan.gitlab.io/mkdocs/UP-IC/">
+        <link rel="canonical" href="https://roycan.gitlab.io/mkdocs/2018-09-25-IS_prog-js_dates/">
         <link rel="shortcut icon" href="../img/favicon.ico">
-        <title>UP-IC - roycan docs</title>
+        <title>2018 09 25 IS prog js dates - roycan docs</title>
         <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
         <link href="../css/font-awesome-4.5.0.css" rel="stylesheet">
         <link href="../css/base.css" rel="stylesheet">
@@ -71,12 +71,12 @@
                     <li >
                         <a href="../pcari-site-proposal/">PCARI</a>
                     </li>
-                    <li class="dropdown active">
+                    <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">UP-IC <b class="caret"></b></a>
                         <ul class="dropdown-menu">
                             
-<li class="active">
-    <a href="./">UP-IC</a>
+<li >
+    <a href="../UP-IC/">UP-IC</a>
 </li>
                             
 <li >
@@ -167,7 +167,7 @@
 </li>
                         </ul>
                     </li>
-                    <li class="dropdown">
+                    <li class="dropdown active">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">teaching <b class="caret"></b></a>
                         <ul class="dropdown-menu">
                             
@@ -179,8 +179,8 @@
     <a href="../2018-09-16-info_sys/">2018 09 16 info sys</a>
 </li>
                             
-<li >
-    <a href="../2018-09-25-IS_prog-js_dates/">2018 09 25 IS prog js dates</a>
+<li class="active">
+    <a href="./">2018 09 25 IS prog js dates</a>
 </li>
                             
 <li >
@@ -238,12 +238,12 @@
                     </a>
                 </li>
                     <li >
-                        <a rel="next" href="../pcari-site-proposal/">
+                        <a rel="next" href="../2018-09-16-info_sys/">
                             <i class="fa fa-arrow-left"></i> Previous
                         </a>
                     </li>
                     <li >
-                        <a rel="prev" href="../sample_readme/">
+                        <a rel="prev" href="../2018-09-25-js_loops/">
                             Next <i class="fa fa-arrow-right"></i>
                         </a>
                     </li>
@@ -255,50 +255,198 @@
         <div class="container">
                 <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
-        <li class="main active"><a href="#people">People</a></li>
+        <li class="main active"><a href="#-soft_engg">- soft_engg</a></li>
+        <li class="main "><a href="#ways-to-create-a-new-date-object">ways to create a new date object</a></li>
+            <li><a href="#using-date-strings">using date strings</a></li>
+        <li class="main "><a href="#ways-to-display-a-date-object">ways to display a date object</a></li>
+        <li class="main "><a href="#js-date-inputs">js date inputs</a></li>
+        <li class="main "><a href="#getting-parts-of-a-date">getting parts of a date</a></li>
+        <li class="main "><a href="#set-date-methods">Set date methods</a></li>
     </ul>
 </div></div>
                 <div class="col-md-9" role="main">
 
-<h2 id="people">People</h2>
+<h2 id="-soft_engg">- soft_engg</h2>
+<pre><code>var d = new Date();
+// Tue Sep 25 2018 15:01:46 GMT+0800 (Philippine Standard Time)
+</code></pre>
+<h2 id="ways-to-create-a-new-date-object">ways to create a new date object</h2>
+<pre><code>new Date()
+new Date(YYYY, &lt;0-11&gt; , &lt;1-31&gt; , &lt;0-23&gt; , &lt;0-59&gt; , &lt;0-59&gt; , &lt;0-99&gt; )
+new Date(milliseconds)
+new Date(date string)
+</code></pre>
+
+<h3 id="using-date-strings">using date strings</h3>
+<p>Variations of the following should work:</p>
+<pre><code>var d = new Date(&quot;October 13, 2014 11:13:00&quot;);
+</code></pre>
+
+<p>JavaScript stores dates as number of milliseconds since January 01, 1970, 00:00:00 UTC (Universal Time Coordinated).</p>
+<h2 id="ways-to-display-a-date-object">ways to display a date object</h2>
+<pre><code>d = new Date();
+document.getElementById(&quot;demo&quot;).innerHTML = d;
+
+document.getElementById(&quot;demo&quot;).innerHTML = d.toDateString();
+
+document.getElementById(&quot;demo&quot;).innerHTML = d.toUTCString();
+</code></pre>
+
+<h2 id="js-date-inputs">js date inputs</h2>
 <table>
 <thead>
 <tr>
-<th>Name</th>
-<th>email</th>
+<th>Type</th>
+<th>Example</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Roy Canseco</td>
-<td>rlcanseco@up.edu.ph</td>
+<td>ISO Date</td>
+<td>"2015-03-25" (The International Standard)</td>
 </tr>
 <tr>
-<td>Paulo Santiago</td>
-<td>paulo64santaigo@gmail.com</td>
+<td>Short Date</td>
+<td>"03/25/2015"</td>
 </tr>
 <tr>
-<td>Anthony Cornell Dacoco</td>
-<td>amdacoco@up.edu.ph</td>
-</tr>
-<tr>
-<td>Blaine Corwyn Aboy</td>
-<td>bdaboy@up.edu.ph</td>
-</tr>
-<tr>
-<td>Daisyree D. Viscaya</td>
-<td>daisyreeviscaya@gmail.com</td>
-</tr>
-<tr>
-<td>Dianne Pauline Urban</td>
-<td>diannepauline.urban@gmail.com</td>
-</tr>
-<tr>
-<td>Loren Anne Lacanilao</td>
-<td>lorenannelacanilao@gmail.com</td>
+<td>Long Date</td>
+<td>"Mar 25 2015" or "25 Mar 2015"</td>
 </tr>
 </tbody>
-</table></div>
+</table>
+<pre><code> var d = new Date("2015-03-25");
+ var d = new Date("2015-03");
+ var d = new Date("2015");
+ var d = new Date("2015-03-25T12:00:00Z");
+ var d = new Date("2015-03-25T12:00:00-06:30");
+ var d = new Date("03/25/2015");
+ var d = new Date("Mar 25 2015");
+ var d = new Date("25 Mar 2015");
+ var d = new Date("January 25 2015");
+ var d = new Date("JANUARY, 25, 2015");
+</code></pre>
+<p>You can have the date in millisecond form too</p>
+<pre><code>var msec = Date.parse("March 21, 2012");
+document.getElementById("demo").innerHTML = msec;
+</code></pre>
+<h2 id="getting-parts-of-a-date">getting parts of a date</h2>
+<p>These methods can be used for getting information from a date object:</p>
+<table>
+<thead>
+<tr>
+<th>Method</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>getFullYear()</td>
+<td>Get the year as a four digit number (yyyy)</td>
+</tr>
+<tr>
+<td>getMonth()</td>
+<td>Get the month as a number (0-11)</td>
+</tr>
+<tr>
+<td>getDate()</td>
+<td>Get the day as a number (1-31)</td>
+</tr>
+<tr>
+<td>getHours()</td>
+<td>Get the hour (0-23)</td>
+</tr>
+<tr>
+<td>getMinutes()</td>
+<td>Get the minute (0-59)</td>
+</tr>
+<tr>
+<td>getSeconds()</td>
+<td>Get the second (0-59)</td>
+</tr>
+<tr>
+<td>getMilliseconds()</td>
+<td>Get the millisecond (0-999)</td>
+</tr>
+<tr>
+<td>getTime()</td>
+<td>Get the time (milliseconds since January 1, 1970)</td>
+</tr>
+<tr>
+<td>getDay()</td>
+<td>Get the weekday as a number (0-6)</td>
+</tr>
+<tr>
+<td>Date.now()</td>
+<td>Get the time. ECMAScript 5.</td>
+</tr>
+</tbody>
+</table>
+<p>for UTC, just add UTC in the command</p>
+<pre><code>getUTCDate()
+</code></pre>
+<p>Same as getDate(), but returns the UTC date</p>
+<h2 id="set-date-methods">Set date methods</h2>
+<table>
+<thead>
+<tr>
+<th>Method</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>setDate()</td>
+<td>Set the day as a number (1-31)</td>
+</tr>
+<tr>
+<td>setFullYear()</td>
+<td>Set the year (optionally month and day)</td>
+</tr>
+<tr>
+<td>setHours()</td>
+<td>Set the hour (0-23)</td>
+</tr>
+<tr>
+<td>setMilliseconds()</td>
+<td>Set the milliseconds (0-999)</td>
+</tr>
+<tr>
+<td>setMinutes()</td>
+<td>Set the minutes (0-59)</td>
+</tr>
+<tr>
+<td>setMonth()</td>
+<td>Set the month (0-11)</td>
+</tr>
+<tr>
+<td>setSeconds()</td>
+<td>Set the seconds (0-59)</td>
+</tr>
+<tr>
+<td>setTime()</td>
+<td>Set the time (milliseconds since January 1, 1970)</td>
+</tr>
+</tbody>
+</table>
+<p>The setFullYear() method sets the year of a date object. In this example to 2020:</p>
+<pre><code>&lt;script&gt;
+var d = new Date();
+d.setFullYear(2020);
+document.getElementById(&quot;demo&quot;).innerHTML = d;
+&lt;/script&gt;
+</code></pre>
+
+<p>The setFullYear() method can optionally set month and day:</p>
+<pre><code>d.setFullYear(2020, 11, 3);
+</code></pre>
+<p>The setDate() method can also be used to add days to a date:</p>
+<pre><code>&lt;script&gt;
+var d = new Date();
+d.setDate(d.getDate() + 50);
+document.getElementById(&quot;demo&quot;).innerHTML = d;
+&lt;/script&gt;
+</code></pre></div>
         </div>
 
         <footer class="col-md-12">

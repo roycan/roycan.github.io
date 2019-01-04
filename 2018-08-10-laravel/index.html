@@ -6,9 +6,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
         <meta name="author" content="Roy Canseco">
-        <link rel="canonical" href="https://roycan.gitlab.io/mkdocs/UP-IC/">
+        <link rel="canonical" href="https://roycan.gitlab.io/mkdocs/2018-08-10-laravel/">
         <link rel="shortcut icon" href="../img/favicon.ico">
-        <title>UP-IC - roycan docs</title>
+        <title>2018 08 10 laravel - roycan docs</title>
         <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
         <link href="../css/font-awesome-4.5.0.css" rel="stylesheet">
         <link href="../css/base.css" rel="stylesheet">
@@ -71,12 +71,12 @@
                     <li >
                         <a href="../pcari-site-proposal/">PCARI</a>
                     </li>
-                    <li class="dropdown active">
+                    <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">UP-IC <b class="caret"></b></a>
                         <ul class="dropdown-menu">
                             
-<li class="active">
-    <a href="./">UP-IC</a>
+<li >
+    <a href="../UP-IC/">UP-IC</a>
 </li>
                             
 <li >
@@ -84,7 +84,7 @@
 </li>
                         </ul>
                     </li>
-                    <li class="dropdown">
+                    <li class="dropdown active">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">skills <b class="caret"></b></a>
                         <ul class="dropdown-menu">
                             
@@ -100,8 +100,8 @@
     <a href="../2018-07-13-aws-jasperreports/">2018 07 13 aws jasperreports</a>
 </li>
                             
-<li >
-    <a href="../2018-08-10-laravel/">2018 08 10 laravel</a>
+<li class="active">
+    <a href="./">2018 08 10 laravel</a>
 </li>
                         </ul>
                     </li>
@@ -238,12 +238,12 @@
                     </a>
                 </li>
                     <li >
-                        <a rel="next" href="../pcari-site-proposal/">
+                        <a rel="next" href="../2018-07-13-aws-jasperreports/">
                             <i class="fa fa-arrow-left"></i> Previous
                         </a>
                     </li>
                     <li >
-                        <a rel="prev" href="../sample_readme/">
+                        <a rel="prev" href="../2018-07-07-phd-hunt/">
                             Next <i class="fa fa-arrow-right"></i>
                         </a>
                     </li>
@@ -255,50 +255,42 @@
         <div class="container">
                 <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
-        <li class="main active"><a href="#people">People</a></li>
+        <li class="main active"><a href="#-web-development">- web development</a></li>
+        <li class="main "><a href="#laravel-programming">Laravel Programming</a></li>
+            <li><a href="#motivation">Motivation</a></li>
+            <li><a href="#outcomes">Outcomes</a></li>
+            <li><a href="#characteristics">Characteristics</a></li>
+            <li><a href="#context">Context</a></li>
+            <li><a href="#steps">Steps</a></li>
     </ul>
 </div></div>
                 <div class="col-md-9" role="main">
 
-<h2 id="people">People</h2>
-<table>
-<thead>
-<tr>
-<th>Name</th>
-<th>email</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Roy Canseco</td>
-<td>rlcanseco@up.edu.ph</td>
-</tr>
-<tr>
-<td>Paulo Santiago</td>
-<td>paulo64santaigo@gmail.com</td>
-</tr>
-<tr>
-<td>Anthony Cornell Dacoco</td>
-<td>amdacoco@up.edu.ph</td>
-</tr>
-<tr>
-<td>Blaine Corwyn Aboy</td>
-<td>bdaboy@up.edu.ph</td>
-</tr>
-<tr>
-<td>Daisyree D. Viscaya</td>
-<td>daisyreeviscaya@gmail.com</td>
-</tr>
-<tr>
-<td>Dianne Pauline Urban</td>
-<td>diannepauline.urban@gmail.com</td>
-</tr>
-<tr>
-<td>Loren Anne Lacanilao</td>
-<td>lorenannelacanilao@gmail.com</td>
-</tr>
-</tbody>
-</table></div>
+<h2 id="-web-development">- web development</h2>
+<h1 id="laravel-programming">Laravel Programming</h1>
+<h2 id="motivation">Motivation</h2>
+<p>I am studying a bit of Laravel for a Proof of Concept (PoC) project for UPD ComSci and the Insurance Commission. </p>
+<p>I want to have the web artisan experience and see how that can feed into the development for other government offices who are currently heavily doing PHP development. </p>
+<h2 id="outcomes">Outcomes</h2>
+<p>I seek to finish a complete project while understanding the concepts and workflow for Laravel development. </p>
+<h2 id="characteristics">Characteristics</h2>
+<p>I want to explore Laravel. I want to imagine our simple PoC sofware being implemented in it. I want an idea on how to move forward using it just in case. </p>
+<h2 id="context">Context</h2>
+<p>This is in the context of me studying in the Software Engineering Field. I want to learn useful and economically valuable skills that I can use to bless others. </p>
+<h2 id="steps">Steps</h2>
+<h3 id="laravel-installation">Laravel Installation</h3>
+<p>Google a tutorial for install laravel to a specific OS version you are using and install.  Try to stay away from XAMPP-based installations, as deployment with that may be problematic. Homestead seems like a non-trivial but recommended solution. Straight LAMPP install seems easiest. </p>
+<h3 id="trying-a-udemy-project">Trying a Udemy Project</h3>
+<pre><code>sudo composer create-project --prefer-dist laravel/laravel cms2 "5.2.*"
+
+sudo chown -R www-data:www-data /var/www/html/myproject
+</code></pre>
+<p>Add the following in the right part of the Vagrantfile. Customize paths as necessary.</p>
+<pre><code>config.vm.synced_folder "C:/Users/roycan/laravel-apps", "/home/vagrant/code", type: "rsync"
+</code></pre>
+<p>then </p>
+<pre><code>vagrant reload
+</code></pre></div>
         </div>
 
         <footer class="col-md-12">

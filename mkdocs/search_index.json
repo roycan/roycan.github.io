@@ -129,6 +129,941 @@
             "location": "/sample_readme/#license",
             "text": "The gem is available as open source under the terms of the  MIT License .",
             "title": "License"
+        },
+        {
+            "location": "/2014-01-15-maple-review/",
+            "text": "Maple\n\n\n\"symbolic math\"\n\n\n\n\n\n\nmaple review\n\n\nquick reminders for relearning maple commands.\n\n\n\n\ndo simple arithmetic (pemdas)\n\n\nvisit   help    for a quick run through\n\n\nctrl space  to  produce special char  (e.g. pi, integral sign...)\n\n\nright button to get out of  ^ \n\n\na video that helps :   http://www.maplesoft.com/support/training/videos/quickstart/MapleQuickStart.aspx\n\n\nuse ctrl-L  to refer back to previous results\n\n\nprint and go over this:    http://www.phys.unsw.edu.au/2nd_and_3rd_syllabi/mapleprimer.pdf",
+            "title": "2014 01 15 maple review"
+        },
+        {
+            "location": "/2014-01-15-maple-review/#maple-review",
+            "text": "quick reminders for relearning maple commands.   do simple arithmetic (pemdas)  visit   help    for a quick run through  ctrl space  to  produce special char  (e.g. pi, integral sign...)  right button to get out of  ^   a video that helps :   http://www.maplesoft.com/support/training/videos/quickstart/MapleQuickStart.aspx  use ctrl-L  to refer back to previous results  print and go over this:    http://www.phys.unsw.edu.au/2nd_and_3rd_syllabi/mapleprimer.pdf",
+            "title": "maple review"
+        },
+        {
+            "location": "/2014-03-03-joomla-backup/",
+            "text": "webdev\n\n\nJoomla\n\n\n\n\n\n\nMAKING A BACKUP/ TEST SITE FOR (e.g. JOBSANNEX.COM)\n\n\nObjectives:\n\n\nmake a production site out of the finalized development site. \n\nTurn the development site into a testing site\nmake the old website into an    archived website\n\n\nsteps:\n\n\nCopy the joomla files into the production folder using the host's (e.g. fatcow) filemanager\n\nTry opening the website from the new folder to see if the files work\n\nCreate a new database using the name of the new folder\n\nExport the contents of the old database and download as a zip file and unzip\n\nImport the contents as an sql file\n\nUpdate db detials in the configuration.php file in the joomla root directory of the production site\nCheck the websites if they work\n\nCreate a subdomain for the old website\n\nRedirect the URL to the new production site folder\n\n\nafterwards:\n\n\n\n\ncheck that the old version 1.7 still works.\nthe website is viewable and navigatable\nthe control dashboard login works\nchanges made are saved\n\n\ncheck that the production site works\nthe website is viewable and navigatable\nthe control dashboard login works\nchanges made are saved\n\n\ncheck that the new testing site works\nthe website is viewable and navigatable\nthe control dashboard login works\nchanges made are saved\n\n\nmake sure that the changes in the test site does not affect the production site\n\n\ncreate and replace the old zip archive files in the fatcow host\n\n\nremove unused subdomains.",
+            "title": "2014 03 03 joomla backup"
+        },
+        {
+            "location": "/2014-03-03-joomla-backup/#objectives",
+            "text": "make a production site out of the finalized development site.  \nTurn the development site into a testing site\nmake the old website into an    archived website",
+            "title": "Objectives:"
+        },
+        {
+            "location": "/2014-03-03-joomla-backup/#steps",
+            "text": "Copy the joomla files into the production folder using the host's (e.g. fatcow) filemanager \nTry opening the website from the new folder to see if the files work \nCreate a new database using the name of the new folder \nExport the contents of the old database and download as a zip file and unzip \nImport the contents as an sql file \nUpdate db detials in the configuration.php file in the joomla root directory of the production site\nCheck the websites if they work \nCreate a subdomain for the old website \nRedirect the URL to the new production site folder",
+            "title": "steps:"
+        },
+        {
+            "location": "/2014-03-03-joomla-backup/#afterwards",
+            "text": "check that the old version 1.7 still works.\nthe website is viewable and navigatable\nthe control dashboard login works\nchanges made are saved  check that the production site works\nthe website is viewable and navigatable\nthe control dashboard login works\nchanges made are saved  check that the new testing site works\nthe website is viewable and navigatable\nthe control dashboard login works\nchanges made are saved  make sure that the changes in the test site does not affect the production site  create and replace the old zip archive files in the fatcow host  remove unused subdomains.",
+            "title": "afterwards:"
+        },
+        {
+            "location": "/2018-07-13-aws-jasperreports/",
+            "text": "AWS\n\n\njasperserver\n\n\n\n\n\n\nI was supposed to take a mock exam for AWS CPE today with Edgar. He asked to have it move to next week. That's fine with me because I'm still listening to the Udemy videos anyway and I expect to finish that part by this weekend. \n\n\nAnyway, I want to get my feet wet with Amazon Web Services, so I've decided to go get Jasper Reports running on it. Let's see this adventure play out. \n\n\nStep 1: Register With Amazon Web Services (AWS)\n\n\nBy all means, this should be the official UP email. I would have thought of using dcs email, but that's probably not a good idea. I have gmail, but that's personal-technical. My yahoo is personal-relational. \n\n\nrlcanseco\nrcaw8\nroycan\n\n\nAWS Market Place for JasperReports\n\n\nI went cheap and took the t2.small ec2 instance. This is expected to bill at Php500/mo if I leave it on. I'm not sure how fast it will be. The recommended infrastructure costs 3 times that. Let's try it out like this first.\n\n\nvpc-92ca23ea\nsubnet-80acebf9 (172.31.16.0/20)\n\n\ncreated a key pair: jasperkey.pem \nplaced in SAFS-AWS\n\n\nHehehe... it didn't work out in the end. The free tier is not enough to support a Jasper Server Instance. And I'm hesitant to do $50/mo deal with AWS at this point. \n\n\nI think I'll try other cloud providers now.  I'm sure I'll find analogs to the lessons I learned through the AWS cloud. \n\n\n\n\nQuote of the day\n\n\nIf you want to be happy, set a goal that commands your thoughts, liberates your energy and inspires your hopes.  \n\n\nAndrew Carnegie - 1835-1919, American Industrialist, Philanthropist",
+            "title": "2018 07 13 aws jasperreports"
+        },
+        {
+            "location": "/2018-07-13-aws-jasperreports/#step-1-register-with-amazon-web-services-aws",
+            "text": "By all means, this should be the official UP email. I would have thought of using dcs email, but that's probably not a good idea. I have gmail, but that's personal-technical. My yahoo is personal-relational.   rlcanseco\nrcaw8\nroycan",
+            "title": "Step 1: Register With Amazon Web Services (AWS)"
+        },
+        {
+            "location": "/2018-07-13-aws-jasperreports/#aws-market-place-for-jasperreports",
+            "text": "I went cheap and took the t2.small ec2 instance. This is expected to bill at Php500/mo if I leave it on. I'm not sure how fast it will be. The recommended infrastructure costs 3 times that. Let's try it out like this first.  vpc-92ca23ea\nsubnet-80acebf9 (172.31.16.0/20)  created a key pair: jasperkey.pem \nplaced in SAFS-AWS  Hehehe... it didn't work out in the end. The free tier is not enough to support a Jasper Server Instance. And I'm hesitant to do $50/mo deal with AWS at this point.   I think I'll try other cloud providers now.  I'm sure I'll find analogs to the lessons I learned through the AWS cloud.",
+            "title": "AWS Market Place for JasperReports"
+        },
+        {
+            "location": "/2018-07-13-aws-jasperreports/#quote-of-the-day",
+            "text": "If you want to be happy, set a goal that commands your thoughts, liberates your energy and inspires your hopes.    Andrew Carnegie - 1835-1919, American Industrialist, Philanthropist",
+            "title": "Quote of the day"
+        },
+        {
+            "location": "/2018-08-10-laravel/",
+            "text": "- web development\n\n\nLaravel Programming\n\n\nMotivation\n\n\nI am studying a bit of Laravel for a Proof of Concept (PoC) project for UPD ComSci and the Insurance Commission. \n\n\nI want to have the web artisan experience and see how that can feed into the development for other government offices who are currently heavily doing PHP development. \n\n\nOutcomes\n\n\nI seek to finish a complete project while understanding the concepts and workflow for Laravel development. \n\n\nCharacteristics\n\n\nI want to explore Laravel. I want to imagine our simple PoC sofware being implemented in it. I want an idea on how to move forward using it just in case. \n\n\nContext\n\n\nThis is in the context of me studying in the Software Engineering Field. I want to learn useful and economically valuable skills that I can use to bless others. \n\n\nSteps\n\n\nLaravel Installation\n\n\nGoogle a tutorial for install laravel to a specific OS version you are using and install.  Try to stay away from XAMPP-based installations, as deployment with that may be problematic. Homestead seems like a non-trivial but recommended solution. Straight LAMPP install seems easiest. \n\n\nTrying a Udemy Project\n\n\nsudo composer create-project --prefer-dist laravel/laravel cms2 \"5.2.*\"\n\nsudo chown -R www-data:www-data /var/www/html/myproject\n\n\n\nAdd the following in the right part of the Vagrantfile. Customize paths as necessary.\n\n\nconfig.vm.synced_folder \"C:/Users/roycan/laravel-apps\", \"/home/vagrant/code\", type: \"rsync\"\n\n\n\nthen \n\n\nvagrant reload",
+            "title": "2018 08 10 laravel"
+        },
+        {
+            "location": "/2018-08-10-laravel/#-web-development",
+            "text": "",
+            "title": "- web development"
+        },
+        {
+            "location": "/2018-08-10-laravel/#laravel-programming",
+            "text": "",
+            "title": "Laravel Programming"
+        },
+        {
+            "location": "/2018-08-10-laravel/#motivation",
+            "text": "I am studying a bit of Laravel for a Proof of Concept (PoC) project for UPD ComSci and the Insurance Commission.   I want to have the web artisan experience and see how that can feed into the development for other government offices who are currently heavily doing PHP development.",
+            "title": "Motivation"
+        },
+        {
+            "location": "/2018-08-10-laravel/#outcomes",
+            "text": "I seek to finish a complete project while understanding the concepts and workflow for Laravel development.",
+            "title": "Outcomes"
+        },
+        {
+            "location": "/2018-08-10-laravel/#characteristics",
+            "text": "I want to explore Laravel. I want to imagine our simple PoC sofware being implemented in it. I want an idea on how to move forward using it just in case.",
+            "title": "Characteristics"
+        },
+        {
+            "location": "/2018-08-10-laravel/#context",
+            "text": "This is in the context of me studying in the Software Engineering Field. I want to learn useful and economically valuable skills that I can use to bless others.",
+            "title": "Context"
+        },
+        {
+            "location": "/2018-08-10-laravel/#steps",
+            "text": "",
+            "title": "Steps"
+        },
+        {
+            "location": "/2018-08-10-laravel/#laravel-installation",
+            "text": "Google a tutorial for install laravel to a specific OS version you are using and install.  Try to stay away from XAMPP-based installations, as deployment with that may be problematic. Homestead seems like a non-trivial but recommended solution. Straight LAMPP install seems easiest.",
+            "title": "Laravel Installation"
+        },
+        {
+            "location": "/2018-08-10-laravel/#trying-a-udemy-project",
+            "text": "sudo composer create-project --prefer-dist laravel/laravel cms2 \"5.2.*\"\n\nsudo chown -R www-data:www-data /var/www/html/myproject  Add the following in the right part of the Vagrantfile. Customize paths as necessary.  config.vm.synced_folder \"C:/Users/roycan/laravel-apps\", \"/home/vagrant/code\", type: \"rsync\"  then   vagrant reload",
+            "title": "Trying a Udemy Project"
+        },
+        {
+            "location": "/2018-07-07-phd-hunt/",
+            "text": "PhD\n\n\npersonal\n\n\n\n\n\n\nI'm looking for my PhD abroad. \nI now am confident in what I can offer and do. More importantly, I think I get how much I don't know and can't yet do. \nI believe in the Lord and I know he has plans for me. I feel it's scary leaving the only life I've known for at least a couple of years. Pero\nkaya namin ni Lord 'to. \nI am learning new skills too. \nMy decision to go Software Engineering has tuned my senses to the various ways that I am to manage software development. I know I'm learning important things from being with everyone here at UP. I want to make those count. There's not so many things that I find important in life, but in those things, I'll fight to make each day count.  \n\n\nThat said, by preparing some things from my end, I'll be able to take the most advantage of the opportunities before me. Also, by taking care of my body, I'll be able to perform at my peak. I've seen the faculty at the Hong Kong University of Science and Technology. They look fit. It is possible. It is possible for me too. \n\n\nRight now, I'm doing a meeting with the Lord. Ako na sa minutes... hehehe.  We're looking for the Universities and Professors to get in touch with.\n\n\n\n\nfilter universities\n\n\nrank universities\n\n\nsend informal inquiries\n\n\nsend formal application\n\n\npackup and go\n\n\n\n\nTo this end, I plan to populate a gdoc that I can share to family and friends as I go through this journey.\n\n\nThis ends day 1 of the search. There's hope and some sort of a plan.  :)",
+            "title": "2018 07 07 phd hunt"
+        },
+        {
+            "location": "/2018-07-08-EUSE-seminar/",
+            "text": "PhD\n\n\nEUD\n\n\n\n\n\n\nFebruary 18 \u2013 23 , 2007, Dagstuhl Seminar 07081\n\n\nOrganizers:\n\n\n\n\nMargaret M. Burnett (Oregon State University, US)\n\n\nGregor Engels (Universit\u00e4t Paderborn, DE)\n\n\nBrad A. Myers (Carnegie Mellon University, US)\n\n\nGregg Rothermel (University of Nebraska \u2013 Lincoln, US)\n\n\n\n\n\n\n\nQuoted Content:\n\n\nThe number of end users creating software is far larger than the number of professional programmers. These end users are using various languages and programming systems to create software in forms such as:\n\n\n\n\n\n\nspreadsheets, \n\n\ndynamic web applications, and \n\n\nscientific simulations. \n\n\n\n\nThis software needs to be sufficiently dependable, but \nsubstantial evidence suggests that it is not\n.\n\n\nSolving these problems involves not just software engineering issues, but also several challenges related to the users that the end user software engineering intends to benefit. End users have very different training and background, and face different motivations and work constraints, than professional programmers. They are not likely to know about such things as:\n\n\n\n\n\n\nformal development processes, \n\n\nsystem models, \n\n\nlanguage design characteristics, \n\n\nquality control mechanisms, \n\n\nor test adequacy criteria.\n\n\n\n\nThese challenges require collaborations by teams of researchers from various computer science subfields, including specialists in:\n\n\n\n\n\n\nend-user-programming (EUP) and end-user development (EUD), \n\n\nresearchers expert in software engineering methodologies and programming language design, \n\n\nhuman-computer interaction experts focusing on end-user programming, and \n\n\nempiricists who can evaluate emerging results and help understand fundamental issues in supporting end-user problem solving.\n\n\n\n\nSummary\n\n\nIn summary, here are my take-aways from the seminar\n\n\nClassification\n\n\n\n\nSw-engineering\n\n\nProgramming Languages\n\n\nHuman-computer Interaction\n\n\nEmpirical Studies\n\n\n\n\nKeywords\n\n\n\n\nEnd-user software engineering\n\n\nEnd-user programming",
+            "title": "2018 07 08 EUSE seminar"
+        },
+        {
+            "location": "/2018-07-08-EUSE-seminar/#organizers",
+            "text": "Margaret M. Burnett (Oregon State University, US)  Gregor Engels (Universit\u00e4t Paderborn, DE)  Brad A. Myers (Carnegie Mellon University, US)  Gregg Rothermel (University of Nebraska \u2013 Lincoln, US)",
+            "title": "Organizers:"
+        },
+        {
+            "location": "/2018-07-08-EUSE-seminar/#quoted-content",
+            "text": "The number of end users creating software is far larger than the number of professional programmers. These end users are using various languages and programming systems to create software in forms such as:   spreadsheets,   dynamic web applications, and   scientific simulations.    This software needs to be sufficiently dependable, but  substantial evidence suggests that it is not .  Solving these problems involves not just software engineering issues, but also several challenges related to the users that the end user software engineering intends to benefit. End users have very different training and background, and face different motivations and work constraints, than professional programmers. They are not likely to know about such things as:   formal development processes,   system models,   language design characteristics,   quality control mechanisms,   or test adequacy criteria.   These challenges require collaborations by teams of researchers from various computer science subfields, including specialists in:   end-user-programming (EUP) and end-user development (EUD),   researchers expert in software engineering methodologies and programming language design,   human-computer interaction experts focusing on end-user programming, and   empiricists who can evaluate emerging results and help understand fundamental issues in supporting end-user problem solving.",
+            "title": "Quoted Content:"
+        },
+        {
+            "location": "/2018-07-08-EUSE-seminar/#summary",
+            "text": "In summary, here are my take-aways from the seminar",
+            "title": "Summary"
+        },
+        {
+            "location": "/2018-07-08-EUSE-seminar/#classification",
+            "text": "Sw-engineering  Programming Languages  Human-computer Interaction  Empirical Studies",
+            "title": "Classification"
+        },
+        {
+            "location": "/2018-07-08-EUSE-seminar/#keywords",
+            "text": "End-user software engineering  End-user programming",
+            "title": "Keywords"
+        },
+        {
+            "location": "/2018-07-08-phd-hunt/",
+            "text": "PhD\n\n\npersonal\n\n\n\n\n\n\nI think I'm done looking at the aggregated PhD scholarships for Computer Science. Only 1 seriously popped up for me. \nUniversity of Technology Sidney\n (UTS).\n\n\nWhat do I need to send an email?\n\n updated CV\n\n key questions\n    * international applications\n    * funding eligibility\n\n \nplan of research\n\n\nNote on the plan of research. This is going for what I want. Then I will go through my \nweak-ties\n and see where that brings me. Of course I will be nice and courteous and helpful to others when I can.  :) \n\n\nPlan A would be to apply somewhere with a grind schedule and just stick with the program. Applying myself to what the boss or supervisor says. I rejected it because it didn't have the growth environment that I wanted. \n\n\nPlan B was to stick to UP. That is now out of the question, due to the choices I made to pursue things that were more important to me and the environment of confusion that I was in with regard to publishing papers in a topic that I didn't feel for. I like the technique. But there weren't support for that in the scale that I needed. I loved the environment though.\n\n\nPlan C, for Canseco.... :D\nPlan is going for what I really want. I might not know how to get there right now. That's fine. I know what I want, what I love, what I feel passionate about. The Lord is giving me ideas for heaven as to what I could do about it. At every corner, I am being questioned if I really want it. I do really want it. I am it. I resonate purpose with it. I live more strongly doing it. \n\n\nPlan C is \nEnd-User Development\n (EUD)\n\n\nClassification of EUD\n\n\n\n\nSw-engineering\n\n\nProgramming Languages\n\n\nHuman-computer Interaction\n\n\nEmpirical Studies\n\n\n\n\nEUD related Keywords\n\n\n\n\nEnd-user software engineering\n\n\nEnd-user programming\n\n\n\n\nThere are two basic \nreasons\n why EUD has become popular.\n1.  One is because organizations are facing delays on projects and using EUD can effectively cut the time of completion on a project. \n2. The second reason is that software tools are more powerful and easier to use now more than ever.\n\n\nLessons learned from EUD solutions can significantly influence \n\n the software life cycles for commercial software products, \n\n in-house intranet/extranet developments and \n* enterprise application deployments.\n\n\nLondon PhD Opportunity\n\n\nThere's an opportunity for a PhD in Machine Learning for Automated Software Engineering in London, \nQueen Mary University of London\n, School of Electronic Engineering and Computer Science. \n\n\nI think I can do this. But it's a B goal, not a C goal. I don't see how mastering it helps my country after. It's cool, but I don't feel passion for it.\n\n\nThere's a better place in London: \nUniversity of Cambridge\n. The Department of Computer Science and Technology there is part of the EUSES Consortium. \n\n\nTarget advisers:\n\n\n\n\nMargaret Burnett\n\n\nChristopher Scaffidi\n\n\n\n\nHowever they are from the US and I am trying to avoid the US at the moment.\n\n\nI have been looking at other possible advisers. The weakness is that their Universities are actually lower in rank than UP. However, I am quite confident that their software engineering lab is stronger than UPD's currently. hehehe\n\n\nSummary\n\n\nIn summary, I am currently find the following Universities very interesting:\n\n\n\n\nUniversity of Technology Sidney\n (UTS)\n\n\nQueen Mary University of London\n\n\nUniversity of Cambridge\n\n\nOregon State Univtersity",
+            "title": "2018 07 08 phd hunt"
+        },
+        {
+            "location": "/2018-07-08-phd-hunt/#classification-of-eud",
+            "text": "Sw-engineering  Programming Languages  Human-computer Interaction  Empirical Studies",
+            "title": "Classification of EUD"
+        },
+        {
+            "location": "/2018-07-08-phd-hunt/#eud-related-keywords",
+            "text": "End-user software engineering  End-user programming   There are two basic  reasons  why EUD has become popular.\n1.  One is because organizations are facing delays on projects and using EUD can effectively cut the time of completion on a project. \n2. The second reason is that software tools are more powerful and easier to use now more than ever.  Lessons learned from EUD solutions can significantly influence   the software life cycles for commercial software products,   in-house intranet/extranet developments and \n* enterprise application deployments.",
+            "title": "EUD related Keywords"
+        },
+        {
+            "location": "/2018-07-08-phd-hunt/#london-phd-opportunity",
+            "text": "There's an opportunity for a PhD in Machine Learning for Automated Software Engineering in London,  Queen Mary University of London , School of Electronic Engineering and Computer Science.   I think I can do this. But it's a B goal, not a C goal. I don't see how mastering it helps my country after. It's cool, but I don't feel passion for it.  There's a better place in London:  University of Cambridge . The Department of Computer Science and Technology there is part of the EUSES Consortium.",
+            "title": "London PhD Opportunity"
+        },
+        {
+            "location": "/2018-07-08-phd-hunt/#target-advisers",
+            "text": "Margaret Burnett  Christopher Scaffidi   However they are from the US and I am trying to avoid the US at the moment.  I have been looking at other possible advisers. The weakness is that their Universities are actually lower in rank than UP. However, I am quite confident that their software engineering lab is stronger than UPD's currently. hehehe",
+            "title": "Target advisers:"
+        },
+        {
+            "location": "/2018-07-08-phd-hunt/#summary",
+            "text": "In summary, I am currently find the following Universities very interesting:   University of Technology Sidney  (UTS)  Queen Mary University of London  University of Cambridge  Oregon State Univtersity",
+            "title": "Summary"
+        },
+        {
+            "location": "/2018-07-09-phd-hunt/",
+            "text": "PhD\n\n\npersonal\n\n\n\n\n\n\nday 3\n\n\nQueensland University of Technology\n\n\nThis is a prime candidate!  \n\n\n\n\nhttps://www.topuniversities.com/universities/queensland-university-technology-qut\n\n\nhttps://www.qut.edu.au/science-engineering/our-schools/school-of-information-systems/service-science\n\n\nhttps://www.qut.edu.au/science-engineering/our-schools/school-of-information-systems/information-science\n\n\nhttps://www.qut.edu.au/science-engineering/our-schools/school-of-electrical-engineering-and-computer-science/computer-human-interaction\n\n\n\n\nWestern Sydney University\n\n\nI have another prime target! \n\n\n\n\nhttps://www.westernsydney.edu.au/scem/school_of_computing_engineering_and_mathematics/research\n\n\n\n\nThis is super prime because I found a paper that I actually want to extend and expand to include our local context.\n\n\n\n\nhttps://link-springer-com.ezproxy.engglib.upd.edu.ph/content/pdf/10.1007%2F11531371_62.pdf\n\n\n\n\nExample Project overview and Proposal\n\n\nI definitely need to write about what I want to do. This is a very good template that will help me quickly draft my proposal executive summary.\n\n\n\n\nhttp://www.cs.cmu.edu/~NatProg/papers/projectoverviewTR.pdf\n\n\n\n\nUniversiti Kebangsaan Malaysia\n\n\nThis is a powerful place for the software engineering I like to do. I didn't see UED, but I had spent little time looking \n\n\nW: it's in Malaysia\nS: it has agile and soft dev research that I understand\n\n\nSummary\n\n\n\n\nI found the \nWestern Sydney University\n as my current top pick.  :)\n\n\nMy second pick is the \nQueensland University of Technology\n\n\nI think I better create a project proposal for this research project. I got a template! :)",
+            "title": "2018 07 09 phd hunt"
+        },
+        {
+            "location": "/2018-07-09-phd-hunt/#day-3",
+            "text": "",
+            "title": "day 3"
+        },
+        {
+            "location": "/2018-07-09-phd-hunt/#queensland-university-of-technology",
+            "text": "This is a prime candidate!     https://www.topuniversities.com/universities/queensland-university-technology-qut  https://www.qut.edu.au/science-engineering/our-schools/school-of-information-systems/service-science  https://www.qut.edu.au/science-engineering/our-schools/school-of-information-systems/information-science  https://www.qut.edu.au/science-engineering/our-schools/school-of-electrical-engineering-and-computer-science/computer-human-interaction",
+            "title": "Queensland University of Technology"
+        },
+        {
+            "location": "/2018-07-09-phd-hunt/#western-sydney-university",
+            "text": "I have another prime target!    https://www.westernsydney.edu.au/scem/school_of_computing_engineering_and_mathematics/research   This is super prime because I found a paper that I actually want to extend and expand to include our local context.   https://link-springer-com.ezproxy.engglib.upd.edu.ph/content/pdf/10.1007%2F11531371_62.pdf",
+            "title": "Western Sydney University"
+        },
+        {
+            "location": "/2018-07-09-phd-hunt/#example-project-overview-and-proposal",
+            "text": "I definitely need to write about what I want to do. This is a very good template that will help me quickly draft my proposal executive summary.   http://www.cs.cmu.edu/~NatProg/papers/projectoverviewTR.pdf",
+            "title": "Example Project overview and Proposal"
+        },
+        {
+            "location": "/2018-07-09-phd-hunt/#universiti-kebangsaan-malaysia",
+            "text": "This is a powerful place for the software engineering I like to do. I didn't see UED, but I had spent little time looking   W: it's in Malaysia\nS: it has agile and soft dev research that I understand",
+            "title": "Universiti Kebangsaan Malaysia"
+        },
+        {
+            "location": "/2018-07-09-phd-hunt/#summary",
+            "text": "I found the  Western Sydney University  as my current top pick.  :)  My second pick is the  Queensland University of Technology  I think I better create a project proposal for this research project. I got a template! :)",
+            "title": "Summary"
+        },
+        {
+            "location": "/2018-07-10-phd-thoughts/",
+            "text": "PhD\n\n\npersonal\n\n\n\n\n\n\nThere was a delay in me writing this, but that's fine. I had a good drive with Sir Gil and we were able to imagine my work as some way of getting the information from the user in almost natural language and having the machine convert it to some useful code. \n\n\nLater that evening, I was talking with Monette about it and I saw the possibility of having machine learning in rails to inform the system of the priority parts for automation improvement. \n\n\nIn the next morning I talked with Dad and we put things together to see that the system will be working on three things:\n\n data entry\n\n DB data viewing\n* calculators with values coming from and being saved in the database\n\n\nAll these would be forming small and useful programs for the End User.",
+            "title": "2018 07 10 phd thoughts"
+        },
+        {
+            "location": "/2018-07-11-phd-australia/",
+            "text": "PhD\n\n\npersonal\n\n\n\n\n\n\n(day 5)\n\n\nThe list of good CS Universities in Australia are as follows:\n1. University of New South Wales- Sydney  (UNSW)\n2. University of Newcastle\n3. University of Sydney\n4. RMIT University\n5. ~~Edith Cowan University~~\n6. The University of Queensland\n7. University of Western Australia\n8. \nUniversity of Technology Sydney\n\n9. Curtin University\n10. \nQueensland University of Technolgy\n\n11. Deakin University\n12. University of South Australia\n13. University of Wollongong\n14. Australian National University\n15. Western Sydney University\n16. University of Canberra\n17. Murdoch University\n18. Central Queensland University\n19. The University of Melbourne\n20. Monash University\n21. University of Tasmania\n22. Swinburne University of Technology\n23. La Trobe University\n24. Victoria University\n25. University of New England Australia\n26. Carnegie Mellon University Australia\n27. Australian Catholic University\n28. Federation University, Australia",
+            "title": "2018 07 11 phd australia"
+        },
+        {
+            "location": "/2018-07-11-phd-australia/#day-5",
+            "text": "The list of good CS Universities in Australia are as follows:\n1. University of New South Wales- Sydney  (UNSW)\n2. University of Newcastle\n3. University of Sydney\n4. RMIT University\n5. ~~Edith Cowan University~~\n6. The University of Queensland\n7. University of Western Australia\n8.  University of Technology Sydney \n9. Curtin University\n10.  Queensland University of Technolgy \n11. Deakin University\n12. University of South Australia\n13. University of Wollongong\n14. Australian National University\n15. Western Sydney University\n16. University of Canberra\n17. Murdoch University\n18. Central Queensland University\n19. The University of Melbourne\n20. Monash University\n21. University of Tasmania\n22. Swinburne University of Technology\n23. La Trobe University\n24. Victoria University\n25. University of New England Australia\n26. Carnegie Mellon University Australia\n27. Australian Catholic University\n28. Federation University, Australia",
+            "title": "(day 5)"
+        },
+        {
+            "location": "/2018-07-12-phd-hunt/",
+            "text": "PhD\n\n\npersonal\n\n\n\n\n\n\n(day 6)\n\n\nUniversity of Newcastle\n\n\nDegree\n\n\nLab: http://i3lab.newcastle.edu.au/index.html#\n\n\nProf: \nhttps://www.newcastle.edu.au/profile/shamus-smith\n\n\n\n\nUniversity of Sydney\n\n\nhttps://sydney.edu.au/courses/courses/pr/doctor-of-philosophy-engineering-and-it.html\n\n\nPersonalised systems with user control...\nThere is a huge amount of personalisation in existing software, especially in web-based systems. Generally, these give rather poor support for users to control the personalisation, more...\n\n\nSupervisor(s): \nKay, Judy (Professor)\n\n\n\n\nRMIT University\n\n\nPhD human-computer interaction\n\n\nPhD Software Engineering\n\n\nAssoc Professor Peter Bertok\n\n\n\n\nmadaming interested in ABM dito... hehehe (past research life)",
+            "title": "2018 07 12 phd hunt"
+        },
+        {
+            "location": "/2018-07-12-phd-hunt/#day-6",
+            "text": "",
+            "title": "(day 6)"
+        },
+        {
+            "location": "/2018-07-12-phd-hunt/#university-of-newcastle",
+            "text": "Degree  Lab: http://i3lab.newcastle.edu.au/index.html#  Prof: \nhttps://www.newcastle.edu.au/profile/shamus-smith",
+            "title": "University of Newcastle"
+        },
+        {
+            "location": "/2018-07-12-phd-hunt/#university-of-sydney",
+            "text": "https://sydney.edu.au/courses/courses/pr/doctor-of-philosophy-engineering-and-it.html  Personalised systems with user control...\nThere is a huge amount of personalisation in existing software, especially in web-based systems. Generally, these give rather poor support for users to control the personalisation, more...  Supervisor(s):  Kay, Judy (Professor)",
+            "title": "University of Sydney"
+        },
+        {
+            "location": "/2018-07-12-phd-hunt/#rmit-university",
+            "text": "PhD human-computer interaction  PhD Software Engineering  Assoc Professor Peter Bertok   madaming interested in ABM dito... hehehe (past research life)",
+            "title": "RMIT University"
+        },
+        {
+            "location": "/2018-07-13-phd-hunt/",
+            "text": "PhD\n\n\npersonal\n\n\n\n\n\n\nday 7\n\n\nI'm still in the process of reading about different Australian University PhD offerings related to End-User Development. \n\n\nFeeling a bit tired, but then again, it's Friday and I did stay up late last night slowly doing a report I just passed for the Cash Office project. I'm grateful. I feel the guidance. At the same time I feel the weaknesses. I feel the power of habit and the energy the some how feeds to the attainment of the comfort provided by the exercise of habits. Nasanay na kung baga. It's like an analog to my gastronomic love for rice. When I feel weak, I'd like to have good habits to tide me through. I think the way to do that is to exercise good habits as much as I can... such as sitting down and doing something for research in the morning.  :D\n\n\nOk, so lets have the loop for this OZ PhD search:\n1. go to the school's website\n2. look for a PhD program on EUD, SE, IS or HCL\n3. look for a prof working on what you want to work on. \n\n\n\n\nUniversity of Technology Sydney\n\n\nOpen Scholarshipt Opportunity\n\n\nRisk:\nI might forever lose the dream of Inclusive Programming for Information Systems depending on the ideas of the research supervisor \n\n\nOpportunity: \nThere's a scholarship offering here that does initial software creation for bacterial outbreaks. \n\n\nAdvantages:\nSydney familiarity. Close to family. \n\n\nDisadvantages:\nThe project's topic isn't exactly what I want, though what I want to do may be useful for the funded research project.\n\n\nProject Heads: \nhttps://www.uts.edu.au/staff/aaron.darling\nhttps://www.uts.edu.au/staff/mathieu.fourment\n\n\nProfessors I'd like to learn from :\n\n\nhttps://www.uts.edu.au/staff/mao.huang\n\n\nhttps://www.uts.edu.au/staff/eng.chew\n\n\nI like the professors here!   :D \n\n\n\n\nCurtin University\n\n\nPossible PhD in 2 years!  :)\n\n\nSupervisors:\n\n\nhttps://research.curtin.edu.au/supervisor/dr-eleanor-sandry-2/\n\n\nhttps://research.curtin.edu.au/supervisor/dr-shirlee-ann-knight/\n\n\nhttps://research.curtin.edu.au/supervisor/dr-torsten-reiners/\n\n\n\n\nQueensland University of Technology\n\n\nI think this is a great place too  :)\n\n\ndetails: https://www.qut.edu.au/study/courses/doctor-of-philosophy/doctor-of-philosophy-science-engineering\n\n\nDisciplines\n\n\nService science\n\n\nInformation science\n\n\nProfs\n\n\nhttp://staff.qut.edu.au/staff/breretom/\n\nhttp://staff.qut.edu.au/staff/johnsodm/\n\nhttp://staff.qut.edu.au/staff/roe/\n\nhttp://staff.qut.edu.au/staff/wyethp/  \n\n\n\n\nUniversity of South Australia\n\n\nhttp://study.unisa.edu.au/degrees/doctor-of-philosophy-lphd/int\n\n\nallows for a Collaborative PhD!!\n\n\nWe have collaborative PhD programs with high quality Australian and international universities in a range of disciplines, including (but not limited to) marketing, public health, engineering and sociology.\n\n\nProf of choice\n\n\nhttp://people.unisa.edu.au/Mark.Billinghurst\n\n\n\n\nUniversity of Wollongong\n\n\nVery interesting! \n\n\nHigher degree research by distance learning!\n\n\nLaboratory:\n\ncentre for IT-enabled transformation \n\n\nResearch Themes\n\n\nProfessors: \n\n\nShen, Jun Associate Professor\n \n\n\nLau, S K. Dr.\n\n\nCui, Tingru Dr",
+            "title": "2018 07 13 phd hunt"
+        },
+        {
+            "location": "/2018-07-13-phd-hunt/#day-7",
+            "text": "I'm still in the process of reading about different Australian University PhD offerings related to End-User Development.   Feeling a bit tired, but then again, it's Friday and I did stay up late last night slowly doing a report I just passed for the Cash Office project. I'm grateful. I feel the guidance. At the same time I feel the weaknesses. I feel the power of habit and the energy the some how feeds to the attainment of the comfort provided by the exercise of habits. Nasanay na kung baga. It's like an analog to my gastronomic love for rice. When I feel weak, I'd like to have good habits to tide me through. I think the way to do that is to exercise good habits as much as I can... such as sitting down and doing something for research in the morning.  :D  Ok, so lets have the loop for this OZ PhD search:\n1. go to the school's website\n2. look for a PhD program on EUD, SE, IS or HCL\n3. look for a prof working on what you want to work on.",
+            "title": "day 7"
+        },
+        {
+            "location": "/2018-07-13-phd-hunt/#university-of-technology-sydney",
+            "text": "",
+            "title": "University of Technology Sydney"
+        },
+        {
+            "location": "/2018-07-13-phd-hunt/#open-scholarshipt-opportunity",
+            "text": "Risk:\nI might forever lose the dream of Inclusive Programming for Information Systems depending on the ideas of the research supervisor   Opportunity: \nThere's a scholarship offering here that does initial software creation for bacterial outbreaks.   Advantages:\nSydney familiarity. Close to family.   Disadvantages:\nThe project's topic isn't exactly what I want, though what I want to do may be useful for the funded research project.  Project Heads: \nhttps://www.uts.edu.au/staff/aaron.darling\nhttps://www.uts.edu.au/staff/mathieu.fourment",
+            "title": "Open Scholarshipt Opportunity"
+        },
+        {
+            "location": "/2018-07-13-phd-hunt/#professors-id-like-to-learn-from",
+            "text": "https://www.uts.edu.au/staff/mao.huang  https://www.uts.edu.au/staff/eng.chew  I like the professors here!   :D",
+            "title": "Professors I'd like to learn from :"
+        },
+        {
+            "location": "/2018-07-13-phd-hunt/#curtin-university",
+            "text": "Possible PhD in 2 years!  :)",
+            "title": "Curtin University"
+        },
+        {
+            "location": "/2018-07-13-phd-hunt/#supervisors",
+            "text": "https://research.curtin.edu.au/supervisor/dr-eleanor-sandry-2/  https://research.curtin.edu.au/supervisor/dr-shirlee-ann-knight/  https://research.curtin.edu.au/supervisor/dr-torsten-reiners/",
+            "title": "Supervisors:"
+        },
+        {
+            "location": "/2018-07-13-phd-hunt/#queensland-university-of-technology",
+            "text": "I think this is a great place too  :)  details: https://www.qut.edu.au/study/courses/doctor-of-philosophy/doctor-of-philosophy-science-engineering",
+            "title": "Queensland University of Technology"
+        },
+        {
+            "location": "/2018-07-13-phd-hunt/#disciplines",
+            "text": "Service science  Information science",
+            "title": "Disciplines"
+        },
+        {
+            "location": "/2018-07-13-phd-hunt/#profs",
+            "text": "http://staff.qut.edu.au/staff/breretom/ \nhttp://staff.qut.edu.au/staff/johnsodm/ \nhttp://staff.qut.edu.au/staff/roe/ \nhttp://staff.qut.edu.au/staff/wyethp/",
+            "title": "Profs"
+        },
+        {
+            "location": "/2018-07-13-phd-hunt/#university-of-south-australia",
+            "text": "http://study.unisa.edu.au/degrees/doctor-of-philosophy-lphd/int  allows for a Collaborative PhD!!  We have collaborative PhD programs with high quality Australian and international universities in a range of disciplines, including (but not limited to) marketing, public health, engineering and sociology.",
+            "title": "University of South Australia"
+        },
+        {
+            "location": "/2018-07-13-phd-hunt/#prof-of-choice",
+            "text": "http://people.unisa.edu.au/Mark.Billinghurst",
+            "title": "Prof of choice"
+        },
+        {
+            "location": "/2018-07-13-phd-hunt/#university-of-wollongong",
+            "text": "Very interesting!   Higher degree research by distance learning!  Laboratory: centre for IT-enabled transformation   Research Themes  Professors:   Shen, Jun Associate Professor    Lau, S K. Dr.  Cui, Tingru Dr",
+            "title": "University of Wollongong"
+        },
+        {
+            "location": "/2018-07-15-phd-hunt/",
+            "text": "PhD\n\n\npersonal\n\n\n\n\n\n\nday 8\n\n\nI finally got around scanning the good universities of Australia for a Computer Science PhD program. These are the last of my notes for the first pass. \n\n\nI think any one of them will be great to get into. Next will be to rank them in terms of happy life priority and then start applying. \n\n\nAustralian National University\n\n\nThis looks like a fun university based on the website.\n\n\nGeneral PhD Program\n\n\nComSci Program\n\n\nProfessors:\n\n\n:)  \nCool Prof!\n \n\n\nProf with ready related project\n\n\nProf with the Skill I want\n\n\n\n\nThe University of Melbourne\n\n\n\n\nIs the top-ranked university in Australia\n\n\nOffers generous scholarship programs\n\n\nOffers a comprehensive support network\n\n\n\n\nResearch in Engg and IT\n\n\nhttp://www.eng.unimelb.edu.au/research/graduate-research\n\n\nProf\n\n\nAssoc Prof Reeva Lederman\nEmail\nreeva.lederman@unimelb.edu.au\nTelephone:  +61 3 8344 1535\n\n\n\n\nLa Trobe University\n\n\nhttps://www.latrobe.edu.au/courses/doctor-of-philosophy2\n\n\nProf:\nhttps://www.latrobe.edu.au/business/about/staff/profile?uname=RKhosla",
+            "title": "2018 07 15 phd hunt"
+        },
+        {
+            "location": "/2018-07-15-phd-hunt/#day-8",
+            "text": "I finally got around scanning the good universities of Australia for a Computer Science PhD program. These are the last of my notes for the first pass.   I think any one of them will be great to get into. Next will be to rank them in terms of happy life priority and then start applying.",
+            "title": "day 8"
+        },
+        {
+            "location": "/2018-07-15-phd-hunt/#australian-national-university",
+            "text": "This looks like a fun university based on the website.  General PhD Program  ComSci Program",
+            "title": "Australian National University"
+        },
+        {
+            "location": "/2018-07-15-phd-hunt/#professors",
+            "text": ":)   Cool Prof!    Prof with ready related project  Prof with the Skill I want",
+            "title": "Professors:"
+        },
+        {
+            "location": "/2018-07-15-phd-hunt/#the-university-of-melbourne",
+            "text": "Is the top-ranked university in Australia  Offers generous scholarship programs  Offers a comprehensive support network",
+            "title": "The University of Melbourne"
+        },
+        {
+            "location": "/2018-07-15-phd-hunt/#research-in-engg-and-it",
+            "text": "http://www.eng.unimelb.edu.au/research/graduate-research",
+            "title": "Research in Engg and IT"
+        },
+        {
+            "location": "/2018-07-15-phd-hunt/#prof",
+            "text": "Assoc Prof Reeva Lederman\nEmail\nreeva.lederman@unimelb.edu.au\nTelephone:  +61 3 8344 1535",
+            "title": "Prof"
+        },
+        {
+            "location": "/2018-07-15-phd-hunt/#la-trobe-university",
+            "text": "https://www.latrobe.edu.au/courses/doctor-of-philosophy2  Prof:\nhttps://www.latrobe.edu.au/business/about/staff/profile?uname=RKhosla",
+            "title": "La Trobe University"
+        },
+        {
+            "location": "/2018-07-19-phd-hunt/",
+            "text": "PhD\n\n\npersonal\n\n\n\n\n\n\nday 9\n\n\nMonette helped me out by choosing the 6 out of 11 schools in Australia where she'd like to stay close to. From there I was able to come up with my top 3 places for this PhD to happen. \n\n\nHere it is in order of preference:\n1. University of Melbourne \n2. Newcastle University (Sydney)\n3. University of Wollongong (Sydney)\n\n\nNext would be to go deeper in their offerings and actually start emailing perspective advisers. \n\n\nI'm excited!",
+            "title": "2018 07 19 phd hunt"
+        },
+        {
+            "location": "/2018-07-19-phd-hunt/#day-9",
+            "text": "Monette helped me out by choosing the 6 out of 11 schools in Australia where she'd like to stay close to. From there I was able to come up with my top 3 places for this PhD to happen.   Here it is in order of preference:\n1. University of Melbourne \n2. Newcastle University (Sydney)\n3. University of Wollongong (Sydney)  Next would be to go deeper in their offerings and actually start emailing perspective advisers.   I'm excited!",
+            "title": "day 9"
+        },
+        {
+            "location": "/2018-07-20-phd-hunt/",
+            "text": "PhD\n\n\npersonal\n\n\n\n\n\n\nday 10\n\n\nI was able to talk to Lyn at the faculty lounge during lunch. She asked me how I was and I told her I submitted my resignation letter and am currently prof-finding. I told her about the research area I want and about Univ of Melbourne and Dr. Laderman. She got me to realize that it was only a half fit and I ought to look for a professor that fits the research I want to do better. So now I'm doing an exhaustive search for better-fitting profs in the univ of melbourne. \n\n\nAnd after going through everyone there, I think I found the one who fits with the end goal of eventually bring enterprise-grade information system to government and other institutions in the Philippines. I think I can contribute by developing a process that increases project success rate and long term adaption of information systems in the Philippines.\n\n\nI found you Dr. Kurnia, I hope you respond very positively.",
+            "title": "2018 07 20 phd hunt"
+        },
+        {
+            "location": "/2018-07-20-phd-hunt/#day-10",
+            "text": "I was able to talk to Lyn at the faculty lounge during lunch. She asked me how I was and I told her I submitted my resignation letter and am currently prof-finding. I told her about the research area I want and about Univ of Melbourne and Dr. Laderman. She got me to realize that it was only a half fit and I ought to look for a professor that fits the research I want to do better. So now I'm doing an exhaustive search for better-fitting profs in the univ of melbourne.   And after going through everyone there, I think I found the one who fits with the end goal of eventually bring enterprise-grade information system to government and other institutions in the Philippines. I think I can contribute by developing a process that increases project success rate and long term adaption of information systems in the Philippines.  I found you Dr. Kurnia, I hope you respond very positively.",
+            "title": "day 10"
+        },
+        {
+            "location": "/2018-08-27-self-made/",
+            "text": "- habits\n\n\nFrom the medium article, I'm seeing humanity's self-made Billionaires seem to treat themselves to \nClarity and Discipline\n through \n\n\n\n\nSimplifying Purpose and Plans\n for whatever they're working on\n\n\nLimiting what they Tolerate\n in things, others and especially themselves.\n\n\n\n\nSelf-made Billionaires seem to treat others in a special way too. They really depend on people, but at the same time they are very dedicated to them too. They choose to proactively with their wishes when they communicate. They do this through\n\n\n\n\nBeing dependent on and dedicated to People\n\n\nBeing Proactively Transparent\n with their intensions\n\n\n\n\nSelf-made Billionaires seem to be efficient and focused when dealing with the world around them. They do this through\n\n\n\n\nRelying on Communication Systems with Push Communications\n for making sure that messages are clear among parties and information gets to them in a timely manner. \n\n\nBeing intentional with what I consume\n , whether it's TV, radio, print and conversation. \n\n\nDeciding based on Data and Narrative\n \n\n\n\n\nI can take lessons from this and etch it in my body. Whenever I undertake something, I make sure to be simple and clear as to what I want from it. I make plans that are easy to communicate, remember and used. I make clear on what results are acceptable too. I will use user stories and definitions of done.\n\n\nWhenever I communicate with others, I appreciate what they do for me and make sure they understand that I am interested in them and their success as much as I appreciate them. I iterate and reiterate my intentions and principles in a manner much like that of tending a garden I love.\n\n\nWhen I interact with the world, I choose to take in what helps. Same with my body. I setup communication systems so that information flows with minimal friction. I open push communications so that important news come in as fast as possible too. When I decide, it will be on the basis the hard numbers and the stories that back it up. When both are reconciled, then a decision is to be made fast.\n\n\nReference: \nThe 10 Principles of Self-Made Billionaires\n \n\n\ndigraph G{\n\n  rankdir = \"LR\"\n\n  \"purpose and plans\" -> simple;\n  \"expectations\" -> clear;\n\n  consumption -> intentional;\n\n  decision -> data [label=\"based on\"];\n  decision -> narrative [label=\"based on\"];\n\n  communication -> \"systemized\";\n  communication -> \"pushed\";\n\n  communication -> \"proactively transparent\";\n  people -> \"loved\";\n  people -> \"depended on\";\n\n\n}\n\n\n\n\n\n\nFrom Bryan Treacy's book (thank you Rap), I see that Leaders have Priorities and most of the time can be found executing on their priorities. They have no excuses.",
+            "title": "2018 08 27 self made"
+        },
+        {
+            "location": "/2018-08-27-self-made/#-habits",
+            "text": "From the medium article, I'm seeing humanity's self-made Billionaires seem to treat themselves to  Clarity and Discipline  through    Simplifying Purpose and Plans  for whatever they're working on  Limiting what they Tolerate  in things, others and especially themselves.   Self-made Billionaires seem to treat others in a special way too. They really depend on people, but at the same time they are very dedicated to them too. They choose to proactively with their wishes when they communicate. They do this through   Being dependent on and dedicated to People  Being Proactively Transparent  with their intensions   Self-made Billionaires seem to be efficient and focused when dealing with the world around them. They do this through   Relying on Communication Systems with Push Communications  for making sure that messages are clear among parties and information gets to them in a timely manner.   Being intentional with what I consume  , whether it's TV, radio, print and conversation.   Deciding based on Data and Narrative     I can take lessons from this and etch it in my body. Whenever I undertake something, I make sure to be simple and clear as to what I want from it. I make plans that are easy to communicate, remember and used. I make clear on what results are acceptable too. I will use user stories and definitions of done.  Whenever I communicate with others, I appreciate what they do for me and make sure they understand that I am interested in them and their success as much as I appreciate them. I iterate and reiterate my intentions and principles in a manner much like that of tending a garden I love.  When I interact with the world, I choose to take in what helps. Same with my body. I setup communication systems so that information flows with minimal friction. I open push communications so that important news come in as fast as possible too. When I decide, it will be on the basis the hard numbers and the stories that back it up. When both are reconciled, then a decision is to be made fast.  Reference:  The 10 Principles of Self-Made Billionaires    digraph G{\n\n  rankdir = \"LR\"\n\n  \"purpose and plans\" -> simple;\n  \"expectations\" -> clear;\n\n  consumption -> intentional;\n\n  decision -> data [label=\"based on\"];\n  decision -> narrative [label=\"based on\"];\n\n  communication -> \"systemized\";\n  communication -> \"pushed\";\n\n  communication -> \"proactively transparent\";\n  people -> \"loved\";\n  people -> \"depended on\";\n\n\n}   From Bryan Treacy's book (thank you Rap), I see that Leaders have Priorities and most of the time can be found executing on their priorities. They have no excuses.",
+            "title": "- habits"
+        },
+        {
+            "location": "/2018-10-19-block_rosary/",
+            "text": "- Mother Mary\n\n\n \n![Our Lady]({{ \"/assets/fatima.jpg\" | absolute_url }})\n\n\nON THE ARRIVAL OF THE IMAGE\n\n\nO Lady of Fatima, sovereign Queen of Heaven and Empress of all creatures, we joyfully welcome you on your visit to the home of your humble servants and devoted children. \n\n\nTake, O glorious Lady, possession of not only our humble home, but also of ourselves. So most pure Virgin, the only owner and mistress of this house and inmates, who promised to be your loyal and devoted children.\n\n\nShower on us your holy blessings and with it the treasure of goodness, health and mercy, which escapes from your most pure hands. \n\n\nWe promise to render you devoted homage of love while you live in our midst, AMEN.\n\n\n(3x) Hail Mary, full of grace, the Lord is with you, blessed are you among women and blessed is the fruit of your womb, Jesus. Holy Mary, Mother of God, pray for us sinners, now and at the hour of our death, AMEN.\n\n\nOur Lady of Fatima, pray for us.\n\n\nINTENTIONS FOR EACH NIGHT\n\n\n(To be read before reciting the rosary)\n\n\nFIRST NIGHT:\n\n\nIn honor of God, the Holy Spirit, the third person of the Blessed Trinity, in honor of the Most Sacred Heart of Jesus and in honor of the Immaculate Heart of Mary.\n\n\nSECOND NIGHT:\n\n\nFor the protection of the Holy Catholic Church, for the Holy Father, for the Catholic religious and faithful, particularly those who are prosecuted.\n\n\nTHIRD NIGHT:\n\n\nFor peace in every Christian family and for the members of the family, both living and dead, where the Image of Our Lady is venerated.\n\n\nFOURTH NIGHT:\n\n\nFor the spiritual and temporal needs of the Rosarians, for the spiritual welfare of children of all nations, for hte increase of priests and religious in the Philippines, for the propagation of Catholic faith in the world.\n\n\nFIFTH NIGHT:\n\n\nFor the Armed Forces fighting for peace, for a clean and honest government in the Philippines.\n\n\nSIXTH NIGHT:\n\n\nFor the conversion of sinners and Non-Catholics.\n\n\nSEVENTH NIGHT:\n\n\nFor the conversion and preservation of faith in the Philippines, in honor of Our Lady of Fatima and most of all for universal peace. \n\n\nTHE ROSARY\n\n\nIn the name of the Father and of the Son and of the Holy Spirit, AMEN.\n\n\nTHE APOSTLES CREED\n\n\nI believe in God, the Father Almighty, creator of heaven and earth. I believe in Jesus Christ, His only Son, Our Lord, who was conceived by the power of the Holy Spirit, born of the Virgin Mary, suffered under Pontius Pilate, was crucified, died and was buried; He decended into the dead; on the third day, He rose again, He ascended into heaven and seated at the right hand of the Father Almighty. He will come again to judge the living and the dead. I believe in the Holy Spirit, the Holy Catholic Church, the Communion of Saints, the forgiveness of sins, the resurrection of the body and life everlasting, AMEN.\n\n\nLORD, GIVE US MORE FAITH, HOPE AND CHARITY\n\n\n(1x) Our Father in heaven, holy by your name, your kingdom, your will be done, on earth as in heaven. Give us this day our daily bread and forgive us our sins, as we forgive those who sinned against us; do not bring us to the test, but deliver us from evil, AMEN.\n\n(3x) Hail Mary, full of grace, the Lord is with you, blessed are you among women and blessed is the fruit of your womb, Jesus. Holy Mary, Mother of God, pray for us sinners, now and at the hour of our death, AMEN.\n\n(1x) Glory be to the Father, to the Son and to the Holy Spirit. As it was in the beginning, is now ever shall be world without end, AMEN.\n\n\n\nDECADES OF THE HOLY ROSARY\n\n\nTHE JOYFUL MYSTERIES (MONDAYS AND SATURDAYS)\n\n\n1.  The Annunciation\n2.  The Visitation\n3.  The Birth of our Lord\n4.  The Presentation of the Child Jesus in the Temple\n5.  The Finding of the Child Jesus in the Temple\n\n\n\nTHE SORROWFUL MYSTERIES (TUESDAYS AND FRIDAYS)\n\n\n1.  The Agony in the Garden\n2.  The Scourging at the Pillar\n3.  The Crowning with Thorns\n4.  The Carrying of the Cross\n5.  The Cruxifiction and Death of our Lord Jesus Christ\n\n\n\nTHE GLORIOUS MYSTERIES (WEDNESDAYS AND SUNDAYS)\n\n\n1.  The Resurrection of Our Lord\n2.  The Ascension of Our Lord into Heaven\n3.  The Descent of the Holy Spirit upon the Apostles and the Blessed Virgin Mary\n4.  The Assumption of the Blessed Virgin \n5.  The Coronation of the Blessed Virgin Mary as Queen of Heaven and Earth\n\n\n\nTHE LUMINOUS MYSTERIES (THURSDAYS)\n\n\n1.  The Baptism of Our Lord\n2.  The Wedding at Cana\n3.  The Proclamation of the Good News and Call to Conversion\n4.  The Transfiguration\n5.  The Institution of the Holy Eucharist\n\n\n\n*After reciting Glory be of each decade, say...\n\n\nO my Jesus, forgive us our sins, save us from the fires of hell and bring all souls into heaven especially those who most need of your mercy.\n\n\nHAIL HOLY QUEEN\n\n\nHail Holy Queen, Mother of Mercy, hail our life, our sweetness and our hope. To you do we cry, poor banished children of Eve, to you do we send up our sighs, mourning and weeping in this valley of tears. Turn then, most gracious advocate, your eyes of mercy towards us; and after this our exile, show unto us the blessed fruit of your womb, Jesus. O clement, o loving, o sweet Virgin Mary.\n\n\nV. Pray for us, O Holy Mother of God\n\nR. That we may be made worthy of the promises of Christ.\n\n\nLET US PRAY:\n\n\nO God, whose only begotten Son, by His life, death and resurrection, has purchased for us the rewards of eternal life. Grant, we beseech you, that meditating upon these mysteries of the most Holy Rosary of the Blessed Virgin Mary, we may imitate what they contain and obtain what they promised, through Christ, our Lord, AMEN.\n\n\nANTIPHON\n\n\nWe fly to your patronage, o Holy Mother of God, despise not our petitions in our necessities, but deliver us from all dangers, o glorious and blessed Virgin Mary.\n\n\nTHE LITANY OF THE IMMACULATE HEART OF MARY\n\n\n(to be recited on Saturday)\n\n\nV. Lord, have mercy on us.\n\nR. Lord, have mercy on us.\n\nV. Christ, have mercy on us.\n\nR. Christ, have mercy on us.\n\nV. Lord, have mercy on us.\n\nR. Lord, have mercy on us.\n\nV. Christ, hear us.\nR. Christ, hear us.\n\nV. Christ, graciously hear us.\n\nR. Christ, graciously hear us.\n\nV. God the Father in heaven\n\nR. Have mercy on us.\n\nV. God the Holy Spirit\n\nR. Have mercy on us.  \n\n\n\n\n\n\n\n\nLitany\n\n\nresponse\n\n\n\n\n\n\n\n\n\n\nHeart of Mary,\n\n\nPray for us\n\n\n\n\n\n\nHeart of Mary, united to the heart of Jesus,\n\n\nPray for us\n\n\n\n\n\n\nHeart of Mary, Orgen of the Holy Spirit,\n\n\nPray for us\n\n\n\n\n\n\nHeart of Mary, Sanctuary of Divine Trinity,\n\n\nPray for us\n\n\n\n\n\n\nHeart of Mary, Tabernacle of God Incarnate,\n\n\nPray for us\n\n\n\n\n\n\nHeart of Mary, imaculate from your creation,\n\n\nPray for us\n\n\n\n\n\n\nHeart of Mary, full of grace,\n\n\nPray for us\n\n\n\n\n\n\nHeart of Mary, blessed among all hearts,\n\n\nPray for us\n\n\n\n\n\n\nHeart of Mary, Throne of Glory,\n\n\nPray for us\n\n\n\n\n\n\nHeart of Mary, holy cause of Divine Love,\n\n\nPray for us\n\n\n\n\n\n\nHeart of Mary, fastened to the cross with Jesus Crucified,\n\n\nPray for us\n\n\n\n\n\n\nHeart of Mary, comforter of the afflicted,\n\n\nPray for us\n\n\n\n\n\n\nHeart of Mary, refuge of sinners,\n\n\nPray for us\n\n\n\n\n\n\nHeart of Mary, hope of the agonizing,\n\n\nPray for us\n\n\n\n\n\n\nHeart of Mary, seat of mercy,\n\n\nPray for us\n\n\n\n\n\n\n\n\nV. Lamb of God, who takes away the sins of the world, \n\nR. Spare us O Lord\n\nV. Lamb of God, who takes away the sins of the world, \n\nR. Graciously hear us O Lord\n\nV. Lamb of God, who takes away the sins of the world, \n\nR. Have mercy on us\n\nV. Christ hear us\n\nR. Christ, graciously hear us\n\nV. Immaculate Mary, meek and humble of heart,\n\nR. Make our hearts according to the heart of Jesus\n\nV. Pray for us, O Holy Mother of God\n\nR. That we may be made worthy of the promises of Christ  \n\n\nIN MEMORARE\n\n\n(to be recited everyday)\n\n\nRemember, O most gracious Virgin Mary, that never was it known that anyone, who fled to your protection, implored your help and sought your intercession, was left unaided. Inspired with this confidence, I fly unto you, O Virgin of Virgins, my Mother, to you I come, before you I stand, sinful and sorrowful. O Mother of the Word Incarnate, despise not my petitions, but in your mercy, hear and answer me, AMEN. \n\n\nACT OF CONSECRATION TO THE IMMACULATE HEART OF MARY\n\n\n(to be recited on Saturday)\n\n\nO Mary, powerful Virgin and Mother of Mercy, Queen of Heaven and Refuge of Sinners, we consecrate ourselves to your Immaculate Heart. To you, we consecrate all the we have and all that we are. To you, we entrust our home, our family and our country. We wish that everything be yours and may share in the benefits of your motherly protection. Therefore we solemnly renew our baptismal vows. We renounce the devil, his works and his attractions. We pledge loyalty to the guidance and leadership of the Holy Father, the Pope and the Bishops. We promise to obey the commandments of God and our Holy Mother, the Church, and in particular, to sanctify the Lord's day, Sunday. We promise to say our daily prayers, to recite the rosary in our family and to make frequent use of the sacraments of Confession and Holy Communion. Finally, O glorious Mother of God and merciful Mother of Mankind, we humbly pray that this wholehearted consecration to your Immaculate Heart, may obtain the conversion of pagans and of sinners, that it may hasten the triumph of the Sacred Heart of Jesus, your Divine Son, all over the world, AMEN.\n\n\nPEACE PRAYER TO OUR LADY OF FATIMA\n\n\n(to be recited on Saturday)\n\n\nQueen of the Most Holy Rosary, refuge of the human race, we are confident in obtaining peace, mercy, grace and help in the  present calamity, through the goodness of your maternal heart.\n\n\nFOR PEACE IN THE PHILIPPINES\n  \n\n\nThree (3) Hail Marys...\nOur Lady of Fatima, Pray for us\n\n\n\nFOR THE INTENTIONS OF THE SPONSORS\n\n\nOne (1) Our Father\nOne (1) Hail Mary\nOne (1) Glory be\nOur Lady of Fatima, Pray for us\n\n\n\nFOR THE POOR SOULS IN PURGATORY\n\n\nOne (1) Our Father\nOne (1) Hail Mary\nOne (1) Glory be\nOur Lady of Fatima, Pray for us\n\n\n\nV. Eternal rest give unto them, O Lord\n\nR. And let your perpetual light shine upon them\n\nV. May the rest in peace\n\nR. AMEN.\n\nV. Most Sacred Heart of Jesus (3x)\n\nR. Have mercy on us (3x)\n\nV. Immaculate Heart of Mary\n\nR. Pray for us  \n\n\nKEEP SILENT AND ASK WHATEVER FAVOR YOU WISH FROM OUR BLESSED MOTHER.\n\n\nFAREWELL TO OUR LADY\n\n\n(to be recited on the last day of visit)\n\n\nOur Lady of Fatima and Immaculate Mother of God, before leaving our humble dwelling, we desire to express the pain and sorrow that fill our souls at seeing you depart from our midst. \n\nThanks O Mother, for having remained among us, your humble and devoted children. \n\nThank you for the benefits, with which no merit on our partyou have granted on us. \n\nDo not forget that in this house, there are hearts that love you and are eager for the moment of receiving you anew in our midst.\n\nForgive and excusee us, Most Merciful Mother, if we did not know how to honor you as due and for not having profited enough from the visit through our frailty and ignorance.\n\nMother, never forget us in time or in eternity and we hope from your unlimited bounty  that in the same way as we willingly have opened our doors to welcome you in our home, you may also one day open for us the gates of heaven, AMEN.\n\n\nOUR LADY OF FATIMA, PRAY FOR US\n\n\nLegion of Mary\nChrist the King Parish\n050803",
+            "title": "2018 10 19 block rosary"
+        },
+        {
+            "location": "/2018-10-19-block_rosary/#-mother-mary",
+            "text": "![Our Lady]({{ \"/assets/fatima.jpg\" | absolute_url }})",
+            "title": "- Mother Mary"
+        },
+        {
+            "location": "/2018-10-19-block_rosary/#on-the-arrival-of-the-image",
+            "text": "O Lady of Fatima, sovereign Queen of Heaven and Empress of all creatures, we joyfully welcome you on your visit to the home of your humble servants and devoted children.   Take, O glorious Lady, possession of not only our humble home, but also of ourselves. So most pure Virgin, the only owner and mistress of this house and inmates, who promised to be your loyal and devoted children.  Shower on us your holy blessings and with it the treasure of goodness, health and mercy, which escapes from your most pure hands.   We promise to render you devoted homage of love while you live in our midst, AMEN.  (3x) Hail Mary, full of grace, the Lord is with you, blessed are you among women and blessed is the fruit of your womb, Jesus. Holy Mary, Mother of God, pray for us sinners, now and at the hour of our death, AMEN.  Our Lady of Fatima, pray for us.",
+            "title": "ON THE ARRIVAL OF THE IMAGE"
+        },
+        {
+            "location": "/2018-10-19-block_rosary/#intentions-for-each-night",
+            "text": "(To be read before reciting the rosary)",
+            "title": "INTENTIONS FOR EACH NIGHT"
+        },
+        {
+            "location": "/2018-10-19-block_rosary/#first-night",
+            "text": "In honor of God, the Holy Spirit, the third person of the Blessed Trinity, in honor of the Most Sacred Heart of Jesus and in honor of the Immaculate Heart of Mary.",
+            "title": "FIRST NIGHT:"
+        },
+        {
+            "location": "/2018-10-19-block_rosary/#second-night",
+            "text": "For the protection of the Holy Catholic Church, for the Holy Father, for the Catholic religious and faithful, particularly those who are prosecuted.",
+            "title": "SECOND NIGHT:"
+        },
+        {
+            "location": "/2018-10-19-block_rosary/#third-night",
+            "text": "For peace in every Christian family and for the members of the family, both living and dead, where the Image of Our Lady is venerated.",
+            "title": "THIRD NIGHT:"
+        },
+        {
+            "location": "/2018-10-19-block_rosary/#fourth-night",
+            "text": "For the spiritual and temporal needs of the Rosarians, for the spiritual welfare of children of all nations, for hte increase of priests and religious in the Philippines, for the propagation of Catholic faith in the world.",
+            "title": "FOURTH NIGHT:"
+        },
+        {
+            "location": "/2018-10-19-block_rosary/#fifth-night",
+            "text": "For the Armed Forces fighting for peace, for a clean and honest government in the Philippines.",
+            "title": "FIFTH NIGHT:"
+        },
+        {
+            "location": "/2018-10-19-block_rosary/#sixth-night",
+            "text": "For the conversion of sinners and Non-Catholics.",
+            "title": "SIXTH NIGHT:"
+        },
+        {
+            "location": "/2018-10-19-block_rosary/#seventh-night",
+            "text": "For the conversion and preservation of faith in the Philippines, in honor of Our Lady of Fatima and most of all for universal peace.",
+            "title": "SEVENTH NIGHT:"
+        },
+        {
+            "location": "/2018-10-19-block_rosary/#the-rosary",
+            "text": "In the name of the Father and of the Son and of the Holy Spirit, AMEN.",
+            "title": "THE ROSARY"
+        },
+        {
+            "location": "/2018-10-19-block_rosary/#the-apostles-creed",
+            "text": "I believe in God, the Father Almighty, creator of heaven and earth. I believe in Jesus Christ, His only Son, Our Lord, who was conceived by the power of the Holy Spirit, born of the Virgin Mary, suffered under Pontius Pilate, was crucified, died and was buried; He decended into the dead; on the third day, He rose again, He ascended into heaven and seated at the right hand of the Father Almighty. He will come again to judge the living and the dead. I believe in the Holy Spirit, the Holy Catholic Church, the Communion of Saints, the forgiveness of sins, the resurrection of the body and life everlasting, AMEN.  LORD, GIVE US MORE FAITH, HOPE AND CHARITY  (1x) Our Father in heaven, holy by your name, your kingdom, your will be done, on earth as in heaven. Give us this day our daily bread and forgive us our sins, as we forgive those who sinned against us; do not bring us to the test, but deliver us from evil, AMEN.\n\n(3x) Hail Mary, full of grace, the Lord is with you, blessed are you among women and blessed is the fruit of your womb, Jesus. Holy Mary, Mother of God, pray for us sinners, now and at the hour of our death, AMEN.\n\n(1x) Glory be to the Father, to the Son and to the Holy Spirit. As it was in the beginning, is now ever shall be world without end, AMEN.",
+            "title": "THE APOSTLES CREED"
+        },
+        {
+            "location": "/2018-10-19-block_rosary/#decades-of-the-holy-rosary",
+            "text": "",
+            "title": "DECADES OF THE HOLY ROSARY"
+        },
+        {
+            "location": "/2018-10-19-block_rosary/#the-joyful-mysteries-mondays-and-saturdays",
+            "text": "1.  The Annunciation\n2.  The Visitation\n3.  The Birth of our Lord\n4.  The Presentation of the Child Jesus in the Temple\n5.  The Finding of the Child Jesus in the Temple",
+            "title": "THE JOYFUL MYSTERIES (MONDAYS AND SATURDAYS)"
+        },
+        {
+            "location": "/2018-10-19-block_rosary/#the-sorrowful-mysteries-tuesdays-and-fridays",
+            "text": "1.  The Agony in the Garden\n2.  The Scourging at the Pillar\n3.  The Crowning with Thorns\n4.  The Carrying of the Cross\n5.  The Cruxifiction and Death of our Lord Jesus Christ",
+            "title": "THE SORROWFUL MYSTERIES (TUESDAYS AND FRIDAYS)"
+        },
+        {
+            "location": "/2018-10-19-block_rosary/#the-glorious-mysteries-wednesdays-and-sundays",
+            "text": "1.  The Resurrection of Our Lord\n2.  The Ascension of Our Lord into Heaven\n3.  The Descent of the Holy Spirit upon the Apostles and the Blessed Virgin Mary\n4.  The Assumption of the Blessed Virgin \n5.  The Coronation of the Blessed Virgin Mary as Queen of Heaven and Earth",
+            "title": "THE GLORIOUS MYSTERIES (WEDNESDAYS AND SUNDAYS)"
+        },
+        {
+            "location": "/2018-10-19-block_rosary/#the-luminous-mysteries-thursdays",
+            "text": "1.  The Baptism of Our Lord\n2.  The Wedding at Cana\n3.  The Proclamation of the Good News and Call to Conversion\n4.  The Transfiguration\n5.  The Institution of the Holy Eucharist  *After reciting Glory be of each decade, say...  O my Jesus, forgive us our sins, save us from the fires of hell and bring all souls into heaven especially those who most need of your mercy.",
+            "title": "THE LUMINOUS MYSTERIES (THURSDAYS)"
+        },
+        {
+            "location": "/2018-10-19-block_rosary/#hail-holy-queen",
+            "text": "Hail Holy Queen, Mother of Mercy, hail our life, our sweetness and our hope. To you do we cry, poor banished children of Eve, to you do we send up our sighs, mourning and weeping in this valley of tears. Turn then, most gracious advocate, your eyes of mercy towards us; and after this our exile, show unto us the blessed fruit of your womb, Jesus. O clement, o loving, o sweet Virgin Mary.  V. Pray for us, O Holy Mother of God \nR. That we may be made worthy of the promises of Christ.  LET US PRAY:  O God, whose only begotten Son, by His life, death and resurrection, has purchased for us the rewards of eternal life. Grant, we beseech you, that meditating upon these mysteries of the most Holy Rosary of the Blessed Virgin Mary, we may imitate what they contain and obtain what they promised, through Christ, our Lord, AMEN.",
+            "title": "HAIL HOLY QUEEN"
+        },
+        {
+            "location": "/2018-10-19-block_rosary/#antiphon",
+            "text": "We fly to your patronage, o Holy Mother of God, despise not our petitions in our necessities, but deliver us from all dangers, o glorious and blessed Virgin Mary.",
+            "title": "ANTIPHON"
+        },
+        {
+            "location": "/2018-10-19-block_rosary/#the-litany-of-the-immaculate-heart-of-mary",
+            "text": "",
+            "title": "THE LITANY OF THE IMMACULATE HEART OF MARY"
+        },
+        {
+            "location": "/2018-10-19-block_rosary/#to-be-recited-on-saturday",
+            "text": "V. Lord, have mercy on us. \nR. Lord, have mercy on us. \nV. Christ, have mercy on us. \nR. Christ, have mercy on us. \nV. Lord, have mercy on us. \nR. Lord, have mercy on us. \nV. Christ, hear us.\nR. Christ, hear us. \nV. Christ, graciously hear us. \nR. Christ, graciously hear us. \nV. God the Father in heaven \nR. Have mercy on us. \nV. God the Holy Spirit \nR. Have mercy on us.       Litany  response      Heart of Mary,  Pray for us    Heart of Mary, united to the heart of Jesus,  Pray for us    Heart of Mary, Orgen of the Holy Spirit,  Pray for us    Heart of Mary, Sanctuary of Divine Trinity,  Pray for us    Heart of Mary, Tabernacle of God Incarnate,  Pray for us    Heart of Mary, imaculate from your creation,  Pray for us    Heart of Mary, full of grace,  Pray for us    Heart of Mary, blessed among all hearts,  Pray for us    Heart of Mary, Throne of Glory,  Pray for us    Heart of Mary, holy cause of Divine Love,  Pray for us    Heart of Mary, fastened to the cross with Jesus Crucified,  Pray for us    Heart of Mary, comforter of the afflicted,  Pray for us    Heart of Mary, refuge of sinners,  Pray for us    Heart of Mary, hope of the agonizing,  Pray for us    Heart of Mary, seat of mercy,  Pray for us     V. Lamb of God, who takes away the sins of the world,  \nR. Spare us O Lord \nV. Lamb of God, who takes away the sins of the world,  \nR. Graciously hear us O Lord \nV. Lamb of God, who takes away the sins of the world,  \nR. Have mercy on us \nV. Christ hear us \nR. Christ, graciously hear us \nV. Immaculate Mary, meek and humble of heart, \nR. Make our hearts according to the heart of Jesus \nV. Pray for us, O Holy Mother of God \nR. That we may be made worthy of the promises of Christ",
+            "title": "(to be recited on Saturday)"
+        },
+        {
+            "location": "/2018-10-19-block_rosary/#in-memorare",
+            "text": "",
+            "title": "IN MEMORARE"
+        },
+        {
+            "location": "/2018-10-19-block_rosary/#to-be-recited-everyday",
+            "text": "Remember, O most gracious Virgin Mary, that never was it known that anyone, who fled to your protection, implored your help and sought your intercession, was left unaided. Inspired with this confidence, I fly unto you, O Virgin of Virgins, my Mother, to you I come, before you I stand, sinful and sorrowful. O Mother of the Word Incarnate, despise not my petitions, but in your mercy, hear and answer me, AMEN.",
+            "title": "(to be recited everyday)"
+        },
+        {
+            "location": "/2018-10-19-block_rosary/#act-of-consecration-to-the-immaculate-heart-of-mary",
+            "text": "",
+            "title": "ACT OF CONSECRATION TO THE IMMACULATE HEART OF MARY"
+        },
+        {
+            "location": "/2018-10-19-block_rosary/#to-be-recited-on-saturday_1",
+            "text": "O Mary, powerful Virgin and Mother of Mercy, Queen of Heaven and Refuge of Sinners, we consecrate ourselves to your Immaculate Heart. To you, we consecrate all the we have and all that we are. To you, we entrust our home, our family and our country. We wish that everything be yours and may share in the benefits of your motherly protection. Therefore we solemnly renew our baptismal vows. We renounce the devil, his works and his attractions. We pledge loyalty to the guidance and leadership of the Holy Father, the Pope and the Bishops. We promise to obey the commandments of God and our Holy Mother, the Church, and in particular, to sanctify the Lord's day, Sunday. We promise to say our daily prayers, to recite the rosary in our family and to make frequent use of the sacraments of Confession and Holy Communion. Finally, O glorious Mother of God and merciful Mother of Mankind, we humbly pray that this wholehearted consecration to your Immaculate Heart, may obtain the conversion of pagans and of sinners, that it may hasten the triumph of the Sacred Heart of Jesus, your Divine Son, all over the world, AMEN.",
+            "title": "(to be recited on Saturday)"
+        },
+        {
+            "location": "/2018-10-19-block_rosary/#peace-prayer-to-our-lady-of-fatima",
+            "text": "",
+            "title": "PEACE PRAYER TO OUR LADY OF FATIMA"
+        },
+        {
+            "location": "/2018-10-19-block_rosary/#to-be-recited-on-saturday_2",
+            "text": "Queen of the Most Holy Rosary, refuge of the human race, we are confident in obtaining peace, mercy, grace and help in the  present calamity, through the goodness of your maternal heart.  FOR PEACE IN THE PHILIPPINES     Three (3) Hail Marys...\nOur Lady of Fatima, Pray for us  FOR THE INTENTIONS OF THE SPONSORS  One (1) Our Father\nOne (1) Hail Mary\nOne (1) Glory be\nOur Lady of Fatima, Pray for us  FOR THE POOR SOULS IN PURGATORY  One (1) Our Father\nOne (1) Hail Mary\nOne (1) Glory be\nOur Lady of Fatima, Pray for us  V. Eternal rest give unto them, O Lord \nR. And let your perpetual light shine upon them \nV. May the rest in peace \nR. AMEN. \nV. Most Sacred Heart of Jesus (3x) \nR. Have mercy on us (3x) \nV. Immaculate Heart of Mary \nR. Pray for us    KEEP SILENT AND ASK WHATEVER FAVOR YOU WISH FROM OUR BLESSED MOTHER.",
+            "title": "(to be recited on Saturday)"
+        },
+        {
+            "location": "/2018-10-19-block_rosary/#farewell-to-our-lady",
+            "text": "",
+            "title": "FAREWELL TO OUR LADY"
+        },
+        {
+            "location": "/2018-10-19-block_rosary/#to-be-recited-on-the-last-day-of-visit",
+            "text": "Our Lady of Fatima and Immaculate Mother of God, before leaving our humble dwelling, we desire to express the pain and sorrow that fill our souls at seeing you depart from our midst.  \nThanks O Mother, for having remained among us, your humble and devoted children.  \nThank you for the benefits, with which no merit on our partyou have granted on us.  \nDo not forget that in this house, there are hearts that love you and are eager for the moment of receiving you anew in our midst. \nForgive and excusee us, Most Merciful Mother, if we did not know how to honor you as due and for not having profited enough from the visit through our frailty and ignorance. \nMother, never forget us in time or in eternity and we hope from your unlimited bounty  that in the same way as we willingly have opened our doors to welcome you in our home, you may also one day open for us the gates of heaven, AMEN.  OUR LADY OF FATIMA, PRAY FOR US  Legion of Mary\nChrist the King Parish\n050803",
+            "title": "(to be recited on the last day of visit)"
+        },
+        {
+            "location": "/2018-09-14-gslides/",
+            "text": "- google slides\n\n\nI'm in CBTL with Monette and she shows me an awesome thing. Her Prof has powerpoint slides that read the notes automatically. I was thinking, how do I achieve this with Google Slides.\n\n\n\n\nrecord audio. I think this can be done on a per slide basis. \n\n\nconvert audio to video. Use audacity or ffmpeg. Google slides can embed video, not audio.\n\n\nupload to google drive. youtube will work too, but you'll have ads. \n\n\nshare the video as a presentation. well, the video has got to be shared.\n\n\nembed the video to the right slide. manage the size and drag past the slide borders so that it doesn't show.\n\n\nset to autoplay. you can fix up the timing also. \n\n\ntest that everything works\n\n\n\n\nThis can be for the instructional materials that I'll be authoring. Any updates can be done piecemeal.",
+            "title": "2018 09 14 gslides"
+        },
+        {
+            "location": "/2018-09-14-gslides/#-google-slides",
+            "text": "I'm in CBTL with Monette and she shows me an awesome thing. Her Prof has powerpoint slides that read the notes automatically. I was thinking, how do I achieve this with Google Slides.   record audio. I think this can be done on a per slide basis.   convert audio to video. Use audacity or ffmpeg. Google slides can embed video, not audio.  upload to google drive. youtube will work too, but you'll have ads.   share the video as a presentation. well, the video has got to be shared.  embed the video to the right slide. manage the size and drag past the slide borders so that it doesn't show.  set to autoplay. you can fix up the timing also.   test that everything works   This can be for the instructional materials that I'll be authoring. Any updates can be done piecemeal.",
+            "title": "- google slides"
+        },
+        {
+            "location": "/2018-09-16-info_sys/",
+            "text": "IS\n\n\nsoftware engineering\n\n\n\n\n\n\nThe end goal is to have the client institution in an upward spiral of technical savvyness with very stable and strong foundations. \n\n\nThis state has a web application with proper tests and is setup for continuous integration. It uses up to date security through a stable web framework. \n\n\nEnhancing functionality can then be added to core functionality safely through a efficient design generation process.\n\n\nDevelopment is conducted through an engaging atmosphere of mutual development.\n\n\nAs a developer, I do not want to hold the prerequisite knowledge of the intricacies of the system that I am developing, chances are, I may not be able to grasp it within an acceptable amount of time anyway. I'll have end-users (EU) and subject area experts (SME) for that. \n\n\nMy job then is to \n1. roll out the design generation process\n1. bring the development process up to a stage that I am certain\n2. teach EU/SME enough programming to communicate clearly the processes that they are certain\n3. merge the Dev and EU output in visual manner\n4. use and refine\n5. teach maintenance and move on",
+            "title": "2018 09 16 info sys"
+        },
+        {
+            "location": "/2018-09-25-IS_prog-js_dates/",
+            "text": "- soft_engg\n\n\nvar d = new Date();\n// Tue Sep 25 2018 15:01:46 GMT+0800 (Philippine Standard Time)\n\n\n\nways to create a new date object\n\n\nnew Date()\nnew Date(YYYY, <0-11> , <1-31> , <0-23> , <0-59> , <0-59> , <0-99> )\nnew Date(milliseconds)\nnew Date(date string)\n\n\n\n\nusing date strings\n\n\nVariations of the following should work:\n\n\nvar d = new Date(\"October 13, 2014 11:13:00\");\n\n\n\n\nJavaScript stores dates as number of milliseconds since January 01, 1970, 00:00:00 UTC (Universal Time Coordinated).\n\n\nways to display a date object\n\n\nd = new Date();\ndocument.getElementById(\"demo\").innerHTML = d;\n\ndocument.getElementById(\"demo\").innerHTML = d.toDateString();\n\ndocument.getElementById(\"demo\").innerHTML = d.toUTCString();\n\n\n\n\njs date inputs\n\n\n\n\n\n\n\n\nType\n\n\nExample\n\n\n\n\n\n\n\n\n\n\nISO Date\n\n\n\"2015-03-25\" (The International Standard)\n\n\n\n\n\n\nShort Date\n\n\n\"03/25/2015\"\n\n\n\n\n\n\nLong Date\n\n\n\"Mar 25 2015\" or \"25 Mar 2015\"\n\n\n\n\n\n\n\n\n var d = new Date(\"2015-03-25\");\n var d = new Date(\"2015-03\");\n var d = new Date(\"2015\");\n var d = new Date(\"2015-03-25T12:00:00Z\");\n var d = new Date(\"2015-03-25T12:00:00-06:30\");\n var d = new Date(\"03/25/2015\");\n var d = new Date(\"Mar 25 2015\");\n var d = new Date(\"25 Mar 2015\");\n var d = new Date(\"January 25 2015\");\n var d = new Date(\"JANUARY, 25, 2015\");\n\n\n\nYou can have the date in millisecond form too\n\n\nvar msec = Date.parse(\"March 21, 2012\");\ndocument.getElementById(\"demo\").innerHTML = msec;\n\n\n\ngetting parts of a date\n\n\nThese methods can be used for getting information from a date object:\n\n\n\n\n\n\n\n\nMethod\n\n\nDescription\n\n\n\n\n\n\n\n\n\n\ngetFullYear()\n\n\nGet the year as a four digit number (yyyy)\n\n\n\n\n\n\ngetMonth()\n\n\nGet the month as a number (0-11)\n\n\n\n\n\n\ngetDate()\n\n\nGet the day as a number (1-31)\n\n\n\n\n\n\ngetHours()\n\n\nGet the hour (0-23)\n\n\n\n\n\n\ngetMinutes()\n\n\nGet the minute (0-59)\n\n\n\n\n\n\ngetSeconds()\n\n\nGet the second (0-59)\n\n\n\n\n\n\ngetMilliseconds()\n\n\nGet the millisecond (0-999)\n\n\n\n\n\n\ngetTime()\n\n\nGet the time (milliseconds since January 1, 1970)\n\n\n\n\n\n\ngetDay()\n\n\nGet the weekday as a number (0-6)\n\n\n\n\n\n\nDate.now()\n\n\nGet the time. ECMAScript 5.\n\n\n\n\n\n\n\n\nfor UTC, just add UTC in the command\n\n\ngetUTCDate()\n\n\n\nSame as getDate(), but returns the UTC date\n\n\nSet date methods\n\n\n\n\n\n\n\n\nMethod\n\n\nDescription\n\n\n\n\n\n\n\n\n\n\nsetDate()\n\n\nSet the day as a number (1-31)\n\n\n\n\n\n\nsetFullYear()\n\n\nSet the year (optionally month and day)\n\n\n\n\n\n\nsetHours()\n\n\nSet the hour (0-23)\n\n\n\n\n\n\nsetMilliseconds()\n\n\nSet the milliseconds (0-999)\n\n\n\n\n\n\nsetMinutes()\n\n\nSet the minutes (0-59)\n\n\n\n\n\n\nsetMonth()\n\n\nSet the month (0-11)\n\n\n\n\n\n\nsetSeconds()\n\n\nSet the seconds (0-59)\n\n\n\n\n\n\nsetTime()\n\n\nSet the time (milliseconds since January 1, 1970)\n\n\n\n\n\n\n\n\nThe setFullYear() method sets the year of a date object. In this example to 2020:\n\n\n<script>\nvar d = new Date();\nd.setFullYear(2020);\ndocument.getElementById(\"demo\").innerHTML = d;\n</script>\n\n\n\n\nThe setFullYear() method can optionally set month and day:\n\n\nd.setFullYear(2020, 11, 3);\n\n\n\nThe setDate() method can also be used to add days to a date:\n\n\n<script>\nvar d = new Date();\nd.setDate(d.getDate() + 50);\ndocument.getElementById(\"demo\").innerHTML = d;\n</script>",
+            "title": "2018 09 25 IS prog js dates"
+        },
+        {
+            "location": "/2018-09-25-IS_prog-js_dates/#-soft_engg",
+            "text": "var d = new Date();\n// Tue Sep 25 2018 15:01:46 GMT+0800 (Philippine Standard Time)",
+            "title": "- soft_engg"
+        },
+        {
+            "location": "/2018-09-25-IS_prog-js_dates/#ways-to-create-a-new-date-object",
+            "text": "new Date()\nnew Date(YYYY, <0-11> , <1-31> , <0-23> , <0-59> , <0-59> , <0-99> )\nnew Date(milliseconds)\nnew Date(date string)",
+            "title": "ways to create a new date object"
+        },
+        {
+            "location": "/2018-09-25-IS_prog-js_dates/#using-date-strings",
+            "text": "Variations of the following should work:  var d = new Date(\"October 13, 2014 11:13:00\");  JavaScript stores dates as number of milliseconds since January 01, 1970, 00:00:00 UTC (Universal Time Coordinated).",
+            "title": "using date strings"
+        },
+        {
+            "location": "/2018-09-25-IS_prog-js_dates/#ways-to-display-a-date-object",
+            "text": "d = new Date();\ndocument.getElementById(\"demo\").innerHTML = d;\n\ndocument.getElementById(\"demo\").innerHTML = d.toDateString();\n\ndocument.getElementById(\"demo\").innerHTML = d.toUTCString();",
+            "title": "ways to display a date object"
+        },
+        {
+            "location": "/2018-09-25-IS_prog-js_dates/#js-date-inputs",
+            "text": "Type  Example      ISO Date  \"2015-03-25\" (The International Standard)    Short Date  \"03/25/2015\"    Long Date  \"Mar 25 2015\" or \"25 Mar 2015\"      var d = new Date(\"2015-03-25\");\n var d = new Date(\"2015-03\");\n var d = new Date(\"2015\");\n var d = new Date(\"2015-03-25T12:00:00Z\");\n var d = new Date(\"2015-03-25T12:00:00-06:30\");\n var d = new Date(\"03/25/2015\");\n var d = new Date(\"Mar 25 2015\");\n var d = new Date(\"25 Mar 2015\");\n var d = new Date(\"January 25 2015\");\n var d = new Date(\"JANUARY, 25, 2015\");  You can have the date in millisecond form too  var msec = Date.parse(\"March 21, 2012\");\ndocument.getElementById(\"demo\").innerHTML = msec;",
+            "title": "js date inputs"
+        },
+        {
+            "location": "/2018-09-25-IS_prog-js_dates/#getting-parts-of-a-date",
+            "text": "These methods can be used for getting information from a date object:     Method  Description      getFullYear()  Get the year as a four digit number (yyyy)    getMonth()  Get the month as a number (0-11)    getDate()  Get the day as a number (1-31)    getHours()  Get the hour (0-23)    getMinutes()  Get the minute (0-59)    getSeconds()  Get the second (0-59)    getMilliseconds()  Get the millisecond (0-999)    getTime()  Get the time (milliseconds since January 1, 1970)    getDay()  Get the weekday as a number (0-6)    Date.now()  Get the time. ECMAScript 5.     for UTC, just add UTC in the command  getUTCDate()  Same as getDate(), but returns the UTC date",
+            "title": "getting parts of a date"
+        },
+        {
+            "location": "/2018-09-25-IS_prog-js_dates/#set-date-methods",
+            "text": "Method  Description      setDate()  Set the day as a number (1-31)    setFullYear()  Set the year (optionally month and day)    setHours()  Set the hour (0-23)    setMilliseconds()  Set the milliseconds (0-999)    setMinutes()  Set the minutes (0-59)    setMonth()  Set the month (0-11)    setSeconds()  Set the seconds (0-59)    setTime()  Set the time (milliseconds since January 1, 1970)     The setFullYear() method sets the year of a date object. In this example to 2020:  <script>\nvar d = new Date();\nd.setFullYear(2020);\ndocument.getElementById(\"demo\").innerHTML = d;\n</script>  The setFullYear() method can optionally set month and day:  d.setFullYear(2020, 11, 3);  The setDate() method can also be used to add days to a date:  <script>\nvar d = new Date();\nd.setDate(d.getDate() + 50);\ndocument.getElementById(\"demo\").innerHTML = d;\n</script>",
+            "title": "Set date methods"
+        },
+        {
+            "location": "/2018-09-25-js_loops/",
+            "text": "- soft_engg\n\n\nThe While Loop\n\n\nwhile (condition) {\n    code block to be executed\n}\n\n\n\n\nwhile (i < 10) {\n    text += \"The number is \" + i;\n    i++;\n}\n\n\n\n\nvar cars = [\"BMW\", \"Volvo\", \"Saab\", \"Ford\"];\nvar i = 0;\nvar text = \"\";\n\nwhile (cars[i]) {\n    text += cars[i] + \"<br>\";\n    i++;\n}\n\n\n\n\nThe Do/While Loop\n\n\ndo {\n    code block to be executed\n}\nwhile (condition);\n\n\n\n\ndo {\n    text += \"The number is \" + i;\n    i++;\n}\nwhile (i < 10);\n\n\n\n\nThe For Loop\n\n\nfor (statement 1; statement 2; statement 3) {\n    code block to be executed\n}\n\n\n\n\nfor (i = 0; i < 5; i++) {\n    text += \"The number is \" + i + \"<br>\";\n}\n\n\n\n\nThe For/In Loop\n\n\nvar person = {fname:\"John\", lname:\"Doe\", age:25}; \n\nvar text = \"\";\nvar x;\nfor (x in person) {\n    text += person[x];\n}",
+            "title": "2018 09 25 js loops"
+        },
+        {
+            "location": "/2018-09-25-js_loops/#-soft_engg",
+            "text": "",
+            "title": "- soft_engg"
+        },
+        {
+            "location": "/2018-09-25-js_loops/#the-while-loop",
+            "text": "while (condition) {\n    code block to be executed\n}  while (i < 10) {\n    text += \"The number is \" + i;\n    i++;\n}  var cars = [\"BMW\", \"Volvo\", \"Saab\", \"Ford\"];\nvar i = 0;\nvar text = \"\";\n\nwhile (cars[i]) {\n    text += cars[i] + \"<br>\";\n    i++;\n}",
+            "title": "The While Loop"
+        },
+        {
+            "location": "/2018-09-25-js_loops/#the-dowhile-loop",
+            "text": "do {\n    code block to be executed\n}\nwhile (condition);  do {\n    text += \"The number is \" + i;\n    i++;\n}\nwhile (i < 10);",
+            "title": "The Do/While Loop"
+        },
+        {
+            "location": "/2018-09-25-js_loops/#the-for-loop",
+            "text": "for (statement 1; statement 2; statement 3) {\n    code block to be executed\n}  for (i = 0; i < 5; i++) {\n    text += \"The number is \" + i + \"<br>\";\n}",
+            "title": "The For Loop"
+        },
+        {
+            "location": "/2018-09-25-js_loops/#the-forin-loop",
+            "text": "var person = {fname:\"John\", lname:\"Doe\", age:25}; \n\nvar text = \"\";\nvar x;\nfor (x in person) {\n    text += person[x];\n}",
+            "title": "The For/In Loop"
+        },
+        {
+            "location": "/2018-09-26-mysql_datatypes/",
+            "text": "- soft_engg\n\n\nNumeric Data\n\n\nIntegers\n\n\nRequired Storage and Range for Integer Types Supported by MySQL\n\n\n\n\n\n\n\n\nType\n\n\nStorage (Bytes)\n\n\nMinimum Value Signed\n\n\nMinimum Value Unsigned\n\n\nMaximum Value Signed\n\n\nMaximum Value Unsigned\n\n\n\n\n\n\n\n\n\n\nTINYINT\n\n\n1\n\n\n-128\n\n\n0\n\n\n127\n\n\n255\n\n\n\n\n\n\nSMALLINT\n\n\n2\n\n\n-32768\n\n\n0\n\n\n32767\n\n\n65535\n\n\n\n\n\n\nMEDIUMINT\n\n\n3\n\n\n-8388608\n\n\n0\n\n\n8388607\n\n\n16777215\n\n\n\n\n\n\nINT\n\n\n4\n\n\n-2147483648\n\n\n0\n\n\n2147483647\n\n\n4294967295\n\n\n\n\n\n\nBIGINT\n\n\n8\n\n\n-2\n63\n\n\n0\n\n\n2\n63\n-1\n\n\n2\n64\n-1\n\n\n\n\n\n\n\n\nDecimals (money)\n\n\nsalary DECIMAL(5,2)\n\n\n\nThis means the the salary field has a maximum of 5 numbers with a maximum of 2 numbers after the decimal point. \n\n\nSo values that can be stored in the salary column range from -999.99 to 999.99.\n\n\nFloats/ Doubles  (scientific)\n\n\n\n\nfloat uses 4 bytes \n\n\ndouble uses 8 bytes\n\n\nthese approximate numbers \n\n\ncarefule when doing approximations\n\n\n\n\nDate types\n\n\nThe following are the form that the date datatype would look like.\n\n\n\n\n\n\n\n\nData Type\n\n\n\u201cZero\u201d Value\n\n\n\n\n\n\n\n\n\n\nDATE\n\n\n'0000-00-00'\n\n\n\n\n\n\nTIME\n\n\n'00:00:00'\n\n\n\n\n\n\nDATETIME\n\n\n'0000-00-00 00:00:00'\n\n\n\n\n\n\nTIMESTAMP\n\n\n'0000-00-00 00:00:00'\n\n\n\n\n\n\nYEAR\n\n\n0000\n\n\n\n\n\n\n\n\nString types\n\n\n\n\nvarchar(N)\n\n\ntext\n\n\ntinytext\n\n\ntext \n\n\nmediumtext\n\n\nlongtext\n\n\nblob\n\n\ntinyblob\n\n\nblob\n\n\nmediumblob\n\n\nlongblob",
+            "title": "2018 09 26 mysql datatypes"
+        },
+        {
+            "location": "/2018-09-26-mysql_datatypes/#-soft_engg",
+            "text": "",
+            "title": "- soft_engg"
+        },
+        {
+            "location": "/2018-09-26-mysql_datatypes/#numeric-data",
+            "text": "",
+            "title": "Numeric Data"
+        },
+        {
+            "location": "/2018-09-26-mysql_datatypes/#integers",
+            "text": "Required Storage and Range for Integer Types Supported by MySQL     Type  Storage (Bytes)  Minimum Value Signed  Minimum Value Unsigned  Maximum Value Signed  Maximum Value Unsigned      TINYINT  1  -128  0  127  255    SMALLINT  2  -32768  0  32767  65535    MEDIUMINT  3  -8388608  0  8388607  16777215    INT  4  -2147483648  0  2147483647  4294967295    BIGINT  8  -2 63  0  2 63 -1  2 64 -1",
+            "title": "Integers"
+        },
+        {
+            "location": "/2018-09-26-mysql_datatypes/#decimals-money",
+            "text": "salary DECIMAL(5,2)  This means the the salary field has a maximum of 5 numbers with a maximum of 2 numbers after the decimal point.   So values that can be stored in the salary column range from -999.99 to 999.99.",
+            "title": "Decimals (money)"
+        },
+        {
+            "location": "/2018-09-26-mysql_datatypes/#floats-doubles-scientific",
+            "text": "float uses 4 bytes   double uses 8 bytes  these approximate numbers   carefule when doing approximations",
+            "title": "Floats/ Doubles  (scientific)"
+        },
+        {
+            "location": "/2018-09-26-mysql_datatypes/#date-types",
+            "text": "The following are the form that the date datatype would look like.     Data Type  \u201cZero\u201d Value      DATE  '0000-00-00'    TIME  '00:00:00'    DATETIME  '0000-00-00 00:00:00'    TIMESTAMP  '0000-00-00 00:00:00'    YEAR  0000",
+            "title": "Date types"
+        },
+        {
+            "location": "/2018-09-26-mysql_datatypes/#string-types",
+            "text": "varchar(N)  text  tinytext  text   mediumtext  longtext  blob  tinyblob  blob  mediumblob  longblob",
+            "title": "String types"
+        },
+        {
+            "location": "/2018-10-01-WAPP-setup/",
+            "text": "- soft_engg\n\n\nWe want to setup Windows for PHP and PostgreSQL development with an Apache Server and phppgadmin.\n\n\n\n\nInstall WAPP stack from Bitnami\n\n\nLogin to phppgadmin\n\n\nusername is postgres\n\n\npassword is the what you put during install\n\n\nplace an alias in your user's .bashrc\n\n\nalias wapp=\"cd C:/Bitnami/wappstack-7.1.22-0/apache2/htdocs\"\n\n\n\n\n\n\nedit php.ini (C:\\Bitnami\\wappstack-7.1.22-0\\php)\n\n\nsearch for  \ndisplay_errors\n\n\nyou should find 2 or 3 instances\n\n\nturn display_errors ON\n\n\n\n\n\n\n\n\n\n\nuse the function versions of the connection code\n\n\nOO are problematic here \n\n\ne.g. use  \npg_close($conn);\n\n\ninstead of \n$conn->close();\n\n\n\n\n\n\n\n\nopcache error\n\n\nThis is when you updated the code but the effect just doesn't reflect as fast as expected\n\n\n\"To get started with Bitnami LAMP Stack we suggest the following:\"\n(Jun '15  pheelixx)\n\nCaching is enabled on this LAMP / LAPP / Ruby Stack using the following two methods:\n\n1) Google PageSpeed Module is enabled by these lines in {$INSTALL_DIR}/apache2/conf/httpd.conf:\n\nInclude conf/pagespeed.conf\nInclude conf/pagespeed_libraries.conf\nComment those lines out to disable this module.\n\n2) PHP has Op Cache enabled by these lines in {$INSTALL_DIR}/php/etc/php.ini:\n\nopcache.enable=1\nopcache.enable_cli=1\nDisable those by making them = 0 instead.\n\nImportant: You will need to disable both caches to remove caching\n\n\n\n\nI did the opcache fix and for my case that was enough.  :) \n\n\nthings to download\n\n\n\n\nbluefish\n\n\nxampp\n\n\nwapp\n\n\nrails for windows",
+            "title": "2018 10 01 WAPP setup"
+        },
+        {
+            "location": "/2018-10-01-WAPP-setup/#-soft_engg",
+            "text": "We want to setup Windows for PHP and PostgreSQL development with an Apache Server and phppgadmin.   Install WAPP stack from Bitnami  Login to phppgadmin  username is postgres  password is the what you put during install  place an alias in your user's .bashrc  alias wapp=\"cd C:/Bitnami/wappstack-7.1.22-0/apache2/htdocs\"    edit php.ini (C:\\Bitnami\\wappstack-7.1.22-0\\php)  search for   display_errors  you should find 2 or 3 instances  turn display_errors ON      use the function versions of the connection code  OO are problematic here   e.g. use   pg_close($conn);  instead of  $conn->close();",
+            "title": "- soft_engg"
+        },
+        {
+            "location": "/2018-10-01-WAPP-setup/#opcache-error",
+            "text": "This is when you updated the code but the effect just doesn't reflect as fast as expected  \"To get started with Bitnami LAMP Stack we suggest the following:\"\n(Jun '15  pheelixx)\n\nCaching is enabled on this LAMP / LAPP / Ruby Stack using the following two methods:\n\n1) Google PageSpeed Module is enabled by these lines in {$INSTALL_DIR}/apache2/conf/httpd.conf:\n\nInclude conf/pagespeed.conf\nInclude conf/pagespeed_libraries.conf\nComment those lines out to disable this module.\n\n2) PHP has Op Cache enabled by these lines in {$INSTALL_DIR}/php/etc/php.ini:\n\nopcache.enable=1\nopcache.enable_cli=1\nDisable those by making them = 0 instead.\n\nImportant: You will need to disable both caches to remove caching  I did the opcache fix and for my case that was enough.  :)",
+            "title": "opcache error"
+        },
+        {
+            "location": "/2018-10-01-WAPP-setup/#things-to-download",
+            "text": "bluefish  xampp  wapp  rails for windows",
+            "title": "things to download"
+        },
+        {
+            "location": "/2018-10-14-BA186_syllabus/",
+            "text": "- soft_engg\n\n\nBA 186 Syllabus\n\n\nc/o Sir Paulo Paje, UP-ITDC Director\n\n\nI plan to explore this thoroughly and come up with several blog posts on the experience.\n\n\nCOURSE DETAILS\n\n\nBA186 SYSTEMS ANALYSIS AND DESIGN\n\n\nPrinciples and methods for analyzing, designing and developing different types of business and management\nsystems.\n\n\nCourse Description\n\n\nThis course on Systems Analysis and Design (BA186) teaches methods for analyzing, designing and assessing\ndifferent types of business and management systems. As an introductory Systems Analysis and Design (SA&D)\ncourse for students in business- or management-related degree programs, it offers basic knowledge of computerbased business information systems (I.S.) and systems development practices. It is designed to give business\nstudents an understanding of the impact of information systems in organizations as well as a better grasp of the\nlimits and constraints under which I.T. professionals (systems analysts, programmers, technicians, support staff)\nwork within organizations.\n\n\nCourse Objectives\n\n\nAt the end of this course, students must be able to:\n\n\n\n\nLearn and understand the processes, methodologies and tools involved in systems development.\n\n\nRecognize which tool and which technique to use in a given phase of the systems development process.\n\n\nBe exposed to the actual work environment that will provide them the opportunity to apply the concepts and\nprinciples of systems analysis and design.\n\n\nUnderstand the impact of SA&D activities to support the business objectives of organizations\n\n\n\n\nCourse Methodology\n\n\nThis course shall employ a variety of methods such as but not limited to, lecture-presentation, discussions,\nteamwork, video presentations, Q&A. Individual assignments shall be given and case studies shall be assigned so\nas to ascertain the level of understanding of students. The use of a Learning Management System (LMS) shall be\nobserved all throughout the course duration. Specifically, e-Learning shall be employed to acquaint the students of this mode of learning. Submission of outputs shall be carried out through the LMS. Class interaction is encouraged\nusing the discussion/chat facilities of the course LMS.\n\n\nCourse Learning Management System (LMS) and Official Class Directory\n\n\nWe will use google classroom. Details will be given on the first day of class.\n\n\nYou will not receive any email notices if you will not register in both the LMS and class directory sites. The LMS will\nprovide you access to course materials, assignments and other information relevant to our course.\n\n\nCOURSE OUTLINE\n\n\nPreliminaries and Creation of Project Teams\n\n\nChapter 1: The Systems Development Environment\n\n\nChapter 2: The Origins of Software\n\n\nPresentation of Project Topics by Team Leaders/Introduction of Team Members\n\n\nChapter 3: Managing the Information Systems Project\n\n\nChapter 4: Identifying and Selecting Systems Development Projects\n\n\nChapter 5: Initiating and Planning Systems Development Projects\n\n\nChapter 6: Determining System Requirements\nFieldwork/Team Work/Lab Work\n\n\nMidterm Examination\n\n\nChapter 7: Structuring System Process Requirements\nFieldwork/Team Work/Lab Work\n\n\nChapter 8: Structuring System Data Requirements\nFieldwork/Team Work/Lab Work\n\n\nChapter 9: Designing Databases\nFieldwork/Team Work/Lab Work\n\n\nChapter 10: Designing Forms and Reports\nFieldwork/Team Work/Lab Work\n\n\nChapter 11: Designing Interfaces and Dialogues\nFieldwork/Team Work/Lab Work\n\n\nChapter 12: Designing Distributed and Internet Systems\n\n\nPre-Final Examination\n\n\nTeam Presentation\n\n\nTeam Presentation\n\n\nTeam Presentation\n\n\nTeam Presentation\n\n\nSubmission of Final Deliverables\n\n\nFinal Examination*\n\n\nNote: \nBased on actual circumstances and assessing the progress of the class, the Instructor reserves the right to change/ collapse/interchange any of the topics as listed above.\n\n\nCOURSE REQUIREMENTS\n\n\nThe class shall observe the following course deliverables:\n\n\n\n\nWritten Exams (Midterm and Pre-Final)\n\n\nFinal Exam (for those who will not meet the average score of 60%, midterm and pre-final exams)\n\n\nQuizzes (shall be given at the discretion of the Instructor)\n\n\nTeam Presentations and Deliverables\n\n\n\n\nAt the end of the semester, each student shall be evaluated based on the following items:\n\n\n\n\n\n\n\n\nRequirement\n\n\nWeight\n\n\n\n\n\n\n\n\n\n\nClass Participation/Attendance/Individual Assignments\n\n\n10%\n\n\n\n\n\n\nMidterm Exam and Pre-Final Exam\n\n\n30%\n\n\n\n\n\n\nGroup Tasks/Assignments\n\n\n10%\n\n\n\n\n\n\nSA&D Deliverables\n\n\n40%\n\n\n\n\n\n\nTeam Presentation\n\n\n10%\n\n\n\n\n\n\nTotal\n\n\n100%\n\n\n\n\n\n\n\n\nGRADE EQUIVALENTS\n\n\nThe scores of the students shall be matched using this grading scale:\n\n\n\n\n\n\n\n\nSCORE FINAL\n\n\nGRADE\n\n\n\n\n\n\n\n\n\n\n92 \u2013 100\n\n\n1.0\n\n\n\n\n\n\n88 - below 92\n\n\n1.25\n\n\n\n\n\n\n85 - below 88\n\n\n1.5\n\n\n\n\n\n\n82 - below 85\n\n\n1.75\n\n\n\n\n\n\n78 - below 82\n\n\n2.0\n\n\n\n\n\n\n74 - below 78\n\n\n2.25\n\n\n\n\n\n\n70 - below 74\n\n\n2.5\n\n\n\n\n\n\n65 - below 70\n\n\n2.75\n\n\n\n\n\n\n60 - below 65\n\n\n3.0\n\n\n\n\n\n\nbelow 60\n\n\n5.0\n\n\n\n\n\n\n\n\nCOURSE POLICIES\n\n\nProject Teams\n\n\nThe class will be grouped into teams. Each team will have at most five (5) members. These teams will work on the\nSA&D deliverables, group assignments and in completing all the other requirements of the course.\n\n\nAttendance\n\n\nThe class shall observe the University rules on attendance. This applies to sessions where physical presence is\nrequired. Four (4) absences (excused/unexcused) are allowed all throughout the duration of the course. A student\nwho exceeds this maximum allowable absences shall be dropped from the class roll. The Instructor shall check\nthe attendance from time to time and this shall be done on a random basis.\n\n\nSubmission of Requirements\n\n\nStudents are expected to demonstrate utmost diligence in the submission of course requirements. For every day\nof delay (includes weekends and holidays), five (5) points shall be deducted from the overall score awarded to any\nwork/task. Time management should be observed by students so as to ensure prompt and quality submission of\nthe course requirements.\n\n\nCode of Ethics\n\n\nThe highest level of ethical standards must be observed by each and every class member. Being admitted into the\nprogram is an accomplishment that should not be tarnished with any pigment of fraud, deceit and distrust. The\ncourse will be delivered under the clear cloud of mutual trust and respect.\n\n\nPeer Evaluation\n\n\nEach member of the team will accomplish an online evaluation form at the end of the course. This evaluation form\nwill capture each member\u2019s assessment of the performance of his/her team members. A rating of 1 shall be given\nto team members whose performance is Very Poor, 3 for Average performance and 5 for those who have\nExcellent performance. For each missing point, two (2) points shall be deducted from the team score and the\nstudent shall receive the resulting score (Illustration: if team score is 90 and peer evaluation rating of student A is 3,\nstudent A will receive a score of 86). Thus, it is important that the peer evaluation will be done with utmost care\nand consideration of what really was delivered and performed by each member of the team.\n\n\nGroup Tasks/Assignments\n\n\nThe course will require groups/teams to work on various tasks and assignments. These group tasks/assignments\nshall be assigned to the teams at a particular time and submission deadlines shall be specified by the Instructor for each of the tasks/assignments. Papers related to the this team work must be uploaded into the LMS. The\nevaluation of papers will follow these metrics:\n\n\n\n\n\n\n\n\nRUBRIC\n\n\n%\n\n\n\n\n\n\n\n\n\n\nOrganization and Logic\n\n\n30%\n\n\n\n\n\n\nDepth of Analysis\n\n\n40%\n\n\n\n\n\n\nPresentation/Delivery of Ideas\n\n\n20%\n\n\n\n\n\n\nOverall Impact of Paper\n\n\n10%\n\n\n\n\n\n\n\n\nOther Policies\n\n\n\n\nComplaints regarding exam results shall be entertained only within a period of one week after the examination\npapers are returned. No complaints shall be entertained after this period. Students must use a pen or ballpen\nwhen taking any examination, otherwise, no complaints whatsoever regarding the examination shall be\naccepted.\n\n\nThe specific guidelines that shall govern the other course requirements (team presentations and deliverables)\nshall be announced in the class prior to the implementation of said course requirements. Each day of delay\n(including Saturdays and Sundays) shall be penalized by deducting 5 points from whatever score earned by a\nstudent/team for a specific requirement.\n\n\nStudents who will get an average score of 60% or higher shall be exempted from taking the Final Exam. A\nstudent who will miss one of the exams (i.e. midterm or pre-final) shall receive 80% of the score of the other\nexam taken by the student. If he/she will miss both exams, the student will take a Completion Exam and the\nFinal Exam (Thursday, Oct 10). Those who will take the Completion and Final Exam must expect a set of more\ndifficult questions.\n\n\nTeams are expected to submit ALL deliverables. If one item is missing, all team members shall automatically\nreceive a grade of INC. For completing said requirements, item #3 above shall be applied in the computation\nof scores.\n\n\n\n\nCOURSE REFERENCES\n\n\n\n\nModern Systems Analysis and Design, 6th edition. Jeffrey A. Hoffer, Joey F. George, and Joseph S. Valacich,2011.\n\n\nSystems Analysis and Design. Kenneth E. Kendall and Julie E. Kendall, 6th edition.",
+            "title": "2018 10 14 BA186 syllabus"
+        },
+        {
+            "location": "/2018-10-14-BA186_syllabus/#-soft_engg",
+            "text": "",
+            "title": "- soft_engg"
+        },
+        {
+            "location": "/2018-10-14-BA186_syllabus/#ba-186-syllabus",
+            "text": "c/o Sir Paulo Paje, UP-ITDC Director  I plan to explore this thoroughly and come up with several blog posts on the experience.",
+            "title": "BA 186 Syllabus"
+        },
+        {
+            "location": "/2018-10-14-BA186_syllabus/#course-details",
+            "text": "BA186 SYSTEMS ANALYSIS AND DESIGN  Principles and methods for analyzing, designing and developing different types of business and management\nsystems.",
+            "title": "COURSE DETAILS"
+        },
+        {
+            "location": "/2018-10-14-BA186_syllabus/#course-description",
+            "text": "This course on Systems Analysis and Design (BA186) teaches methods for analyzing, designing and assessing\ndifferent types of business and management systems. As an introductory Systems Analysis and Design (SA&D)\ncourse for students in business- or management-related degree programs, it offers basic knowledge of computerbased business information systems (I.S.) and systems development practices. It is designed to give business\nstudents an understanding of the impact of information systems in organizations as well as a better grasp of the\nlimits and constraints under which I.T. professionals (systems analysts, programmers, technicians, support staff)\nwork within organizations.",
+            "title": "Course Description"
+        },
+        {
+            "location": "/2018-10-14-BA186_syllabus/#course-objectives",
+            "text": "At the end of this course, students must be able to:   Learn and understand the processes, methodologies and tools involved in systems development.  Recognize which tool and which technique to use in a given phase of the systems development process.  Be exposed to the actual work environment that will provide them the opportunity to apply the concepts and\nprinciples of systems analysis and design.  Understand the impact of SA&D activities to support the business objectives of organizations",
+            "title": "Course Objectives"
+        },
+        {
+            "location": "/2018-10-14-BA186_syllabus/#course-methodology",
+            "text": "This course shall employ a variety of methods such as but not limited to, lecture-presentation, discussions,\nteamwork, video presentations, Q&A. Individual assignments shall be given and case studies shall be assigned so\nas to ascertain the level of understanding of students. The use of a Learning Management System (LMS) shall be\nobserved all throughout the course duration. Specifically, e-Learning shall be employed to acquaint the students of this mode of learning. Submission of outputs shall be carried out through the LMS. Class interaction is encouraged\nusing the discussion/chat facilities of the course LMS.",
+            "title": "Course Methodology"
+        },
+        {
+            "location": "/2018-10-14-BA186_syllabus/#course-learning-management-system-lms-and-official-class-directory",
+            "text": "We will use google classroom. Details will be given on the first day of class.  You will not receive any email notices if you will not register in both the LMS and class directory sites. The LMS will\nprovide you access to course materials, assignments and other information relevant to our course.",
+            "title": "Course Learning Management System (LMS) and Official Class Directory"
+        },
+        {
+            "location": "/2018-10-14-BA186_syllabus/#course-outline",
+            "text": "Preliminaries and Creation of Project Teams  Chapter 1: The Systems Development Environment  Chapter 2: The Origins of Software  Presentation of Project Topics by Team Leaders/Introduction of Team Members  Chapter 3: Managing the Information Systems Project  Chapter 4: Identifying and Selecting Systems Development Projects  Chapter 5: Initiating and Planning Systems Development Projects  Chapter 6: Determining System Requirements\nFieldwork/Team Work/Lab Work  Midterm Examination  Chapter 7: Structuring System Process Requirements\nFieldwork/Team Work/Lab Work  Chapter 8: Structuring System Data Requirements\nFieldwork/Team Work/Lab Work  Chapter 9: Designing Databases\nFieldwork/Team Work/Lab Work  Chapter 10: Designing Forms and Reports\nFieldwork/Team Work/Lab Work  Chapter 11: Designing Interfaces and Dialogues\nFieldwork/Team Work/Lab Work  Chapter 12: Designing Distributed and Internet Systems  Pre-Final Examination  Team Presentation  Team Presentation  Team Presentation  Team Presentation  Submission of Final Deliverables  Final Examination*  Note:  Based on actual circumstances and assessing the progress of the class, the Instructor reserves the right to change/ collapse/interchange any of the topics as listed above.",
+            "title": "COURSE OUTLINE"
+        },
+        {
+            "location": "/2018-10-14-BA186_syllabus/#course-requirements",
+            "text": "The class shall observe the following course deliverables:   Written Exams (Midterm and Pre-Final)  Final Exam (for those who will not meet the average score of 60%, midterm and pre-final exams)  Quizzes (shall be given at the discretion of the Instructor)  Team Presentations and Deliverables   At the end of the semester, each student shall be evaluated based on the following items:     Requirement  Weight      Class Participation/Attendance/Individual Assignments  10%    Midterm Exam and Pre-Final Exam  30%    Group Tasks/Assignments  10%    SA&D Deliverables  40%    Team Presentation  10%    Total  100%",
+            "title": "COURSE REQUIREMENTS"
+        },
+        {
+            "location": "/2018-10-14-BA186_syllabus/#grade-equivalents",
+            "text": "The scores of the students shall be matched using this grading scale:     SCORE FINAL  GRADE      92 \u2013 100  1.0    88 - below 92  1.25    85 - below 88  1.5    82 - below 85  1.75    78 - below 82  2.0    74 - below 78  2.25    70 - below 74  2.5    65 - below 70  2.75    60 - below 65  3.0    below 60  5.0",
+            "title": "GRADE EQUIVALENTS"
+        },
+        {
+            "location": "/2018-10-14-BA186_syllabus/#course-policies",
+            "text": "",
+            "title": "COURSE POLICIES"
+        },
+        {
+            "location": "/2018-10-14-BA186_syllabus/#project-teams",
+            "text": "The class will be grouped into teams. Each team will have at most five (5) members. These teams will work on the\nSA&D deliverables, group assignments and in completing all the other requirements of the course.",
+            "title": "Project Teams"
+        },
+        {
+            "location": "/2018-10-14-BA186_syllabus/#attendance",
+            "text": "The class shall observe the University rules on attendance. This applies to sessions where physical presence is\nrequired. Four (4) absences (excused/unexcused) are allowed all throughout the duration of the course. A student\nwho exceeds this maximum allowable absences shall be dropped from the class roll. The Instructor shall check\nthe attendance from time to time and this shall be done on a random basis.",
+            "title": "Attendance"
+        },
+        {
+            "location": "/2018-10-14-BA186_syllabus/#submission-of-requirements",
+            "text": "Students are expected to demonstrate utmost diligence in the submission of course requirements. For every day\nof delay (includes weekends and holidays), five (5) points shall be deducted from the overall score awarded to any\nwork/task. Time management should be observed by students so as to ensure prompt and quality submission of\nthe course requirements.",
+            "title": "Submission of Requirements"
+        },
+        {
+            "location": "/2018-10-14-BA186_syllabus/#code-of-ethics",
+            "text": "The highest level of ethical standards must be observed by each and every class member. Being admitted into the\nprogram is an accomplishment that should not be tarnished with any pigment of fraud, deceit and distrust. The\ncourse will be delivered under the clear cloud of mutual trust and respect.",
+            "title": "Code of Ethics"
+        },
+        {
+            "location": "/2018-10-14-BA186_syllabus/#peer-evaluation",
+            "text": "Each member of the team will accomplish an online evaluation form at the end of the course. This evaluation form\nwill capture each member\u2019s assessment of the performance of his/her team members. A rating of 1 shall be given\nto team members whose performance is Very Poor, 3 for Average performance and 5 for those who have\nExcellent performance. For each missing point, two (2) points shall be deducted from the team score and the\nstudent shall receive the resulting score (Illustration: if team score is 90 and peer evaluation rating of student A is 3,\nstudent A will receive a score of 86). Thus, it is important that the peer evaluation will be done with utmost care\nand consideration of what really was delivered and performed by each member of the team.",
+            "title": "Peer Evaluation"
+        },
+        {
+            "location": "/2018-10-14-BA186_syllabus/#group-tasksassignments",
+            "text": "The course will require groups/teams to work on various tasks and assignments. These group tasks/assignments\nshall be assigned to the teams at a particular time and submission deadlines shall be specified by the Instructor for each of the tasks/assignments. Papers related to the this team work must be uploaded into the LMS. The\nevaluation of papers will follow these metrics:     RUBRIC  %      Organization and Logic  30%    Depth of Analysis  40%    Presentation/Delivery of Ideas  20%    Overall Impact of Paper  10%",
+            "title": "Group Tasks/Assignments"
+        },
+        {
+            "location": "/2018-10-14-BA186_syllabus/#other-policies",
+            "text": "Complaints regarding exam results shall be entertained only within a period of one week after the examination\npapers are returned. No complaints shall be entertained after this period. Students must use a pen or ballpen\nwhen taking any examination, otherwise, no complaints whatsoever regarding the examination shall be\naccepted.  The specific guidelines that shall govern the other course requirements (team presentations and deliverables)\nshall be announced in the class prior to the implementation of said course requirements. Each day of delay\n(including Saturdays and Sundays) shall be penalized by deducting 5 points from whatever score earned by a\nstudent/team for a specific requirement.  Students who will get an average score of 60% or higher shall be exempted from taking the Final Exam. A\nstudent who will miss one of the exams (i.e. midterm or pre-final) shall receive 80% of the score of the other\nexam taken by the student. If he/she will miss both exams, the student will take a Completion Exam and the\nFinal Exam (Thursday, Oct 10). Those who will take the Completion and Final Exam must expect a set of more\ndifficult questions.  Teams are expected to submit ALL deliverables. If one item is missing, all team members shall automatically\nreceive a grade of INC. For completing said requirements, item #3 above shall be applied in the computation\nof scores.",
+            "title": "Other Policies"
+        },
+        {
+            "location": "/2018-10-14-BA186_syllabus/#course-references",
+            "text": "Modern Systems Analysis and Design, 6th edition. Jeffrey A. Hoffer, Joey F. George, and Joseph S. Valacich,2011.  Systems Analysis and Design. Kenneth E. Kendall and Julie E. Kendall, 6th edition.",
+            "title": "COURSE REFERENCES"
+        },
+        {
+            "location": "/2018-10-19-configure_git/",
+            "text": "- soft_engg\n\n\nhave a Github account, make sure to \nregister\n.\n\n\ndownload and install \ngit for windows\n\n\ngit config --global color.ui true\ngit config --global user.name \"YOUR NAME\"\ngit config --global user.email \"YOUR@EMAIL.com\"\nssh-keygen -t rsa -b 4096 -C \"YOUR@EMAIL.com\"\n\n\n\n\n\n\nleave the file path as is\n\n\nleave the password empty",
+            "title": "2018 10 19 configure git"
+        },
+        {
+            "location": "/2018-10-19-configure_git/#-soft_engg",
+            "text": "have a Github account, make sure to  register .  download and install  git for windows  git config --global color.ui true\ngit config --global user.name \"YOUR NAME\"\ngit config --global user.email \"YOUR@EMAIL.com\"\nssh-keygen -t rsa -b 4096 -C \"YOUR@EMAIL.com\"   leave the file path as is  leave the password empty",
+            "title": "- soft_engg"
+        },
+        {
+            "location": "/2018-10-19-install_rails/",
+            "text": "- soft_engg\n\n\nInstall Ruby\n\n\nfirst  install some dependencies for Ruby and Rails.\n\n\nstart by adding the Node.js and Yarn repositories\n\n\nsudo apt install curl\ncurl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -\ncurl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -\necho \"deb https://dl.yarnpkg.com/debian/ stable main\" | sudo tee /etc/apt/sources.list.d/yarn.list\n\nsudo apt-get update\nsudo apt-get install git-core curl zlib1g-dev build-essential libssl-dev libreadline-dev libyaml-dev libsqlite3-dev sqlite3 libxml2-dev libxslt1-dev libcurl4-openssl-dev software-properties-common libffi-dev nodejs yarn\n\n\n\n\nInstall using rbenv, which sets up a controlled version environment for ruby.\n\n\ncd\ngit clone https://github.com/rbenv/rbenv.git ~/.rbenv\necho 'export PATH=\"$HOME/.rbenv/bin:$PATH\"' >> ~/.bashrc\necho 'eval \"$(rbenv init -)\"' >> ~/.bashrc\nexec $SHELL\n\ngit clone https://github.com/rbenv/ruby-build.git ~/.rbenv/plugins/ruby-build\necho 'export PATH=\"$HOME/.rbenv/plugins/ruby-build/bin:$PATH\"' >> ~/.bashrc\nexec $SHELL\n\nrbenv install 2.5.1\nrbenv global 2.5.1\nruby -v\n\n\n\n\ninstall Bundler\n\n\ngem install bundler\nbundle update\n\n\n\nrbenv users need to run rbenv rehash after installing bundler.\n\n\nrbenv rehash\n\n\n\nGetting Git\n\n\n*see the article on \nConfiguring Git\n\n\nSetting Up MySQL\n\n\n*see the article on \nSetting Up MySQL\n\n\nRails ships with sqlite3 as the default database. This is good only for simple and small databases. \n\n\nMySQL is much much better, especially when you're coming from a background of PHP.\n\n\nUse the software repo to install and take note of the password you set and update the database.yml file.\n\n\nSetting Up PostgreSQL\n\n\n*see the article on \nSetting Up PostgreSQL\n\n\nPostgreSQL is even better than MySQL for normal implementations of Rails Web applications.\n\n\nUse the software repo to install and take note of the password you set and update the database.yml file.\n\n\nInspect if everything works\n\n\n#### If you want to use SQLite (not recommended)\nrails new myapp\n\n#### If you want to use MySQL\nrails new myapp -d mysql\n\n#### If you want to use Postgres\n# Note that this will expect a postgres user with the same username\n# as your app, you may need to edit config/database.yml to match the\n# user you created earlier\nrails new myapp -d postgresql\n\n# Move into the application directory\ncd myapp\n\n# If you setup MySQL or Postgres with a username/password, modify the\n# config/database.yml file to contain the username/password that you specified\n\n# Create the database\nrake db:create\n\nrails server\n\n\n\n\nvisit http://localhost:3000 to view your new website",
+            "title": "2018 10 19 install rails"
+        },
+        {
+            "location": "/2018-10-19-install_rails/#-soft_engg",
+            "text": "",
+            "title": "- soft_engg"
+        },
+        {
+            "location": "/2018-10-19-install_rails/#install-ruby",
+            "text": "first  install some dependencies for Ruby and Rails.  start by adding the Node.js and Yarn repositories  sudo apt install curl\ncurl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -\ncurl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -\necho \"deb https://dl.yarnpkg.com/debian/ stable main\" | sudo tee /etc/apt/sources.list.d/yarn.list\n\nsudo apt-get update\nsudo apt-get install git-core curl zlib1g-dev build-essential libssl-dev libreadline-dev libyaml-dev libsqlite3-dev sqlite3 libxml2-dev libxslt1-dev libcurl4-openssl-dev software-properties-common libffi-dev nodejs yarn  Install using rbenv, which sets up a controlled version environment for ruby.  cd\ngit clone https://github.com/rbenv/rbenv.git ~/.rbenv\necho 'export PATH=\"$HOME/.rbenv/bin:$PATH\"' >> ~/.bashrc\necho 'eval \"$(rbenv init -)\"' >> ~/.bashrc\nexec $SHELL\n\ngit clone https://github.com/rbenv/ruby-build.git ~/.rbenv/plugins/ruby-build\necho 'export PATH=\"$HOME/.rbenv/plugins/ruby-build/bin:$PATH\"' >> ~/.bashrc\nexec $SHELL\n\nrbenv install 2.5.1\nrbenv global 2.5.1\nruby -v  install Bundler  gem install bundler\nbundle update  rbenv users need to run rbenv rehash after installing bundler.  rbenv rehash",
+            "title": "Install Ruby"
+        },
+        {
+            "location": "/2018-10-19-install_rails/#getting-git",
+            "text": "*see the article on  Configuring Git",
+            "title": "Getting Git"
+        },
+        {
+            "location": "/2018-10-19-install_rails/#setting-up-mysql",
+            "text": "*see the article on  Setting Up MySQL  Rails ships with sqlite3 as the default database. This is good only for simple and small databases.   MySQL is much much better, especially when you're coming from a background of PHP.  Use the software repo to install and take note of the password you set and update the database.yml file.",
+            "title": "Setting Up MySQL"
+        },
+        {
+            "location": "/2018-10-19-install_rails/#setting-up-postgresql",
+            "text": "*see the article on  Setting Up PostgreSQL  PostgreSQL is even better than MySQL for normal implementations of Rails Web applications.  Use the software repo to install and take note of the password you set and update the database.yml file.",
+            "title": "Setting Up PostgreSQL"
+        },
+        {
+            "location": "/2018-10-19-install_rails/#inspect-if-everything-works",
+            "text": "#### If you want to use SQLite (not recommended)\nrails new myapp\n\n#### If you want to use MySQL\nrails new myapp -d mysql\n\n#### If you want to use Postgres\n# Note that this will expect a postgres user with the same username\n# as your app, you may need to edit config/database.yml to match the\n# user you created earlier\nrails new myapp -d postgresql\n\n# Move into the application directory\ncd myapp\n\n# If you setup MySQL or Postgres with a username/password, modify the\n# config/database.yml file to contain the username/password that you specified\n\n# Create the database\nrake db:create\n\nrails server  visit http://localhost:3000 to view your new website",
+            "title": "Inspect if everything works"
+        },
+        {
+            "location": "/2018-10-19-setup_mysql/",
+            "text": "- soft_engg\n\n\nGo to the terminal\n\n\nsudo apt-get install mysql-server mysql-client libmysqlclient-dev\n\n\n\n\n\nlibmysqlclient-dev allows you to compile useful plugins for mysql use.\n\n\n\n\nAs there is no password set for root user, simply login with blank password\n\n\nsudo mysql -u root -p\nEnter password: (press enter as no password is set)\n\n\n\n\nafter then can easily run query\n\n\nALTER USER 'root'@'locahost' IDENTIFIED BY '<password>';",
+            "title": "2018 10 19 setup mysql"
+        },
+        {
+            "location": "/2018-10-19-setup_mysql/#-soft_engg",
+            "text": "Go to the terminal  sudo apt-get install mysql-server mysql-client libmysqlclient-dev   libmysqlclient-dev allows you to compile useful plugins for mysql use.   As there is no password set for root user, simply login with blank password  sudo mysql -u root -p\nEnter password: (press enter as no password is set)  after then can easily run query  ALTER USER 'root'@'locahost' IDENTIFIED BY '<password>';",
+            "title": "- soft_engg"
+        },
+        {
+            "location": "/2018-10-19-setup_postgresql/",
+            "text": "- soft_engg\n\n\nadd a new repository to easily install a recent version of Postgres\n\n\nsudo sh -c \"echo 'deb http://apt.postgresql.org/pub/repos/apt/ xenial-pgdg main' > /etc/apt/sources.list.d/pgdg.list\"\nwget --quiet -O - http://apt.postgresql.org/pub/repos/apt/ACCC4CF8.asc | sudo apt-key add -\nsudo apt-get update\nsudo apt-get install postgresql-common\nsudo apt-get install postgresql-9.5 libpq-dev\n\n\n\n\nYou will now have a user named postgres with no password\n\n\nsudo -u postgres psql\n\\q\n\n\n\n\ncreate a user with permission to create databases\n\n\nsudo -u postgres createuser roycan -s\n\n# If you would like to set a password for the user, you can do the following\nsudo -u postgres psql\npostgres=# \\password roycan",
+            "title": "2018 10 19 setup postgresql"
+        },
+        {
+            "location": "/2018-10-19-setup_postgresql/#-soft_engg",
+            "text": "add a new repository to easily install a recent version of Postgres  sudo sh -c \"echo 'deb http://apt.postgresql.org/pub/repos/apt/ xenial-pgdg main' > /etc/apt/sources.list.d/pgdg.list\"\nwget --quiet -O - http://apt.postgresql.org/pub/repos/apt/ACCC4CF8.asc | sudo apt-key add -\nsudo apt-get update\nsudo apt-get install postgresql-common\nsudo apt-get install postgresql-9.5 libpq-dev  You will now have a user named postgres with no password  sudo -u postgres psql\n\\q  create a user with permission to create databases  sudo -u postgres createuser roycan -s\n\n# If you would like to set a password for the user, you can do the following\nsudo -u postgres psql\npostgres=# \\password roycan",
+            "title": "- soft_engg"
+        },
+        {
+            "location": "/2018-11-01-aws_upkeep/",
+            "text": "- soft_engg\n\n\nThese are my 6 steps for using an AWS account for a development team.\n\n\nThis is best after a weekend of AWS workshops/ training.\n\n\n\n\nRemove access rights from outsiders (non-team members)\n\n\nSet an agreement on naming conventions (e.g. prefix new instances with 3-letter acronyms or first 3 letters of the name)\n\n\nSelf-name/ prefix cloud resources so we know who will terminate \n\n\nTerminate all un-named/ unclaimed billable cloud resources\n\n\nAssign someone to monitor billing on a regular basis\n\n\nWhen there are live projects, assign someone to monitor instances on a regular basis",
+            "title": "2018 11 01 aws upkeep"
+        },
+        {
+            "location": "/2018-11-01-aws_upkeep/#-soft_engg",
+            "text": "These are my 6 steps for using an AWS account for a development team.  This is best after a weekend of AWS workshops/ training.   Remove access rights from outsiders (non-team members)  Set an agreement on naming conventions (e.g. prefix new instances with 3-letter acronyms or first 3 letters of the name)  Self-name/ prefix cloud resources so we know who will terminate   Terminate all un-named/ unclaimed billable cloud resources  Assign someone to monitor billing on a regular basis  When there are live projects, assign someone to monitor instances on a regular basis",
+            "title": "- soft_engg"
+        },
+        {
+            "location": "/2018-10-15-ICarchitecture/",
+            "text": "- soft_engg\n\n\nDefinitions\n\n\n\n\nIC    - Insurance Commision\n\n\nMVC   - model-view-controller architecture\n\n\nREST  - representational state transfer architecture\n\n\nMySQL - most popular database for the web\n\n\nMariaDB   - open-source version of MySQL\n\n\nPostgreSQL    - open-source database with the most features\n\n\nAurora MySQL  - Amazon's improved version of MySQL\n\n\nRDMS  - relational database management system\n\n\nIS    - information system\n\n\nClient    - computer trying to access the server\n\n\nServer    - computer servicing Client requests\n\n\nLaravel   - PHP based web development framework\n\n\nPHP   - most popular web scripting language\n\n\nWeb App   - web-based application software\n\n\nBusiness Logic  - enforces the routes and the methods by which business objects are accessed and updated\n\n\nPAAS  - platform as a service\n\n\nAWS   - Amazon Web Services cloud provider\n\n\nIAAS  - infrastructure as a service\n\n\nAmazon S3     - AWS Simple Storage Service\n\n\nAPI   - application program interface\n\n\n\n\nIntroduction\n\n\nAudience\n\n\nThere are three main audiences for this document. The first would be the implementing technical team that would be composed of the developers, testers and analysts who will implement the software system. The second group would be the IC I.T. team who would be in charge of hosting and deploying the system. Lastly, this document is also for the I.S. team tasked in software support, enhancement and maintenance.  \n\n\nPurpose\n\n\nThe Insurance Commission (IC) desires to have data-driven information system software that is accessible to everyone in need of the data parked there.\n\n\nThe IC desires to have their system equipped with a high level of maintainability. It also requires a high flexibility in adding functionality.\n\n\nIC desires the ability to integrate current stand-alone web applications as well as future developments with respect to data exchange and secure access.\n\n\nThis document describes a design for a Web Application (Web App) that aligns to the desires of IC in realizing an information system that will support them as IC moves to whole new level of public service.\n\n\nAssessment\n\n\nThroughout the interview stage of the project, I have assessed several needs and opportunities that drive design. Listed here are points of note and how I believe we can use them as guidance for the development stage.\n\n\nThe current development man-power of IC is not so large. It will then benefit enormously from having the ability to split roles in project among in-house and third-party developers. The MVC architecture has good role-splitting  mechanism (e.g. frontend views, backend controller).\n\n\nThe information system needs of IC is large. It will force the files to be split into many logical directories. Since no single developer can claim his logic is better than all the rest, we recommend following a framework so that all system developers, current or future, will know where each type of file will be found. The Laravel framework has a good directory structure, which is similar to other popular frameworks such as Rails.\n\n\nPolicy changes seem to be a fairly regular occurence in IC. It would be great if End-Users confident that particular link will give them what they need and failing that, will return empty and not give them anything else that may cause confusion. It would be great if End-users are confident that new features will mean new links and would simply expect those to be available in response to policy. These benefits are part of implementing a RESTful architecture pattern through the uniform interface constraint.\n\n\nThere would be two (2) main environments for system usage. The first is within the IC for data access needs in support of analysis and reportorial requirements. The second environment in insurance companies, as a means to submit data and obtain feedback from IC.\n\n\nThe users for the first environment are IC staff for data access and report generation and IC heads for report consumption. The users for the second environement are the insurance company staff to prepare and update requirements as draft submissions and the insurance company head to authorize submissions.\n\n\nThe system is for having a central repository of files and data for IC interaction with insurance companies.\n\n\nThe main functions are secure login to a centralized data-driven web application that allows access to resources depending on the user rights of their IC staff or insurance company staff. Part of the resources are soft copies of the submissions to IC (i.e requests, schedules and reports).\n\n\nThe main interfaces are a insurance company interface and an IC interface per division. The main inputs to the system are the various required from insurance companies. The main outputs of the system are support for the reports that IC generates.\n\n\nArchitecture\n\n\nThe relevant architectures used in this design are\n\n\n\n\nModel-View-Controller (MVC)\n\n\nRepresentational State Transfer (REST)\n\n\nActive Record Architectural Pattern\n\n\n\n\nThese software architecture patterns are compatible with each other when the development is done in a certain way, which are described more throughout this document.\n\n\nI recommend one of the following actions to better ensure that the overall architecture is followed, that key patterns implemented consistent with each other and the benefits on reliability, scalability, security and maintainability are achieved for IC.\n\n\nPlease choose 1:\n1. Get the same team who designed to develop the system\n2. Get at least part of the design team to be part of the development team\n3. Take a software architect from the design team as design consultant in the development phase and resolve each development obstacle in keeping with the principles of the architecture\n4. Make sure that a software architect, who understands the design, guides the development and inspects if the architectural constraints in the design document are observed.\n\n\nThis is like in making a building. Every great and large building has an architect all the way from its start to the end.\n\n\nThe basic architecture will look like this:\n\n\n\n![MVC]({{ \"/assets/mvc.png\" | absolute_url }})\n(https://medium.freecodecamp.org/understanding-the-basics-of-ruby-on-rails-http-mvc-and-routes-359b8d809c7a)\n\n\nModel-View-Controller\n\n\nAll requests from clients to the server will be brought to the controller to be preprocessed and routed to the proper action. The controller will direct the actions to the Model when database access is necessary and direct it to the Views when the data requirements are satisfied.\n\n\nEvery service that the server provides are in terms of actions/ methods for a particular Controller. The default means of output or feedback is through Views that correspond to the actions in the Controller. These controllers may have corresponding Models if they have need to access the database. The Models contain the relationship among the tables in the database. They provide access to database table rows as class instances. The provide access to the fields of a table as object properties.\n\n\nIn this manner, it would be possible to change the underlying relational database management system without altering the base code. The clients can also change web browsers or web-browsing devices without affecting the services rendered by the system.\n\n\nI agree with the advantages of using MySQL or MariaDB initially to maximize compatibility with most of the databases used in IC. I recommend that  Aurora MySQL RDMS be used when moving operations into the cloud. I also recommend a migration to the PostgreSQL database at some point prior to developing the part of workflow automation where a lot of computation will be necessary. MySQL is best for text heavy databases such as blogs and websites. PostgreSQL tends to excel more for Information Systems (IS).\n\n\nMVC allows a degree of separation between the front end of the system and its backend. This will be especially be useful when aesthetics and usability improvements are desired while making sure that the underlying data and logic are kept safe during the implementation of the changes.\n\n\nWe recommend the MVC framework Laravel for the purpose of IC, where there are I.S. division already has skills in the underlying technologies of the framework and will find it easy to adapt. I recommend switching all development to a framework as soon as possible to make all the resulting systems more scalable, maintainable and future-proof.\n\n\nREST Pattern\n\n\nImplementing the web application using the framework of Representational State Transfer maximizes scalability of multi-developer multi-group contribution and access. It makes the system resilient with respect to changes in the services requested by the Clients , while having the Server keep assumptions about Clients at a minimum.\n\n\nThe REST pattern allows expansion in complexity through adding layers between the Client and the Server with each layer only interacting with the one immediately above or below it. This makes it easier for the system to work with proxy servers and network gateways.\n\n\nThe REST patterns imposes some other important constraints such as being stateless and having a uniform interface. Using Laravel's resource controller route allows automatically generated and thus, uniform interfaces, so that other developers can safely and easily request for server resources. This will allow multiple IC or non-IC developers to work on a single project together. This will also allow future developers to continue the work of former developers that may have left the service of IC.\n\n\nIt is important to keep in mind that all requests must be sending a representation of what is required and not commands to the server. The server will still have the ability to ignore or serve the request. Also, the server can send hypermedia, or invitations to access other services or resources from the server. The server provide or push any unrequested service to the Client. What this will do for the UP-IC FEDS is to allow safe addition and removal of features during run time. New or enhanced features will not interfere with current usage without the explicit request for their use. Also, when old features are retired, the server can safely catch any request towards those features and handle them appropriately since the Client cannot directly command the Server.\n\n\nActive Record Architectural Pattern\n\n\nWe recommend that the Active Record Pattern be used as the approach for accessing database data in IC.\n\n\nIn this pattern, each Table of View is mapped into a class. Each instance of the class gets mapped into a row of the Table. There is automatic syncing. New ORM objects are saved in the database. Existing objects are loaded from the database. Changes to object properties are reflected as updates to the database. Finally, when objects are deleted, corresponding rows in the database are destroyed.\n\n\nObjects have methods for Insert, Update and Delete. Calls to object properties give the data. Foreign key relationships for joined Tables are used by having one object accessed through a property of another object.\n\n\nBy using Laravel's ORM Model and not directly accessing the database through SQL statements, the Active Record Architecture can be enforced. IC will then have the ability to easily move to other databases in the future such as PostgreSQL and even other proprietary database management systems.\n\n\nUsing this architecture pattern also has other benefits such as enforcing constraints in linked data deletion, protecting your dependent data against accidental deletion.\n\n\nProcess and Workflow\n\n\nThe processes per Division with their corresponding designs are listed separately. Please proceed to that section to see descriptions of the designs that adhere to the architecture stated herein.  \n\n\nCommon workflows among processes include User Administration, Data Monitoring and Transaction Audit. Specific processes have dataflow diagrams.\n\n\nEnvironment and Network\n\n\nThe following Environment diagram can be supported by the Heroku PAAS on top of the AWS cloud service. This is what I recommend for the next phase of development.\n\n\nThe current on-premise servers in IC also capable of hosting the servers according to the diagram.\n\n\ndigraph G{\n\n    node[shape=box]\n    edge[dir=both]\n\n\n  \"Production Server\" -> \"Database Server\";\n  \"Clients\" -> \"Production Server\";\n\n\n  \"Pre-Production Server\" -> \"Mirrored Database\";\n  \"Change Manager\" -> \"Pre-Production Server\";\n\n\n}\n\n\n\n\nThe software is recommended to be initially cloud developed with the choice of moving on-premise after development. This will allow maximum flexibility in efficient adding of security and reliability to the system during development that can more-readily be translated to on-premise at a future point.  \n\n\nDevelopment and Testing will be done on local machines and not on the server.\n\n\nDeployment View\n\n\nI suggest to use a Platform as a Service (PAAS) for the first deployment of the system. This is a middle layer to Cloud Infrastructure.\n\n\nSpecifically, I suggest using Heroku PAAS that is built on top of the AWS cloud. I find this as a best-practice intermediate step going to a direct cloud Infrastructure as a Service.\n\n\nFor file storage, we recommend the AWS Simple Storage Service (S3) for the security and reliability it provides. It also has a stable and well developed API for use with the recommended framework.\n\n\nBy doing the above, we will be able to capture, real-time bandwidth, redundancy and security requirements for the system that will guide any future deployment and expansion.\n\n\nShould on-premise deployment be pursued:\nThe services are provided by the local server. The server, whether on-premise will be provisioned and maintained with standard performance parameters of within ~70 percent of average capacity for bandwidth, memory and processing. The clients will be nodes within the network with applicable access rights. The server actions in response to logged client requests.\n\n\nImplementation View\n\n\nWe recommend a Git-based source code version control. Examples of which are Gitlab, Bitbucket and Github. This can be hosted by IC once a stable version 1.0 of the system is released. For initial development, the code is recommended to be stored in a private cloud-based repository.\n\n\nWe recommend month-long agile sprints as a development methodology for implementing this design over a 9-12 month period.\n\n\nData Management\n\n\nData conversion and migration would be through Excel or similar spreadsheets and SQL databases. Archiving data will be through database backups and secure cloud-based storage.\n\n\nSecurity Authentication Authorization and Audit\n\n\nAuthentication would be through login accounts set per division or per insurance company access rights.\n\n\nAuthorization would on the company side, would rely on the account given to the company head. Authorization on the IC side may be designated to each Division Head for each division. Deputy Commissioners would have authority over all their divisions.\n\n\nAll actions will be logged by the system. For actions that impact the database, the logs will include enough data to reverse the change being done.\n\n\nReferences\n\n\nMartin Fowler. 2003. Patterns of Enterprise Application Architecture. Book\n\n\nRoy Thomas Fielding. 2000. Architectural Styles and the Design of Network-based Software Architectures. UNIVERSITY OF CALIFORNIA,\nIRVINE. DISSERTATION",
+            "title": "2018 10 15 ICarchitecture"
+        },
+        {
+            "location": "/2018-10-15-ICarchitecture/#-soft_engg",
+            "text": "",
+            "title": "- soft_engg"
+        },
+        {
+            "location": "/2018-10-15-ICarchitecture/#definitions",
+            "text": "IC    - Insurance Commision  MVC   - model-view-controller architecture  REST  - representational state transfer architecture  MySQL - most popular database for the web  MariaDB   - open-source version of MySQL  PostgreSQL    - open-source database with the most features  Aurora MySQL  - Amazon's improved version of MySQL  RDMS  - relational database management system  IS    - information system  Client    - computer trying to access the server  Server    - computer servicing Client requests  Laravel   - PHP based web development framework  PHP   - most popular web scripting language  Web App   - web-based application software  Business Logic  - enforces the routes and the methods by which business objects are accessed and updated  PAAS  - platform as a service  AWS   - Amazon Web Services cloud provider  IAAS  - infrastructure as a service  Amazon S3     - AWS Simple Storage Service  API   - application program interface",
+            "title": "Definitions"
+        },
+        {
+            "location": "/2018-10-15-ICarchitecture/#introduction",
+            "text": "",
+            "title": "Introduction"
+        },
+        {
+            "location": "/2018-10-15-ICarchitecture/#audience",
+            "text": "There are three main audiences for this document. The first would be the implementing technical team that would be composed of the developers, testers and analysts who will implement the software system. The second group would be the IC I.T. team who would be in charge of hosting and deploying the system. Lastly, this document is also for the I.S. team tasked in software support, enhancement and maintenance.",
+            "title": "Audience"
+        },
+        {
+            "location": "/2018-10-15-ICarchitecture/#purpose",
+            "text": "The Insurance Commission (IC) desires to have data-driven information system software that is accessible to everyone in need of the data parked there.  The IC desires to have their system equipped with a high level of maintainability. It also requires a high flexibility in adding functionality.  IC desires the ability to integrate current stand-alone web applications as well as future developments with respect to data exchange and secure access.  This document describes a design for a Web Application (Web App) that aligns to the desires of IC in realizing an information system that will support them as IC moves to whole new level of public service.",
+            "title": "Purpose"
+        },
+        {
+            "location": "/2018-10-15-ICarchitecture/#assessment",
+            "text": "Throughout the interview stage of the project, I have assessed several needs and opportunities that drive design. Listed here are points of note and how I believe we can use them as guidance for the development stage.  The current development man-power of IC is not so large. It will then benefit enormously from having the ability to split roles in project among in-house and third-party developers. The MVC architecture has good role-splitting  mechanism (e.g. frontend views, backend controller).  The information system needs of IC is large. It will force the files to be split into many logical directories. Since no single developer can claim his logic is better than all the rest, we recommend following a framework so that all system developers, current or future, will know where each type of file will be found. The Laravel framework has a good directory structure, which is similar to other popular frameworks such as Rails.  Policy changes seem to be a fairly regular occurence in IC. It would be great if End-Users confident that particular link will give them what they need and failing that, will return empty and not give them anything else that may cause confusion. It would be great if End-users are confident that new features will mean new links and would simply expect those to be available in response to policy. These benefits are part of implementing a RESTful architecture pattern through the uniform interface constraint.  There would be two (2) main environments for system usage. The first is within the IC for data access needs in support of analysis and reportorial requirements. The second environment in insurance companies, as a means to submit data and obtain feedback from IC.  The users for the first environment are IC staff for data access and report generation and IC heads for report consumption. The users for the second environement are the insurance company staff to prepare and update requirements as draft submissions and the insurance company head to authorize submissions.  The system is for having a central repository of files and data for IC interaction with insurance companies.  The main functions are secure login to a centralized data-driven web application that allows access to resources depending on the user rights of their IC staff or insurance company staff. Part of the resources are soft copies of the submissions to IC (i.e requests, schedules and reports).  The main interfaces are a insurance company interface and an IC interface per division. The main inputs to the system are the various required from insurance companies. The main outputs of the system are support for the reports that IC generates.",
+            "title": "Assessment"
+        },
+        {
+            "location": "/2018-10-15-ICarchitecture/#architecture",
+            "text": "The relevant architectures used in this design are   Model-View-Controller (MVC)  Representational State Transfer (REST)  Active Record Architectural Pattern   These software architecture patterns are compatible with each other when the development is done in a certain way, which are described more throughout this document.  I recommend one of the following actions to better ensure that the overall architecture is followed, that key patterns implemented consistent with each other and the benefits on reliability, scalability, security and maintainability are achieved for IC.  Please choose 1:\n1. Get the same team who designed to develop the system\n2. Get at least part of the design team to be part of the development team\n3. Take a software architect from the design team as design consultant in the development phase and resolve each development obstacle in keeping with the principles of the architecture\n4. Make sure that a software architect, who understands the design, guides the development and inspects if the architectural constraints in the design document are observed.  This is like in making a building. Every great and large building has an architect all the way from its start to the end.  The basic architecture will look like this:  \n![MVC]({{ \"/assets/mvc.png\" | absolute_url }})\n(https://medium.freecodecamp.org/understanding-the-basics-of-ruby-on-rails-http-mvc-and-routes-359b8d809c7a)",
+            "title": "Architecture"
+        },
+        {
+            "location": "/2018-10-15-ICarchitecture/#model-view-controller",
+            "text": "All requests from clients to the server will be brought to the controller to be preprocessed and routed to the proper action. The controller will direct the actions to the Model when database access is necessary and direct it to the Views when the data requirements are satisfied.  Every service that the server provides are in terms of actions/ methods for a particular Controller. The default means of output or feedback is through Views that correspond to the actions in the Controller. These controllers may have corresponding Models if they have need to access the database. The Models contain the relationship among the tables in the database. They provide access to database table rows as class instances. The provide access to the fields of a table as object properties.  In this manner, it would be possible to change the underlying relational database management system without altering the base code. The clients can also change web browsers or web-browsing devices without affecting the services rendered by the system.  I agree with the advantages of using MySQL or MariaDB initially to maximize compatibility with most of the databases used in IC. I recommend that  Aurora MySQL RDMS be used when moving operations into the cloud. I also recommend a migration to the PostgreSQL database at some point prior to developing the part of workflow automation where a lot of computation will be necessary. MySQL is best for text heavy databases such as blogs and websites. PostgreSQL tends to excel more for Information Systems (IS).  MVC allows a degree of separation between the front end of the system and its backend. This will be especially be useful when aesthetics and usability improvements are desired while making sure that the underlying data and logic are kept safe during the implementation of the changes.  We recommend the MVC framework Laravel for the purpose of IC, where there are I.S. division already has skills in the underlying technologies of the framework and will find it easy to adapt. I recommend switching all development to a framework as soon as possible to make all the resulting systems more scalable, maintainable and future-proof.",
+            "title": "Model-View-Controller"
+        },
+        {
+            "location": "/2018-10-15-ICarchitecture/#rest-pattern",
+            "text": "Implementing the web application using the framework of Representational State Transfer maximizes scalability of multi-developer multi-group contribution and access. It makes the system resilient with respect to changes in the services requested by the Clients , while having the Server keep assumptions about Clients at a minimum.  The REST pattern allows expansion in complexity through adding layers between the Client and the Server with each layer only interacting with the one immediately above or below it. This makes it easier for the system to work with proxy servers and network gateways.  The REST patterns imposes some other important constraints such as being stateless and having a uniform interface. Using Laravel's resource controller route allows automatically generated and thus, uniform interfaces, so that other developers can safely and easily request for server resources. This will allow multiple IC or non-IC developers to work on a single project together. This will also allow future developers to continue the work of former developers that may have left the service of IC.  It is important to keep in mind that all requests must be sending a representation of what is required and not commands to the server. The server will still have the ability to ignore or serve the request. Also, the server can send hypermedia, or invitations to access other services or resources from the server. The server provide or push any unrequested service to the Client. What this will do for the UP-IC FEDS is to allow safe addition and removal of features during run time. New or enhanced features will not interfere with current usage without the explicit request for their use. Also, when old features are retired, the server can safely catch any request towards those features and handle them appropriately since the Client cannot directly command the Server.",
+            "title": "REST Pattern"
+        },
+        {
+            "location": "/2018-10-15-ICarchitecture/#active-record-architectural-pattern",
+            "text": "We recommend that the Active Record Pattern be used as the approach for accessing database data in IC.  In this pattern, each Table of View is mapped into a class. Each instance of the class gets mapped into a row of the Table. There is automatic syncing. New ORM objects are saved in the database. Existing objects are loaded from the database. Changes to object properties are reflected as updates to the database. Finally, when objects are deleted, corresponding rows in the database are destroyed.  Objects have methods for Insert, Update and Delete. Calls to object properties give the data. Foreign key relationships for joined Tables are used by having one object accessed through a property of another object.  By using Laravel's ORM Model and not directly accessing the database through SQL statements, the Active Record Architecture can be enforced. IC will then have the ability to easily move to other databases in the future such as PostgreSQL and even other proprietary database management systems.  Using this architecture pattern also has other benefits such as enforcing constraints in linked data deletion, protecting your dependent data against accidental deletion.",
+            "title": "Active Record Architectural Pattern"
+        },
+        {
+            "location": "/2018-10-15-ICarchitecture/#process-and-workflow",
+            "text": "The processes per Division with their corresponding designs are listed separately. Please proceed to that section to see descriptions of the designs that adhere to the architecture stated herein.    Common workflows among processes include User Administration, Data Monitoring and Transaction Audit. Specific processes have dataflow diagrams.",
+            "title": "Process and Workflow"
+        },
+        {
+            "location": "/2018-10-15-ICarchitecture/#environment-and-network",
+            "text": "The following Environment diagram can be supported by the Heroku PAAS on top of the AWS cloud service. This is what I recommend for the next phase of development.  The current on-premise servers in IC also capable of hosting the servers according to the diagram.  digraph G{\n\n    node[shape=box]\n    edge[dir=both]\n\n\n  \"Production Server\" -> \"Database Server\";\n  \"Clients\" -> \"Production Server\";\n\n\n  \"Pre-Production Server\" -> \"Mirrored Database\";\n  \"Change Manager\" -> \"Pre-Production Server\";\n\n\n}  The software is recommended to be initially cloud developed with the choice of moving on-premise after development. This will allow maximum flexibility in efficient adding of security and reliability to the system during development that can more-readily be translated to on-premise at a future point.    Development and Testing will be done on local machines and not on the server.",
+            "title": "Environment and Network"
+        },
+        {
+            "location": "/2018-10-15-ICarchitecture/#deployment-view",
+            "text": "I suggest to use a Platform as a Service (PAAS) for the first deployment of the system. This is a middle layer to Cloud Infrastructure.  Specifically, I suggest using Heroku PAAS that is built on top of the AWS cloud. I find this as a best-practice intermediate step going to a direct cloud Infrastructure as a Service.  For file storage, we recommend the AWS Simple Storage Service (S3) for the security and reliability it provides. It also has a stable and well developed API for use with the recommended framework.  By doing the above, we will be able to capture, real-time bandwidth, redundancy and security requirements for the system that will guide any future deployment and expansion.  Should on-premise deployment be pursued:\nThe services are provided by the local server. The server, whether on-premise will be provisioned and maintained with standard performance parameters of within ~70 percent of average capacity for bandwidth, memory and processing. The clients will be nodes within the network with applicable access rights. The server actions in response to logged client requests.",
+            "title": "Deployment View"
+        },
+        {
+            "location": "/2018-10-15-ICarchitecture/#implementation-view",
+            "text": "We recommend a Git-based source code version control. Examples of which are Gitlab, Bitbucket and Github. This can be hosted by IC once a stable version 1.0 of the system is released. For initial development, the code is recommended to be stored in a private cloud-based repository.  We recommend month-long agile sprints as a development methodology for implementing this design over a 9-12 month period.",
+            "title": "Implementation View"
+        },
+        {
+            "location": "/2018-10-15-ICarchitecture/#data-management",
+            "text": "Data conversion and migration would be through Excel or similar spreadsheets and SQL databases. Archiving data will be through database backups and secure cloud-based storage.",
+            "title": "Data Management"
+        },
+        {
+            "location": "/2018-10-15-ICarchitecture/#security-authentication-authorization-and-audit",
+            "text": "Authentication would be through login accounts set per division or per insurance company access rights.  Authorization would on the company side, would rely on the account given to the company head. Authorization on the IC side may be designated to each Division Head for each division. Deputy Commissioners would have authority over all their divisions.  All actions will be logged by the system. For actions that impact the database, the logs will include enough data to reverse the change being done.",
+            "title": "Security Authentication Authorization and Audit"
+        },
+        {
+            "location": "/2018-10-15-ICarchitecture/#references",
+            "text": "Martin Fowler. 2003. Patterns of Enterprise Application Architecture. Book  Roy Thomas Fielding. 2000. Architectural Styles and the Design of Network-based Software Architectures. UNIVERSITY OF CALIFORNIA,\nIRVINE. DISSERTATION",
+            "title": "References"
         }
     ]
 }

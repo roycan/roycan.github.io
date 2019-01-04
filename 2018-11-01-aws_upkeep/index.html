@@ -6,9 +6,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
         <meta name="author" content="Roy Canseco">
-        <link rel="canonical" href="https://roycan.gitlab.io/mkdocs/UP-IC/">
+        <link rel="canonical" href="https://roycan.gitlab.io/mkdocs/2018-11-01-aws_upkeep/">
         <link rel="shortcut icon" href="../img/favicon.ico">
-        <title>UP-IC - roycan docs</title>
+        <title>2018 11 01 aws upkeep - roycan docs</title>
         <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
         <link href="../css/font-awesome-4.5.0.css" rel="stylesheet">
         <link href="../css/base.css" rel="stylesheet">
@@ -71,12 +71,12 @@
                     <li >
                         <a href="../pcari-site-proposal/">PCARI</a>
                     </li>
-                    <li class="dropdown active">
+                    <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">UP-IC <b class="caret"></b></a>
                         <ul class="dropdown-menu">
                             
-<li class="active">
-    <a href="./">UP-IC</a>
+<li >
+    <a href="../UP-IC/">UP-IC</a>
 </li>
                             
 <li >
@@ -167,7 +167,7 @@
 </li>
                         </ul>
                     </li>
-                    <li class="dropdown">
+                    <li class="dropdown active">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">teaching <b class="caret"></b></a>
                         <ul class="dropdown-menu">
                             
@@ -215,8 +215,8 @@
     <a href="../2018-10-19-setup_postgresql/">2018 10 19 setup postgresql</a>
 </li>
                             
-<li >
-    <a href="../2018-11-01-aws_upkeep/">2018 11 01 aws upkeep</a>
+<li class="active">
+    <a href="./">2018 11 01 aws upkeep</a>
 </li>
                         </ul>
                     </li>
@@ -238,12 +238,12 @@
                     </a>
                 </li>
                     <li >
-                        <a rel="next" href="../pcari-site-proposal/">
+                        <a rel="next" href="../2018-10-19-setup_postgresql/">
                             <i class="fa fa-arrow-left"></i> Previous
                         </a>
                     </li>
                     <li >
-                        <a rel="prev" href="../sample_readme/">
+                        <a rel="prev" href="../2018-10-15-ICarchitecture/">
                             Next <i class="fa fa-arrow-right"></i>
                         </a>
                     </li>
@@ -255,50 +255,22 @@
         <div class="container">
                 <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
-        <li class="main active"><a href="#people">People</a></li>
+        <li class="main active"><a href="#-soft_engg">- soft_engg</a></li>
     </ul>
 </div></div>
                 <div class="col-md-9" role="main">
 
-<h2 id="people">People</h2>
-<table>
-<thead>
-<tr>
-<th>Name</th>
-<th>email</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Roy Canseco</td>
-<td>rlcanseco@up.edu.ph</td>
-</tr>
-<tr>
-<td>Paulo Santiago</td>
-<td>paulo64santaigo@gmail.com</td>
-</tr>
-<tr>
-<td>Anthony Cornell Dacoco</td>
-<td>amdacoco@up.edu.ph</td>
-</tr>
-<tr>
-<td>Blaine Corwyn Aboy</td>
-<td>bdaboy@up.edu.ph</td>
-</tr>
-<tr>
-<td>Daisyree D. Viscaya</td>
-<td>daisyreeviscaya@gmail.com</td>
-</tr>
-<tr>
-<td>Dianne Pauline Urban</td>
-<td>diannepauline.urban@gmail.com</td>
-</tr>
-<tr>
-<td>Loren Anne Lacanilao</td>
-<td>lorenannelacanilao@gmail.com</td>
-</tr>
-</tbody>
-</table></div>
+<h2 id="-soft_engg">- soft_engg</h2>
+<p>These are my 6 steps for using an AWS account for a development team.</p>
+<p>This is best after a weekend of AWS workshops/ training.</p>
+<ol>
+<li>Remove access rights from outsiders (non-team members)</li>
+<li>Set an agreement on naming conventions (e.g. prefix new instances with 3-letter acronyms or first 3 letters of the name)</li>
+<li>Self-name/ prefix cloud resources so we know who will terminate </li>
+<li>Terminate all un-named/ unclaimed billable cloud resources</li>
+<li>Assign someone to monitor billing on a regular basis</li>
+<li>When there are live projects, assign someone to monitor instances on a regular basis  </li>
+</ol></div>
         </div>
 
         <footer class="col-md-12">

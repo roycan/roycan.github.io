@@ -6,9 +6,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
         <meta name="author" content="Roy Canseco">
-        <link rel="canonical" href="https://roycan.gitlab.io/mkdocs/UP-IC/">
+        <link rel="canonical" href="https://roycan.gitlab.io/mkdocs/2018-10-01-WAPP-setup/">
         <link rel="shortcut icon" href="../img/favicon.ico">
-        <title>UP-IC - roycan docs</title>
+        <title>2018 10 01 WAPP setup - roycan docs</title>
         <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
         <link href="../css/font-awesome-4.5.0.css" rel="stylesheet">
         <link href="../css/base.css" rel="stylesheet">
@@ -71,12 +71,12 @@
                     <li >
                         <a href="../pcari-site-proposal/">PCARI</a>
                     </li>
-                    <li class="dropdown active">
+                    <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">UP-IC <b class="caret"></b></a>
                         <ul class="dropdown-menu">
                             
-<li class="active">
-    <a href="./">UP-IC</a>
+<li >
+    <a href="../UP-IC/">UP-IC</a>
 </li>
                             
 <li >
@@ -167,7 +167,7 @@
 </li>
                         </ul>
                     </li>
-                    <li class="dropdown">
+                    <li class="dropdown active">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">teaching <b class="caret"></b></a>
                         <ul class="dropdown-menu">
                             
@@ -191,8 +191,8 @@
     <a href="../2018-09-26-mysql_datatypes/">2018 09 26 mysql datatypes</a>
 </li>
                             
-<li >
-    <a href="../2018-10-01-WAPP-setup/">2018 10 01 WAPP setup</a>
+<li class="active">
+    <a href="./">2018 10 01 WAPP setup</a>
 </li>
                             
 <li >
@@ -238,12 +238,12 @@
                     </a>
                 </li>
                     <li >
-                        <a rel="next" href="../pcari-site-proposal/">
+                        <a rel="next" href="../2018-09-26-mysql_datatypes/">
                             <i class="fa fa-arrow-left"></i> Previous
                         </a>
                     </li>
                     <li >
-                        <a rel="prev" href="../sample_readme/">
+                        <a rel="prev" href="../2018-10-14-BA186_syllabus/">
                             Next <i class="fa fa-arrow-right"></i>
                         </a>
                     </li>
@@ -255,50 +255,69 @@
         <div class="container">
                 <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
-        <li class="main active"><a href="#people">People</a></li>
+        <li class="main active"><a href="#-soft_engg">- soft_engg</a></li>
+        <li class="main "><a href="#opcache-error">opcache error</a></li>
+        <li class="main "><a href="#things-to-download">things to download</a></li>
     </ul>
 </div></div>
                 <div class="col-md-9" role="main">
 
-<h2 id="people">People</h2>
-<table>
-<thead>
-<tr>
-<th>Name</th>
-<th>email</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Roy Canseco</td>
-<td>rlcanseco@up.edu.ph</td>
-</tr>
-<tr>
-<td>Paulo Santiago</td>
-<td>paulo64santaigo@gmail.com</td>
-</tr>
-<tr>
-<td>Anthony Cornell Dacoco</td>
-<td>amdacoco@up.edu.ph</td>
-</tr>
-<tr>
-<td>Blaine Corwyn Aboy</td>
-<td>bdaboy@up.edu.ph</td>
-</tr>
-<tr>
-<td>Daisyree D. Viscaya</td>
-<td>daisyreeviscaya@gmail.com</td>
-</tr>
-<tr>
-<td>Dianne Pauline Urban</td>
-<td>diannepauline.urban@gmail.com</td>
-</tr>
-<tr>
-<td>Loren Anne Lacanilao</td>
-<td>lorenannelacanilao@gmail.com</td>
-</tr>
-</tbody>
-</table></div>
+<h2 id="-soft_engg">- soft_engg</h2>
+<p>We want to setup Windows for PHP and PostgreSQL development with an Apache Server and phppgadmin.</p>
+<ul>
+<li>Install WAPP stack from Bitnami</li>
+<li>Login to phppgadmin</li>
+<li>username is postgres</li>
+<li>password is the what you put during install</li>
+<li>place an alias in your user's .bashrc<ul>
+<li>alias wapp="cd C:/Bitnami/wappstack-7.1.22-0/apache2/htdocs"</li>
+</ul>
+</li>
+<li>edit php.ini (C:\Bitnami\wappstack-7.1.22-0\php)<ul>
+<li>search for  <strong>display_errors</strong></li>
+<li>you should find 2 or 3 instances<ul>
+<li>turn display_errors ON</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>use the function versions of the connection code<ul>
+<li>OO are problematic here </li>
+<li>e.g. use  <em>pg_close($conn);</em></li>
+<li>instead of <em>$conn-&gt;close();</em></li>
+</ul>
+</li>
+</ul>
+<h2 id="opcache-error">opcache error</h2>
+<p>This is when you updated the code but the effect just doesn't reflect as fast as expected</p>
+<pre><code>&quot;To get started with Bitnami LAMP Stack we suggest the following:&quot;
+(Jun '15  pheelixx)
+
+Caching is enabled on this LAMP / LAPP / Ruby Stack using the following two methods:
+
+1) Google PageSpeed Module is enabled by these lines in {$INSTALL_DIR}/apache2/conf/httpd.conf:
+
+Include conf/pagespeed.conf
+Include conf/pagespeed_libraries.conf
+Comment those lines out to disable this module.
+
+2) PHP has Op Cache enabled by these lines in {$INSTALL_DIR}/php/etc/php.ini:
+
+opcache.enable=1
+opcache.enable_cli=1
+Disable those by making them = 0 instead.
+
+Important: You will need to disable both caches to remove caching
+</code></pre>
+
+<p>I did the opcache fix and for my case that was enough.  :) </p>
+<h2 id="things-to-download">things to download</h2>
+<ol>
+<li>bluefish</li>
+<li>xampp</li>
+<li>wapp</li>
+<li>rails for windows   </li>
+</ol></div>
         </div>
 
         <footer class="col-md-12">
