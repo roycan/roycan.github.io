@@ -2,133 +2,18 @@
     "docs": [
         {
             "location": "/",
-            "text": "Welcome to MkDocs\n\n\nThis is a test site hosted on \nGitLab Pages\n. You can\n\nbrowse its source code\n, fork it and start\nusing it on your projects.\n\n\nFor full documentation visit \nmkdocs.org\n.\n\n\nCommands\n\n\n\n\nmkdocs new [dir-name]\n - Create a new project.\n\n\nmkdocs serve\n - Start the live-reloading docs server.\n\n\nmkdocs build\n - Build the documentation site.\n\n\nmkdocs help\n - Print this help message.\n\n\n\n\nProject layout\n\n\nmkdocs.yml    # The configuration file.\ndocs/\n    index.md  # The documentation homepage.\n    ...       # Other markdown pages, images and other files.\n\n\n\nhello",
+            "text": "Welcome to my site\n\n\nI am \nRoy Vincent Luna Canseco\n and this is where I document my different learning projects.\n\n\nsite specs\n\n\nThis is a test site hosted on \nGitLab Pages\n and \nGithub Pages\n. You can\n\nbrowse its source code\n, fork it and start\nusing it on your projects.\n\n\nFor full documentation visit \nmkdocs.org\n.",
             "title": "Home"
         },
         {
-            "location": "/#welcome-to-mkdocs",
-            "text": "This is a test site hosted on  GitLab Pages . You can browse its source code , fork it and start\nusing it on your projects.  For full documentation visit  mkdocs.org .",
-            "title": "Welcome to MkDocs"
+            "location": "/#welcome-to-my-site",
+            "text": "I am  Roy Vincent Luna Canseco  and this is where I document my different learning projects.",
+            "title": "Welcome to my site"
         },
         {
-            "location": "/#commands",
-            "text": "mkdocs new [dir-name]  - Create a new project.  mkdocs serve  - Start the live-reloading docs server.  mkdocs build  - Build the documentation site.  mkdocs help  - Print this help message.",
-            "title": "Commands"
-        },
-        {
-            "location": "/#project-layout",
-            "text": "mkdocs.yml    # The configuration file.\ndocs/\n    index.md  # The documentation homepage.\n    ...       # Other markdown pages, images and other files.  hello",
-            "title": "Project layout"
-        },
-        {
-            "location": "/bar/",
-            "text": "Welcome to MkDocs\n\n\nThis is a test site hosted on \nGitLab Pages\n. You can\n\nbrowse its source code\n, fork it and start\nusing it on your projects.\n\n\nFor full documentation visit \nmkdocs.org\n.\n\n\nCommands\n\n\n\n\nmkdocs new [dir-name]\n - Create a new project.\n\n\nmkdocs serve\n - Start the live-reloading docs server.\n\n\nmkdocs build\n - Build the documentation site.\n\n\nmkdocs help\n - Print this help message.\n\n\n\n\nProject layout\n\n\nmkdocs.yml    # The configuration file.\ndocs/\n    index.md  # The documentation homepage.\n    ...       # Other markdown pages, images and other files.",
-            "title": "Bar"
-        },
-        {
-            "location": "/bar/#welcome-to-mkdocs",
-            "text": "This is a test site hosted on  GitLab Pages . You can browse its source code , fork it and start\nusing it on your projects.  For full documentation visit  mkdocs.org .",
-            "title": "Welcome to MkDocs"
-        },
-        {
-            "location": "/bar/#commands",
-            "text": "mkdocs new [dir-name]  - Create a new project.  mkdocs serve  - Start the live-reloading docs server.  mkdocs build  - Build the documentation site.  mkdocs help  - Print this help message.",
-            "title": "Commands"
-        },
-        {
-            "location": "/bar/#project-layout",
-            "text": "mkdocs.yml    # The configuration file.\ndocs/\n    index.md  # The documentation homepage.\n    ...       # Other markdown pages, images and other files.",
-            "title": "Project layout"
-        },
-        {
-            "location": "/quux/",
-            "text": "Welcome to MkDocs\n\n\nThis is a test site hosted on \nGitLab Pages\n. You can\n\nbrowse its source code\n, fork it and start\nusing it on your projects.\n\n\nFor full documentation visit \nmkdocs.org\n.\n\n\nCommands\n\n\n\n\nmkdocs new [dir-name]\n - Create a new project.\n\n\nmkdocs serve\n - Start the live-reloading docs server.\n\n\nmkdocs build\n - Build the documentation site.\n\n\nmkdocs help\n - Print this help message.\n\n\n\n\nProject layout\n\n\nmkdocs.yml    # The configuration file.\ndocs/\n    index.md  # The documentation homepage.\n    ...       # Other markdown pages, images and other files.",
-            "title": "Quux"
-        },
-        {
-            "location": "/quux/#welcome-to-mkdocs",
-            "text": "This is a test site hosted on  GitLab Pages . You can browse its source code , fork it and start\nusing it on your projects.  For full documentation visit  mkdocs.org .",
-            "title": "Welcome to MkDocs"
-        },
-        {
-            "location": "/quux/#commands",
-            "text": "mkdocs new [dir-name]  - Create a new project.  mkdocs serve  - Start the live-reloading docs server.  mkdocs build  - Build the documentation site.  mkdocs help  - Print this help message.",
-            "title": "Commands"
-        },
-        {
-            "location": "/quux/#project-layout",
-            "text": "mkdocs.yml    # The configuration file.\ndocs/\n    index.md  # The documentation homepage.\n    ...       # Other markdown pages, images and other files.",
-            "title": "Project layout"
-        },
-        {
-            "location": "/pcari-site-proposal/",
-            "text": "PCARI Project Website\n\n\nRoy Canseco  with  Romeo Ramos Jr. and James Karl Qui\u00f1o\n\n\nDecember 2018\n\n\n\n\nPCARI Website Project\n\n\nPurpose\n\n\nWe propose to create a blog-styled technical project website for the purpose of sharing research results and data with the general public according to the guidelines of PCARI. \n\n\nPlan\n\n\nUse Wordpress as the content management system (CMS). Host the site in Wordpress.com using a subdomain of the client's choosing.  \n\n\nDuties\n\n\n\n\nTo setup the project website locally \n\n\nTo seed the website with initial project content\n\n\nTo host the project website on the cloud\n\n\nTo train users in using, updating and managing the website\n\n\n\n\nDeliverables\n\n\n\n\nsource code for the project website \n\n\nSQL export of the website database\n\n\nWeb access to the host server account \n\n\nWebsite administration account\n\n\nList of plugins and software versions\n\n\n\n\nSample pages",
-            "title": "PCARI"
-        },
-        {
-            "location": "/pcari-site-proposal/#pcari-website-project",
-            "text": "",
-            "title": "PCARI Website Project"
-        },
-        {
-            "location": "/pcari-site-proposal/#purpose",
-            "text": "We propose to create a blog-styled technical project website for the purpose of sharing research results and data with the general public according to the guidelines of PCARI.",
-            "title": "Purpose"
-        },
-        {
-            "location": "/pcari-site-proposal/#plan",
-            "text": "Use Wordpress as the content management system (CMS). Host the site in Wordpress.com using a subdomain of the client's choosing.",
-            "title": "Plan"
-        },
-        {
-            "location": "/pcari-site-proposal/#duties",
-            "text": "To setup the project website locally   To seed the website with initial project content  To host the project website on the cloud  To train users in using, updating and managing the website",
-            "title": "Duties"
-        },
-        {
-            "location": "/pcari-site-proposal/#deliverables",
-            "text": "source code for the project website   SQL export of the website database  Web access to the host server account   Website administration account  List of plugins and software versions",
-            "title": "Deliverables"
-        },
-        {
-            "location": "/pcari-site-proposal/#sample-pages",
-            "text": "",
-            "title": "Sample pages"
-        },
-        {
-            "location": "/UP-IC/",
-            "text": "People\n\n\n\n\n\n\n\n\nName\n\n\nemail\n\n\n\n\n\n\n\n\n\n\nRoy Canseco\n\n\nrlcanseco@up.edu.ph\n\n\n\n\n\n\nPaulo Santiago\n\n\npaulo64santaigo@gmail.com\n\n\n\n\n\n\nAnthony Cornell Dacoco\n\n\namdacoco@up.edu.ph\n\n\n\n\n\n\nBlaine Corwyn Aboy\n\n\nbdaboy@up.edu.ph\n\n\n\n\n\n\nDaisyree D. Viscaya\n\n\ndaisyreeviscaya@gmail.com\n\n\n\n\n\n\nDianne Pauline Urban\n\n\ndiannepauline.urban@gmail.com\n\n\n\n\n\n\nLoren Anne Lacanilao\n\n\nlorenannelacanilao@gmail.com",
-            "title": "UP-IC"
-        },
-        {
-            "location": "/UP-IC/#people",
-            "text": "Name  email      Roy Canseco  rlcanseco@up.edu.ph    Paulo Santiago  paulo64santaigo@gmail.com    Anthony Cornell Dacoco  amdacoco@up.edu.ph    Blaine Corwyn Aboy  bdaboy@up.edu.ph    Daisyree D. Viscaya  daisyreeviscaya@gmail.com    Dianne Pauline Urban  diannepauline.urban@gmail.com    Loren Anne Lacanilao  lorenannelacanilao@gmail.com",
-            "title": "People"
-        },
-        {
-            "location": "/sample_readme/",
-            "text": "Palindrome Detector\n\n\nrlcanseco_palindrome\n is a sample Ruby gem created in \nLean Enough Ruby to be\nDangerous\n Michael Hartl.\n\n\nInstallation\n\n\nTo install \n`rlcanseco_palindrome\n , add this line to your application's Gemfile:\n\n\ngem 'rlcanseco_palindrome'\n\n\n\n\nAnd then install as follows:\n\n\n$ bundle install\n\n\n\nOr install it directly using gem :\n\n\n$ gem install rlcanseco_palindrome\n\n\n\nUsage\n\n\nrlcanseco_parlindrome\n adds a \npalindrom?\n method to the \nString\n class, and can be used as follows:\n\n\n$ irb\n>> require 'mhartl_palindrome'\n>> \"honey badger\".palindrome?\n=> false\n>> \"deified\".palindrome?\n=> true\n>> \"Able was I, ere I saw Elba.\".palindrome?\n=> true\n>> phrase = \"Madam, I'm Adam.\"\n>> phrase.palindrome?\n=> true\n\n\n\n\nLicense\n\n\nThe gem is available as open source under the terms of the \nMIT License\n.",
-            "title": "readme"
-        },
-        {
-            "location": "/sample_readme/#palindrome-detector",
-            "text": "rlcanseco_palindrome  is a sample Ruby gem created in  Lean Enough Ruby to be\nDangerous  Michael Hartl.",
-            "title": "Palindrome Detector"
-        },
-        {
-            "location": "/sample_readme/#installation",
-            "text": "To install  `rlcanseco_palindrome  , add this line to your application's Gemfile:  gem 'rlcanseco_palindrome'  And then install as follows:  $ bundle install  Or install it directly using gem :  $ gem install rlcanseco_palindrome",
-            "title": "Installation"
-        },
-        {
-            "location": "/sample_readme/#usage",
-            "text": "rlcanseco_parlindrome  adds a  palindrom?  method to the  String  class, and can be used as follows:  $ irb\n>> require 'mhartl_palindrome'\n>> \"honey badger\".palindrome?\n=> false\n>> \"deified\".palindrome?\n=> true\n>> \"Able was I, ere I saw Elba.\".palindrome?\n=> true\n>> phrase = \"Madam, I'm Adam.\"\n>> phrase.palindrome?\n=> true",
-            "title": "Usage"
-        },
-        {
-            "location": "/sample_readme/#license",
-            "text": "The gem is available as open source under the terms of the  MIT License .",
-            "title": "License"
+            "location": "/#site-specs",
+            "text": "This is a test site hosted on  GitLab Pages  and  Github Pages . You can browse its source code , fork it and start\nusing it on your projects.  For full documentation visit  mkdocs.org .",
+            "title": "site specs"
         },
         {
             "location": "/2014-01-15-maple-review/",
@@ -1064,6 +949,71 @@
             "location": "/2018-10-15-ICarchitecture/#references",
             "text": "Martin Fowler. 2003. Patterns of Enterprise Application Architecture. Book  Roy Thomas Fielding. 2000. Architectural Styles and the Design of Network-based Software Architectures. UNIVERSITY OF CALIFORNIA,\nIRVINE. DISSERTATION",
             "title": "References"
+        },
+        {
+            "location": "/pcari-site-proposal/",
+            "text": "PCARI Project Website\n\n\nRoy Canseco  with  Romeo Ramos Jr. and James Karl Qui\u00f1o\n\n\nDecember 2018\n\n\n\n\nPCARI Website Project\n\n\nPurpose\n\n\nWe propose to create a blog-styled technical project website for the purpose of sharing research results and data with the general public according to the guidelines of PCARI. \n\n\nPlan\n\n\nUse Wordpress as the content management system (CMS). Host the site in Wordpress.com using a subdomain of the client's choosing.  \n\n\nDuties\n\n\n\n\nTo setup the project website locally \n\n\nTo seed the website with initial project content\n\n\nTo host the project website on the cloud\n\n\nTo train users in using, updating and managing the website\n\n\n\n\nDeliverables\n\n\n\n\nsource code for the project website \n\n\nSQL export of the website database\n\n\nWeb access to the host server account \n\n\nWebsite administration account\n\n\nList of plugins and software versions\n\n\n\n\nSample pages",
+            "title": "Pcari site proposal"
+        },
+        {
+            "location": "/pcari-site-proposal/#pcari-website-project",
+            "text": "",
+            "title": "PCARI Website Project"
+        },
+        {
+            "location": "/pcari-site-proposal/#purpose",
+            "text": "We propose to create a blog-styled technical project website for the purpose of sharing research results and data with the general public according to the guidelines of PCARI.",
+            "title": "Purpose"
+        },
+        {
+            "location": "/pcari-site-proposal/#plan",
+            "text": "Use Wordpress as the content management system (CMS). Host the site in Wordpress.com using a subdomain of the client's choosing.",
+            "title": "Plan"
+        },
+        {
+            "location": "/pcari-site-proposal/#duties",
+            "text": "To setup the project website locally   To seed the website with initial project content  To host the project website on the cloud  To train users in using, updating and managing the website",
+            "title": "Duties"
+        },
+        {
+            "location": "/pcari-site-proposal/#deliverables",
+            "text": "source code for the project website   SQL export of the website database  Web access to the host server account   Website administration account  List of plugins and software versions",
+            "title": "Deliverables"
+        },
+        {
+            "location": "/pcari-site-proposal/#sample-pages",
+            "text": "",
+            "title": "Sample pages"
+        },
+        {
+            "location": "/UP-IC/",
+            "text": "People\n\n\n\n\n\n\n\n\nName\n\n\nemail\n\n\n\n\n\n\n\n\n\n\nRoy Canseco\n\n\nrlcanseco@up.edu.ph\n\n\n\n\n\n\nPaulo Santiago\n\n\npaulo64santaigo@gmail.com\n\n\n\n\n\n\nAnthony Cornell Dacoco\n\n\namdacoco@up.edu.ph\n\n\n\n\n\n\nBlaine Corwyn Aboy\n\n\nbdaboy@up.edu.ph\n\n\n\n\n\n\nDaisyree D. Viscaya\n\n\ndaisyreeviscaya@gmail.com\n\n\n\n\n\n\nDianne Pauline Urban\n\n\ndiannepauline.urban@gmail.com\n\n\n\n\n\n\nLoren Anne Lacanilao\n\n\nlorenannelacanilao@gmail.com\n\n\n\n\n\n\n\n\nKey Design Decisions\n\n\n\n\nBackend language: PHP\n\n\nFramework: laravel\n\n\nHTML / CSS :  HTML 5 / Boostrap 4\n\n\nDatabase : MySQL\n\n\nVersion Control : Gitlab\n\n\nTesting :  (to follow)\n\n\nDeployment : AWS",
+            "title": "UP IC"
+        },
+        {
+            "location": "/UP-IC/#people",
+            "text": "Name  email      Roy Canseco  rlcanseco@up.edu.ph    Paulo Santiago  paulo64santaigo@gmail.com    Anthony Cornell Dacoco  amdacoco@up.edu.ph    Blaine Corwyn Aboy  bdaboy@up.edu.ph    Daisyree D. Viscaya  daisyreeviscaya@gmail.com    Dianne Pauline Urban  diannepauline.urban@gmail.com    Loren Anne Lacanilao  lorenannelacanilao@gmail.com",
+            "title": "People"
+        },
+        {
+            "location": "/UP-IC/#key-design-decisions",
+            "text": "Backend language: PHP  Framework: laravel  HTML / CSS :  HTML 5 / Boostrap 4  Database : MySQL  Version Control : Gitlab  Testing :  (to follow)  Deployment : AWS",
+            "title": "Key Design Decisions"
+        },
+        {
+            "location": "/2019-01-05-IS-proj-start/",
+            "text": "Beginning an Information System Project\n\n\nKey Design Decisions\n\n\n\n\nLanguage\n\n\nFramework\n\n\nHTML & CSS\n\n\nDatabase\n\n\nVersion Control\n\n\nTesting\n\n\nDeployment",
+            "title": "2019 01 05 IS proj start"
+        },
+        {
+            "location": "/2019-01-05-IS-proj-start/#beginning-an-information-system-project",
+            "text": "",
+            "title": "Beginning an Information System Project"
+        },
+        {
+            "location": "/2019-01-05-IS-proj-start/#key-design-decisions",
+            "text": "Language  Framework  HTML & CSS  Database  Version Control  Testing  Deployment",
+            "title": "Key Design Decisions"
         }
     ]
 }
