@@ -951,6 +951,21 @@
             "title": "References"
         },
         {
+            "location": "/2019-01-05-pcari-site/",
+            "text": "Key Design Decisions\n\n\n\n\nBackend Language : PHP\n\n\nFramework : Wordpress CMS\n\n\nHTML & CSS\n\n\nDatabase : MySQL\n\n\nVersion Control\n\n\nTesting\n\n\nDeployment : Wordpress.com\n\n\n\n\nMain Software Sources\n\n\n\n\nThird party developer\n\n\nCloud services : Wordpress PAAS",
+            "title": "2019 01 05 pcari site"
+        },
+        {
+            "location": "/2019-01-05-pcari-site/#key-design-decisions",
+            "text": "Backend Language : PHP  Framework : Wordpress CMS  HTML & CSS  Database : MySQL  Version Control  Testing  Deployment : Wordpress.com",
+            "title": "Key Design Decisions"
+        },
+        {
+            "location": "/2019-01-05-pcari-site/#main-software-sources",
+            "text": "Third party developer  Cloud services : Wordpress PAAS",
+            "title": "Main Software Sources"
+        },
+        {
             "location": "/pcari-site-proposal/",
             "text": "PCARI Project Website\n\n\nRoy Canseco  with  Romeo Ramos Jr. and James Karl Qui\u00f1o\n\n\nDecember 2018\n\n\n\n\nPCARI Website Project\n\n\nPurpose\n\n\nWe propose to create a blog-styled technical project website for the purpose of sharing research results and data with the general public according to the guidelines of PCARI. \n\n\nPlan\n\n\nUse Wordpress as the content management system (CMS). Host the site in Wordpress.com using a subdomain of the client's choosing.  \n\n\nDuties\n\n\n\n\nTo setup the project website locally \n\n\nTo seed the website with initial project content\n\n\nTo host the project website on the cloud\n\n\nTo train users in using, updating and managing the website\n\n\n\n\nDeliverables\n\n\n\n\nsource code for the project website \n\n\nSQL export of the website database\n\n\nWeb access to the host server account \n\n\nWebsite administration account\n\n\nList of plugins and software versions\n\n\n\n\nSample pages",
             "title": "Pcari site proposal"
@@ -1002,7 +1017,7 @@
         },
         {
             "location": "/2019-01-05-IS-proj-start/",
-            "text": "Beginning an Information System Project\n\n\nKey Design Decisions\n\n\n\n\nLanguage\n\n\nFramework\n\n\nHTML & CSS\n\n\nDatabase\n\n\nVersion Control\n\n\nTesting\n\n\nDeployment",
+            "text": "Beginning an Information System Project\n\n\nKey Design Decisions\n\n\n\n\nBackend Language\n\n\nFramework\n\n\nHTML & CSS\n\n\nDatabase\n\n\nVersion Control\n\n\nTesting\n\n\nDeployment\n\n\n\n\nSources of Software\n\n\nThere are 6 main sources of software. Which of these would be utilized in this project and in what ways?\n\n\n\n\nIn-house development\n\n\nThird-party developer\n\n\nCOTS producer\n\n\nERP provider\n\n\nOpen Source software\n\n\nCloud services",
             "title": "2019 01 05 IS proj start"
         },
         {
@@ -1012,8 +1027,13 @@
         },
         {
             "location": "/2019-01-05-IS-proj-start/#key-design-decisions",
-            "text": "Language  Framework  HTML & CSS  Database  Version Control  Testing  Deployment",
+            "text": "Backend Language  Framework  HTML & CSS  Database  Version Control  Testing  Deployment",
             "title": "Key Design Decisions"
+        },
+        {
+            "location": "/2019-01-05-IS-proj-start/#sources-of-software",
+            "text": "There are 6 main sources of software. Which of these would be utilized in this project and in what ways?   In-house development  Third-party developer  COTS producer  ERP provider  Open Source software  Cloud services",
+            "title": "Sources of Software"
         }
     ]
 }
