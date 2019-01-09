@@ -6,9 +6,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
         <meta name="author" content="Roy Vincent Luna Canseco">
-        <link rel="canonical" href="https://roycan.gitlab.io/mkdocs/2018-10-01-WAPP-setup/">
+        <link rel="canonical" href="https://roycan.gitlab.io/mkdocs/2019-01-09-email-marketing/">
         <link rel="shortcut icon" href="../img/favicon.ico">
-        <title>2018 10 01 WAPP setup - roycan docs</title>
+        <title>2019 01 09 email marketing - roycan docs</title>
         <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
         <link href="../css/font-awesome-4.5.0.css" rel="stylesheet">
         <link href="../css/base.css" rel="stylesheet">
@@ -48,7 +48,7 @@
                     <li >
                         <a href="..">Home</a>
                     </li>
-                    <li class="dropdown">
+                    <li class="dropdown active">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">skills <b class="caret"></b></a>
                         <ul class="dropdown-menu">
                             
@@ -72,8 +72,8 @@
     <a href="../2019-01-09-digital-ads/">2019 01 09 digital ads</a>
 </li>
                             
-<li >
-    <a href="../2019-01-09-email-marketing/">2019 01 09 email marketing</a>
+<li class="active">
+    <a href="./">2019 01 09 email marketing</a>
 </li>
                         </ul>
                     </li>
@@ -143,7 +143,7 @@
 </li>
                         </ul>
                     </li>
-                    <li class="dropdown active">
+                    <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">teaching <b class="caret"></b></a>
                         <ul class="dropdown-menu">
                             
@@ -167,8 +167,8 @@
     <a href="../2018-09-26-mysql_datatypes/">2018 09 26 mysql datatypes</a>
 </li>
                             
-<li class="active">
-    <a href="./">2018 10 01 WAPP setup</a>
+<li >
+    <a href="../2018-10-01-WAPP-setup/">2018 10 01 WAPP setup</a>
 </li>
                             
 <li >
@@ -238,12 +238,12 @@
                     </a>
                 </li>
                     <li >
-                        <a rel="next" href="../2018-09-26-mysql_datatypes/">
+                        <a rel="next" href="../2019-01-09-digital-ads/">
                             <i class="fa fa-arrow-left"></i> Previous
                         </a>
                     </li>
                     <li >
-                        <a rel="prev" href="../2018-10-14-BA186_syllabus/">
+                        <a rel="prev" href="../2018-07-07-phd-hunt/">
                             Next <i class="fa fa-arrow-right"></i>
                         </a>
                     </li>
@@ -255,69 +255,146 @@
         <div class="container">
                 <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
-        <li class="main active"><a href="#-soft_engg">- soft_engg</a></li>
-        <li class="main "><a href="#opcache-error">opcache error</a></li>
-        <li class="main "><a href="#things-to-download">things to download</a></li>
+        <li class="main active"><a href="#email-marketing">Email marketing</a></li>
+            <li><a href="#advantages-and-disadvantages">Advantages and Disadvantages</a></li>
+            <li><a href="#quick-start">Quick start</a></li>
+            <li><a href="#collecting-emails">Collecting Emails</a></li>
+            <li><a href="#sustaining-interest">Sustaining interest</a></li>
+            <li><a href="#organizing-the-mailing-list">Organizing the Mailing List</a></li>
+            <li><a href="#email-content">Email content</a></li>
+            <li><a href="#be-can-spam-compliant">be CAN-SPAM compliant</a></li>
+            <li><a href="#do-spam-testing">Do Spam testing</a></li>
+            <li><a href="#popular-email-blacklisting-websites">Popular Email Blacklisting websites</a></li>
+            <li><a href="#email-validators">Email Validators</a></li>
+            <li><a href="#tools-we-can-practice-on">Tools we can practice on</a></li>
     </ul>
 </div></div>
                 <div class="col-md-9" role="main">
 
-<h2 id="-soft_engg">- soft_engg</h2>
-<p>We want to setup Windows for PHP and PostgreSQL development with an Apache Server and phppgadmin.</p>
-<ul>
-<li>Install WAPP stack from Bitnami</li>
-<li>Login to phppgadmin</li>
-<li>username is postgres</li>
-<li>password is the what you put during install</li>
-<li>place an alias in your user's .bashrc<ul>
-<li>alias wapp="cd C:/Bitnami/wappstack-7.1.22-0/apache2/htdocs"</li>
-</ul>
-</li>
-<li>edit php.ini (C:\Bitnami\wappstack-7.1.22-0\php)<ul>
-<li>search for  <strong>display_errors</strong></li>
-<li>you should find 2 or 3 instances<ul>
-<li>turn display_errors ON</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>use the function versions of the connection code<ul>
-<li>OO are problematic here </li>
-<li>e.g. use  <em>pg_close($conn);</em></li>
-<li>instead of <em>$conn-&gt;close();</em></li>
-</ul>
-</li>
-</ul>
-<h2 id="opcache-error">opcache error</h2>
-<p>This is when you updated the code but the effect just doesn't reflect as fast as expected</p>
-<pre><code>&quot;To get started with Bitnami LAMP Stack we suggest the following:&quot;
-(Jun '15  pheelixx)
-
-Caching is enabled on this LAMP / LAPP / Ruby Stack using the following two methods:
-
-1) Google PageSpeed Module is enabled by these lines in {$INSTALL_DIR}/apache2/conf/httpd.conf:
-
-Include conf/pagespeed.conf
-Include conf/pagespeed_libraries.conf
-Comment those lines out to disable this module.
-
-2) PHP has Op Cache enabled by these lines in {$INSTALL_DIR}/php/etc/php.ini:
-
-opcache.enable=1
-opcache.enable_cli=1
-Disable those by making them = 0 instead.
-
-Important: You will need to disable both caches to remove caching
-</code></pre>
-
-<p>I did the opcache fix and for my case that was enough.  :) </p>
-<h2 id="things-to-download">things to download</h2>
+<h1 id="email-marketing">Email marketing</h1>
+<p><img alt="Email Marketing" src="../2019-01/email-marketing.png" /> <a href="https://www.tutorialspoint.com/email_marketing/email_marketing_overview.htm">^1</a></p>
+<h2 id="advantages-and-disadvantages">Advantages and Disadvantages</h2>
+<table>
+<thead>
+<tr>
+<th>Pros</th>
+<th>Cons</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>reach both mobile and pc</td>
+<td>spam filter blocks</td>
+</tr>
+<tr>
+<td>effective for info dissemination</td>
+<td></td>
+</tr>
+<tr>
+<td>cheap</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="quick-start">Quick start</h2>
+<p>Have a sign-up form in your website, collect emails and pilot test an email marketing campaign.</p>
+<p>Gmail and Yahoo gives ~500 free emails per day per account</p>
+<p>You can pay monthly :</p>
+<p><img alt="Monthly Subscription" src="../2019-01/monthly-provider.jpg" /><a href="https://www.tutorialspoint.com/email_marketing/email_marketing_service_providers.htm">^3</a></p>
+<p>Or you can pay per use:</p>
+<p><img alt="Pay Per Use" src="../2019-01/per-use-provider.jpg" /><a href="https://www.tutorialspoint.com/email_marketing/email_marketing_service_providers.htm">^3</a></p>
+<p>If you pay, you get to easily track:</p>
+<p><img alt="Email Gang Tracking" src="../2019-01/email-gang-track.png" /><a href="https://www.tutorialspoint.com/email_marketing/email_marketing_automation.htm">^6</a></p>
+<h2 id="collecting-emails">Collecting Emails</h2>
 <ol>
-<li>bluefish</li>
-<li>xampp</li>
-<li>wapp</li>
-<li>rails for windows   </li>
-</ol></div>
+<li>Have multiple subscribe CTA's  (i.e. Calls to Action)</li>
+<li>Exchange something for their emails<ol>
+<li>coupons</li>
+<li>convenience appeals</li>
+<li>rewards</li>
+</ol>
+</li>
+<li>Disclose your Social Strength (e.g. number of people served, accounts, years up)</li>
+</ol>
+<h2 id="sustaining-interest">Sustaining interest</h2>
+<ol>
+<li>Have great content</li>
+<li>Encourage signing up and forwarding to friends</li>
+<li>Limit ads to around 10%</li>
+<li>Great headings (eg "KATTSI is happy to announce a Destination..." , "This is perfect for..." , "Book now and you get ..." , "For a limited time only, save ....")</li>
+<li>Invite past clients first and offer them a discount</li>
+<li>Offer early bird and regular pricing</li>
+<li>Send greeting cards</li>
+</ol>
+<h2 id="organizing-the-mailing-list">Organizing the Mailing List</h2>
+<ol>
+<li>Put everything on an Excel sheet</li>
+<li>Remove bad/ bouncing emails (~22.5% emails are deactivated yearly)</li>
+<li>Have Email Service Validation  (so you're not marked as a spammer)</li>
+<li>Protect your brand by having an Opt-in Policy (6-month last touch expiry)</li>
+<li>Have Opt-out/ Unsubscribe links</li>
+</ol>
+<p><img alt="Double Opt-In" src="../2019-01/double-opt-in.png" /><a href="https://www.tutorialspoint.com/email_marketing/email_marketing_avoid_being_blacklisted.htm">^4</a></p>
+<h2 id="email-content">Email content</h2>
+<ol>
+<li>
+<p>Have subjects that are 6-10 words -<a href="https://www.tutorialspoint.com/email_marketing/email_marketing_content.htm">source</a></p>
+</li>
+<li>
+<p>Connect with the client</p>
+<ol>
+<li>Segment by location (L V S)</li>
+<li>Segment by age (single, family, seniors)</li>
+<li>Interests (weekend warriors , corporate leave)</li>
+</ol>
+</li>
+<li>Add photo/ logo to the email signature</li>
+<li>Have social media icons in the signature</li>
+</ol>
+<p><img alt="Email Signature" src="../2019-01/email-sig.png" /><a href="https://www.tutorialspoint.com/email_marketing/email_marketing_content.htm">^2</a></p>
+<h2 id="be-can-spam-compliant">be CAN-SPAM compliant</h2>
+<blockquote>
+<blockquote>
+<p><code>CAN-SPAM stands for Controlling the Assault of Non-Solicited Pornography and Marketing Act of 2003)</code></p>
+</blockquote>
+</blockquote>
+<p>Steps:</p>
+<ol>
+<li>Be Who You Say You Are</li>
+<li>Don't Lie (in the Subject Line)</li>
+<li>Tell recipients where you are (mailing address)</li>
+<li><em>Tell people how to Opt-Out (universal unsubscribe rule)</em></li>
+<li>Honor Opt-Out requests promptly (&lt; 10 days)</li>
+<li>Monitor what others are doing on your behalf</li>
+</ol>
+<p><img alt="CAN-SPAM COMPLIANT" src="../2019-01/can-spam.png" /><a href="https://www.tutorialspoint.com/email_marketing/email_marketing_spam_compliance.htm">^5</a></p>
+<h2 id="do-spam-testing">Do Spam testing</h2>
+<ul>
+<li><a href="../mailingcheck.com">Mailing Check</a></li>
+<li><a href="../isnotspam.com">Is Not Spam</a></li>
+<li><a href="../mail-tester.com">Mail-Tester</a></li>
+</ul>
+<h2 id="popular-email-blacklisting-websites">Popular Email Blacklisting websites</h2>
+<ul>
+<li>Barracuda Reputation Block List</li>
+<li>MXToolBox</li>
+<li>Invaluement</li>
+<li>MultiRBL</li>
+<li>Spamcop</li>
+<li>Spamhaus</li>
+<li>SURBL</li>
+</ul>
+<p>If you are blacklisted, follow the instructions to fix the problems and remove your IP address from the list</p>
+<h2 id="email-validators">Email Validators</h2>
+<p>Prevention is better than cure, so here are services that check if the emails in your list are still active, so that you don't get accused of spamming.</p>
+<p><img alt="Email Validators" src="../2019-01/email-validation.png" /><a href="https://www.tutorialspoint.com/email_marketing/email_marketing_service_providers.htm">^3</a></p>
+<h2 id="tools-we-can-practice-on">Tools we can practice on</h2>
+<ol>
+<li>MS Excel</li>
+<li>Google Website Optimizer (free)</li>
+<li><a href="https://openrefine.org">Open Refine</a> (formerly Google Refine)</li>
+</ol>
+<hr /></div>
         </div>
 
         <footer class="col-md-12">
