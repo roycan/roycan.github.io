@@ -2004,6 +2004,41 @@
             "location": "/2019-01-16-DENR_TOR/#inception-report-draft",
             "text": "Have all the data together, both current and historical in a single database to find the gaps\nand determine level of specificity to be expected from the final deliverables  This will include expectations for each milestone  This will detail definitions of done  Include demos for map generation (track routes) using google maps api  Have 2 versions, one internal-facing and the other public-facing  Scoping, what is in-scope and what is out-of-scope for the project  crowd source reports to DENR  not shared publicly unless DENR pushes to the bulletin page  allows upload of evidence (e.g. picture, video, audio)    Communical validation  Planners can download maps for their own use (not reported back to the system)  FGD with planners later on",
             "title": "Inception Report Draft"
+        },
+        {
+            "location": "/2019-01-uppfi-import-rules/",
+            "text": "Rules for the Account Import CSV\n\n\nRules on Dates\n\n\nThis is for the membership date and the appointment date\n\n\n\n\n\n\nAll months must be start with a non-zero number  (eg.  January is 1 not 01)\n\n\n\n\n\n\nAll days must be start with a non-zero number  (eg.  1 not 01)\n\n\n\n\n\n\nAll years must be 2 digits (eg. 2019 is 19)\n\n\n\n\n\n\nRules on Email\n\n\n\n\nIsang email lang pala dapat. Example: row 33\n\n\n\n\n200463401  PACHECO MARYANN L   mary-ann_pacheco014@yahoo.com, maryann_pacheco014@yahoo.com\n\n\n\n\nPwedeng blank na email pero bawal ang \"none\" or \"wala\" or \"n/a\"  etc...   Example: row  132\n\n\n\n\n201615367  SAN AGUSTIN CARLOS  A   none    9095005992  8/1/16  6/20/01 PGH Admin   Administrative Aide I ( Utility Worker I )\n\n\n\n\nBawal ang may space sa email: Example: row 136\n\n\n\n\n200857893  FAJANEL PRISCILA    R   cila myluv@yahoo.com    9098001213  11/1/08 3/5/07  PGH Admin   Nurse II\n\n\nRules on Campus\n\n\n\n\nBawal ang space sa Campus. So kung \"PGH\" bawal ang \" PGH\". Example row 203\n\n\n\n\n201801929  AGONCILLO   INNA FELICIA    ISIP    innaagoncillo@yahoo.com 9155630220  9/1/18  9/4/17  PGH Admin   Nurse I\n\n\nRules on Contact Numbers\n\n\n\n\nkelangan 1 number lang or no number at all\n\n\nkelangan mobile number lang\n\n\nkelangan 10-digits lang.  for example:   \n9260343013\n\n\n\n\nAdditional Rules\n\n\nThere shouldn't be any blank rows sandwiched between rows of members data.",
+            "title": "2019 01 uppfi import rules"
+        },
+        {
+            "location": "/2019-01-uppfi-import-rules/#rules-for-the-account-import-csv",
+            "text": "",
+            "title": "Rules for the Account Import CSV"
+        },
+        {
+            "location": "/2019-01-uppfi-import-rules/#rules-on-dates",
+            "text": "This is for the membership date and the appointment date    All months must be start with a non-zero number  (eg.  January is 1 not 01)    All days must be start with a non-zero number  (eg.  1 not 01)    All years must be 2 digits (eg. 2019 is 19)",
+            "title": "Rules on Dates"
+        },
+        {
+            "location": "/2019-01-uppfi-import-rules/#rules-on-email",
+            "text": "Isang email lang pala dapat. Example: row 33   200463401  PACHECO MARYANN L   mary-ann_pacheco014@yahoo.com, maryann_pacheco014@yahoo.com   Pwedeng blank na email pero bawal ang \"none\" or \"wala\" or \"n/a\"  etc...   Example: row  132   201615367  SAN AGUSTIN CARLOS  A   none    9095005992  8/1/16  6/20/01 PGH Admin   Administrative Aide I ( Utility Worker I )   Bawal ang may space sa email: Example: row 136   200857893  FAJANEL PRISCILA    R   cila myluv@yahoo.com    9098001213  11/1/08 3/5/07  PGH Admin   Nurse II",
+            "title": "Rules on Email"
+        },
+        {
+            "location": "/2019-01-uppfi-import-rules/#rules-on-campus",
+            "text": "Bawal ang space sa Campus. So kung \"PGH\" bawal ang \" PGH\". Example row 203   201801929  AGONCILLO   INNA FELICIA    ISIP    innaagoncillo@yahoo.com 9155630220  9/1/18  9/4/17  PGH Admin   Nurse I",
+            "title": "Rules on Campus"
+        },
+        {
+            "location": "/2019-01-uppfi-import-rules/#rules-on-contact-numbers",
+            "text": "kelangan 1 number lang or no number at all  kelangan mobile number lang  kelangan 10-digits lang.  for example:    9260343013",
+            "title": "Rules on Contact Numbers"
+        },
+        {
+            "location": "/2019-01-uppfi-import-rules/#additional-rules",
+            "text": "There shouldn't be any blank rows sandwiched between rows of members data.",
+            "title": "Additional Rules"
         }
     ]
 }
