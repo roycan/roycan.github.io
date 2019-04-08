@@ -89,6 +89,10 @@
 <li >
     <a href="../2019-01-12-pro-rails-project/">2019 01 12 pro rails project</a>
 </li>
+                            
+<li >
+    <a href="../2019-03-30-se_proj_planning/">2019 03 30 se proj planning</a>
+</li>
                         </ul>
                     </li>
                     <li class="dropdown">
@@ -216,6 +220,10 @@
 <li >
     <a href="../2018-01-IPSE-syllabus/">2018 01 IPSE syllabus</a>
 </li>
+                            
+<li >
+    <a href="../2019-03-pisay_cs4_setup/">2019 03 pisay cs4 setup</a>
+</li>
                         </ul>
                     </li>
                     <li class="dropdown">
@@ -305,15 +313,21 @@
 
 <h2 id="-soft_engg">- soft_engg</h2>
 <h1 id="install-ruby">Install Ruby</h1>
-<p>first  install some dependencies for Ruby and Rails.</p>
+<p>First  install some dependencies for Ruby and Rails. Make sure you have stable internet to proceed.</p>
 <p>start by adding the Node.js and Yarn repositories</p>
 <pre><code class="bash">sudo apt install curl
-curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
-curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
-echo &quot;deb https://dl.yarnpkg.com/debian/ stable main&quot; | sudo tee /etc/apt/sources.list.d/yarn.list
+sudo curl -L https://deb.nodesource.com/setup_8.x | sudo -E bash -
+sudo apt-get install -y nodejs
 
-sudo apt-get update
-sudo apt-get install git-core curl zlib1g-dev build-essential libssl-dev libreadline-dev libyaml-dev libsqlite3-dev sqlite3 libxml2-dev libxslt1-dev libcurl4-openssl-dev software-properties-common libffi-dev nodejs yarn
+## You may also need development tools to build native addons:
+     sudo apt-get install gcc g++ make
+## To install the Yarn package manager, run:
+     sudo curl -L https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
+     sudo echo &quot;deb https://dl.yarnpkg.com/debian/ stable main&quot; | sudo tee /etc/apt/sources.list.d/yarn.list
+     sudo apt update &amp;&amp; sudo apt install -y yarn
+
+
+sudo apt install -y git-core zlib1g-dev build-essential libssl-dev libreadline-dev libyaml-dev libsqlite3-dev sqlite3 libxml2-dev libxslt1-dev libcurl4-openssl-dev software-properties-common libffi-dev nodejs yarn curl
 </code></pre>
 
 <p>Install using rbenv, which sets up a controlled version environment for ruby.</p>
@@ -333,44 +347,55 @@ ruby -v
 </code></pre>
 
 <p>install Bundler</p>
-<pre><code>gem install bundler
-bundle update
+<pre><code>`gem install bundler`
 </code></pre>
 <p>rbenv users need to run rbenv rehash after installing bundler.</p>
-<pre><code>rbenv rehash
+<pre><code>`rbenv rehash`
+
+`gem install rails -v 5.2.1`
 </code></pre>
+<p>After the installation is complete, check the rails version.</p>
+<p><code>rails -v</code></p>
 <h1 id="getting-git">Getting Git</h1>
-<p>*see the article on <a href="../{{ site.baseurl }}{% link _posts/2018-10-19-configure_git.md %}">Configuring Git</a></p>
+<ul>
+<li>see the article on <a href="../2018-10-19-configure_git/">Configuring Git</a></li>
+</ul>
 <h1 id="setting-up-mysql">Setting Up MySQL</h1>
-<p>*see the article on <a href="../{{ site.baseurl }}{% link _posts/2018-10-19-setup_mysql.md %}">Setting Up MySQL</a></p>
-<p>Rails ships with sqlite3 as the default database. This is good only for simple and small databases. </p>
+<ul>
+<li>see the article on <a href="../2018-10-19-setup_mysql/">Setting Up MySQL</a></li>
+</ul>
+<p>Rails ships with sqlite3 as the default database. This is good only for simple and small databases.</p>
 <p>MySQL is much much better, especially when you're coming from a background of PHP.</p>
 <p>Use the software repo to install and take note of the password you set and update the database.yml file.</p>
 <h1 id="setting-up-postgresql">Setting Up PostgreSQL</h1>
-<p>*see the article on <a href="../{{ site.baseurl }}{% link _posts/2018-10-19-setup_postgresql.md %}">Setting Up PostgreSQL</a></p>
+<ul>
+<li>see the article on <a href="../2018-10-19-setup_postgresql/">Setting Up PostgreSQL</a></li>
+</ul>
 <p>PostgreSQL is even better than MySQL for normal implementations of Rails Web applications.</p>
 <p>Use the software repo to install and take note of the password you set and update the database.yml file.</p>
 <h1 id="inspect-if-everything-works">Inspect if everything works</h1>
-<pre><code class="bash">#### If you want to use SQLite (not recommended)
-rails new myapp
+<pre><code class="bash">#### If you want to use SQLite (easiest for dev; bad for prod)
+    rails new my_test_app
 
 #### If you want to use MySQL
-rails new myapp -d mysql
+    rails new myapp -d mysql
 
 #### If you want to use Postgres
 # Note that this will expect a postgres user with the same username
 # as your app, you may need to edit config/database.yml to match the
 # user you created earlier
-rails new myapp -d postgresql
+    rails new myapp -d postgresql
 
 # Move into the application directory
-cd myapp
+cd my_test_app
+bundle exec spring binstub --all
+bundle update
 
 # If you setup MySQL or Postgres with a username/password, modify the
 # config/database.yml file to contain the username/password that you specified
 
 # Create the database
-rake db:create
+rails db:create
 
 rails server
 </code></pre>
@@ -380,7 +405,7 @@ rails server
 
         <footer class="col-md-12">
             <hr>
-                <p>Copyright &copy; 2018 - 2019 Roy Canseco</p>
+                <p>Copyright &copy; 2018 - 2019 Roy Canseco <br> Feedback: 03rvlc+mkdocs@gmail.com</p>
             <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</p>
         </footer>
         <script>var base_url = '..';</script>

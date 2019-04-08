@@ -321,6 +321,31 @@
             "title": "Setup Continous Integration"
         },
         {
+            "location": "/2019-03-30-se_proj_planning/",
+            "text": "This Project Planning from SDLC\n\n\n\n\nCost Considerations\n\n\n\n\nCOTS for general problems is cheaper\n\n\nCustom dev for specific problems is cheaper\n\n\nIn-house for small dev projects is cheaper\n\n\nOut-source for large dev projects is cheaper\n\n\nClear is Cheap.\n\n\nAmbiguity is Costly\n\n\n\n\nManage by\n\n\n\n\nScope (in and out)\n\n\nDefinitions of Done\n\n\nMilestones\n\n\nPrioritization\n\n\n\n\nPrioritize by\n\n\n\n\nValue\n\n\nCost\n\n\nTime\n\n\nScope",
+            "title": "2019 03 30 se proj planning"
+        },
+        {
+            "location": "/2019-03-30-se_proj_planning/#this-project-planning-from-sdlc",
+            "text": "",
+            "title": "This Project Planning from SDLC"
+        },
+        {
+            "location": "/2019-03-30-se_proj_planning/#cost-considerations",
+            "text": "COTS for general problems is cheaper  Custom dev for specific problems is cheaper  In-house for small dev projects is cheaper  Out-source for large dev projects is cheaper  Clear is Cheap.  Ambiguity is Costly",
+            "title": "Cost Considerations"
+        },
+        {
+            "location": "/2019-03-30-se_proj_planning/#manage-by",
+            "text": "Scope (in and out)  Definitions of Done  Milestones  Prioritization",
+            "title": "Manage by"
+        },
+        {
+            "location": "/2019-03-30-se_proj_planning/#prioritize-by",
+            "text": "Value  Cost  Time  Scope",
+            "title": "Prioritize by"
+        },
+        {
             "location": "/2018-07-07-phd-hunt/",
             "text": "PhD\n\n\npersonal\n\n\n\n\n\n\nI'm looking for my PhD abroad. \nI now am confident in what I can offer and do. More importantly, I think I get how much I don't know and can't yet do. \nI believe in the Lord and I know he has plans for me. I feel it's scary leaving the only life I've known for at least a couple of years. Pero\nkaya namin ni Lord 'to. \nI am learning new skills too. \nMy decision to go Software Engineering has tuned my senses to the various ways that I am to manage software development. I know I'm learning important things from being with everyone here at UP. I want to make those count. There's not so many things that I find important in life, but in those things, I'll fight to make each day count.  \n\n\nThat said, by preparing some things from my end, I'll be able to take the most advantage of the opportunities before me. Also, by taking care of my body, I'll be able to perform at my peak. I've seen the faculty at the Hong Kong University of Science and Technology. They look fit. It is possible. It is possible for me too. \n\n\nRight now, I'm doing a meeting with the Lord. Ako na sa minutes... hehehe.  We're looking for the Universities and Professors to get in touch with.\n\n\n\n\nfilter universities\n\n\nrank universities\n\n\nsend informal inquiries\n\n\nsend formal application\n\n\npackup and go\n\n\n\n\nTo this end, I plan to populate a gdoc that I can share to family and friends as I go through this journey.\n\n\nThis ends day 1 of the search. There's hope and some sort of a plan.  :)",
             "title": "2018 07 07 phd hunt"
@@ -1012,7 +1037,7 @@
         },
         {
             "location": "/2018-10-19-install_rails/",
-            "text": "- soft_engg\n\n\nInstall Ruby\n\n\nfirst  install some dependencies for Ruby and Rails.\n\n\nstart by adding the Node.js and Yarn repositories\n\n\nsudo apt install curl\ncurl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -\ncurl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -\necho \"deb https://dl.yarnpkg.com/debian/ stable main\" | sudo tee /etc/apt/sources.list.d/yarn.list\n\nsudo apt-get update\nsudo apt-get install git-core curl zlib1g-dev build-essential libssl-dev libreadline-dev libyaml-dev libsqlite3-dev sqlite3 libxml2-dev libxslt1-dev libcurl4-openssl-dev software-properties-common libffi-dev nodejs yarn\n\n\n\n\nInstall using rbenv, which sets up a controlled version environment for ruby.\n\n\ncd\ngit clone https://github.com/rbenv/rbenv.git ~/.rbenv\necho 'export PATH=\"$HOME/.rbenv/bin:$PATH\"' >> ~/.bashrc\necho 'eval \"$(rbenv init -)\"' >> ~/.bashrc\nexec $SHELL\n\ngit clone https://github.com/rbenv/ruby-build.git ~/.rbenv/plugins/ruby-build\necho 'export PATH=\"$HOME/.rbenv/plugins/ruby-build/bin:$PATH\"' >> ~/.bashrc\nexec $SHELL\n\nrbenv install 2.5.1\nrbenv global 2.5.1\nruby -v\n\n\n\n\ninstall Bundler\n\n\ngem install bundler\nbundle update\n\n\n\nrbenv users need to run rbenv rehash after installing bundler.\n\n\nrbenv rehash\n\n\n\nGetting Git\n\n\n*see the article on \nConfiguring Git\n\n\nSetting Up MySQL\n\n\n*see the article on \nSetting Up MySQL\n\n\nRails ships with sqlite3 as the default database. This is good only for simple and small databases. \n\n\nMySQL is much much better, especially when you're coming from a background of PHP.\n\n\nUse the software repo to install and take note of the password you set and update the database.yml file.\n\n\nSetting Up PostgreSQL\n\n\n*see the article on \nSetting Up PostgreSQL\n\n\nPostgreSQL is even better than MySQL for normal implementations of Rails Web applications.\n\n\nUse the software repo to install and take note of the password you set and update the database.yml file.\n\n\nInspect if everything works\n\n\n#### If you want to use SQLite (not recommended)\nrails new myapp\n\n#### If you want to use MySQL\nrails new myapp -d mysql\n\n#### If you want to use Postgres\n# Note that this will expect a postgres user with the same username\n# as your app, you may need to edit config/database.yml to match the\n# user you created earlier\nrails new myapp -d postgresql\n\n# Move into the application directory\ncd myapp\n\n# If you setup MySQL or Postgres with a username/password, modify the\n# config/database.yml file to contain the username/password that you specified\n\n# Create the database\nrake db:create\n\nrails server\n\n\n\n\nvisit http://localhost:3000 to view your new website",
+            "text": "- soft_engg\n\n\nInstall Ruby\n\n\nFirst  install some dependencies for Ruby and Rails. Make sure you have stable internet to proceed.\n\n\nstart by adding the Node.js and Yarn repositories\n\n\nsudo apt install curl\nsudo curl -L https://deb.nodesource.com/setup_8.x | sudo -E bash -\nsudo apt-get install -y nodejs\n\n## You may also need development tools to build native addons:\n     sudo apt-get install gcc g++ make\n## To install the Yarn package manager, run:\n     sudo curl -L https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -\n     sudo echo \"deb https://dl.yarnpkg.com/debian/ stable main\" | sudo tee /etc/apt/sources.list.d/yarn.list\n     sudo apt update && sudo apt install -y yarn\n\n\nsudo apt install -y git-core zlib1g-dev build-essential libssl-dev libreadline-dev libyaml-dev libsqlite3-dev sqlite3 libxml2-dev libxslt1-dev libcurl4-openssl-dev software-properties-common libffi-dev nodejs yarn curl\n\n\n\n\nInstall using rbenv, which sets up a controlled version environment for ruby.\n\n\ncd\ngit clone https://github.com/rbenv/rbenv.git ~/.rbenv\necho 'export PATH=\"$HOME/.rbenv/bin:$PATH\"' >> ~/.bashrc\necho 'eval \"$(rbenv init -)\"' >> ~/.bashrc\nexec $SHELL\n\ngit clone https://github.com/rbenv/ruby-build.git ~/.rbenv/plugins/ruby-build\necho 'export PATH=\"$HOME/.rbenv/plugins/ruby-build/bin:$PATH\"' >> ~/.bashrc\nexec $SHELL\n\nrbenv install 2.5.1\nrbenv global 2.5.1\nruby -v\n\n\n\n\ninstall Bundler\n\n\n`gem install bundler`\n\n\n\nrbenv users need to run rbenv rehash after installing bundler.\n\n\n`rbenv rehash`\n\n`gem install rails -v 5.2.1`\n\n\n\nAfter the installation is complete, check the rails version.\n\n\nrails -v\n\n\nGetting Git\n\n\n\n\nsee the article on \nConfiguring Git\n\n\n\n\nSetting Up MySQL\n\n\n\n\nsee the article on \nSetting Up MySQL\n\n\n\n\nRails ships with sqlite3 as the default database. This is good only for simple and small databases.\n\n\nMySQL is much much better, especially when you're coming from a background of PHP.\n\n\nUse the software repo to install and take note of the password you set and update the database.yml file.\n\n\nSetting Up PostgreSQL\n\n\n\n\nsee the article on \nSetting Up PostgreSQL\n\n\n\n\nPostgreSQL is even better than MySQL for normal implementations of Rails Web applications.\n\n\nUse the software repo to install and take note of the password you set and update the database.yml file.\n\n\nInspect if everything works\n\n\n#### If you want to use SQLite (easiest for dev; bad for prod)\n    rails new my_test_app\n\n#### If you want to use MySQL\n    rails new myapp -d mysql\n\n#### If you want to use Postgres\n# Note that this will expect a postgres user with the same username\n# as your app, you may need to edit config/database.yml to match the\n# user you created earlier\n    rails new myapp -d postgresql\n\n# Move into the application directory\ncd my_test_app\nbundle exec spring binstub --all\nbundle update\n\n# If you setup MySQL or Postgres with a username/password, modify the\n# config/database.yml file to contain the username/password that you specified\n\n# Create the database\nrails db:create\n\nrails server\n\n\n\n\nvisit http://localhost:3000 to view your new website",
             "title": "2018 10 19 install rails"
         },
         {
@@ -1022,27 +1047,27 @@
         },
         {
             "location": "/2018-10-19-install_rails/#install-ruby",
-            "text": "first  install some dependencies for Ruby and Rails.  start by adding the Node.js and Yarn repositories  sudo apt install curl\ncurl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -\ncurl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -\necho \"deb https://dl.yarnpkg.com/debian/ stable main\" | sudo tee /etc/apt/sources.list.d/yarn.list\n\nsudo apt-get update\nsudo apt-get install git-core curl zlib1g-dev build-essential libssl-dev libreadline-dev libyaml-dev libsqlite3-dev sqlite3 libxml2-dev libxslt1-dev libcurl4-openssl-dev software-properties-common libffi-dev nodejs yarn  Install using rbenv, which sets up a controlled version environment for ruby.  cd\ngit clone https://github.com/rbenv/rbenv.git ~/.rbenv\necho 'export PATH=\"$HOME/.rbenv/bin:$PATH\"' >> ~/.bashrc\necho 'eval \"$(rbenv init -)\"' >> ~/.bashrc\nexec $SHELL\n\ngit clone https://github.com/rbenv/ruby-build.git ~/.rbenv/plugins/ruby-build\necho 'export PATH=\"$HOME/.rbenv/plugins/ruby-build/bin:$PATH\"' >> ~/.bashrc\nexec $SHELL\n\nrbenv install 2.5.1\nrbenv global 2.5.1\nruby -v  install Bundler  gem install bundler\nbundle update  rbenv users need to run rbenv rehash after installing bundler.  rbenv rehash",
+            "text": "First  install some dependencies for Ruby and Rails. Make sure you have stable internet to proceed.  start by adding the Node.js and Yarn repositories  sudo apt install curl\nsudo curl -L https://deb.nodesource.com/setup_8.x | sudo -E bash -\nsudo apt-get install -y nodejs\n\n## You may also need development tools to build native addons:\n     sudo apt-get install gcc g++ make\n## To install the Yarn package manager, run:\n     sudo curl -L https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -\n     sudo echo \"deb https://dl.yarnpkg.com/debian/ stable main\" | sudo tee /etc/apt/sources.list.d/yarn.list\n     sudo apt update && sudo apt install -y yarn\n\n\nsudo apt install -y git-core zlib1g-dev build-essential libssl-dev libreadline-dev libyaml-dev libsqlite3-dev sqlite3 libxml2-dev libxslt1-dev libcurl4-openssl-dev software-properties-common libffi-dev nodejs yarn curl  Install using rbenv, which sets up a controlled version environment for ruby.  cd\ngit clone https://github.com/rbenv/rbenv.git ~/.rbenv\necho 'export PATH=\"$HOME/.rbenv/bin:$PATH\"' >> ~/.bashrc\necho 'eval \"$(rbenv init -)\"' >> ~/.bashrc\nexec $SHELL\n\ngit clone https://github.com/rbenv/ruby-build.git ~/.rbenv/plugins/ruby-build\necho 'export PATH=\"$HOME/.rbenv/plugins/ruby-build/bin:$PATH\"' >> ~/.bashrc\nexec $SHELL\n\nrbenv install 2.5.1\nrbenv global 2.5.1\nruby -v  install Bundler  `gem install bundler`  rbenv users need to run rbenv rehash after installing bundler.  `rbenv rehash`\n\n`gem install rails -v 5.2.1`  After the installation is complete, check the rails version.  rails -v",
             "title": "Install Ruby"
         },
         {
             "location": "/2018-10-19-install_rails/#getting-git",
-            "text": "*see the article on  Configuring Git",
+            "text": "see the article on  Configuring Git",
             "title": "Getting Git"
         },
         {
             "location": "/2018-10-19-install_rails/#setting-up-mysql",
-            "text": "*see the article on  Setting Up MySQL  Rails ships with sqlite3 as the default database. This is good only for simple and small databases.   MySQL is much much better, especially when you're coming from a background of PHP.  Use the software repo to install and take note of the password you set and update the database.yml file.",
+            "text": "see the article on  Setting Up MySQL   Rails ships with sqlite3 as the default database. This is good only for simple and small databases.  MySQL is much much better, especially when you're coming from a background of PHP.  Use the software repo to install and take note of the password you set and update the database.yml file.",
             "title": "Setting Up MySQL"
         },
         {
             "location": "/2018-10-19-install_rails/#setting-up-postgresql",
-            "text": "*see the article on  Setting Up PostgreSQL  PostgreSQL is even better than MySQL for normal implementations of Rails Web applications.  Use the software repo to install and take note of the password you set and update the database.yml file.",
+            "text": "see the article on  Setting Up PostgreSQL   PostgreSQL is even better than MySQL for normal implementations of Rails Web applications.  Use the software repo to install and take note of the password you set and update the database.yml file.",
             "title": "Setting Up PostgreSQL"
         },
         {
             "location": "/2018-10-19-install_rails/#inspect-if-everything-works",
-            "text": "#### If you want to use SQLite (not recommended)\nrails new myapp\n\n#### If you want to use MySQL\nrails new myapp -d mysql\n\n#### If you want to use Postgres\n# Note that this will expect a postgres user with the same username\n# as your app, you may need to edit config/database.yml to match the\n# user you created earlier\nrails new myapp -d postgresql\n\n# Move into the application directory\ncd myapp\n\n# If you setup MySQL or Postgres with a username/password, modify the\n# config/database.yml file to contain the username/password that you specified\n\n# Create the database\nrake db:create\n\nrails server  visit http://localhost:3000 to view your new website",
+            "text": "#### If you want to use SQLite (easiest for dev; bad for prod)\n    rails new my_test_app\n\n#### If you want to use MySQL\n    rails new myapp -d mysql\n\n#### If you want to use Postgres\n# Note that this will expect a postgres user with the same username\n# as your app, you may need to edit config/database.yml to match the\n# user you created earlier\n    rails new myapp -d postgresql\n\n# Move into the application directory\ncd my_test_app\nbundle exec spring binstub --all\nbundle update\n\n# If you setup MySQL or Postgres with a username/password, modify the\n# config/database.yml file to contain the username/password that you specified\n\n# Create the database\nrails db:create\n\nrails server  visit http://localhost:3000 to view your new website",
             "title": "Inspect if everything works"
         },
         {
@@ -1214,6 +1239,36 @@
             "location": "/2018-01-IPSE-syllabus/#references",
             "text": "Kent Beck, 2002, Test-Driven Development by Example, Three Rivers Institute  John Ferguson Smart, 2011, Jenkins the Definitive Guide - Continuous Integration for the Masses, O'Reilly Media, CA",
             "title": "References"
+        },
+        {
+            "location": "/2019-03-pisay_cs4_setup/",
+            "text": "How to setup Java FXML with Netbeans and Scene Builder in Ubuntu 18.04\n\n\nHow to Install Oracle Java 11 in Ubuntu 18.04/18.10\n\n\n\n\nadd the PPA\n\n\n\n\nsudo add-apt-repository ppa:linuxuprising/java\n\n\n\n\ninstall java 11\n\n\n\n\nsudo apt-get update && sudo apt-get install -y oracle-java11-installer\n\nAccept the license agreement\n\n\n\n\n[optional] install app to set/ unset java 11 as default\n\n\n\n\nsudo apt-get install oracle-java11-set-default\n\n\n\n\ncheck default java version \n\n\n\n\njava -version\n\n\n[just in case] To Uninstall java 11\n\n\n\n\nsudo apt-get remove oracle-java11-installer\n\n\ngo to \nSoftware & Updates -> Other Software\n to remove the PPA repository.\n\n\n\n\nInstall Netbeans 10 (according to Netbeans)\n\n\n\n\n\n\nDownload netbeans\n\n\n\n\n\n\nunzip run\n\n\n\n\n\n\ncd ~/Downloads  && unzip incubating-netbeans-10.0-bin.zip\n\n\ncd ~/Downloads/netbeans/bin && ./netbeans\n\n\n\n\ninstall ant\n\n\n\n\nsudo apt install -y ant\n\n\nIntall Netbeans 10 (according to Ubuntu)\n\n\nGo to the \nUbuntu Software Center\n and install \nApache Netbeans (incubating)",
+            "title": "2019 03 pisay cs4 setup"
+        },
+        {
+            "location": "/2019-03-pisay_cs4_setup/#how-to-setup-java-fxml-with-netbeans-and-scene-builder-in-ubuntu-1804",
+            "text": "",
+            "title": "How to setup Java FXML with Netbeans and Scene Builder in Ubuntu 18.04"
+        },
+        {
+            "location": "/2019-03-pisay_cs4_setup/#how-to-install-oracle-java-11-in-ubuntu-18041810",
+            "text": "add the PPA   sudo add-apt-repository ppa:linuxuprising/java   install java 11   sudo apt-get update && sudo apt-get install -y oracle-java11-installer \nAccept the license agreement   [optional] install app to set/ unset java 11 as default   sudo apt-get install oracle-java11-set-default   check default java version    java -version",
+            "title": "How to Install Oracle Java 11 in Ubuntu 18.04/18.10"
+        },
+        {
+            "location": "/2019-03-pisay_cs4_setup/#just-in-case-to-uninstall-java-11",
+            "text": "sudo apt-get remove oracle-java11-installer  go to  Software & Updates -> Other Software  to remove the PPA repository.",
+            "title": "[just in case] To Uninstall java 11"
+        },
+        {
+            "location": "/2019-03-pisay_cs4_setup/#install-netbeans-10-according-to-netbeans",
+            "text": "Download netbeans    unzip run    cd ~/Downloads  && unzip incubating-netbeans-10.0-bin.zip  cd ~/Downloads/netbeans/bin && ./netbeans   install ant   sudo apt install -y ant",
+            "title": "Install Netbeans 10 (according to Netbeans)"
+        },
+        {
+            "location": "/2019-03-pisay_cs4_setup/#intall-netbeans-10-according-to-ubuntu",
+            "text": "Go to the  Ubuntu Software Center  and install  Apache Netbeans (incubating)",
+            "title": "Intall Netbeans 10 (according to Ubuntu)"
         },
         {
             "location": "/2018-10-15-ICarchitecture/",
