@@ -6,9 +6,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
         <meta name="author" content="Roy Vincent Luna Canseco">
-        <link rel="canonical" href="https://roycan.gitlab.io/mkdocs/2018-10-01-WAPP-setup/">
+        <link rel="canonical" href="https://roycan.gitlab.io/mkdocs/2019-04-pisay_promotion/">
         <link rel="shortcut icon" href="../img/favicon.ico">
-        <title>2018 10 01 WAPP setup - roycan docs</title>
+        <title>2019 04 pisay promotion - roycan docs</title>
         <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
         <link href="../css/font-awesome-4.5.0.css" rel="stylesheet">
         <link href="../css/base.css" rel="stylesheet">
@@ -189,8 +189,8 @@
     <a href="../2018-09-26-mysql_datatypes/">2018 09 26 mysql datatypes</a>
 </li>
                             
-<li class="active">
-    <a href="./">2018 10 01 WAPP setup</a>
+<li >
+    <a href="../2018-10-01-WAPP-setup/">2018 10 01 WAPP setup</a>
 </li>
                             
 <li >
@@ -229,8 +229,8 @@
     <a href="../2019-03-pisay_cs4_setup/">2019 03 pisay cs4 setup</a>
 </li>
                             
-<li >
-    <a href="../2019-04-pisay_promotion/">2019 04 pisay promotion</a>
+<li class="active">
+    <a href="./">2019 04 pisay promotion</a>
 </li>
                         </ul>
                     </li>
@@ -292,12 +292,12 @@
                     </a>
                 </li>
                     <li >
-                        <a rel="next" href="../2018-09-26-mysql_datatypes/">
+                        <a rel="next" href="../2019-03-pisay_cs4_setup/">
                             <i class="fa fa-arrow-left"></i> Previous
                         </a>
                     </li>
                     <li >
-                        <a rel="prev" href="../2018-10-14-BA186_syllabus/">
+                        <a rel="prev" href="../2018-10-15-ICarchitecture/">
                             Next <i class="fa fa-arrow-right"></i>
                         </a>
                     </li>
@@ -309,69 +309,89 @@
         <div class="container">
                 <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
-        <li class="main active"><a href="#-soft_engg">- soft_engg</a></li>
-        <li class="main "><a href="#opcache-error">opcache error</a></li>
-        <li class="main "><a href="#things-to-download">things to download</a></li>
+        <li class="main active"><a href="#teaching-performance">Teaching Performance</a></li>
+        <li class="main "><a href="#relevant-education-19-points">Relevant Education (19 points)</a></li>
+        <li class="main "><a href="#relevant-teaching-experience-50-points">Relevant Teaching Experience (5.0 points)</a></li>
+        <li class="main "><a href="#relevant-training-89-points">Relevant Training (8.9 points)</a></li>
+        <li class="main "><a href="#professional-output-activities">Professional Output / Activities</a></li>
+            <li><a href="#teacher-training-involvement">Teacher Training Involvement</a></li>
+            <li><a href="#student-training-involvement-4-points">Student Training Involvement (4 points)</a></li>
+            <li><a href="#leading-a-professional-organization">Leading a Professional Organization</a></li>
+            <li><a href="#committee-membership-40">Committee Membership (4.0)</a></li>
+            <li><a href="#administrative-assignments">Administrative Assignments</a></li>
+            <li><a href="#books-published">Books Published</a></li>
+            <li><a href="#research-professional-articles-published-40-points">Research / Professional Articles Published (4.0 points)</a></li>
+            <li><a href="#lab-manual-workbook-published">Lab Manual/ Workbook published</a></li>
+            <li><a href="#involvement-in-research">Involvement in Research</a></li>
+            <li><a href="#professional-awards-and-recognition-10-points">Professional Awards and Recognition (1.0 points)</a></li>
+            <li><a href="#coaching-co-curricular-activities">Coaching Co-curricular Activities</a></li>
+            <li><a href="#involvement-in-outreach-activities-12-points">Involvement in Outreach Activities (1.2 points)</a></li>
     </ul>
 </div></div>
                 <div class="col-md-9" role="main">
 
-<h2 id="-soft_engg">- soft_engg</h2>
-<p>We want to setup Windows for PHP and PostgreSQL development with an Apache Server and phppgadmin.</p>
-<ul>
-<li>Install WAPP stack from Bitnami</li>
-<li>Login to phppgadmin</li>
-<li>username is postgres</li>
-<li>password is the what you put during install</li>
-<li>place an alias in your user's .bashrc<ul>
-<li>alias wapp="cd C:/Bitnami/wappstack-7.1.22-0/apache2/htdocs"</li>
-</ul>
-</li>
-<li>edit php.ini (C:\Bitnami\wappstack-7.1.22-0\php)<ul>
-<li>search for  <strong>display_errors</strong></li>
-<li>you should find 2 or 3 instances<ul>
-<li>turn display_errors ON</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>use the function versions of the connection code<ul>
-<li>OO are problematic here </li>
-<li>e.g. use  <em>pg_close($conn);</em></li>
-<li>instead of <em>$conn-&gt;close();</em></li>
-</ul>
-</li>
-</ul>
-<h2 id="opcache-error">opcache error</h2>
-<p>This is when you updated the code but the effect just doesn't reflect as fast as expected</p>
-<pre><code>&quot;To get started with Bitnami LAMP Stack we suggest the following:&quot;
-(Jun '15  pheelixx)
-
-Caching is enabled on this LAMP / LAPP / Ruby Stack using the following two methods:
-
-1) Google PageSpeed Module is enabled by these lines in {$INSTALL_DIR}/apache2/conf/httpd.conf:
-
-Include conf/pagespeed.conf
-Include conf/pagespeed_libraries.conf
-Comment those lines out to disable this module.
-
-2) PHP has Op Cache enabled by these lines in {$INSTALL_DIR}/php/etc/php.ini:
-
-opcache.enable=1
-opcache.enable_cli=1
-Disable those by making them = 0 instead.
-
-Important: You will need to disable both caches to remove caching
-</code></pre>
-
-<p>I did the opcache fix and for my case that was enough.  :) </p>
-<h2 id="things-to-download">things to download</h2>
+<p>Dear Venerable Appointment Committee,</p>
+<p>I wish to apply for a Special Science Teacher V post in Philippine Science High School - Main Campus in the Computer Science Unit.</p>
+<p>Here are some points of interest for consideration. I am putting self evaluations points on the work that I was able to find the certificates for.</p>
+<p>Thank you very much for considering.</p>
+<p>Sincerely,</p>
+<p>Roy Canseco</p>
+<hr />
+<h2 id="teaching-performance">Teaching Performance</h2>
+<p><to be written></p>
+<h2 id="relevant-education-19-points">Relevant Education (19 points)</h2>
+<p>Bachelor of Science in Electrical Engineering  -  I got the honor of graduating top of the B.S.E.E. class of 2008.</p>
+<p>Master of Science in Electrical Engineering maj. Power Systems  - I got the honor of finishing program in 1 year, instead of 2. My adviser and I believes that I was the first to do so. This can easily be checked by looking at my Bachelor's diploma (year 2008) and comparing it to my Master of Science diploma (year 2009).</p>
+<p>Both degrees are from UP Diliman.</p>
+<p>I would like to request 19 points.</p>
+<h2 id="relevant-teaching-experience-50-points">Relevant Teaching Experience (5.0 points)</h2>
+<p>I include my Service Record in UP Diliman, both for teaching in Electrical and Electronics Engineering and in Computer Science. If you add the years/months/days, it would show a few days more than 5 years worth teaching to present.</p>
+<h2 id="relevant-training-89-points">Relevant Training (8.9 points)</h2>
+<p>I ask that the following be credited:</p>
 <ol>
-<li>bluefish</li>
-<li>xampp</li>
-<li>wapp</li>
-<li>rails for windows   </li>
-</ol></div>
+<li><to be written></li>
+</ol>
+<h2 id="professional-output-activities">Professional Output / Activities</h2>
+<h3 id="teacher-training-involvement"><em>Teacher</em> Training Involvement</h3>
+<ol>
+<li><to be written></li>
+</ol>
+<h3 id="student-training-involvement-4-points"><em>Student</em> Training Involvement (4 points)</h3>
+<ol>
+<li><to be written></li>
+</ol>
+<h3 id="leading-a-professional-organization">Leading a Professional Organization</h3>
+<p><to be written></p>
+<h3 id="committee-membership-40">Committee Membership (4.0)</h3>
+<ul>
+<li><to be written></li>
+</ul>
+<h3 id="administrative-assignments">Administrative Assignments</h3>
+<ul>
+<li><to be written></li>
+</ul>
+<h3 id="books-published">Books Published</h3>
+<p>none yet (still in the bucket list)</p>
+<h3 id="research-professional-articles-published-40-points">Research / Professional Articles Published (4.0 points)</h3>
+<p><to be written></p>
+<h3 id="lab-manual-workbook-published">Lab Manual/ Workbook published</h3>
+<p>none yet (planning to for Web/ Mobile Information System Development)</p>
+<h3 id="involvement-in-research">Involvement in Research</h3>
+<ul>
+<li><to be written></li>
+</ul>
+<h3 id="professional-awards-and-recognition-10-points">Professional Awards and Recognition (1.0 points)</h3>
+<ul>
+<li><to be written></li>
+</ul>
+<h3 id="coaching-co-curricular-activities">Coaching Co-curricular Activities</h3>
+<p>none yet (no plans)</p>
+<h3 id="involvement-in-outreach-activities-12-points">Involvement in Outreach Activities (1.2 points)</h3>
+<ul>
+<li><to be written></li>
+</ul>
+<hr />
+<p>Thank you for your kind consideration!</p></div>
         </div>
 
         <footer class="col-md-12">
