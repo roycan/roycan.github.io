@@ -6,9 +6,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
         <meta name="author" content="Roy Vincent Luna Canseco">
-        <link rel="canonical" href="https://roycan.gitlab.io/mkdocs/2019-02-UPPFI-WW-DOD-1/">
+        <link rel="canonical" href="https://roycan.gitlab.io/mkdocs/2019-03-phalcon_php/">
         <link rel="shortcut icon" href="../img/favicon.ico">
-        <title>2019 02 UPPFI WW DOD 1 - roycan docs</title>
+        <title>2019 03 phalcon php - roycan docs</title>
         <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
         <link href="../css/font-awesome-4.5.0.css" rel="stylesheet">
         <link href="../css/base.css" rel="stylesheet">
@@ -54,7 +54,7 @@
                     <li >
                         <a href="../presentations/">Presentations</a>
                     </li>
-                    <li class="dropdown">
+                    <li class="dropdown active">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">skills <b class="caret"></b></a>
                         <ul class="dropdown-menu">
                             
@@ -98,8 +98,8 @@
     <a href="../2019-04-xp_virtualbox/">2019 04 xp virtualbox</a>
 </li>
                             
-<li >
-    <a href="../2019-03-phalcon_php/">2019 03 phalcon php</a>
+<li class="active">
+    <a href="./">2019 03 phalcon php</a>
 </li>
                         </ul>
                     </li>
@@ -238,7 +238,7 @@
 </li>
                         </ul>
                     </li>
-                    <li class="dropdown active">
+                    <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">projects <b class="caret"></b></a>
                         <ul class="dropdown-menu">
                             
@@ -282,8 +282,8 @@
     <a href="../2019-01-16-DENR_TOR/">2019 01 16 DENR TOR</a>
 </li>
                             
-<li class="active">
-    <a href="./">2019 02 UPPFI WW DOD 1</a>
+<li >
+    <a href="../2019-02-UPPFI-WW-DOD-1/">2019 02 UPPFI WW DOD 1</a>
 </li>
                         </ul>
                     </li>
@@ -296,12 +296,12 @@
                     </a>
                 </li>
                     <li >
-                        <a rel="next" href="../2019-01-16-DENR_TOR/">
+                        <a rel="next" href="../2019-04-xp_virtualbox/">
                             <i class="fa fa-arrow-left"></i> Previous
                         </a>
                     </li>
-                    <li class="disabled">
-                        <a rel="prev" >
+                    <li >
+                        <a rel="prev" href="../2018-07-07-phd-hunt/">
                             Next <i class="fa fa-arrow-right"></i>
                         </a>
                     </li>
@@ -313,57 +313,115 @@
         <div class="container">
                 <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
-        <li class="main active"><a href="#abstract">Abstract</a></li>
-        <li class="main "><a href="#issue-prioritization">Issue Prioritization</a></li>
-        <li class="main "><a href="#membership-data-import">Membership Data Import</a></li>
-        <li class="main "><a href="#contribution-data-import">Contribution Data Import</a></li>
-        <li class="main "><a href="#loans-data-import">Loans Data Import</a></li>
+        <li class="main active"><a href="#installing-phalcon-php-in-ubuntu-1804">Installing Phalcon PHP in Ubuntu 18.04</a></li>
+            <li><a href="#requirements">requirements</a></li>
+            <li><a href="#installation-proper">Installation proper</a></li>
+            <li><a href="#generating-a-project-skeleton">Generating a Project Skeleton</a></li>
+            <li><a href="#using-the-built-in-webserver-for-development">Using the Built-in Webserver (for Development)</a></li>
     </ul>
 </div></div>
                 <div class="col-md-9" role="main">
 
-<h2 id="abstract">Abstract</h2>
-<p>This document puts together the issues that UPPFI found and the tests cases created that we believe will more or else ensure that the root causes of the issues have been addressed.[^1] </p>
-<p>Addressing the issues listed in this document is expected to allow UPPFI to finish testing the functionalities of the Web App, leading to the soonest possible date for going Live as well as project source code verification and turn-over. </p>
-<h2 id="issue-prioritization">Issue Prioritization</h2>
-<p>Priority one:  The Template/ Sample CSV for Loans uploading catches errors even without us doing anything to it. Kindly fix the bad "loans_template.csv"</p>
-<p>Priority two:  The "TRANSACTIONS" field in both the  "loans_template.csv"  and the "contributions_template.csv"   should take in variable length strings.  This field's purpose is to inform members of the nature of each loan or contribution record/ transaction and though for a lot of accounts, this includes putting in the OR#, it more often than not, needs to includes some text and dates as well. Please check the View for this also. Remove the automatic "OR#" in the transactions column in the views. The UPPFI staff will manually put the "OR#" whenever they see appropriate. </p>
-<p>Priority three:  In the "loans_template_csv", the following fields should accept "0"  : 
-AMOUNT  AMORTIZATION    INTEREST
-and the following fields should be allowed to be blank:
-AMORTIZATION START DATE AMORTIZATION END DATE</p>
-<p>Priority three also:  In the "contributions_template.csv"  the  following fields should accept "0"  : 
-UP CONTRIBUTION MEMBER CONTRIBUTION EARNINGS ON UP CONTRIBUTION EARNINGS ON MEMBER CONTRIBUTION</p>
-<p>Priority four: The allowed values for the "TYPE" field in the "loans_template.csv"  should be editable/ configurable to allow the PFI to create new loan products are retire old ones. </p>
-<p>Please note that when Excel exports csv files, default non-string datatypes (e.g. dates and numbers) are not wrapped in quotes. The Web App should anticipate and validate this.  </p>
-<h2 id="membership-data-import">Membership Data Import</h2>
-<p>The template workflow is as follows : </p>
+<h1 id="installing-phalcon-php-in-ubuntu-1804">Installing Phalcon PHP in Ubuntu 18.04</h1>
+<h2 id="requirements">requirements</h2>
+<ul>
+<li>
+<p>database connectivity will require the <code>php_pdo</code> extension which can be found in the <code>php7.2-common</code> package</p>
+</li>
+<li>
+<p>MySQL/ MariaDB or Aurora databases will need <code>php_mysqlnd</code> extension , while PostgreSQL will need <code>php_pgsql</code> extension. Both extensions are in the <code>php7.2-pdo*</code> packages</p>
+</li>
+</ul>
+<h3 id="hardware-requirements">Hardware requirements</h3>
+<p>An AWS VM with 512 RAM and 1vCPU will be enough for simple sites such as blogs.</p>
+<h3 id="software-prerequisites">software prerequisites</h3>
+<p>We assume that we want to use PHP 7+ (e.g. 7.2)</p>
+<p>Step 1 will be to install the following prerequisite programs:</p>
+<ul>
+<li>curl</li>
+<li>gettext</li>
+<li>gd2 (php-gd)</li>
+<li>libpcre3-dev</li>
+<li>json (php-json)</li>
+<li>mbstring (php-mbstring)</li>
+<li>pdo_* (php7.2-pdo*)</li>
+<li>fileinfo (php7.2-common)</li>
+<li>openssl</li>
+</ul>
+<p>Note that depending on what you want to do, <code>pdo_*</code> , <code>openssl</code> and <code>mbstring</code> may be optional.</p>
+<h2 id="installation-proper">Installation proper</h2>
 <ol>
-<li>UPPFI does uses the templates and does their work in Excel. </li>
-<li>At the end of their work in filling the spreadsheet, they will do an extra step to save in csv format.</li>
-<li>They will use the web app to upload the resulting csv to the database.</li>
-<li>The database will be accessed by the members through the corresponding views. </li>
+<li>Get a stable release script:  </li>
 </ol>
-<p>Below is a sample xlsx file that includes testcases mapped to the listed priority issues. Note that we are not changing any of the rules, but rather generalizing them to include cases that occur in practice and are expected from the Web App by the members/ end-users of UPPFI.  </p>
-<p><a href="../2019-02/members_template-test.xlsx">test file: members data - excel</a>  </p>
-<p>The above text file was converted into a <em>csv</em> below. It is the resulting <em>csv</em> that is expected to be imported correctly and reliably to the database. </p>
-<p><a href="../2019-02/members_template-test.csv">test file: members data - csv</a></p>
-<h2 id="contribution-data-import">Contribution Data Import</h2>
-<p>The above text file was converted into a <em>csv</em> below. It is the resulting <em>csv</em> that is expected to be imported correctly and reliably to the database. </p>
-<p><a href="../2019-02/contributions_template-test.xlsx">test file: contributions data - excel</a>  </p>
-<p>The above text file was converted into a <em>csv</em> below. It is the resulting <em>csv</em> that is expected to be imported correctly and reliably to the database. </p>
-<p><a href="../2019-02/contributions_template-test.csv">test file: contributions data - csv</a></p>
-<p>Below is a 2nd excel sheet that should be acceptable. Please try to save as <em>csv</em> and check that it will be importable to the database. </p>
-<p><a href="../2019-02/contributions_template-test-2.xlsx">2nd test file: contributions data - excel</a>  </p>
-<h2 id="loans-data-import">Loans Data Import</h2>
-<p>Below is a sample xlsx file that includes testcases mapped to the listed priority issues. Note that we are not changing any of the rules, but rather generalizing them to include cases that occur in practice and are expected from the Web App by the members/ end-users of UPPFI.  </p>
-<p><a href="../2019-02/loans_template-test.xlsx">test file: loans data - excel</a>  </p>
-<p>The above text file was converted into a <em>csv</em> below. It is the resulting <em>csv</em> that is expected to be imported correctly and reliably to the database. </p>
-<p><a href="../2019-02/loans_template-test.csv">test file: loans data - csv</a></p>
-<p>Below is a 2nd excel sheet that should be acceptable. Please try to save as <em>csv</em> and check that it will be importable to the database. </p>
-<p><a href="../2019-02/loans_template-test-2.xlsx">2nd test file: loans data - excel</a> </p>
-<hr />
-<p>[^1]: Any personally identifiable information have been scrubbed out.</p></div>
+<pre><code class="bash"> curl - https://packagecloud.io/install/repositories/phalcon/stable/script.deb.sh | sudo bash
+</code></pre>
+
+<ol>
+<li>Install Phalcon</li>
+</ol>
+<pre><code class="bash">sudo apt-get update &amp;&amp;
+sudo apt-get install php7.2-phalcon
+</code></pre>
+
+<ol>
+<li>Install Phalcon Developer Tools for Linux</li>
+</ol>
+<pre><code class="bash">sudo apt install -y git
+cd
+git clone git://github.com/phalcon/phalcon-devtools.git
+</code></pre>
+
+<ol>
+<li>Enter the cloned directory and run</li>
+</ol>
+<pre><code class="bash">cd phalcon-devtools/
+. ./phalcon.sh
+</code></pre>
+
+<ol>
+<li>Create a symlink to the phalcon script</li>
+</ol>
+<pre><code class="bash">sudo n -s ~/phalcon-devtools/phalcon.php /usr/bin/phalcon
+sudo chmod ugo+x /usr/bin/phalcon
+</code></pre>
+
+<ol>
+<li>Check for installation success using <code>phalcon commands</code></li>
+</ol>
+<pre><code class="bash">$ phalcon commands
+
+Phalcon DevTools (3.0.0)
+
+Available commands:
+  commands         (alias of: list, enumerate)
+  controller       (alias of: create-controller)
+  module           (alias of: create-module)
+  model            (alias of: create-model)
+  all-models       (alias of: create-all-models)
+  project          (alias of: create-project)
+  scaffold         (alias of: create-scaffold)
+  migration        (alias of: create-migration)
+  webtools         (alias of: create-webtools)
+</code></pre>
+
+<h2 id="generating-a-project-skeleton">Generating a Project Skeleton</h2>
+<pre><code class="bash">$ cd
+$ mkdir projects
+$ cd projects
+$ phalcon create-project store
+</code></pre>
+
+<h2 id="using-the-built-in-webserver-for-development">Using the Built-in Webserver (for Development)</h2>
+<pre><code class="bash">$(which php) -S localhost:8000 -t public .htrouter.php
+</code></pre>
+
+<ul>
+<li><code>$(which php)</code> - will insert the absolute path to your PHP binary</li>
+<li><code>-S localhost:8000</code> - invokes server mode with the provided host:port</li>
+<li><code>-t public</code> - defines the servers root directory, necessary for php to route requests to assets like JS, CSS, and images in your public directory</li>
+<li><code>.htrouter.php</code> - the entry point that will be evaluated for each request</li>
+</ul>
+<p><strong> Go to <em>http://localhost:8000/</em> to check if everything is working.</strong></p></div>
         </div>
 
         <footer class="col-md-12">

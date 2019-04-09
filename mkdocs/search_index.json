@@ -366,6 +366,46 @@
             "title": "Download and install updated drivers"
         },
         {
+            "location": "/2019-03-phalcon_php/",
+            "text": "Installing Phalcon PHP in Ubuntu 18.04\n\n\nrequirements\n\n\n\n\n\n\ndatabase connectivity will require the \nphp_pdo\n extension which can be found in the \nphp7.2-common\n package\n\n\n\n\n\n\nMySQL/ MariaDB or Aurora databases will need \nphp_mysqlnd\n extension , while PostgreSQL will need \nphp_pgsql\n extension. Both extensions are in the \nphp7.2-pdo*\n packages\n\n\n\n\n\n\nHardware requirements\n\n\nAn AWS VM with 512 RAM and 1vCPU will be enough for simple sites such as blogs.\n\n\nsoftware prerequisites\n\n\nWe assume that we want to use PHP 7+ (e.g. 7.2)\n\n\nStep 1 will be to install the following prerequisite programs:\n\n\n\n\ncurl\n\n\ngettext\n\n\ngd2 (php-gd)\n\n\nlibpcre3-dev\n\n\njson (php-json)\n\n\nmbstring (php-mbstring)\n\n\npdo_* (php7.2-pdo*)\n\n\nfileinfo (php7.2-common)\n\n\nopenssl\n\n\n\n\nNote that depending on what you want to do, \npdo_*\n , \nopenssl\n and \nmbstring\n may be optional.\n\n\nInstallation proper\n\n\n\n\nGet a stable release script:  \n\n\n\n\n curl - https://packagecloud.io/install/repositories/phalcon/stable/script.deb.sh | sudo bash\n\n\n\n\n\n\nInstall Phalcon\n\n\n\n\nsudo apt-get update &&\nsudo apt-get install php7.2-phalcon\n\n\n\n\n\n\nInstall Phalcon Developer Tools for Linux\n\n\n\n\nsudo apt install -y git\ncd\ngit clone git://github.com/phalcon/phalcon-devtools.git\n\n\n\n\n\n\nEnter the cloned directory and run\n\n\n\n\ncd phalcon-devtools/\n. ./phalcon.sh\n\n\n\n\n\n\nCreate a symlink to the phalcon script\n\n\n\n\nsudo n -s ~/phalcon-devtools/phalcon.php /usr/bin/phalcon\nsudo chmod ugo+x /usr/bin/phalcon\n\n\n\n\n\n\nCheck for installation success using \nphalcon commands\n\n\n\n\n$ phalcon commands\n\nPhalcon DevTools (3.0.0)\n\nAvailable commands:\n  commands         (alias of: list, enumerate)\n  controller       (alias of: create-controller)\n  module           (alias of: create-module)\n  model            (alias of: create-model)\n  all-models       (alias of: create-all-models)\n  project          (alias of: create-project)\n  scaffold         (alias of: create-scaffold)\n  migration        (alias of: create-migration)\n  webtools         (alias of: create-webtools)\n\n\n\n\nGenerating a Project Skeleton\n\n\n$ cd\n$ mkdir projects\n$ cd projects\n$ phalcon create-project store\n\n\n\n\nUsing the Built-in Webserver (for Development)\n\n\n$(which php) -S localhost:8000 -t public .htrouter.php\n\n\n\n\n\n\n$(which php)\n - will insert the absolute path to your PHP binary\n\n\n-S localhost:8000\n - invokes server mode with the provided host:port\n\n\n-t public\n - defines the servers root directory, necessary for php to route requests to assets like JS, CSS, and images in your public directory\n\n\n.htrouter.php\n - the entry point that will be evaluated for each request\n\n\n\n\n Go to \nhttp://localhost:8000/\n to check if everything is working.",
+            "title": "2019 03 phalcon php"
+        },
+        {
+            "location": "/2019-03-phalcon_php/#installing-phalcon-php-in-ubuntu-1804",
+            "text": "",
+            "title": "Installing Phalcon PHP in Ubuntu 18.04"
+        },
+        {
+            "location": "/2019-03-phalcon_php/#requirements",
+            "text": "database connectivity will require the  php_pdo  extension which can be found in the  php7.2-common  package    MySQL/ MariaDB or Aurora databases will need  php_mysqlnd  extension , while PostgreSQL will need  php_pgsql  extension. Both extensions are in the  php7.2-pdo*  packages",
+            "title": "requirements"
+        },
+        {
+            "location": "/2019-03-phalcon_php/#hardware-requirements",
+            "text": "An AWS VM with 512 RAM and 1vCPU will be enough for simple sites such as blogs.",
+            "title": "Hardware requirements"
+        },
+        {
+            "location": "/2019-03-phalcon_php/#software-prerequisites",
+            "text": "We assume that we want to use PHP 7+ (e.g. 7.2)  Step 1 will be to install the following prerequisite programs:   curl  gettext  gd2 (php-gd)  libpcre3-dev  json (php-json)  mbstring (php-mbstring)  pdo_* (php7.2-pdo*)  fileinfo (php7.2-common)  openssl   Note that depending on what you want to do,  pdo_*  ,  openssl  and  mbstring  may be optional.",
+            "title": "software prerequisites"
+        },
+        {
+            "location": "/2019-03-phalcon_php/#installation-proper",
+            "text": "Get a stable release script:      curl - https://packagecloud.io/install/repositories/phalcon/stable/script.deb.sh | sudo bash   Install Phalcon   sudo apt-get update &&\nsudo apt-get install php7.2-phalcon   Install Phalcon Developer Tools for Linux   sudo apt install -y git\ncd\ngit clone git://github.com/phalcon/phalcon-devtools.git   Enter the cloned directory and run   cd phalcon-devtools/\n. ./phalcon.sh   Create a symlink to the phalcon script   sudo n -s ~/phalcon-devtools/phalcon.php /usr/bin/phalcon\nsudo chmod ugo+x /usr/bin/phalcon   Check for installation success using  phalcon commands   $ phalcon commands\n\nPhalcon DevTools (3.0.0)\n\nAvailable commands:\n  commands         (alias of: list, enumerate)\n  controller       (alias of: create-controller)\n  module           (alias of: create-module)\n  model            (alias of: create-model)\n  all-models       (alias of: create-all-models)\n  project          (alias of: create-project)\n  scaffold         (alias of: create-scaffold)\n  migration        (alias of: create-migration)\n  webtools         (alias of: create-webtools)",
+            "title": "Installation proper"
+        },
+        {
+            "location": "/2019-03-phalcon_php/#generating-a-project-skeleton",
+            "text": "$ cd\n$ mkdir projects\n$ cd projects\n$ phalcon create-project store",
+            "title": "Generating a Project Skeleton"
+        },
+        {
+            "location": "/2019-03-phalcon_php/#using-the-built-in-webserver-for-development",
+            "text": "$(which php) -S localhost:8000 -t public .htrouter.php   $(which php)  - will insert the absolute path to your PHP binary  -S localhost:8000  - invokes server mode with the provided host:port  -t public  - defines the servers root directory, necessary for php to route requests to assets like JS, CSS, and images in your public directory  .htrouter.php  - the entry point that will be evaluated for each request    Go to  http://localhost:8000/  to check if everything is working.",
+            "title": "Using the Built-in Webserver (for Development)"
+        },
+        {
             "location": "/2018-07-07-phd-hunt/",
             "text": "PhD\n\n\npersonal\n\n\n\n\n\n\nI'm looking for my PhD abroad. \nI now am confident in what I can offer and do. More importantly, I think I get how much I don't know and can't yet do. \nI believe in the Lord and I know he has plans for me. I feel it's scary leaving the only life I've known for at least a couple of years. Pero\nkaya namin ni Lord 'to. \nI am learning new skills too. \nMy decision to go Software Engineering has tuned my senses to the various ways that I am to manage software development. I know I'm learning important things from being with everyone here at UP. I want to make those count. There's not so many things that I find important in life, but in those things, I'll fight to make each day count.  \n\n\nThat said, by preparing some things from my end, I'll be able to take the most advantage of the opportunities before me. Also, by taking care of my body, I'll be able to perform at my peak. I've seen the faculty at the Hong Kong University of Science and Technology. They look fit. It is possible. It is possible for me too. \n\n\nRight now, I'm doing a meeting with the Lord. Ako na sa minutes... hehehe.  We're looking for the Universities and Professors to get in touch with.\n\n\n\n\nfilter universities\n\n\nrank universities\n\n\nsend informal inquiries\n\n\nsend formal application\n\n\npackup and go\n\n\n\n\nTo this end, I plan to populate a gdoc that I can share to family and friends as I go through this journey.\n\n\nThis ends day 1 of the search. There's hope and some sort of a plan.  :)",
             "title": "2018 07 07 phd hunt"
