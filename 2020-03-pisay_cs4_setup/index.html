@@ -6,9 +6,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
         <meta name="author" content="Roy Vincent Luna Canseco">
-        <link rel="canonical" href="https://roycan.gitlab.io/mkdocs/2019-03-pisay_cs4_setup/">
+        <link rel="canonical" href="https://roycan.gitlab.io/mkdocs/2020-03-pisay_cs4_setup/">
         <link rel="shortcut icon" href="../img/favicon.ico">
-        <title>2019 03 pisay cs4 setup - roycan docs</title>
+        <title>2020 03 pisay cs4 setup - roycan docs</title>
         <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
         <link href="../css/font-awesome-4.5.0.css" rel="stylesheet">
         <link href="../css/base.css" rel="stylesheet">
@@ -229,12 +229,12 @@
     <a href="../2018-01-IPSE-syllabus/">2018 01 IPSE syllabus</a>
 </li>
                             
-<li class="active">
-    <a href="./">2019 03 pisay cs4 setup</a>
-</li>
-                            
 <li >
     <a href="../2019-04-pisay_promotion/">2019 04 pisay promotion</a>
+</li>
+                            
+<li class="active">
+    <a href="./">2020 03 pisay cs4 setup</a>
 </li>
                         </ul>
                     </li>
@@ -296,12 +296,12 @@
                     </a>
                 </li>
                     <li >
-                        <a rel="next" href="../2018-01-IPSE-syllabus/">
+                        <a rel="next" href="../2019-04-pisay_promotion/">
                             <i class="fa fa-arrow-left"></i> Previous
                         </a>
                     </li>
                     <li >
-                        <a rel="prev" href="../2019-04-pisay_promotion/">
+                        <a rel="prev" href="../2018-10-15-ICarchitecture/">
                             Next <i class="fa fa-arrow-right"></i>
                         </a>
                     </li>
@@ -313,7 +313,7 @@
         <div class="container">
                 <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
-        <li class="main active"><a href="#how-to-setup-java-fxml-with-netbeans-and-scene-builder-in-ubuntu-1804">How to setup Java FXML with Netbeans and Scene Builder in Ubuntu 18.04</a></li>
+        <li class="main active"><a href="#how-to-setup-java-fxml-with-netbeans-and-scene-builder-in-windows-10">How to setup Java FXML with Netbeans and Scene Builder in Windows 10</a></li>
             <li><a href="#download-oracle-jdk-18">Download Oracle JDK 1.8</a></li>
             <li><a href="#install-netbeans">Install NetBeans</a></li>
             <li><a href="#install-the-javafx-scene-builder">Install the JavaFX Scene Builder</a></li>
@@ -323,7 +323,7 @@
 </div></div>
                 <div class="col-md-9" role="main">
 
-<h1 id="how-to-setup-java-fxml-with-netbeans-and-scene-builder-in-ubuntu-1804">How to setup Java FXML with Netbeans and Scene Builder in Ubuntu 18.04</h1>
+<h1 id="how-to-setup-java-fxml-with-netbeans-and-scene-builder-in-windows-10">How to setup Java FXML with Netbeans and Scene Builder in Windows 10</h1>
 <p><em>A guide for my students in Computer Science</em></p>
 <hr>
 
@@ -339,8 +339,8 @@
 <p>https://www.oracle.com/java/technologies/javase-jdk8-downloads.html</p>
 <p><img alt="qownnotes-media-W12311" src="../media/179859311.png" /></p>
 <ol>
-<li>Scroll down until you find the right download for your machine</li>
-<li>Download and install or unzip</li>
+<li>Scroll down until you find the right download for your machine (probably the 64-bit version for windows)</li>
+<li>Download and install</li>
 </ol>
 <hr>
 
@@ -354,7 +354,7 @@
 <p><img alt="qownnotes-media-P12311" src="../media/1512443135.png" /></p>
 </li>
 <li>
-<p>You can also download other previous versions as well but its recommended to use the latest version.</p>
+<p>You can also download other previous versions as well but I recommend the LTS version.</p>
 </li>
 <li>This will take you to a page titled “Downloading Apache NetBeans (incubating)”.</li>
 <li>
@@ -365,10 +365,12 @@
 <p>Once clicked, this will redirect you to the apache page where a link will be generated for you.</p>
 </li>
 <li>Click the link and it will start downloading.</li>
-<li>Install or unzip and run. You might be asked for the version of JDK to use. Make sure it's JDK 1.8 by pointing to the directory where you it's installed</li>
-<li>If you are greeted with this view once it opens, then NetBeans has been successfully installed and is ready for you to start writing programs and developing applications on it.</li>
+<li>Unzip</li>
+<li>After extraction, go in the extracted directory and look for the “bin” folder.</li>
+<li>Go in the “bin” folder and you will see two “Application” files; “netbeans.exe” and “netbeans64.exe”. You probably should run the 64-bit version</li>
+<li>If you are greeted with this view once it opens, then NetBeans has been successfully installed. You are ready to start writing java programs.</li>
 </ol>
-<p><img alt="qownnotes-media-J12311" src="../media/1292380126.png" /></p>
+<p><img alt="qownnotes-media-x12311" src="../media/1972724940.png" /></p>
 <hr>
 
 <h2 id="install-the-javafx-scene-builder">Install the JavaFX Scene Builder</h2>
@@ -393,16 +395,16 @@ To check whether the installation was successful or not you can open “SceneBui
 <ol>
 <li>Open NetBeans,</li>
 <li>click on “File” and then “New project.” in the dropdown menu. A new window will open.</li>
+<li>Click on “JavaFX” from the “Categories” tab and “Java FXML Application” from  “Projects” tab.
+        <img alt="qownnotes-media-F12311" src="../media/594897691.png" /></li>
+<li>Click “Next”.</li>
 <li>
-<p>Click on “JavaFX” from the “Categories” tab and “Java FXML Application” from  “Projects” tab.</p>
-<p><img alt="qownnotes-media-F12311" src="../media/594897691.png" />
-4. Click “Next”.
-5. Install any modules, if it prompts to download and activate any modules. In the next window give the project a name and click “Finish”.</p>
+<p>Install any modules, if it prompts to download and activate any modules. In the next window give the project a name and click “Finish”.</p>
 <p><img alt="qownnotes-media-h12311" src="../media/1483339083.png" />
 6.  Once opened, go to the “Projects” tab and click on your project.
 7. Then click on “Source Packages”,
 8. click on your project’s package,
-9.  right-click on the .fxml file and click “Open”.
+9.  double-click on the .fxml file
 10.  This will open the file in Scene Builder for you to work on it.</p>
 </li>
 </ol>
@@ -410,7 +412,7 @@ To check whether the installation was successful or not you can open “SceneBui
 <hr>
 
 <h2 id="next-steps">Next Steps</h2>
-<p>And with this, you have successfully integrated Scene Builder and NetBeans to work together seamlessly. Once you are done with making the GUI, to add functionality and logic to it, edit the “Controller.Java” file directly below the .fxml file and give it functionality. Now you can go on and enjoy making GUI for your programs in an intuitive and fun way using JavaFX Scene Builder.</p></div>
+<p>You have successfully integrated Scene Builder and NetBeans to work together. Once you are done with making the GUI,  add functionality and logic to it by editing the “Controller.Java” file, which is directly below the .fxml file. Enjoy making GUI for your programs in an intuitive and fun way using JavaFX Scene Builder.</p></div>
         </div>
 
         <footer class="col-md-12">
