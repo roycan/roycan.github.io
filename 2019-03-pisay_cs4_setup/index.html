@@ -6,9 +6,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
         <meta name="author" content="Roy Vincent Luna Canseco">
-        <link rel="canonical" href="https://roycan.gitlab.io/mkdocs/2018-10-19-install_rails/">
+        <link rel="canonical" href="https://roycan.gitlab.io/mkdocs/2019-03-pisay_cs4_setup/">
         <link rel="shortcut icon" href="../img/favicon.ico">
-        <title>2018 10 19 install rails - roycan docs</title>
+        <title>2019 03 pisay cs4 setup - roycan docs</title>
         <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
         <link href="../css/font-awesome-4.5.0.css" rel="stylesheet">
         <link href="../css/base.css" rel="stylesheet">
@@ -205,8 +205,8 @@
     <a href="../2018-10-19-configure_git/">2018 10 19 configure git</a>
 </li>
                             
-<li class="active">
-    <a href="./">2018 10 19 install rails</a>
+<li >
+    <a href="../2018-10-19-install_rails/">2018 10 19 install rails</a>
 </li>
                             
 <li >
@@ -233,8 +233,8 @@
     <a href="../2019-04-pisay_promotion/">2019 04 pisay promotion</a>
 </li>
                             
-<li >
-    <a href="../2019-03-pisay_cs4_setup/">2019 03 pisay cs4 setup</a>
+<li class="active">
+    <a href="./">2019 03 pisay cs4 setup</a>
 </li>
                             
 <li >
@@ -300,12 +300,12 @@
                     </a>
                 </li>
                     <li >
-                        <a rel="next" href="../2018-10-19-configure_git/">
+                        <a rel="next" href="../2019-04-pisay_promotion/">
                             <i class="fa fa-arrow-left"></i> Previous
                         </a>
                     </li>
                     <li >
-                        <a rel="prev" href="../2018-10-19-setup_mysql/">
+                        <a rel="prev" href="../2020-03-pisay_cs4_setup/">
                             Next <i class="fa fa-arrow-right"></i>
                         </a>
                     </li>
@@ -317,106 +317,104 @@
         <div class="container">
                 <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
-        <li class="main active"><a href="#-soft_engg">- soft_engg</a></li>
-        <li class="main "><a href="#install-ruby">Install Ruby</a></li>
-        <li class="main "><a href="#getting-git">Getting Git</a></li>
-        <li class="main "><a href="#setting-up-mysql">Setting Up MySQL</a></li>
-        <li class="main "><a href="#setting-up-postgresql">Setting Up PostgreSQL</a></li>
-        <li class="main "><a href="#inspect-if-everything-works">Inspect if everything works</a></li>
+        <li class="main active"><a href="#how-to-setup-java-fxml-with-netbeans-and-scene-builder-in-ubuntu-1804">How to setup Java FXML with Netbeans and Scene Builder in Ubuntu 18.04</a></li>
+            <li><a href="#download-oracle-jdk-18">Download Oracle JDK 1.8</a></li>
+            <li><a href="#install-netbeans">Install NetBeans</a></li>
+            <li><a href="#install-the-javafx-scene-builder">Install the JavaFX Scene Builder</a></li>
+            <li><a href="#integrate-javafx-scene-builder-and-netbeans">Integrate JavaFX Scene Builder and NetBeans</a></li>
+            <li><a href="#next-steps">Next Steps</a></li>
     </ul>
 </div></div>
                 <div class="col-md-9" role="main">
 
-<h2 id="-soft_engg">- soft_engg</h2>
-<h1 id="install-ruby">Install Ruby</h1>
-<p>First  install some dependencies for Ruby and Rails. Make sure you have stable internet to proceed.</p>
-<p>start by adding the Node.js and Yarn repositories</p>
-<pre><code class="bash">sudo apt install curl
-sudo curl -L https://deb.nodesource.com/setup_8.x | sudo -E bash -
-sudo apt-get install -y nodejs
+<h1 id="how-to-setup-java-fxml-with-netbeans-and-scene-builder-in-ubuntu-1804">How to setup Java FXML with Netbeans and Scene Builder in Ubuntu 18.04</h1>
+<p><em>A guide for my students in Computer Science</em></p>
+<hr>
 
-## You may also need development tools to build native addons:
-     sudo apt-get install gcc g++ make
-## To install the Yarn package manager, run:
-     sudo curl -L https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
-     sudo echo &quot;deb https://dl.yarnpkg.com/debian/ stable main&quot; | sudo tee /etc/apt/sources.list.d/yarn.list
-     sudo apt update &amp;&amp; sudo apt install -y yarn
-
-
-sudo apt install -y git-core zlib1g-dev build-essential libssl-dev libreadline-dev libyaml-dev libsqlite3-dev sqlite3 libxml2-dev libxslt1-dev libcurl4-openssl-dev software-properties-common libffi-dev nodejs yarn curl
-</code></pre>
-
-<p>Install using rbenv, which sets up a controlled version environment for ruby.</p>
-<pre><code class="bash">cd
-git clone https://github.com/rbenv/rbenv.git ~/.rbenv
-echo 'export PATH=&quot;$HOME/.rbenv/bin:$PATH&quot;' &gt;&gt; ~/.bashrc
-echo 'eval &quot;$(rbenv init -)&quot;' &gt;&gt; ~/.bashrc
-exec $SHELL
-
-git clone https://github.com/rbenv/ruby-build.git ~/.rbenv/plugins/ruby-build
-echo 'export PATH=&quot;$HOME/.rbenv/plugins/ruby-build/bin:$PATH&quot;' &gt;&gt; ~/.bashrc
-exec $SHELL
-
-rbenv install 2.5.1
-rbenv global 2.5.1
-ruby -v
-</code></pre>
-
-<p>install Bundler</p>
-<pre><code>`gem install bundler`
-</code></pre>
-<p>rbenv users need to run rbenv rehash after installing bundler.</p>
-<pre><code>`rbenv rehash`
-
-`gem install rails -v 5.2.1`
-</code></pre>
-<p>After the installation is complete, check the rails version.</p>
-<p><code>rails -v</code></p>
-<h1 id="getting-git">Getting Git</h1>
+<h2 id="download-oracle-jdk-18">Download Oracle JDK 1.8</h2>
 <ul>
-<li>see the article on <a href="../2018-10-19-configure_git/">Configuring Git</a></li>
+<li>this has javafx automatically included to it.</li>
+<li>it's free</li>
+<li>you'll need to sign up, but other alternatives are way harder to do</li>
+<li>JDK 1.8 is also know as JDK 8</li>
+<li>We can also use higher versions of java, but we'll need more complicated build tools like maven or gradle to work with JavaFX. We want Java 8 so we can stick to the default ANT build tool.</li>
 </ul>
-<h1 id="setting-up-mysql">Setting Up MySQL</h1>
-<ul>
-<li>see the article on <a href="../2018-10-19-setup_mysql/">Setting Up MySQL</a></li>
-</ul>
-<p>Rails ships with sqlite3 as the default database. This is good only for simple and small databases.</p>
-<p>MySQL is much much better, especially when you're coming from a background of PHP.</p>
-<p>Use the software repo to install and take note of the password you set and update the database.yml file.</p>
-<h1 id="setting-up-postgresql">Setting Up PostgreSQL</h1>
-<ul>
-<li>see the article on <a href="../2018-10-19-setup_postgresql/">Setting Up PostgreSQL</a></li>
-</ul>
-<p>PostgreSQL is even better than MySQL for normal implementations of Rails Web applications.</p>
-<p>Use the software repo to install and take note of the password you set and update the database.yml file.</p>
-<h1 id="inspect-if-everything-works">Inspect if everything works</h1>
-<pre><code class="bash">#### If you want to use SQLite (easiest for dev; bad for prod)
-    rails new my_test_app
+<p>To install NetBeans, you have to download it first from the Oracle official website:</p>
+<p>https://www.oracle.com/java/technologies/javase-jdk8-downloads.html</p>
+<p><img alt="qownnotes-media-W12311" src="../media/179859311.png" /></p>
+<ol>
+<li>Scroll down until you find the right download for your machine</li>
+<li>Download and install or unzip</li>
+</ol>
+<hr>
 
-#### If you want to use MySQL
-    rails new myapp -d mysql
+<h2 id="install-netbeans">Install NetBeans</h2>
+<p>To install NetBeans, you have to download it first from the NetBeans official website:</p>
+<p>https://netbeans.apache.org/download/index.html</p>
+<ol>
+<li>Click on the green “Download” button under the <strong><em>Apache NetBeans LTS</em></strong> line</li>
+<li>
+<p>You can also learn more about NetBeans by clicking the blue “Features” button next to the “Download” button.</p>
+<p><img alt="qownnotes-media-P12311" src="../media/1512443135.png" /></p>
+</li>
+<li>
+<p>You can also download other previous versions as well but its recommended to use the latest version.</p>
+</li>
+<li>This will take you to a page titled “Downloading Apache NetBeans (incubating)”.</li>
+<li>
+<p>From this page, click on the <strong><em>“Binaries”</em></strong> link. You can click the “Source” link and download that if you want to compile it yourself but downloading the “Binaries” is faster and easier.</p>
+<p><img alt="qownnotes-media-T12311" src="../media/724898476.png" /></p>
+</li>
+<li>
+<p>Once clicked, this will redirect you to the apache page where a link will be generated for you.</p>
+</li>
+<li>Click the link and it will start downloading.</li>
+<li>Install or unzip and run. You might be asked for the version of JDK to use. Make sure it's JDK 1.8 by pointing to the directory where you it's installed</li>
+<li>If you are greeted with this view once it opens, then NetBeans has been successfully installed and is ready for you to start writing programs and developing applications on it.</li>
+</ol>
+<p><img alt="qownnotes-media-J12311" src="../media/1292380126.png" /></p>
+<hr>
 
-#### If you want to use Postgres
-# Note that this will expect a postgres user with the same username
-# as your app, you may need to edit config/database.yml to match the
-# user you created earlier
-    rails new myapp -d postgresql
+<h2 id="install-the-javafx-scene-builder">Install the JavaFX Scene Builder</h2>
+<p>Now that NetBeans has been successfully installed and is working properly, we can move to the next step; install JavaFX Scene Builder.</p>
+<p>First, we have to download Scene Builder from its official website:</p>
+<p>https://gluonhq.com/products/scene-builder/#download</p>
+<p><img alt="qownnotes-media-t12311" src="../media/1902213677.png" /></p>
+<ol>
+<li>On this page, scroll down until you see the download options for your version of Java (Java 8).</li>
+<li>Look for the right Scene Builder version for your operating system and click the green “Download” button.</li>
+<li>This will redirect you to a “Thanks” page and start downloading.</li>
+<li>Once downloaded, open the installer.</li>
+<li>In the installer, accept the terms and conditions and click install.</li>
+<li>Once installed, click finish.
+To check whether the installation was successful or not you can open “SceneBuilder” and will be greeted with the following view if the installation was successful:</li>
+</ol>
+<p><img alt="qownnotes-media-G12311" src="../media/2053071218.png" /></p>
+<hr>
 
-# Move into the application directory
-cd my_test_app
-bundle exec spring binstub --all
-bundle update
+<h2 id="integrate-javafx-scene-builder-and-netbeans">Integrate JavaFX Scene Builder and NetBeans</h2>
+<p>Once Scene Builder and NetBeans have been installed, it is time to move to the final step; integrate both the programs.</p>
+<ol>
+<li>Open NetBeans,</li>
+<li>click on “File” and then “New project.” in the dropdown menu. A new window will open.</li>
+<li>
+<p>Click on “JavaFX” from the “Categories” tab and “Java FXML Application” from  “Projects” tab.</p>
+<p><img alt="qownnotes-media-F12311" src="../media/594897691.png" />
+4. Click “Next”.
+5. Install any modules, if it prompts to download and activate any modules. In the next window give the project a name and click “Finish”.</p>
+<p><img alt="qownnotes-media-h12311" src="../media/1483339083.png" />
+6.  Once opened, go to the “Projects” tab and click on your project.
+7. Then click on “Source Packages”,
+8. click on your project’s package,
+9.  right-click on the .fxml file and click “Open”.
+10.  This will open the file in Scene Builder for you to work on it.</p>
+</li>
+</ol>
+<p><img alt="qownnotes-media-z12311" src="../media/1508710837.png" /></p>
+<hr>
 
-# If you setup MySQL or Postgres with a username/password, modify the
-# config/database.yml file to contain the username/password that you specified
-
-# Create the database
-rails db:create
-
-rails server
-</code></pre>
-
-<p>visit http://localhost:3000 to view your new website</p></div>
+<h2 id="next-steps">Next Steps</h2>
+<p>And with this, you have successfully integrated Scene Builder and NetBeans to work together seamlessly. Once you are done with making the GUI, to add functionality and logic to it, edit the “Controller.Java” file directly below the .fxml file and give it functionality. Now you can go on and enjoy making GUI for your programs in an intuitive and fun way using JavaFX Scene Builder.</p></div>
         </div>
 
         <footer class="col-md-12">
