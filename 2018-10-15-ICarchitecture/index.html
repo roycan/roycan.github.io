@@ -8,337 +8,389 @@
         <meta name="author" content="Roy Vincent Luna Canseco">
         <link rel="canonical" href="https://roycan.gitlab.io/mkdocs/2018-10-15-ICarchitecture/">
         <link rel="shortcut icon" href="../img/favicon.ico">
-        <title>2018 10 15 ICarchitecture - roycan docs</title>
-        <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
-        <link href="../css/font-awesome-4.5.0.css" rel="stylesheet">
+        <title>Software Achitecture Document - roycan docs</title>
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../css/font-awesome.min.css" rel="stylesheet">
         <link href="../css/base.css" rel="stylesheet">
-        <link rel="stylesheet" href="../css/highlight.css">
-        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-        <!--[if lt IE 9]>
-            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
-        <![endif]-->
-	
-	<script src="../js/jquery-1.10.2.min.js"></script>
-        <script src="../js/bootstrap-3.0.3.min.js"></script>
-        <script src="../js/highlight.pack.js"></script> 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/docco.min.css">
+
+        <script src="../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
     </head>
 
     <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="..">roycan docs</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
-    <div class="container">
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem">
+                                <a href=".." class="nav-link">Home</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="../2019-01-cv/" class="nav-link">About</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="../presentations/" class="nav-link">Presentations</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">skills <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../2014-01-15-maple-review/" class="dropdown-item"> Quickly relearning Maple </a>
+</li>
+                                    
+<li>
+    <a href="../2014-03-03-joomla-backup/" class="dropdown-item">Backing up a Joomla Site</a>
+</li>
+                                    
+<li>
+    <a href="../2018-07-13-aws-jasperreports/" class="dropdown-item">Jasper Server on AWS Attempt</a>
+</li>
+                                    
+<li>
+    <a href="../2018-08-10-laravel/" class="dropdown-item">PHP Laravel</a>
+</li>
+                                    
+<li>
+    <a href="../2019-01-09-digital-ads/" class="dropdown-item">2019 01 09 digital ads</a>
+</li>
+                                    
+<li>
+    <a href="../2019-01-09-email-marketing/" class="dropdown-item">Email marketing</a>
+</li>
+                                    
+<li>
+    <a href="../2019-01-10-digital-marketing/" class="dropdown-item">Digitial marketing</a>
+</li>
+                                    
+<li>
+    <a href="../2019-01-12-pro-rails-project/" class="dropdown-item">Professional Rails Project Steps</a>
+</li>
+                                    
+<li>
+    <a href="../2019-03-30-se_proj_planning/" class="dropdown-item">This Project Planning from SDLC</a>
+</li>
+                                    
+<li>
+    <a href="../2019-04-xp_virtualbox/" class="dropdown-item">Setting up Networking for WinXP on virtualbox</a>
+</li>
+                                    
+<li>
+    <a href="../2019-03-phalcon_php/" class="dropdown-item">Installing Phalcon PHP in Ubuntu 18.04</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">research <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../2018-07-07-phd-hunt/" class="dropdown-item">To PhD Abroad I Go</a>
+</li>
+                                    
+<li>
+    <a href="../2018-07-08-EUSE-seminar/" class="dropdown-item">End-User Software Engineering</a>
+</li>
+                                    
+<li>
+    <a href="../2018-07-08-phd-hunt/" class="dropdown-item">My PhD Hunt  (day 2)</a>
+</li>
+                                    
+<li>
+    <a href="../2018-07-09-phd-hunt/" class="dropdown-item">My PhD Hunt  (day 3)</a>
+</li>
+                                    
+<li>
+    <a href="../2018-07-10-phd-thoughts/" class="dropdown-item">My PhD Hunt  (day 4)</a>
+</li>
+                                    
+<li>
+    <a href="../2018-07-11-phd-australia/" class="dropdown-item">Australian Uni's w/ good CS PhD Programs </a>
+</li>
+                                    
+<li>
+    <a href="../2018-07-12-phd-hunt/" class="dropdown-item">Deeper look Australian Uni's - part 1</a>
+</li>
+                                    
+<li>
+    <a href="../2018-07-13-phd-hunt/" class="dropdown-item">Deeper look Australian Uni's - part 2</a>
+</li>
+                                    
+<li>
+    <a href="../2018-07-15-phd-hunt/" class="dropdown-item">Deeper look Australian Uni's - part 3 (last)</a>
+</li>
+                                    
+<li>
+    <a href="../2018-07-19-phd-hunt/" class="dropdown-item">PhD Top 3</a>
+</li>
+                                    
+<li>
+    <a href="../2018-07-20-phd-hunt/" class="dropdown-item">Melbourne for PhD</a>
+</li>
+                                    
+<li>
+    <a href="../2019-01-09-marketing-trends-ph/" class="dropdown-item">Philippine Digital Marketing Trends 2018</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">relationships <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../2018-08-27-self-made/" class="dropdown-item"> Billionaire's Habits </a>
+</li>
+                                    
+<li>
+    <a href="../2018-10-19-block_rosary/" class="dropdown-item">Block Rosary</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">teaching <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../2018-09-14-gslides/" class="dropdown-item">Google slides with Audio</a>
+</li>
+                                    
+<li>
+    <a href="../2018-09-16-info_sys/" class="dropdown-item">My Information System Development Philosophy</a>
+</li>
+                                    
+<li>
+    <a href="../2018-09-25-IS_prog-js_dates/" class="dropdown-item">Javascript Date Object</a>
+</li>
+                                    
+<li>
+    <a href="../2018-09-25-js_loops/" class="dropdown-item">Javascript loops</a>
+</li>
+                                    
+<li>
+    <a href="../2018-09-26-mysql_datatypes/" class="dropdown-item">MySQL datatypes</a>
+</li>
+                                    
+<li>
+    <a href="../2018-10-01-WAPP-setup/" class="dropdown-item">WAPP Setup</a>
+</li>
+                                    
+<li>
+    <a href="../2018-10-14-BA186_syllabus/" class="dropdown-item">BA186 SYSTEMS ANALYSIS AND DESIGN</a>
+</li>
+                                    
+<li>
+    <a href="../2018-10-19-configure_git/" class="dropdown-item">Setup Git and Github</a>
+</li>
+                                    
+<li>
+    <a href="../2018-10-19-install_rails/" class="dropdown-item">Install rails in Ubuntu 18.04</a>
+</li>
+                                    
+<li>
+    <a href="../2018-10-19-setup_mysql/" class="dropdown-item">Setting Up MySQL in Ubuntu 18.04</a>
+</li>
+                                    
+<li>
+    <a href="../2018-10-19-setup_postgresql/" class="dropdown-item">Setting Up PostgreSQL in Ubuntu 18.04</a>
+</li>
+                                    
+<li>
+    <a href="../2018-11-01-aws_upkeep/" class="dropdown-item">Setting up an AWS account for Team Development</a>
+</li>
+                                    
+<li>
+    <a href="../2019-02-pisay_application/" class="dropdown-item">Teacher Career Path Evaluation Sheet</a>
+</li>
+                                    
+<li>
+    <a href="../2018-01-IPSE-syllabus/" class="dropdown-item">2018 01 IPSE syllabus</a>
+</li>
+                                    
+<li>
+    <a href="../2019-04-pisay_promotion/" class="dropdown-item">Teacher Career Path Evaluation Sheet</a>
+</li>
+                                    
+<li>
+    <a href="../2019-03-pisay_cs4_setup/" class="dropdown-item">2019 03 pisay cs4 setup</a>
+</li>
+                                    
+<li>
+    <a href="../2020-03-pisay_cs4_setup/" class="dropdown-item">2020 03 pisay cs4 setup</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown active">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">projects <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="./" class="dropdown-item active">Software Achitecture Document</a>
+</li>
+                                    
+<li>
+    <a href="../2019-01-05-pcari-site/" class="dropdown-item">2019 01 05 pcari site</a>
+</li>
+                                    
+<li>
+    <a href="../pcari-site-proposal/" class="dropdown-item">Pcari site proposal</a>
+</li>
+                                    
+<li>
+    <a href="../UP-IC/" class="dropdown-item">UP IC</a>
+</li>
+                                    
+<li>
+    <a href="../2019-01-05-IS-proj-start/" class="dropdown-item">Beginning an Information System Project</a>
+</li>
+                                    
+<li>
+    <a href="../2018-collated_screens/" class="dropdown-item">2018 collated screens</a>
+</li>
+                                    
+<li>
+    <a href="../2018-11-IC-comments/" class="dropdown-item">2018 11 IC comments</a>
+</li>
+                                    
+<li>
+    <a href="../2018-collated_erd/" class="dropdown-item">2018 collated erd</a>
+</li>
+                                    
+<li>
+    <a href="../2018-mobile_screens/" class="dropdown-item">2018 mobile screens</a>
+</li>
+                                    
+<li>
+    <a href="../2019-01-16-DENR_TOR/" class="dropdown-item">2019 01 16 DENR TOR</a>
+</li>
+                                    
+<li>
+    <a href="../2019-02-UPPFI-WW-DOD-1/" class="dropdown-item">Definitions of Done - UPPFI-WW web app</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
 
-        <!-- Collapsed navigation -->
-        <div class="navbar-header">
-            <!-- Expander button -->
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="..">roycan docs</a>
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../2020-03-pisay_cs4_setup/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../2019-01-05-pcari-site/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
         </div>
-
-        <!-- Expanded navigation -->
-        <div class="navbar-collapse collapse">
-                <!-- Main navigation -->
-                <ul class="nav navbar-nav">
-                    <li >
-                        <a href="..">Home</a>
-                    </li>
-                    <li >
-                        <a href="../2019-01-cv/">About</a>
-                    </li>
-                    <li >
-                        <a href="../presentations/">Presentations</a>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">skills <b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                            
-<li >
-    <a href="../2014-01-15-maple-review/">2014 01 15 maple review</a>
-</li>
-                            
-<li >
-    <a href="../2014-03-03-joomla-backup/">2014 03 03 joomla backup</a>
-</li>
-                            
-<li >
-    <a href="../2018-07-13-aws-jasperreports/">2018 07 13 aws jasperreports</a>
-</li>
-                            
-<li >
-    <a href="../2018-08-10-laravel/">2018 08 10 laravel</a>
-</li>
-                            
-<li >
-    <a href="../2019-01-09-digital-ads/">2019 01 09 digital ads</a>
-</li>
-                            
-<li >
-    <a href="../2019-01-09-email-marketing/">2019 01 09 email marketing</a>
-</li>
-                            
-<li >
-    <a href="../2019-01-10-digital-marketing/">2019 01 10 digital marketing</a>
-</li>
-                            
-<li >
-    <a href="../2019-01-12-pro-rails-project/">2019 01 12 pro rails project</a>
-</li>
-                            
-<li >
-    <a href="../2019-03-30-se_proj_planning/">2019 03 30 se proj planning</a>
-</li>
-                            
-<li >
-    <a href="../2019-04-xp_virtualbox/">2019 04 xp virtualbox</a>
-</li>
-                            
-<li >
-    <a href="../2019-03-phalcon_php/">2019 03 phalcon php</a>
-</li>
-                        </ul>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">research <b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                            
-<li >
-    <a href="../2018-07-07-phd-hunt/">2018 07 07 phd hunt</a>
-</li>
-                            
-<li >
-    <a href="../2018-07-08-EUSE-seminar/">2018 07 08 EUSE seminar</a>
-</li>
-                            
-<li >
-    <a href="../2018-07-08-phd-hunt/">2018 07 08 phd hunt</a>
-</li>
-                            
-<li >
-    <a href="../2018-07-09-phd-hunt/">2018 07 09 phd hunt</a>
-</li>
-                            
-<li >
-    <a href="../2018-07-10-phd-thoughts/">2018 07 10 phd thoughts</a>
-</li>
-                            
-<li >
-    <a href="../2018-07-11-phd-australia/">2018 07 11 phd australia</a>
-</li>
-                            
-<li >
-    <a href="../2018-07-12-phd-hunt/">2018 07 12 phd hunt</a>
-</li>
-                            
-<li >
-    <a href="../2018-07-13-phd-hunt/">2018 07 13 phd hunt</a>
-</li>
-                            
-<li >
-    <a href="../2018-07-15-phd-hunt/">2018 07 15 phd hunt</a>
-</li>
-                            
-<li >
-    <a href="../2018-07-19-phd-hunt/">2018 07 19 phd hunt</a>
-</li>
-                            
-<li >
-    <a href="../2018-07-20-phd-hunt/">2018 07 20 phd hunt</a>
-</li>
-                            
-<li >
-    <a href="../2019-01-09-marketing-trends-ph/">2019 01 09 marketing trends ph</a>
-</li>
-                        </ul>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">relationships <b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                            
-<li >
-    <a href="../2018-08-27-self-made/">2018 08 27 self made</a>
-</li>
-                            
-<li >
-    <a href="../2018-10-19-block_rosary/">2018 10 19 block rosary</a>
-</li>
-                        </ul>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">teaching <b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                            
-<li >
-    <a href="../2018-09-14-gslides/">2018 09 14 gslides</a>
-</li>
-                            
-<li >
-    <a href="../2018-09-16-info_sys/">2018 09 16 info sys</a>
-</li>
-                            
-<li >
-    <a href="../2018-09-25-IS_prog-js_dates/">2018 09 25 IS prog js dates</a>
-</li>
-                            
-<li >
-    <a href="../2018-09-25-js_loops/">2018 09 25 js loops</a>
-</li>
-                            
-<li >
-    <a href="../2018-09-26-mysql_datatypes/">2018 09 26 mysql datatypes</a>
-</li>
-                            
-<li >
-    <a href="../2018-10-01-WAPP-setup/">2018 10 01 WAPP setup</a>
-</li>
-                            
-<li >
-    <a href="../2018-10-14-BA186_syllabus/">2018 10 14 BA186 syllabus</a>
-</li>
-                            
-<li >
-    <a href="../2018-10-19-configure_git/">2018 10 19 configure git</a>
-</li>
-                            
-<li >
-    <a href="../2018-10-19-install_rails/">2018 10 19 install rails</a>
-</li>
-                            
-<li >
-    <a href="../2018-10-19-setup_mysql/">2018 10 19 setup mysql</a>
-</li>
-                            
-<li >
-    <a href="../2018-10-19-setup_postgresql/">2018 10 19 setup postgresql</a>
-</li>
-                            
-<li >
-    <a href="../2018-11-01-aws_upkeep/">2018 11 01 aws upkeep</a>
-</li>
-                            
-<li >
-    <a href="../2019-02-pisay_application/">2019 02 pisay application</a>
-</li>
-                            
-<li >
-    <a href="../2018-01-IPSE-syllabus/">2018 01 IPSE syllabus</a>
-</li>
-                            
-<li >
-    <a href="../2019-04-pisay_promotion/">2019 04 pisay promotion</a>
-</li>
-                            
-<li >
-    <a href="../2019-03-pisay_cs4_setup/">2019 03 pisay cs4 setup</a>
-</li>
-                            
-<li >
-    <a href="../2020-03-pisay_cs4_setup/">2020 03 pisay cs4 setup</a>
-</li>
-                        </ul>
-                    </li>
-                    <li class="dropdown active">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">projects <b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                            
-<li class="active">
-    <a href="./">2018 10 15 ICarchitecture</a>
-</li>
-                            
-<li >
-    <a href="../2019-01-05-pcari-site/">2019 01 05 pcari site</a>
-</li>
-                            
-<li >
-    <a href="../pcari-site-proposal/">Pcari site proposal</a>
-</li>
-                            
-<li >
-    <a href="../UP-IC/">UP IC</a>
-</li>
-                            
-<li >
-    <a href="../2019-01-05-IS-proj-start/">2019 01 05 IS proj start</a>
-</li>
-                            
-<li >
-    <a href="../2018-collated_screens/">2018 collated screens</a>
-</li>
-                            
-<li >
-    <a href="../2018-11-IC-comments/">2018 11 IC comments</a>
-</li>
-                            
-<li >
-    <a href="../2018-collated_erd/">2018 collated erd</a>
-</li>
-                            
-<li >
-    <a href="../2018-mobile_screens/">2018 mobile screens</a>
-</li>
-                            
-<li >
-    <a href="../2019-01-16-DENR_TOR/">2019 01 16 DENR TOR</a>
-</li>
-                            
-<li >
-    <a href="../2019-02-UPPFI-WW-DOD-1/">2019 02 UPPFI WW DOD 1</a>
-</li>
-                        </ul>
-                    </li>
-                </ul>
-
-            <ul class="nav navbar-nav navbar-right">
-                <li>
-                    <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
-                        <i class="fa fa-search"></i> Search
-                    </a>
-                </li>
-                    <li >
-                        <a rel="next" href="../2020-03-pisay_cs4_setup/">
-                            <i class="fa fa-arrow-left"></i> Previous
-                        </a>
-                    </li>
-                    <li >
-                        <a rel="prev" href="../2019-01-05-pcari-site/">
-                            Next <i class="fa fa-arrow-right"></i>
-                        </a>
-                    </li>
-            </ul>
-        </div>
-    </div>
-</div>
 
         <div class="container">
-                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
-    <ul class="nav bs-sidenav">
-        <li class="main active"><a href="#-soft_engg">- soft_engg</a></li>
-        <li class="main "><a href="#definitions">Definitions</a></li>
-        <li class="main "><a href="#introduction">Introduction</a></li>
-            <li><a href="#audience">Audience</a></li>
-            <li><a href="#purpose">Purpose</a></li>
-            <li><a href="#assessment">Assessment</a></li>
-        <li class="main "><a href="#architecture">Architecture</a></li>
-            <li><a href="#model-view-controller">Model-View-Controller</a></li>
-            <li><a href="#rest-pattern">REST Pattern</a></li>
-            <li><a href="#active-record-architectural-pattern">Active Record Architectural Pattern</a></li>
-        <li class="main "><a href="#process-and-workflow">Process and Workflow</a></li>
-        <li class="main "><a href="#environment-and-network">Environment and Network</a></li>
-        <li class="main "><a href="#deployment-view">Deployment View</a></li>
-        <li class="main "><a href="#implementation-view">Implementation View</a></li>
-            <li><a href="#data-management">Data Management</a></li>
-            <li><a href="#security-authentication-authorization-and-audit">Security Authentication Authorization and Audit</a></li>
-        <li class="main "><a href="#references">References</a></li>
-    </ul>
-</div></div>
-                <div class="col-md-9" role="main">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
 
-<h2 id="-soft_engg">- soft_engg</h2>
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="2"><a href="#definitions" class="nav-link">Definitions</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#introduction" class="nav-link">Introduction</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#audience" class="nav-link">Audience</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#purpose" class="nav-link">Purpose</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#assessment" class="nav-link">Assessment</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#architecture" class="nav-link">Architecture</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#model-view-controller" class="nav-link">Model-View-Controller</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#rest-pattern" class="nav-link">REST Pattern</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#active-record-architectural-pattern" class="nav-link">Active Record Architectural Pattern</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#process-and-workflow" class="nav-link">Process and Workflow</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#environment-and-network" class="nav-link">Environment and Network</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#deployment-view" class="nav-link">Deployment View</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#implementation-view" class="nav-link">Implementation View</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#data-management" class="nav-link">Data Management</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#security-authentication-authorization-and-audit" class="nav-link">Security Authentication Authorization and Audit</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#references" class="nav-link">References</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
 <h2 id="definitions">Definitions</h2>
 <ul>
 <li>IC    - Insurance Commision</li>
@@ -397,7 +449,7 @@
 <p>This is like in making a building. Every great and large building has an architect all the way from its start to the end.</p>
 <p>The basic architecture will look like this:</p>
 <p><img src="../assets/mvc.png" alt="MVC">
-![MVC]({{ "/assets/mvc.png" | absolute_url }})
+<img alt="MVC" src="{{ &quot;/assets/mvc.png&quot; | absolute_url }}" />
 (https://medium.freecodecamp.org/understanding-the-basics-of-ruby-on-rails-http-mvc-and-routes-359b8d809c7a)</p>
 <h2 id="model-view-controller">Model-View-Controller</h2>
 <p>All requests from clients to the server will be brought to the controller to be preprocessed and routed to the proper action. The controller will direct the actions to the Model when database access is necessary and direct it to the Views when the data requirements are satisfied.</p>
@@ -423,7 +475,7 @@
 <h1 id="environment-and-network">Environment and Network</h1>
 <p>The following Environment diagram can be supported by the Heroku PAAS on top of the AWS cloud service. This is what I recommend for the next phase of development.</p>
 <p>The current on-premise servers in IC also capable of hosting the servers according to the diagram.</p>
-<pre><code class="graphviz">digraph G{
+<pre><code class="language-graphviz">digraph G{
 
     node[shape=box]
     edge[dir=both]
@@ -439,7 +491,6 @@
 
 }
 </code></pre>
-
 <p>The software is recommended to be initially cloud developed with the choice of moving on-premise after development. This will allow maximum flexibility in efficient adding of security and reliability to the system during development that can more-readily be translated to on-premise at a future point.  </p>
 <p>Development and Testing will be done on local machines and not on the server.</p>
 <h1 id="deployment-view">Deployment View</h1>
@@ -462,33 +513,75 @@ The services are provided by the local server. The server, whether on-premise wi
 <p>Martin Fowler. 2003. Patterns of Enterprise Application Architecture. Book</p>
 <p>Roy Thomas Fielding. 2000. Architectural Styles and the Design of Network-based Software Architectures. UNIVERSITY OF CALIFORNIA,
 IRVINE. DISSERTATION</p></div>
+            </div>
         </div>
 
         <footer class="col-md-12">
             <hr>
                 <p>&copy; 2018 - 2020 Roy Canseco <br> Feedback: 03rvlc+mkdocs@gmail.com</p>
-            <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</p>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
         </footer>
-        <script>var base_url = '..';</script>
-        <script data-main="../mkdocs/js/search.js" src="../mkdocs/js/require.js"></script>
-        <script src="../js/base.js"></script><div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+        <script>
+            var base_url = "..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../js/base.js" defer></script>
+        <script src="../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
                 <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
             </div>
             <div class="modal-body">
-                <p>
-                    From here you can search these documents. Enter
-                    your search terms below.
-                </p>
-                <form role="form">
-                    <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query">
-                    </div>
-                </form>
-                <div id="mkdocs-search-results"></div>
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
             <div class="modal-footer">
             </div>
