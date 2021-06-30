@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <meta name="author" content="Roy Vincent Luna Canseco">
+        <link rel="canonical" href="https://roycan.gitlab.io/mkdocs/Q1%20-%20coding%20problems/">
+        <link rel="shortcut icon" href="../img/favicon.ico">
+        <title>Q1   coding problems - roycan docs</title>
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/docco.min.css">
+
+        <script src="../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="..">roycan docs</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem">
+                                <a href=".." class="nav-link">Home</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="../2019-01-cv/" class="nav-link">About</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">skills <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../2014-01-15-maple-review/" class="dropdown-item"> Quickly relearning Maple </a>
+</li>
+                                    
+<li>
+    <a href="../2014-03-03-joomla-backup/" class="dropdown-item">Backing up a Joomla Site</a>
+</li>
+                                    
+<li>
+    <a href="../2018-07-13-aws-jasperreports/" class="dropdown-item">Jasper Server on AWS Attempt</a>
+</li>
+                                    
+<li>
+    <a href="../2018-08-10-laravel/" class="dropdown-item">PHP Laravel</a>
+</li>
+                                    
+<li>
+    <a href="../2019-01-09-digital-ads/" class="dropdown-item">2019 01 09 digital ads</a>
+</li>
+                                    
+<li>
+    <a href="../2019-01-09-email-marketing/" class="dropdown-item">Email marketing</a>
+</li>
+                                    
+<li>
+    <a href="../2019-01-10-digital-marketing/" class="dropdown-item">Digitial marketing</a>
+</li>
+                                    
+<li>
+    <a href="../2019-01-12-pro-rails-project/" class="dropdown-item">Professional Rails Project Steps</a>
+</li>
+                                    
+<li>
+    <a href="../2019-03-30-se_proj_planning/" class="dropdown-item">This Project Planning from SDLC</a>
+</li>
+                                    
+<li>
+    <a href="../2019-04-xp_virtualbox/" class="dropdown-item">Setting up Networking for WinXP on virtualbox</a>
+</li>
+                                    
+<li>
+    <a href="../2019-03-phalcon_php/" class="dropdown-item">Installing Phalcon PHP in Ubuntu 18.04</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">research <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../2018-07-07-phd-hunt/" class="dropdown-item">To PhD Abroad I Go</a>
+</li>
+                                    
+<li>
+    <a href="../2018-07-08-EUSE-seminar/" class="dropdown-item">End-User Software Engineering</a>
+</li>
+                                    
+<li>
+    <a href="../2018-07-08-phd-hunt/" class="dropdown-item">My PhD Hunt  (day 2)</a>
+</li>
+                                    
+<li>
+    <a href="../2018-07-09-phd-hunt/" class="dropdown-item">My PhD Hunt  (day 3)</a>
+</li>
+                                    
+<li>
+    <a href="../2018-07-10-phd-thoughts/" class="dropdown-item">My PhD Hunt  (day 4)</a>
+</li>
+                                    
+<li>
+    <a href="../2018-07-11-phd-australia/" class="dropdown-item">Australian Uni's w/ good CS PhD Programs </a>
+</li>
+                                    
+<li>
+    <a href="../2018-07-12-phd-hunt/" class="dropdown-item">Deeper look Australian Uni's - part 1</a>
+</li>
+                                    
+<li>
+    <a href="../2018-07-13-phd-hunt/" class="dropdown-item">Deeper look Australian Uni's - part 2</a>
+</li>
+                                    
+<li>
+    <a href="../2018-07-15-phd-hunt/" class="dropdown-item">Deeper look Australian Uni's - part 3 (last)</a>
+</li>
+                                    
+<li>
+    <a href="../2018-07-19-phd-hunt/" class="dropdown-item">PhD Top 3</a>
+</li>
+                                    
+<li>
+    <a href="../2018-07-20-phd-hunt/" class="dropdown-item">Melbourne for PhD</a>
+</li>
+                                    
+<li>
+    <a href="../2019-01-09-marketing-trends-ph/" class="dropdown-item">Philippine Digital Marketing Trends 2018</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">relationships <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../2018-08-27-self-made/" class="dropdown-item"> Billionaire's Habits </a>
+</li>
+                                    
+<li>
+    <a href="../2018-10-19-block_rosary/" class="dropdown-item">Block Rosary</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">teaching <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../2018-09-14-gslides/" class="dropdown-item">Google slides with Audio</a>
+</li>
+                                    
+<li>
+    <a href="../2018-09-16-info_sys/" class="dropdown-item">My Information System Development Philosophy</a>
+</li>
+                                    
+<li>
+    <a href="../2018-09-25-IS_prog-js_dates/" class="dropdown-item">Javascript Date Object</a>
+</li>
+                                    
+<li>
+    <a href="../2018-09-25-js_loops/" class="dropdown-item">Javascript loops</a>
+</li>
+                                    
+<li>
+    <a href="../2018-09-26-mysql_datatypes/" class="dropdown-item">MySQL datatypes</a>
+</li>
+                                    
+<li>
+    <a href="../2018-10-01-WAPP-setup/" class="dropdown-item">WAPP Setup</a>
+</li>
+                                    
+<li>
+    <a href="../2018-10-14-BA186_syllabus/" class="dropdown-item">BA186 SYSTEMS ANALYSIS AND DESIGN</a>
+</li>
+                                    
+<li>
+    <a href="../2018-10-19-configure_git/" class="dropdown-item">Setup Git and Github</a>
+</li>
+                                    
+<li>
+    <a href="../2018-10-19-install_rails/" class="dropdown-item">Install rails in Ubuntu 18.04</a>
+</li>
+                                    
+<li>
+    <a href="../2018-10-19-setup_mysql/" class="dropdown-item">Setting Up MySQL in Ubuntu 18.04</a>
+</li>
+                                    
+<li>
+    <a href="../2018-10-19-setup_postgresql/" class="dropdown-item">Setting Up PostgreSQL in Ubuntu 18.04</a>
+</li>
+                                    
+<li>
+    <a href="../2018-11-01-aws_upkeep/" class="dropdown-item">Setting up an AWS account for Team Development</a>
+</li>
+                                    
+<li>
+    <a href="../2019-02-pisay_application/" class="dropdown-item">Teacher Career Path Evaluation Sheet</a>
+</li>
+                                    
+<li>
+    <a href="../2018-01-IPSE-syllabus/" class="dropdown-item">2018 01 IPSE syllabus</a>
+</li>
+                                    
+<li>
+    <a href="../2019-04-pisay_promotion/" class="dropdown-item">Teacher Career Path Evaluation Sheet</a>
+</li>
+                                    
+<li>
+    <a href="../2019-03-pisay_cs4_setup/" class="dropdown-item">2019 03 pisay cs4 setup</a>
+</li>
+                                    
+<li>
+    <a href="../2020-03-pisay_cs4_setup/" class="dropdown-item">2020 03 pisay cs4 setup</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">projects <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../2019-01-05-pcari-site/" class="dropdown-item">2019 01 05 pcari site</a>
+</li>
+                                    
+<li>
+    <a href="../pcari-site-proposal/" class="dropdown-item">Pcari site proposal</a>
+</li>
+                                    
+<li>
+    <a href="../UP-IC/" class="dropdown-item">UP IC</a>
+</li>
+                                    
+<li>
+    <a href="../2019-01-05-IS-proj-start/" class="dropdown-item">Beginning an Information System Project</a>
+</li>
+                                    
+<li>
+    <a href="../2018-collated_screens/" class="dropdown-item">2018 collated screens</a>
+</li>
+                                    
+<li>
+    <a href="../2018-11-IC-comments/" class="dropdown-item">2018 11 IC comments</a>
+</li>
+                                    
+<li>
+    <a href="../2018-mobile_screens/" class="dropdown-item">2018 mobile screens</a>
+</li>
+                                    
+<li>
+    <a href="../2019-01-16-DENR_TOR/" class="dropdown-item">2019 01 16 DENR TOR</a>
+</li>
+                                    
+<li>
+    <a href="../2019-02-UPPFI-WW-DOD-1/" class="dropdown-item">Definitions of Done - UPPFI-WW web app</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#q1-coding-problems" class="nav-link">Q1 - coding problems</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#2-introduction-to-a-programming-language-hello-world" class="nav-link">(2) Introduction to a programming language - hello world</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#31-constants-and-variables-pizza" class="nav-link">(3.1) Constants and Variables - pizza</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#35-input-and-output-statements-square" class="nav-link">(3.5) Input and Output Statements - square</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#371-operators-expressions-arithmetic-calculator" class="nav-link">(3.7.1) Operators, expressions ( Arithmetic) - Calculator</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#372-operators-expressions-relational" class="nav-link">(3.7.2) Operators, expressions (Relational)</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#q1-pt" class="nav-link">Q1 PT</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="q1-coding-problems">Q1 - coding problems</h1>
+<p>I'll use Moodle with CodePost.io </p>
+<h2 id="2-introduction-to-a-programming-language-hello-world">(2) Introduction to a programming language - hello world</h2>
+<h3 id="instructions-from-your-teacher">Instructions from your teacher:</h3>
+<p>Click the "run" button in the top left and see your text show up in the terminal in the bottom left. </p>
+<p>You would then have created the quintessential first program, the "Hello World!".</p>
+<p>What can you change in the code for it to say "Hello Sir Roy!"?</p>
+<p>Try it!  :)</p>
+<p>If you got it to work, edit the multiline comments to describe what you've done to the program.</p>
+<pre><code>#include &lt;iostream&gt;
+
+int main() {
+  std::cout &lt;&lt; &quot;Hello World!\n&quot;;
+}
+</code></pre>
+<hr />
+<h2 id="31-constants-and-variables-pizza">(3.1) Constants and Variables - pizza</h2>
+<p>Instructions from your teacher:</p>
+<h3 id="pizza-problem-canseco-aug-2020">Pizza problem - Canseco - Aug 2020</h3>
+<p><img alt="media-dpLRDh" src="../media/media-dpLRDh-291500905.png" /></p>
+<p>Today we'll be computing (not eating) pizzas! 
+The sizes of Shakey's pizzas are the following:
+- regular - 8"
+- large - 11"
+- party = 14"</p>
+<p>The prices of Shakey's Thin Crust Hawaiian Pizza (my favorite) are the following:
+- regular - 283 pesos
+- large - 434 pesos
+- party - 625 pesos </p>
+<p>Let's make a program that will help us figure out which pizza size has the best price. We do that by computing the area of each pizza size and comparing that to the price.We want the pizza with the smallest pesos per square inch. </p>
+<p>Here's what's needed to create such a program. 
+- PI - needed for getting areas of circles. I want to be very accurate, so we're using it with up to 100 decimal places. 
+- const - stands for constant. Useful so that we lock the value of PI and prevent possible changes within the program.
+- float - this is a type of data that the computer will expect to be a number with a decimal place, for example, PI. 
+- int - these are integers or numbers without decimal places, like our pizza diameters. 
+- string - these are a collection of characters, such as a word, for example, "regular pizza".</p>
+<h3 id="instructions">Instructions</h3>
+<p>Read through the program I created. Pay special attention to the multiline comment at the top, which tells you what I want to do in the program.Pay attention too to the single-line comments that I've placed around to help you understand what's going on.</p>
+<p>Take note: 
+- variables are boxes for data. They have values and they have types (e.g. int, float, string). 
+- constants prevent the program from changing the value of the variable</p>
+<p>Run the program. You should see the price per square inch of a regular Shakey's Hawaiian Pizza. Now change the given values in the program so that it gives the price per square inch for the large pizza.Now change the given values in the program so that it gives the price per square inch for the party pizza.Which of the pizzas is most cost-effective? Change the given values in the program to the most cost-effective pizza.Check that the output of the black terminal.Submit the program. :)</p>
+<pre><code>/*
+I want the students to learn about constants and variables through trying to decipher which pizza sizes are best to buy.
+One way of doing this is to compare how much a square inch of regular pizza vs a large pizza vs a party pizza.
+To compute to cost of a square inch of pizza, we have to get the area of the pizza. 
+We then divide the price of the pizza by its area. 
+We print the output to the terminal.
+*/
+
+
+#include &lt;iostream&gt;
+using namespace std;
+
+
+// This is where you input the given values
+
+const float PI = 3.1415926535897932384626433832795028841971693993751058209749445923078164062862089986280348253421170679;
+string pizza_name = &quot;regular&quot;;    // string means a string of characters
+int diameter = 8;   // int means integer or no decimal parts
+int price = 283;    // float means number with decimal parts
+float area = 0;    // we put 0 here as a placeholder since we haven't computed for the pizza's area
+
+
+
+// This is the main computing part of your program. 
+
+int main() {
+  float radius = diameter / 2;
+  area = PI * radius * radius;
+  float price_per_area = price / area;
+  cout &lt;&lt; &quot;Hello!\n&quot;;
+  cout &lt;&lt; &quot;The price per square inch of a &quot;  ;
+  cout &lt;&lt; pizza_name ;
+  cout &lt;&lt; &quot; Hawaiian pizza is &quot;;
+  cout &lt;&lt; price_per_area;
+
+}
+</code></pre>
+<hr />
+<h2 id="35-input-and-output-statements-square">(3.5) Input and Output Statements - square</h2>
+<p>Instructions from your teacher:</p>
+<h3 id="input-and-output">Input and Output</h3>
+<p>We use the command cin&gt;&gt; in order to take input from the user.We use the command cout&lt;&lt; in order to print text to the screen. 
+If you are working offline, you'd probably need to enter the input in the terminal when you run the program.In repl.it, you first put input in the stdin text box. To do that, you click on the following icon in the upper right corner of the black terminal.</p>
+<p><img alt="media-upAlrL" src="../media/media-upAlrL-727330111.png" /></p>
+<p>A text box will show up and you just enter the input and click on the "Set input" button. </p>
+<h3 id="instructions_1">Instructions</h3>
+<ul>
+<li>Put 5 as input and run the program</li>
+<li>Check the terminal and see that it gives the cube of 5 correctly</li>
+<li>Read the single-line comments and see if you can figure out what's happening with each line of code.</li>
+<li>Now edit the code so that it gives the square of a number, and says so. </li>
+<li>Change the input to my (Sir Roy) Pisay batch. Clue, the digits of my batch sum up to 5. Clue, my batch is prime.</li>
+<li>Run the code.</li>
+<li>Submit</li>
+</ul>
+<pre><code>
+#include &lt;iostream&gt;
+using namespace std;
+
+int main() {
+
+  int num;  // you first make a variable to hold your input
+
+  // take user's input using  cin&gt;&gt; and put it in your variable
+  cin&gt;&gt; num;
+
+  // now output the cube of that number using  cout&lt;&lt;
+  cout &lt;&lt; num &lt;&lt; &quot; cubed is &quot; &lt;&lt; num * num * num &lt;&lt; &quot;\n&quot;;
+
+
+}
+</code></pre>
+<hr />
+<h2 id="371-operators-expressions-arithmetic-calculator">(3.7.1) Operators, expressions ( Arithmetic) - Calculator</h2>
+<p>Instructions from your teacher:</p>
+<h3 id="simple-calculator">Simple Calculator</h3>
+<p>Today we shall create the beginnings of a calculator program.
+It shall have the following abilities:- add
+- subtract
+- multiply
+- divide
+- get remainder 
+- increment, which means to increase by 1
+- decrement, which means to decrease by 1</p>
+<p>Here is a table of the code we'll use today.</p>
+<p><img alt="media-aRVTyn" src="../media/media-aRVTyn-1889126925.png" /></p>
+<h3 id="instructions_2">Instructions</h3>
+<ul>
+<li>Note: endl means "end line" or print a new line in C++.</li>
+<li>Read through the program and see if you can create an expectation as to what the output should be</li>
+<li>Save the program as calculator.cpp</li>
+<li>compile the program <code>g++ -o calculator calculator.cpp</code></li>
+<li>run the program from the commandline with 2 numerical arguments <code>./calculator 4 5</code></li>
+<li>Notice that only the first line is mathematically correct
+*Correct the rest of the program</li>
+<li>Run the corrected program and check if the terminal shows what you expect</li>
+<li>Upload your calculator.cpp file to codepost.io</li>
+</ul>
+<h3 id="dig-deeper">Dig Deeper</h3>
+<p>The results of the division might be looking weird. In which case, remember that we are only using int in this program.That means it cannot handle decimal places at the moment. Any decimals in the results will be ignored by C++.</p>
+<pre><code>#include &lt;iostream&gt;
+using namespace std;
+
+int main(int argc, char *argv[]) {
+
+  string name = argv[0];
+  int x = atoi(argv[1]);  // converts first argument to int
+  int y =  atoi(argv[2]); // converts second argument to int
+
+
+  cout &lt;&lt; &quot;There are &quot; &lt;&lt; argc &lt;&lt; &quot; arguments for this program, when including the filename.&quot; &lt;&lt; endl;
+  cout &lt;&lt; name &lt;&lt; endl;
+  cout &lt;&lt; &quot;The first argument in the program is &quot; &lt;&lt; x &lt;&lt; endl;
+  cout &lt;&lt; &quot;The second argument in the program is &quot; &lt;&lt; y &lt;&lt; endl;
+
+  cout &lt;&lt; &quot;Adding x and y equals &quot; &lt;&lt; x + y &lt;&lt; endl; 
+  cout &lt;&lt; &quot;Subracting x from y equals &quot; &lt;&lt; y &lt;&lt; endl ;
+  cout &lt;&lt; &quot;Multiplying x by y equals  &quot; &lt;&lt; y &lt;&lt; endl ;
+  cout &lt;&lt; &quot;Dividing x by y equals &quot; &lt;&lt; y &lt;&lt; endl ;
+  cout &lt;&lt; &quot;Getting the modulus of x by y equals &quot; &lt;&lt; y &lt;&lt; endl ;
+  cout &lt;&lt; &quot;Incrementing x equals &quot; &lt;&lt; y &lt;&lt; endl ;
+  cout &lt;&lt; &quot;Decrementing y equals &quot; &lt;&lt; y &lt;&lt; endl ;
+}
+</code></pre>
+<hr />
+<h2 id="372-operators-expressions-relational">(3.7.2) Operators, expressions (Relational)</h2>
+<p>Instructions from your teacher:</p>
+<h3 id="binary-problem">Binary Problem</h3>
+<p><img alt="media-lxabcA" src="../media/media-lxabcA-377219867.png" /></p>
+<p>C++ can compare values and tell you whether they're equal, greater than, less than, or something like that.It then says whether it is or it isn't, but it can only respond in code.
+- C++ will return "1" if it means true. 
+- C++ will return "0" if it means false. </p>
+<h3 id="instructions_3">Instructions</h3>
+<ul>
+<li>Read through the comments in the code and see if you can understand how the code works because of the comments</li>
+<li>Get a piece of paper and write down what you expect the output of the code will be.</li>
+<li>Run the code. Is it what you expected? If not exactly, what have you missed?</li>
+<li>Notice that the numbers in x and y are being compared and 6 comparisons become the 6 digits: 010101 </li>
+<li>Recall from gr.7 that 010101 in binary is equal to 21 (i.e. 16+4+1)</li>
+<li>I want the binary output to equal Sir Roy's age, which is 35. Change the values of x and y in the code to achieve this.</li>
+</ul>
+<pre><code>#include &lt;iostream&gt;
+using namespace std;
+
+int main() {
+
+  // let's have C++ print out its code true and false 
+  cout &lt;&lt; &quot;True: &quot; &lt;&lt; true &lt;&lt; endl  ;
+  cout &lt;&lt; &quot;False: &quot; &lt;&lt; false &lt;&lt; endl ;
+  cout &lt;&lt; &quot;\n&quot;;                          // &quot;\n&quot; means new line. 
+
+
+  // now let's get two numbers to compare: x and y 
+  // remember to place the numbers in the input box, one line each
+
+  int x,y;
+  x = 5;
+  y = 6;
+
+
+  // here we make the comparisons and output whether they're true (i.e. 1) or false (i.e. 0) for each comparison
+
+  cout &lt;&lt; (x == y) ;
+  cout &lt;&lt; (x != y) ; 
+  cout &lt;&lt; (x &gt; y) ; 
+  cout &lt;&lt; (x &lt; y) ; 
+  cout &lt;&lt; (x &gt;= y) ; 
+  cout &lt;&lt; (x &lt;= y) ; 
+</code></pre>
+<hr />
+<h2 id="q1-pt">Q1 PT</h2>
+<h3 id="part-1-adder">Part 1 Adder</h3>
+<p>Fix the following code to be able to do what the comments describe.
+This program has to be flexible. </p>
+<p>Examples:
+./a 1 3   results in 4 <br />
+./a 7.2 3.3   results in 10.5</p>
+<pre><code>/*********************************************
+create a file called a.cpp
+this file will contain a program that adds two numbers
+the numbers will be given as commandline arguments
+if you compile using the following command:
+g++ -o a a.cpp
+to run the program and add the numbers 4 and 5 you type:
+./a 4 5
+this will result to:
+9
+use the datatype float for all numbers
+**********************************************/
+
+#include &lt;iostream&gt;
+using namespace std;
+
+int main(int argc, char *argv[]){
+
+   float x = atof(argv[1]);  // converts alphanumeric to float
+   float y = atof(argv[2]);  
+
+   cout &lt;&lt; x &lt;&lt; y; 
+}
+
+</code></pre>
+<h3 id="part-2-subtracter">Part 2 Subtracter</h3>
+<p>Fix the following code to be able to do what the comments describe.
+This program has to be flexible. </p>
+<p>Examples:
+./a 1 3   results in -2  <br />
+./a 7.2 3.3   results in 3.9</p>
+<pre><code>/*********************************************
+create a file called s.cpp
+this file will contain a program that subtracts two numbers
+the numbers will be given as commandline arguments
+if you compile using the following command:
+g++ -o s s.cpp
+to run the program and add the numbers 4 and 5 you type:
+./s 4 5
+this will result to:
+-1
+use the datatype float for all numbers
+**********************************************/
+
+#include &lt;iostream&gt;
+using namespace std;
+
+int main(int argc, char *argv[]){
+
+
+}
+
+</code></pre>
+<h3 id="part-3-multiplier">Part 3 Multiplier</h3>
+<p>Fix the following code to be able to do what the comments describe.
+This program has to be flexible. </p>
+<p>Examples:
+./a 1 3   results in 3<br />
+./a 7.2 3.3   results in 23.76</p>
+<pre><code>/*********************************************
+create a file called m.cpp
+this file will contain a program that multiplies two numbers
+the numbers will be given as commandline arguments
+if you compile using the following command:
+g++ -o m m.cpp
+to run the program and add the numbers 4 and 5 you type:
+./s 4 5
+this will result to:
+20
+use the datatype float for all numbers
+**********************************************/
+
+#include &lt;iostream&gt;
+using namespace std;
+
+
+
+</code></pre>
+<h3 id="part-4-divider">Part 4 Divider</h3>
+<p>Fix the following code to be able to do what the comments describe.
+This program has to be flexible. </p>
+<p>Examples:
+./a 3 1   results in 3<br />
+./a 7.2 3.6   results in 2</p>
+<pre><code>/*********************************************
+create a file called d.cpp
+this file will contain a program that divides two numbers
+the numbers will be given as commandline arguments
+if you compile using the following command:
+g++ -o d d.cpp
+to run the program and add the numbers 4 and 5 you type:
+./s 4 5
+this will result to:
+0.8
+use the datatype float for all numbers
+**********************************************/
+
+
+
+
+</code></pre></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+                <p>&copy; 2018 - 2020 Roy Canseco <br> Feedback: 03rvlc+mkdocs@gmail.com</p>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../js/base.js" defer></script>
+        <script src="../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

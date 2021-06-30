@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <meta name="author" content="Roy Vincent Luna Canseco">
+        <link rel="canonical" href="https://roycan.gitlab.io/mkdocs/Q2%20-%20Programming%20Project%20-%20TicTacToe/">
+        <link rel="shortcut icon" href="../img/favicon.ico">
+        <title>Q2   Programming Project   TicTacToe - roycan docs</title>
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/docco.min.css">
+
+        <script src="../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="..">roycan docs</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem">
+                                <a href=".." class="nav-link">Home</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="../2019-01-cv/" class="nav-link">About</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">skills <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../2014-01-15-maple-review/" class="dropdown-item"> Quickly relearning Maple </a>
+</li>
+                                    
+<li>
+    <a href="../2014-03-03-joomla-backup/" class="dropdown-item">Backing up a Joomla Site</a>
+</li>
+                                    
+<li>
+    <a href="../2018-07-13-aws-jasperreports/" class="dropdown-item">Jasper Server on AWS Attempt</a>
+</li>
+                                    
+<li>
+    <a href="../2018-08-10-laravel/" class="dropdown-item">PHP Laravel</a>
+</li>
+                                    
+<li>
+    <a href="../2019-01-09-digital-ads/" class="dropdown-item">2019 01 09 digital ads</a>
+</li>
+                                    
+<li>
+    <a href="../2019-01-09-email-marketing/" class="dropdown-item">Email marketing</a>
+</li>
+                                    
+<li>
+    <a href="../2019-01-10-digital-marketing/" class="dropdown-item">Digitial marketing</a>
+</li>
+                                    
+<li>
+    <a href="../2019-01-12-pro-rails-project/" class="dropdown-item">Professional Rails Project Steps</a>
+</li>
+                                    
+<li>
+    <a href="../2019-03-30-se_proj_planning/" class="dropdown-item">This Project Planning from SDLC</a>
+</li>
+                                    
+<li>
+    <a href="../2019-04-xp_virtualbox/" class="dropdown-item">Setting up Networking for WinXP on virtualbox</a>
+</li>
+                                    
+<li>
+    <a href="../2019-03-phalcon_php/" class="dropdown-item">Installing Phalcon PHP in Ubuntu 18.04</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">research <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../2018-07-07-phd-hunt/" class="dropdown-item">To PhD Abroad I Go</a>
+</li>
+                                    
+<li>
+    <a href="../2018-07-08-EUSE-seminar/" class="dropdown-item">End-User Software Engineering</a>
+</li>
+                                    
+<li>
+    <a href="../2018-07-08-phd-hunt/" class="dropdown-item">My PhD Hunt  (day 2)</a>
+</li>
+                                    
+<li>
+    <a href="../2018-07-09-phd-hunt/" class="dropdown-item">My PhD Hunt  (day 3)</a>
+</li>
+                                    
+<li>
+    <a href="../2018-07-10-phd-thoughts/" class="dropdown-item">My PhD Hunt  (day 4)</a>
+</li>
+                                    
+<li>
+    <a href="../2018-07-11-phd-australia/" class="dropdown-item">Australian Uni's w/ good CS PhD Programs </a>
+</li>
+                                    
+<li>
+    <a href="../2018-07-12-phd-hunt/" class="dropdown-item">Deeper look Australian Uni's - part 1</a>
+</li>
+                                    
+<li>
+    <a href="../2018-07-13-phd-hunt/" class="dropdown-item">Deeper look Australian Uni's - part 2</a>
+</li>
+                                    
+<li>
+    <a href="../2018-07-15-phd-hunt/" class="dropdown-item">Deeper look Australian Uni's - part 3 (last)</a>
+</li>
+                                    
+<li>
+    <a href="../2018-07-19-phd-hunt/" class="dropdown-item">PhD Top 3</a>
+</li>
+                                    
+<li>
+    <a href="../2018-07-20-phd-hunt/" class="dropdown-item">Melbourne for PhD</a>
+</li>
+                                    
+<li>
+    <a href="../2019-01-09-marketing-trends-ph/" class="dropdown-item">Philippine Digital Marketing Trends 2018</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">relationships <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../2018-08-27-self-made/" class="dropdown-item"> Billionaire's Habits </a>
+</li>
+                                    
+<li>
+    <a href="../2018-10-19-block_rosary/" class="dropdown-item">Block Rosary</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">teaching <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../2018-09-14-gslides/" class="dropdown-item">Google slides with Audio</a>
+</li>
+                                    
+<li>
+    <a href="../2018-09-16-info_sys/" class="dropdown-item">My Information System Development Philosophy</a>
+</li>
+                                    
+<li>
+    <a href="../2018-09-25-IS_prog-js_dates/" class="dropdown-item">Javascript Date Object</a>
+</li>
+                                    
+<li>
+    <a href="../2018-09-25-js_loops/" class="dropdown-item">Javascript loops</a>
+</li>
+                                    
+<li>
+    <a href="../2018-09-26-mysql_datatypes/" class="dropdown-item">MySQL datatypes</a>
+</li>
+                                    
+<li>
+    <a href="../2018-10-01-WAPP-setup/" class="dropdown-item">WAPP Setup</a>
+</li>
+                                    
+<li>
+    <a href="../2018-10-14-BA186_syllabus/" class="dropdown-item">BA186 SYSTEMS ANALYSIS AND DESIGN</a>
+</li>
+                                    
+<li>
+    <a href="../2018-10-19-configure_git/" class="dropdown-item">Setup Git and Github</a>
+</li>
+                                    
+<li>
+    <a href="../2018-10-19-install_rails/" class="dropdown-item">Install rails in Ubuntu 18.04</a>
+</li>
+                                    
+<li>
+    <a href="../2018-10-19-setup_mysql/" class="dropdown-item">Setting Up MySQL in Ubuntu 18.04</a>
+</li>
+                                    
+<li>
+    <a href="../2018-10-19-setup_postgresql/" class="dropdown-item">Setting Up PostgreSQL in Ubuntu 18.04</a>
+</li>
+                                    
+<li>
+    <a href="../2018-11-01-aws_upkeep/" class="dropdown-item">Setting up an AWS account for Team Development</a>
+</li>
+                                    
+<li>
+    <a href="../2019-02-pisay_application/" class="dropdown-item">Teacher Career Path Evaluation Sheet</a>
+</li>
+                                    
+<li>
+    <a href="../2018-01-IPSE-syllabus/" class="dropdown-item">2018 01 IPSE syllabus</a>
+</li>
+                                    
+<li>
+    <a href="../2019-04-pisay_promotion/" class="dropdown-item">Teacher Career Path Evaluation Sheet</a>
+</li>
+                                    
+<li>
+    <a href="../2019-03-pisay_cs4_setup/" class="dropdown-item">2019 03 pisay cs4 setup</a>
+</li>
+                                    
+<li>
+    <a href="../2020-03-pisay_cs4_setup/" class="dropdown-item">2020 03 pisay cs4 setup</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">projects <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../2019-01-05-pcari-site/" class="dropdown-item">2019 01 05 pcari site</a>
+</li>
+                                    
+<li>
+    <a href="../pcari-site-proposal/" class="dropdown-item">Pcari site proposal</a>
+</li>
+                                    
+<li>
+    <a href="../UP-IC/" class="dropdown-item">UP IC</a>
+</li>
+                                    
+<li>
+    <a href="../2019-01-05-IS-proj-start/" class="dropdown-item">Beginning an Information System Project</a>
+</li>
+                                    
+<li>
+    <a href="../2018-collated_screens/" class="dropdown-item">2018 collated screens</a>
+</li>
+                                    
+<li>
+    <a href="../2018-11-IC-comments/" class="dropdown-item">2018 11 IC comments</a>
+</li>
+                                    
+<li>
+    <a href="../2018-mobile_screens/" class="dropdown-item">2018 mobile screens</a>
+</li>
+                                    
+<li>
+    <a href="../2019-01-16-DENR_TOR/" class="dropdown-item">2019 01 16 DENR TOR</a>
+</li>
+                                    
+<li>
+    <a href="../2019-02-UPPFI-WW-DOD-1/" class="dropdown-item">Definitions of Done - UPPFI-WW web app</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#q2-programming-project-tictactoe" class="nav-link">Q2 - Programming Project - TicTacToe</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#useful-links" class="nav-link">Useful Links</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#instructions" class="nav-link">Instructions</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="q2-programming-project-tictactoe">Q2 - Programming Project - TicTacToe</h1>
+<h2 id="useful-links">Useful Links</h2>
+<p>Documentation Template link :</p>
+<p>https://docs.google.com/document/d/1kWEDRdOH8ELIubh_kq80bTKxaY60WedXFf2b6G0BCGw/edit?usp=sharing</p>
+<p>Emergency Submission Form Link:  </p>
+<p>https://docs.google.com/forms/d/1s9gHJLTs7hGDHVS_c5TSpxiy55FUBRCSJmbvxp3SLBg/edit?usp=drive_web</p>
+<h2 id="instructions">Instructions</h2>
+<ol>
+<li>(optional) Find a partner and help each other. One can be in-charge of the game play and the other can create code to check if a player has already won.</li>
+<li>Use the template code provided to create a 2-player Tic Tac Toe game.</li>
+<li>Add one of the following features to the game (more than one becomes a bonus)</li>
+</ol>
+<p>Features (1 required): 
+* After the game, the players are asked if they want to play another round. If they say "yes", the game restarts
+* There's a tournament option at the start where the first to score 3 points wins (best of 5)
+* The players are asked their names and their names are shown whenever it's their turn and if they win. </p>
+<p>Answer the gdoc documentation individually and submit. Note that you may need to make a copy of the gdoc docu template if it's view only. </p>
+<p>## Template Code</p>
+<p>```
+ /<strong><em>*</em></strong><strong><em>*</em></strong><strong><em>*</em></strong><strong><em>*</em></strong><strong><em>*</em></strong><strong><em>*</em></strong><strong><em>*</em></strong><strong><em>*</em></strong><strong><em>*</em></strong><strong><em>*</em></strong><strong><em>*</em></strong><strong><em>*</em></strong><strong>
+ * 
+ * This is the Q2 Programming Project Template. Use it. 
+ * 
+ * by: Roy Canseco 
+ * 
+ * </strong><strong><em>*</em></strong><strong><em>*</em></strong><strong><em>*</em></strong><strong><em>*</em></strong><strong><em>*</em></strong><strong><em>*</em></strong><strong><em>*</em></strong><strong><em>*</em></strong><strong><em>*</em></strong><strong><em>*</em></strong><strong><em>*</em></strong>****/</p>
+<p>#include <iostream>
+using namespace std;</p>
+<p>int main() {</p>
+<pre><code>// initialize variables to 'X', 'O' or blank
+char a1 = 'X'; char a2 = 'O'; char a3 = 'X';
+char b1 = 'O'; char b2 = 'X'; char b3 = 'O';
+char c1 = 'X'; char c2 = 'O'; char c3 = 'X';
+
+
+// printout the board 
+cout &lt;&lt; "\t \t" &lt;&lt; "|" &lt;&lt; "\t \t" &lt;&lt;  "|" &lt;&lt; endl;
+cout &lt;&lt; "\t" &lt;&lt; a1 &lt;&lt; "\t" &lt;&lt; "|" &lt;&lt; "\t" &lt;&lt; a2 &lt;&lt; "\t" &lt;&lt; "|" &lt;&lt; "\t" &lt;&lt; a3 &lt;&lt; endl;
+cout &lt;&lt; "\t \t" &lt;&lt; "|" &lt;&lt; "\t \t" &lt;&lt;  "|" &lt;&lt; endl;
+cout &lt;&lt; "------------------------------------------------"&lt;&lt; endl;
+cout &lt;&lt; "\t \t" &lt;&lt; "|" &lt;&lt; "\t \t" &lt;&lt;  "|" &lt;&lt; endl;
+cout &lt;&lt; "\t" &lt;&lt; b1 &lt;&lt; "\t" &lt;&lt; "|" &lt;&lt; "\t" &lt;&lt; b2 &lt;&lt; "\t" &lt;&lt; "|" &lt;&lt; "\t" &lt;&lt; b3 &lt;&lt; endl;
+cout &lt;&lt; "\t \t" &lt;&lt; "|" &lt;&lt; "\t \t" &lt;&lt;  "|" &lt;&lt; endl;
+cout &lt;&lt; "------------------------------------------------"&lt;&lt; endl;
+cout &lt;&lt; "\t \t" &lt;&lt; "|" &lt;&lt; "\t \t" &lt;&lt;  "|" &lt;&lt; endl;
+cout &lt;&lt; "\t" &lt;&lt; c1 &lt;&lt; "\t" &lt;&lt; "|" &lt;&lt; "\t" &lt;&lt; c2 &lt;&lt; "\t" &lt;&lt; "|" &lt;&lt; "\t" &lt;&lt; c3 &lt;&lt; endl;
+cout &lt;&lt; "\t \t" &lt;&lt; "|" &lt;&lt; "\t \t" &lt;&lt;  "|" &lt;&lt; endl;
+</code></pre>
+<p>}
+ ```</p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+                <p>&copy; 2018 - 2020 Roy Canseco <br> Feedback: 03rvlc+mkdocs@gmail.com</p>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../js/base.js" defer></script>
+        <script src="../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

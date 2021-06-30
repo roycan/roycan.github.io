@@ -2,542 +2,902 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://roycan.gitlab.io/mkdocs/</loc>
-         <lastmod>2021-06-16</lastmod>
+         <lastmod>2021-06-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://roycan.gitlab.io/mkdocs/%28Interim%29%20Campus%20IT%20Manager/</loc>
+         <lastmod>2021-06-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://roycan.gitlab.io/mkdocs/2014-01-15-maple-review/</loc>
-         <lastmod>2021-06-16</lastmod>
+         <lastmod>2021-06-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://roycan.gitlab.io/mkdocs/2014-03-03-joomla-backup/</loc>
-         <lastmod>2021-06-16</lastmod>
+         <lastmod>2021-06-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://roycan.gitlab.io/mkdocs/2018-01-IPSE-syllabus/</loc>
-         <lastmod>2021-06-16</lastmod>
+         <lastmod>2021-06-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://roycan.gitlab.io/mkdocs/2018-07-07-phd-hunt/</loc>
-         <lastmod>2021-06-16</lastmod>
+         <lastmod>2021-06-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://roycan.gitlab.io/mkdocs/2018-07-08-EUSE-seminar/</loc>
-         <lastmod>2021-06-16</lastmod>
+         <lastmod>2021-06-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://roycan.gitlab.io/mkdocs/2018-07-08-phd-hunt/</loc>
-         <lastmod>2021-06-16</lastmod>
+         <lastmod>2021-06-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://roycan.gitlab.io/mkdocs/2018-07-09-phd-hunt/</loc>
-         <lastmod>2021-06-16</lastmod>
+         <lastmod>2021-06-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://roycan.gitlab.io/mkdocs/2018-07-10-phd-thoughts/</loc>
-         <lastmod>2021-06-16</lastmod>
+         <lastmod>2021-06-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://roycan.gitlab.io/mkdocs/2018-07-11-phd-australia/</loc>
-         <lastmod>2021-06-16</lastmod>
+         <lastmod>2021-06-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://roycan.gitlab.io/mkdocs/2018-07-12-phd-hunt/</loc>
-         <lastmod>2021-06-16</lastmod>
+         <lastmod>2021-06-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://roycan.gitlab.io/mkdocs/2018-07-13-aws-jasperreports/</loc>
-         <lastmod>2021-06-16</lastmod>
+         <lastmod>2021-06-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://roycan.gitlab.io/mkdocs/2018-07-13-phd-hunt/</loc>
-         <lastmod>2021-06-16</lastmod>
+         <lastmod>2021-06-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://roycan.gitlab.io/mkdocs/2018-07-15-phd-hunt/</loc>
-         <lastmod>2021-06-16</lastmod>
+         <lastmod>2021-06-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://roycan.gitlab.io/mkdocs/2018-07-19-phd-hunt/</loc>
-         <lastmod>2021-06-16</lastmod>
+         <lastmod>2021-06-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://roycan.gitlab.io/mkdocs/2018-07-20-phd-hunt/</loc>
-         <lastmod>2021-06-16</lastmod>
+         <lastmod>2021-06-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://roycan.gitlab.io/mkdocs/2018-08-10-laravel/</loc>
-         <lastmod>2021-06-16</lastmod>
+         <lastmod>2021-06-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://roycan.gitlab.io/mkdocs/2018-08-27-self-made/</loc>
-         <lastmod>2021-06-16</lastmod>
+         <lastmod>2021-06-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://roycan.gitlab.io/mkdocs/2018-09-14-gslides/</loc>
-         <lastmod>2021-06-16</lastmod>
+         <lastmod>2021-06-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://roycan.gitlab.io/mkdocs/2018-09-16-info_sys/</loc>
-         <lastmod>2021-06-16</lastmod>
+         <lastmod>2021-06-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://roycan.gitlab.io/mkdocs/2018-09-25-IS_prog-js_dates/</loc>
-         <lastmod>2021-06-16</lastmod>
+         <lastmod>2021-06-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://roycan.gitlab.io/mkdocs/2018-09-25-js_loops/</loc>
-         <lastmod>2021-06-16</lastmod>
+         <lastmod>2021-06-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://roycan.gitlab.io/mkdocs/2018-09-26-mysql_datatypes/</loc>
-         <lastmod>2021-06-16</lastmod>
+         <lastmod>2021-06-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://roycan.gitlab.io/mkdocs/2018-10-01-WAPP-setup/</loc>
-         <lastmod>2021-06-16</lastmod>
+         <lastmod>2021-06-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://roycan.gitlab.io/mkdocs/2018-10-14-BA186_syllabus/</loc>
-         <lastmod>2021-06-16</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://roycan.gitlab.io/mkdocs/2018-10-15-ICarchitecture/</loc>
-         <lastmod>2021-06-16</lastmod>
+         <lastmod>2021-06-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://roycan.gitlab.io/mkdocs/2018-10-19-block_rosary/</loc>
-         <lastmod>2021-06-16</lastmod>
+         <lastmod>2021-06-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://roycan.gitlab.io/mkdocs/2018-10-19-configure_git/</loc>
-         <lastmod>2021-06-16</lastmod>
+         <lastmod>2021-06-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://roycan.gitlab.io/mkdocs/2018-10-19-install_rails/</loc>
-         <lastmod>2021-06-16</lastmod>
+         <lastmod>2021-06-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://roycan.gitlab.io/mkdocs/2018-10-19-setup_mysql/</loc>
-         <lastmod>2021-06-16</lastmod>
+         <lastmod>2021-06-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://roycan.gitlab.io/mkdocs/2018-10-19-setup_postgresql/</loc>
-         <lastmod>2021-06-16</lastmod>
+         <lastmod>2021-06-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://roycan.gitlab.io/mkdocs/2018-11-01-aws_upkeep/</loc>
-         <lastmod>2021-06-16</lastmod>
+         <lastmod>2021-06-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://roycan.gitlab.io/mkdocs/2018-11-IC-comments/</loc>
-         <lastmod>2021-06-16</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://roycan.gitlab.io/mkdocs/2018-collated_erd/</loc>
-         <lastmod>2021-06-16</lastmod>
+         <lastmod>2021-06-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://roycan.gitlab.io/mkdocs/2018-collated_screens/</loc>
-         <lastmod>2021-06-16</lastmod>
+         <lastmod>2021-06-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://roycan.gitlab.io/mkdocs/2018-mobile_screens/</loc>
-         <lastmod>2021-06-16</lastmod>
+         <lastmod>2021-06-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://roycan.gitlab.io/mkdocs/2019-01-05-IS-proj-start/</loc>
-         <lastmod>2021-06-16</lastmod>
+         <lastmod>2021-06-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://roycan.gitlab.io/mkdocs/2019-01-05-pcari-site/</loc>
-         <lastmod>2021-06-16</lastmod>
+         <lastmod>2021-06-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://roycan.gitlab.io/mkdocs/2019-01-09-digital-ads/</loc>
-         <lastmod>2021-06-16</lastmod>
+         <lastmod>2021-06-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://roycan.gitlab.io/mkdocs/2019-01-09-email-marketing/</loc>
-         <lastmod>2021-06-16</lastmod>
+         <lastmod>2021-06-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://roycan.gitlab.io/mkdocs/2019-01-09-marketing-trends-ph/</loc>
-         <lastmod>2021-06-16</lastmod>
+         <lastmod>2021-06-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://roycan.gitlab.io/mkdocs/2019-01-10-digital-marketing/</loc>
-         <lastmod>2021-06-16</lastmod>
+         <lastmod>2021-06-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://roycan.gitlab.io/mkdocs/2019-01-12-pro-rails-project/</loc>
-         <lastmod>2021-06-16</lastmod>
+         <lastmod>2021-06-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://roycan.gitlab.io/mkdocs/2019-01-12-reversing-rails/</loc>
-         <lastmod>2021-06-16</lastmod>
+         <lastmod>2021-06-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://roycan.gitlab.io/mkdocs/2019-01-16-DENR_TOR/</loc>
-         <lastmod>2021-06-16</lastmod>
+         <lastmod>2021-06-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://roycan.gitlab.io/mkdocs/2019-01-cv/</loc>
-         <lastmod>2021-06-16</lastmod>
+         <lastmod>2021-06-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://roycan.gitlab.io/mkdocs/2019-02-UPPFI-WW-DOD-1/</loc>
-         <lastmod>2021-06-16</lastmod>
+         <lastmod>2021-06-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://roycan.gitlab.io/mkdocs/2019-02-pisay_application/</loc>
-         <lastmod>2021-06-16</lastmod>
+         <lastmod>2021-06-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://roycan.gitlab.io/mkdocs/2019-03-30-se_proj_planning/</loc>
-         <lastmod>2021-06-16</lastmod>
+         <lastmod>2021-06-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://roycan.gitlab.io/mkdocs/2019-03-phalcon_php/</loc>
-         <lastmod>2021-06-16</lastmod>
+         <lastmod>2021-06-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://roycan.gitlab.io/mkdocs/2019-03-pisay_cs4_setup/</loc>
-         <lastmod>2021-06-16</lastmod>
+         <lastmod>2021-06-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://roycan.gitlab.io/mkdocs/2019-04-pisay_promotion/</loc>
-         <lastmod>2021-06-16</lastmod>
+         <lastmod>2021-06-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://roycan.gitlab.io/mkdocs/2019-04-xp_virtualbox/</loc>
-         <lastmod>2021-06-16</lastmod>
+         <lastmod>2021-06-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://roycan.gitlab.io/mkdocs/2020-03-pisay_cs4_setup/</loc>
-         <lastmod>2021-06-16</lastmod>
+         <lastmod>2021-06-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://roycan.gitlab.io/mkdocs/2020-2021%20committee%20memberships/</loc>
+         <lastmod>2021-06-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://roycan.gitlab.io/mkdocs/2021-06-khub-linode_migration/</loc>
+         <lastmod>2021-06-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://roycan.gitlab.io/mkdocs/AWS%20Build%20to%20Scale/</loc>
+         <lastmod>2021-06-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://roycan.gitlab.io/mkdocs/AWS%20TCO%20Optimization/</loc>
+         <lastmod>2021-06-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://roycan.gitlab.io/mkdocs/BA%20186%20-%20Activity%20Guide/</loc>
+         <lastmod>2021-06-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://roycan.gitlab.io/mkdocs/BA%20186%20-%20Study%20Guide/</loc>
+         <lastmod>2021-06-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://roycan.gitlab.io/mkdocs/BA%20186%20Online%20Classes/</loc>
+         <lastmod>2021-06-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://roycan.gitlab.io/mkdocs/Bouncing%20Back%20Big%202020-08-24T21.05.26/</loc>
+         <lastmod>2021-06-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://roycan.gitlab.io/mkdocs/Build%20a%20fresh%20server/</loc>
+         <lastmod>2021-06-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://roycan.gitlab.io/mkdocs/CHMF%202020-10-13T16.48.48/</loc>
+         <lastmod>2021-06-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://roycan.gitlab.io/mkdocs/CS4%20Q3%20Practical%20Test%20%2850pts%29/</loc>
+         <lastmod>2021-06-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://roycan.gitlab.io/mkdocs/Cloud%20Engineer%202021-06-23T18.06.01/</loc>
+         <lastmod>2021-06-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://roycan.gitlab.io/mkdocs/Competitive%20Programming%20Coach/</loc>
+         <lastmod>2021-06-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://roycan.gitlab.io/mkdocs/CyberAttack%202020-09-30T08.26.16/</loc>
+         <lastmod>2021-06-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://roycan.gitlab.io/mkdocs/Data%20Loader%20Tool%20for%20Oracle%20E-Business%2C%20Import%20Excel%2CCSV%20Convert%20MySQL%2C%20MS%20Access/</loc>
+         <lastmod>2021-06-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://roycan.gitlab.io/mkdocs/Database%20replication/</loc>
+         <lastmod>2021-06-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://roycan.gitlab.io/mkdocs/Easter%20Bonus%20points/</loc>
+         <lastmod>2021-06-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://roycan.gitlab.io/mkdocs/Equipment%20Outlay/</loc>
+         <lastmod>2021-06-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://roycan.gitlab.io/mkdocs/Feature%20Creation/</loc>
+         <lastmod>2021-06-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://roycan.gitlab.io/mkdocs/Fiber%20Project/</loc>
+         <lastmod>2021-06-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://roycan.gitlab.io/mkdocs/Gr%2012%20grades%20deadline/</loc>
+         <lastmod>2021-06-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://roycan.gitlab.io/mkdocs/Hacker%20Rank%202020-09-22T13.41.30/</loc>
+         <lastmod>2021-06-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://roycan.gitlab.io/mkdocs/How%20to%20setup%20Java%20FXML%20with%20Netbeans%20and%20Scene%20Builder%20in%20Ubuntu%2018.04/</loc>
+         <lastmod>2021-06-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://roycan.gitlab.io/mkdocs/How%20to%20setup%20Java%20FXML%20with%20Netbeans%20and%20Scene%20Builder%20in%20Windows%2010/</loc>
+         <lastmod>2021-06-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://roycan.gitlab.io/mkdocs/I.T.%20Service%20Management%20Elective/</loc>
+         <lastmod>2021-06-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://roycan.gitlab.io/mkdocs/ICPC%20Initial%20exercise/</loc>
+         <lastmod>2021-06-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://roycan.gitlab.io/mkdocs/IP%20Website/</loc>
+         <lastmod>2021-06-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://roycan.gitlab.io/mkdocs/IT%20Consulting%202020-09-22T08.49.39/</loc>
+         <lastmod>2021-06-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://roycan.gitlab.io/mkdocs/IT%20Training%20Plan/</loc>
+         <lastmod>2021-06-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://roycan.gitlab.io/mkdocs/KHub%20details/</loc>
+         <lastmod>2021-06-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://roycan.gitlab.io/mkdocs/KHub%20linode%20migration/</loc>
+         <lastmod>2021-06-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://roycan.gitlab.io/mkdocs/LDAP%20-%20Prime/</loc>
+         <lastmod>2021-06-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://roycan.gitlab.io/mkdocs/Laravel%20on%20XAMPP%20in%20Ubuntu%2018.04/</loc>
+         <lastmod>2021-06-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://roycan.gitlab.io/mkdocs/Learn%20Ruby%20on%20Rails%20Book%20One/</loc>
+         <lastmod>2021-06-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://roycan.gitlab.io/mkdocs/Learn%20Ruby%20on%20Rails%20Book%20Two%20-%20Roy/</loc>
+         <lastmod>2021-06-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://roycan.gitlab.io/mkdocs/Learn%20Ruby%20on%20Rails%20Book%20Two/</loc>
+         <lastmod>2021-06-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://roycan.gitlab.io/mkdocs/Links%20and%20Logs/</loc>
+         <lastmod>2021-06-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://roycan.gitlab.io/mkdocs/MariaDB%20backup/</loc>
+         <lastmod>2021-06-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://roycan.gitlab.io/mkdocs/Markdown%20Cheatsheet/</loc>
+         <lastmod>2021-06-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://roycan.gitlab.io/mkdocs/Markdown%20Showcase/</loc>
+         <lastmod>2021-06-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://roycan.gitlab.io/mkdocs/MoM%202020-10-14T19.37.13/</loc>
+         <lastmod>2021-06-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://roycan.gitlab.io/mkdocs/MoM%202021-04-12/</loc>
+         <lastmod>2021-06-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://roycan.gitlab.io/mkdocs/MoM%20template/</loc>
+         <lastmod>2021-06-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://roycan.gitlab.io/mkdocs/Moodle%20install%202020-09-08T16.03.31/</loc>
+         <lastmod>2021-06-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://roycan.gitlab.io/mkdocs/Muon%20Pics/</loc>
+         <lastmod>2021-06-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://roycan.gitlab.io/mkdocs/Nginx%20config%20for%20Moodle%203.9/</loc>
+         <lastmod>2021-06-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://roycan.gitlab.io/mkdocs/No%20classes%20-%202021/</loc>
+         <lastmod>2021-06-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://roycan.gitlab.io/mkdocs/Note%202020-02-26T05.32.48/</loc>
+         <lastmod>2021-06-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://roycan.gitlab.io/mkdocs/Note%202020-05-20T10.41.12/</loc>
+         <lastmod>2021-06-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://roycan.gitlab.io/mkdocs/Note%202020-06-05T12.31.07/</loc>
+         <lastmod>2021-06-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://roycan.gitlab.io/mkdocs/Note%202020-08-24T22.39.33/</loc>
+         <lastmod>2021-06-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://roycan.gitlab.io/mkdocs/Note%202021-05-13T00.40.44/</loc>
+         <lastmod>2021-06-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://roycan.gitlab.io/mkdocs/OpenCV%20research/</loc>
+         <lastmod>2021-06-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://roycan.gitlab.io/mkdocs/PHP%207.4/</loc>
+         <lastmod>2021-06-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://roycan.gitlab.io/mkdocs/PLDT%20Digital%20Transformation%202020-06-16T10.46.01/</loc>
+         <lastmod>2021-06-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://roycan.gitlab.io/mkdocs/Project%20Management%20-%20CAMMP/</loc>
+         <lastmod>2021-06-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://roycan.gitlab.io/mkdocs/Project%20Proposal%20Template/</loc>
+         <lastmod>2021-06-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://roycan.gitlab.io/mkdocs/Punlaan%202020-06-12T09.40.42/</loc>
+         <lastmod>2021-06-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://roycan.gitlab.io/mkdocs/Punlaan%20Tablet%202020-06-16T21.57.24/</loc>
+         <lastmod>2021-06-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://roycan.gitlab.io/mkdocs/Q1%20-%20coding%20problems/</loc>
+         <lastmod>2021-06-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://roycan.gitlab.io/mkdocs/Q2%20-%20M.E.%20-%20cake/</loc>
+         <lastmod>2021-06-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://roycan.gitlab.io/mkdocs/Q2%20-%20Programming%20Project%20-%20TicTacToe/</loc>
+         <lastmod>2021-06-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://roycan.gitlab.io/mkdocs/Q2%20Q3%20Grades%20Deadline/</loc>
+         <lastmod>2021-06-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://roycan.gitlab.io/mkdocs/Q3%20-%20LT1%20-%20stocks/</loc>
+         <lastmod>2021-06-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://roycan.gitlab.io/mkdocs/Q3%20-%20LT2%20-%20bubble/</loc>
+         <lastmod>2021-06-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://roycan.gitlab.io/mkdocs/Q3%20-%20ME%201%20-%20Numeric%20Triangle%20Pattern/</loc>
+         <lastmod>2021-06-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://roycan.gitlab.io/mkdocs/Q3%20-%20ME%202%20-%20Multipication%20Table/</loc>
+         <lastmod>2021-06-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://roycan.gitlab.io/mkdocs/Q3%20-%20Project%20-%20Mastermind/</loc>
+         <lastmod>2021-06-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://roycan.gitlab.io/mkdocs/Q3%20-%20bonus%20-%20ceasar_cipher/</loc>
+         <lastmod>2021-06-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://roycan.gitlab.io/mkdocs/Q4%20-%20LT2%20-%20part%202%20-%20memory/</loc>
+         <lastmod>2021-06-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://roycan.gitlab.io/mkdocs/Q4%20-%20Quiz%20-%20functions/</loc>
+         <lastmod>2021-06-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://roycan.gitlab.io/mkdocs/Q4%20-%20bonus%20-%20comparisons%20%28p11172%29/</loc>
+         <lastmod>2021-06-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://roycan.gitlab.io/mkdocs/Q4%20Removals%20Plan%202021-06-18T09.54.33/</loc>
+         <lastmod>2021-06-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://roycan.gitlab.io/mkdocs/Q4%20removals%20-%20Notes/</loc>
+         <lastmod>2021-06-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://roycan.gitlab.io/mkdocs/Q4bonus%20-%20123%20%28p12289%29/</loc>
+         <lastmod>2021-06-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://roycan.gitlab.io/mkdocs/Q4bonus%20-%20Emoogle%20%28p12279%29/</loc>
+         <lastmod>2021-06-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://roycan.gitlab.io/mkdocs/Q4bonus%20-%20hola%20%28p12250%29/</loc>
+         <lastmod>2021-06-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://roycan.gitlab.io/mkdocs/Q4bonus%20-%20holiday%20%28p12372%29/</loc>
+         <lastmod>2021-06-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://roycan.gitlab.io/mkdocs/Q4bonus%20-%20master%20lock%20%28p10550%29/</loc>
+         <lastmod>2021-06-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://roycan.gitlab.io/mkdocs/Q4bonus%20-%20parking%20%28p11364%29/</loc>
+         <lastmod>2021-06-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://roycan.gitlab.io/mkdocs/Q4bonus%20-%20recession%20%28p111727%29/</loc>
+         <lastmod>2021-06-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://roycan.gitlab.io/mkdocs/Q4bonus%20-%20setu%20%28p12403%29/</loc>
+         <lastmod>2021-06-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://roycan.gitlab.io/mkdocs/Q4bonus%20-%20tapmaster%20%28p11547%29/</loc>
+         <lastmod>2021-06-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://roycan.gitlab.io/mkdocs/RPAD%20OED%202021-03-30T18.10.55/</loc>
+         <lastmod>2021-06-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://roycan.gitlab.io/mkdocs/Robbin%27s%20Edge/</loc>
+         <lastmod>2021-06-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://roycan.gitlab.io/mkdocs/Saving%20ArrayLists%20to%20a%20file/</loc>
+         <lastmod>2021-06-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://roycan.gitlab.io/mkdocs/So%2C%20you%20want%20to%20learn%20AWS%20AKA%2C%20How%20do%20I%20learn%20to%20be%20a%20Cloud%20Engineer%20sysadmin/</loc>
+         <lastmod>2021-06-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://roycan.gitlab.io/mkdocs/Sup-easy%20-%20Nlogonia%20%2811498%29/</loc>
+         <lastmod>2021-06-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://roycan.gitlab.io/mkdocs/Tasks%20for%20UP%20HRDO/</loc>
+         <lastmod>2021-06-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://roycan.gitlab.io/mkdocs/UP-IC-taxi/</loc>
-         <lastmod>2021-06-16</lastmod>
+         <lastmod>2021-06-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://roycan.gitlab.io/mkdocs/UP-IC/</loc>
-         <lastmod>2021-06-16</lastmod>
+         <lastmod>2021-06-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://roycan.gitlab.io/mkdocs/Ubuntu%20Linux%20System%20Administration%20Basics/</loc>
+         <lastmod>2021-06-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://roycan.gitlab.io/mkdocs/VPN%20Prime/</loc>
+         <lastmod>2021-06-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://roycan.gitlab.io/mkdocs/Welcome%20to%20QOwnNotes/</loc>
+         <lastmod>2021-06-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://roycan.gitlab.io/mkdocs/Zip%20Grade%20Online/</loc>
+         <lastmod>2021-06-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://roycan.gitlab.io/mkdocs/configure%20Nginx%20with%20PHP-FPM/</loc>
+         <lastmod>2021-06-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://roycan.gitlab.io/mkdocs/easy%20-%20car%20%28p10114%29/</loc>
+         <lastmod>2021-06-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://roycan.gitlab.io/mkdocs/easy%20-%20excursion%20%28p11559%29/</loc>
+         <lastmod>2021-06-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://roycan.gitlab.io/mkdocs/easy%20-%20farm%20%28p10300%29/</loc>
+         <lastmod>2021-06-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://roycan.gitlab.io/mkdocs/easy%20-%20gn%20%28p11332%29/</loc>
+         <lastmod>2021-06-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://roycan.gitlab.io/mkdocs/easy%20-%20google%20%28p12015%29/</loc>
+         <lastmod>2021-06-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://roycan.gitlab.io/mkdocs/easy%20-%20horror_dash%20%28p11799%29/</loc>
+         <lastmod>2021-06-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://roycan.gitlab.io/mkdocs/easy%20-%20lumberjacks%20%28p11942%29/</loc>
+         <lastmod>2021-06-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://roycan.gitlab.io/mkdocs/easy%20-%20mario%20%28p11764%29/</loc>
+         <lastmod>2021-06-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://roycan.gitlab.io/mkdocs/easy%20-%20mobile%20%28p12157%29/</loc>
+         <lastmod>2021-06-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://roycan.gitlab.io/mkdocs/easy%20-%20remote%20%28p12468%29/</loc>
+         <lastmod>2021-06-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://roycan.gitlab.io/mkdocs/easy%20-%20results%20%28p621%29/</loc>
+         <lastmod>2021-06-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://roycan.gitlab.io/mkdocs/easy%20-%20robot%20%28p12503%29/</loc>
+         <lastmod>2021-06-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://roycan.gitlab.io/mkdocs/easy%20-%20rujia%20%28p12554%29/</loc>
+         <lastmod>2021-06-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://roycan.gitlab.io/mkdocs/goodls%20-%20gdrive%20file%20download/</loc>
+         <lastmod>2021-06-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://roycan.gitlab.io/mkdocs/grading%20plan%202021-04-05T11.43.55/</loc>
+         <lastmod>2021-06-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://roycan.gitlab.io/mkdocs/medium%20-%20bending%20%28p11507%29/</loc>
+         <lastmod>2021-06-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://roycan.gitlab.io/mkdocs/medium%20-%20snail%20%28p573%29/</loc>
+         <lastmod>2021-06-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://roycan.gitlab.io/mkdocs/moodle/</loc>
+         <lastmod>2021-06-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://roycan.gitlab.io/mkdocs/moosh%20-%20Moodle%20Shell/</loc>
+         <lastmod>2021-06-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://roycan.gitlab.io/mkdocs/nginx/</loc>
+         <lastmod>2021-06-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://roycan.gitlab.io/mkdocs/overthewire%20-%20bandit/</loc>
+         <lastmod>2021-06-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://roycan.gitlab.io/mkdocs/pcari-site-proposal/</loc>
-         <lastmod>2021-06-16</lastmod>
+         <lastmod>2021-06-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://roycan.gitlab.io/mkdocs/presentations/</loc>
-         <lastmod>2021-06-16</lastmod>
+         <loc>https://roycan.gitlab.io/mkdocs/postgresql/</loc>
+         <lastmod>2021-06-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://roycan.gitlab.io/mkdocs/rsync/</loc>
+         <lastmod>2021-06-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://roycan.gitlab.io/mkdocs/sample_readme/</loc>
-         <lastmod>2021-06-16</lastmod>
+         <lastmod>2021-06-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://roycan.gitlab.io/mkdocs/sed/</loc>
+         <lastmod>2021-06-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://roycan.gitlab.io/mkdocs/tar/</loc>
+         <lastmod>2021-06-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://roycan.gitlab.io/mkdocs/slides/</loc>
-         <lastmod>2021-06-16</lastmod>
+         <lastmod>2021-06-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://roycan.gitlab.io/mkdocs/slides/2019-01-CoopTV/</loc>
-         <lastmod>2021-06-16</lastmod>
+         <lastmod>2021-06-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://roycan.gitlab.io/mkdocs/slides/myslides/</loc>
-         <lastmod>2021-06-16</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://roycan.gitlab.io/mkdocs/slides/174-slides/img0/</loc>
-         <lastmod>2021-06-16</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://roycan.gitlab.io/mkdocs/slides/174-slides/img1/</loc>
-         <lastmod>2021-06-16</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://roycan.gitlab.io/mkdocs/slides/174-slides/img10/</loc>
-         <lastmod>2021-06-16</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://roycan.gitlab.io/mkdocs/slides/174-slides/img11/</loc>
-         <lastmod>2021-06-16</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://roycan.gitlab.io/mkdocs/slides/174-slides/img12/</loc>
-         <lastmod>2021-06-16</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://roycan.gitlab.io/mkdocs/slides/174-slides/img13/</loc>
-         <lastmod>2021-06-16</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://roycan.gitlab.io/mkdocs/slides/174-slides/img14/</loc>
-         <lastmod>2021-06-16</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://roycan.gitlab.io/mkdocs/slides/174-slides/img15/</loc>
-         <lastmod>2021-06-16</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://roycan.gitlab.io/mkdocs/slides/174-slides/img16/</loc>
-         <lastmod>2021-06-16</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://roycan.gitlab.io/mkdocs/slides/174-slides/img17/</loc>
-         <lastmod>2021-06-16</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://roycan.gitlab.io/mkdocs/slides/174-slides/img18/</loc>
-         <lastmod>2021-06-16</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://roycan.gitlab.io/mkdocs/slides/174-slides/img19/</loc>
-         <lastmod>2021-06-16</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://roycan.gitlab.io/mkdocs/slides/174-slides/img2/</loc>
-         <lastmod>2021-06-16</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://roycan.gitlab.io/mkdocs/slides/174-slides/img20/</loc>
-         <lastmod>2021-06-16</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://roycan.gitlab.io/mkdocs/slides/174-slides/img21/</loc>
-         <lastmod>2021-06-16</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://roycan.gitlab.io/mkdocs/slides/174-slides/img22/</loc>
-         <lastmod>2021-06-16</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://roycan.gitlab.io/mkdocs/slides/174-slides/img23/</loc>
-         <lastmod>2021-06-16</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://roycan.gitlab.io/mkdocs/slides/174-slides/img24/</loc>
-         <lastmod>2021-06-16</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://roycan.gitlab.io/mkdocs/slides/174-slides/img25/</loc>
-         <lastmod>2021-06-16</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://roycan.gitlab.io/mkdocs/slides/174-slides/img26/</loc>
-         <lastmod>2021-06-16</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://roycan.gitlab.io/mkdocs/slides/174-slides/img27/</loc>
-         <lastmod>2021-06-16</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://roycan.gitlab.io/mkdocs/slides/174-slides/img28/</loc>
-         <lastmod>2021-06-16</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://roycan.gitlab.io/mkdocs/slides/174-slides/img29/</loc>
-         <lastmod>2021-06-16</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://roycan.gitlab.io/mkdocs/slides/174-slides/img3/</loc>
-         <lastmod>2021-06-16</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://roycan.gitlab.io/mkdocs/slides/174-slides/img30/</loc>
-         <lastmod>2021-06-16</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://roycan.gitlab.io/mkdocs/slides/174-slides/img31/</loc>
-         <lastmod>2021-06-16</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://roycan.gitlab.io/mkdocs/slides/174-slides/img32/</loc>
-         <lastmod>2021-06-16</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://roycan.gitlab.io/mkdocs/slides/174-slides/img33/</loc>
-         <lastmod>2021-06-16</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://roycan.gitlab.io/mkdocs/slides/174-slides/img34/</loc>
-         <lastmod>2021-06-16</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://roycan.gitlab.io/mkdocs/slides/174-slides/img35/</loc>
-         <lastmod>2021-06-16</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://roycan.gitlab.io/mkdocs/slides/174-slides/img36/</loc>
-         <lastmod>2021-06-16</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://roycan.gitlab.io/mkdocs/slides/174-slides/img37/</loc>
-         <lastmod>2021-06-16</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://roycan.gitlab.io/mkdocs/slides/174-slides/img38/</loc>
-         <lastmod>2021-06-16</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://roycan.gitlab.io/mkdocs/slides/174-slides/img39/</loc>
-         <lastmod>2021-06-16</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://roycan.gitlab.io/mkdocs/slides/174-slides/img4/</loc>
-         <lastmod>2021-06-16</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://roycan.gitlab.io/mkdocs/slides/174-slides/img40/</loc>
-         <lastmod>2021-06-16</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://roycan.gitlab.io/mkdocs/slides/174-slides/img41/</loc>
-         <lastmod>2021-06-16</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://roycan.gitlab.io/mkdocs/slides/174-slides/img42/</loc>
-         <lastmod>2021-06-16</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://roycan.gitlab.io/mkdocs/slides/174-slides/img5/</loc>
-         <lastmod>2021-06-16</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://roycan.gitlab.io/mkdocs/slides/174-slides/img6/</loc>
-         <lastmod>2021-06-16</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://roycan.gitlab.io/mkdocs/slides/174-slides/img7/</loc>
-         <lastmod>2021-06-16</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://roycan.gitlab.io/mkdocs/slides/174-slides/img8/</loc>
-         <lastmod>2021-06-16</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://roycan.gitlab.io/mkdocs/slides/174-slides/img9/</loc>
-         <lastmod>2021-06-16</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://roycan.gitlab.io/mkdocs/slides/174-slides/stiched/</loc>
-         <lastmod>2021-06-16</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://roycan.gitlab.io/mkdocs/slides/174-slides/stitched/</loc>
-         <lastmod>2021-06-16</lastmod>
+         <lastmod>2021-06-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://roycan.gitlab.io/mkdocs/up-ic-screens/test/</loc>
-         <lastmod>2021-06-16</lastmod>
+         <lastmod>2021-06-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>

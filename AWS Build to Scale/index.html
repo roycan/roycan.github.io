@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <meta name="author" content="Roy Vincent Luna Canseco">
+        <link rel="canonical" href="https://roycan.gitlab.io/mkdocs/AWS%20Build%20to%20Scale/">
+        <link rel="shortcut icon" href="../img/favicon.ico">
+        <title>AWS Build to Scale - roycan docs</title>
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/docco.min.css">
+
+        <script src="../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="..">roycan docs</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem">
+                                <a href=".." class="nav-link">Home</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="../2019-01-cv/" class="nav-link">About</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">skills <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../2014-01-15-maple-review/" class="dropdown-item"> Quickly relearning Maple </a>
+</li>
+                                    
+<li>
+    <a href="../2014-03-03-joomla-backup/" class="dropdown-item">Backing up a Joomla Site</a>
+</li>
+                                    
+<li>
+    <a href="../2018-07-13-aws-jasperreports/" class="dropdown-item">Jasper Server on AWS Attempt</a>
+</li>
+                                    
+<li>
+    <a href="../2018-08-10-laravel/" class="dropdown-item">PHP Laravel</a>
+</li>
+                                    
+<li>
+    <a href="../2019-01-09-digital-ads/" class="dropdown-item">2019 01 09 digital ads</a>
+</li>
+                                    
+<li>
+    <a href="../2019-01-09-email-marketing/" class="dropdown-item">Email marketing</a>
+</li>
+                                    
+<li>
+    <a href="../2019-01-10-digital-marketing/" class="dropdown-item">Digitial marketing</a>
+</li>
+                                    
+<li>
+    <a href="../2019-01-12-pro-rails-project/" class="dropdown-item">Professional Rails Project Steps</a>
+</li>
+                                    
+<li>
+    <a href="../2019-03-30-se_proj_planning/" class="dropdown-item">This Project Planning from SDLC</a>
+</li>
+                                    
+<li>
+    <a href="../2019-04-xp_virtualbox/" class="dropdown-item">Setting up Networking for WinXP on virtualbox</a>
+</li>
+                                    
+<li>
+    <a href="../2019-03-phalcon_php/" class="dropdown-item">Installing Phalcon PHP in Ubuntu 18.04</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">research <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../2018-07-07-phd-hunt/" class="dropdown-item">To PhD Abroad I Go</a>
+</li>
+                                    
+<li>
+    <a href="../2018-07-08-EUSE-seminar/" class="dropdown-item">End-User Software Engineering</a>
+</li>
+                                    
+<li>
+    <a href="../2018-07-08-phd-hunt/" class="dropdown-item">My PhD Hunt  (day 2)</a>
+</li>
+                                    
+<li>
+    <a href="../2018-07-09-phd-hunt/" class="dropdown-item">My PhD Hunt  (day 3)</a>
+</li>
+                                    
+<li>
+    <a href="../2018-07-10-phd-thoughts/" class="dropdown-item">My PhD Hunt  (day 4)</a>
+</li>
+                                    
+<li>
+    <a href="../2018-07-11-phd-australia/" class="dropdown-item">Australian Uni's w/ good CS PhD Programs </a>
+</li>
+                                    
+<li>
+    <a href="../2018-07-12-phd-hunt/" class="dropdown-item">Deeper look Australian Uni's - part 1</a>
+</li>
+                                    
+<li>
+    <a href="../2018-07-13-phd-hunt/" class="dropdown-item">Deeper look Australian Uni's - part 2</a>
+</li>
+                                    
+<li>
+    <a href="../2018-07-15-phd-hunt/" class="dropdown-item">Deeper look Australian Uni's - part 3 (last)</a>
+</li>
+                                    
+<li>
+    <a href="../2018-07-19-phd-hunt/" class="dropdown-item">PhD Top 3</a>
+</li>
+                                    
+<li>
+    <a href="../2018-07-20-phd-hunt/" class="dropdown-item">Melbourne for PhD</a>
+</li>
+                                    
+<li>
+    <a href="../2019-01-09-marketing-trends-ph/" class="dropdown-item">Philippine Digital Marketing Trends 2018</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">relationships <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../2018-08-27-self-made/" class="dropdown-item"> Billionaire's Habits </a>
+</li>
+                                    
+<li>
+    <a href="../2018-10-19-block_rosary/" class="dropdown-item">Block Rosary</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">teaching <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../2018-09-14-gslides/" class="dropdown-item">Google slides with Audio</a>
+</li>
+                                    
+<li>
+    <a href="../2018-09-16-info_sys/" class="dropdown-item">My Information System Development Philosophy</a>
+</li>
+                                    
+<li>
+    <a href="../2018-09-25-IS_prog-js_dates/" class="dropdown-item">Javascript Date Object</a>
+</li>
+                                    
+<li>
+    <a href="../2018-09-25-js_loops/" class="dropdown-item">Javascript loops</a>
+</li>
+                                    
+<li>
+    <a href="../2018-09-26-mysql_datatypes/" class="dropdown-item">MySQL datatypes</a>
+</li>
+                                    
+<li>
+    <a href="../2018-10-01-WAPP-setup/" class="dropdown-item">WAPP Setup</a>
+</li>
+                                    
+<li>
+    <a href="../2018-10-14-BA186_syllabus/" class="dropdown-item">BA186 SYSTEMS ANALYSIS AND DESIGN</a>
+</li>
+                                    
+<li>
+    <a href="../2018-10-19-configure_git/" class="dropdown-item">Setup Git and Github</a>
+</li>
+                                    
+<li>
+    <a href="../2018-10-19-install_rails/" class="dropdown-item">Install rails in Ubuntu 18.04</a>
+</li>
+                                    
+<li>
+    <a href="../2018-10-19-setup_mysql/" class="dropdown-item">Setting Up MySQL in Ubuntu 18.04</a>
+</li>
+                                    
+<li>
+    <a href="../2018-10-19-setup_postgresql/" class="dropdown-item">Setting Up PostgreSQL in Ubuntu 18.04</a>
+</li>
+                                    
+<li>
+    <a href="../2018-11-01-aws_upkeep/" class="dropdown-item">Setting up an AWS account for Team Development</a>
+</li>
+                                    
+<li>
+    <a href="../2019-02-pisay_application/" class="dropdown-item">Teacher Career Path Evaluation Sheet</a>
+</li>
+                                    
+<li>
+    <a href="../2018-01-IPSE-syllabus/" class="dropdown-item">2018 01 IPSE syllabus</a>
+</li>
+                                    
+<li>
+    <a href="../2019-04-pisay_promotion/" class="dropdown-item">Teacher Career Path Evaluation Sheet</a>
+</li>
+                                    
+<li>
+    <a href="../2019-03-pisay_cs4_setup/" class="dropdown-item">2019 03 pisay cs4 setup</a>
+</li>
+                                    
+<li>
+    <a href="../2020-03-pisay_cs4_setup/" class="dropdown-item">2020 03 pisay cs4 setup</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">projects <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../2019-01-05-pcari-site/" class="dropdown-item">2019 01 05 pcari site</a>
+</li>
+                                    
+<li>
+    <a href="../pcari-site-proposal/" class="dropdown-item">Pcari site proposal</a>
+</li>
+                                    
+<li>
+    <a href="../UP-IC/" class="dropdown-item">UP IC</a>
+</li>
+                                    
+<li>
+    <a href="../2019-01-05-IS-proj-start/" class="dropdown-item">Beginning an Information System Project</a>
+</li>
+                                    
+<li>
+    <a href="../2018-collated_screens/" class="dropdown-item">2018 collated screens</a>
+</li>
+                                    
+<li>
+    <a href="../2018-11-IC-comments/" class="dropdown-item">2018 11 IC comments</a>
+</li>
+                                    
+<li>
+    <a href="../2018-mobile_screens/" class="dropdown-item">2018 mobile screens</a>
+</li>
+                                    
+<li>
+    <a href="../2019-01-16-DENR_TOR/" class="dropdown-item">2019 01 16 DENR TOR</a>
+</li>
+                                    
+<li>
+    <a href="../2019-02-UPPFI-WW-DOD-1/" class="dropdown-item">Definitions of Done - UPPFI-WW web app</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#aws-build-to-scale" class="nav-link">AWS Build to Scale</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#context" class="nav-link">Context</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#big-idea" class="nav-link">Big Idea</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#benefits" class="nav-link">Benefits</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#details" class="nav-link">Details</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#next-steps" class="nav-link">Next Steps</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="aws-build-to-scale">AWS Build to Scale</h1>
+<blockquote>
+<p>Roy Canseco<br />
+2020-10-30 </p>
+</blockquote>
+<h2 id="context">Context</h2>
+<p>AWS is special in how flexible it is compared to most cloud providers. However, we, the clients are paying for this flexibility. </p>
+<p>Other cloud providers actually provide cheaper products with as much functionality but with less flexibility. It is therefore up to us, the clients, to leverage this flexibility by configuring AWS workloads to our advantage. The corollary to this, if we fail to configure properly, we will be paying more, or getting less. </p>
+<h2 id="big-idea">Big Idea</h2>
+<p>We look to AWS as to how to iteratively build a generic web application that will make the most of the AWS flexibility and give us the most bang for our buck.</p>
+<p>It turns out that AWS has a 4-step process. </p>
+<ol>
+<li>Deploy a simple your web application code in an EC2 instance, your database in a block storage, and your static files into an S3 bucket. </li>
+<li>Replace your block storage with RDS</li>
+<li>Put in cloud watch, a load balancer, and an auto scaling group of EC2 instances</li>
+<li>Add cloud formation to be able to convert your infrastructure layout to code. </li>
+</ol>
+<p>This is taken from </p>
+<blockquote>
+<p>AWS Public Sector Summit Online / Breakout Sessions / ...<br />
+Building in the cloud<br />
+ Patrick Do, Technical Trainer, AWS</p>
+</blockquote>
+<p><img alt="qownnotes-media-WsEYFK" src="../media/qownnotes-media-WsEYFK-3915169783.png" /></p>
+<p>If we are able to fix the storage issue through S3 or EFS, then we will be completing step 2. </p>
+<h2 id="benefits">Benefits</h2>
+<p>Each step delivers unique advantages
+1. Cheap storage that scales as your files grow
+2. A database that can be managed and secured separately from the web application
+3. A fleet of CPU instances that balances load between them and increases/ decreases their number as needed
+4. A way to export and store all the infrastructure configuration for quick and easy redeployment</p>
+<p>This will bring us to an Optimized Lift and Shift status as described as the halfway point to total cost optimization, which was also described in AWS Summit 2020, as mentioned in my Oct 29 report. </p>
+<p>There was a report of an institution in India, EdTech Impartus, that launched online education in AWS for 90 schools, equivalent to 530,000 students and 32,000 teachers during the recent pandemic months. It is possible to setup AWS for all PSHS campuses well. </p>
+<h2 id="details">Details</h2>
+<h3 id="situationer">Situationer</h3>
+<p>Right now our moodledata are inside the Instance Store (ephemeral storage). This is fast, but expanding this is very costly. Also this hinders us from doing EC2 autoscaling since the compute node has the user data as well. Ideally the static data will be in the S3 bucket, which is also something we are not using at this point. </p>
+<p>On the other hand, our database is already well placed and is separate from the webserver instance.</p>
+<p><img alt="qownnotes-media-zahSgJ" src="../media/qownnotes-media-zahSgJ-1006029957.png" /></p>
+<p>### Step 1 of 4</p>
+<p>This diagram is how most web applications in AWS will start. We haven't fully reached this stage yet since we haven't separated our static content from our compute instance.</p>
+<p>This implies that we can manage our static content apart from the compute instance. 
+ For our particular case, this  can mean that we put our moodledata folder inside a block storage. We can also use a moodle plugin to get static content from within moodledata block storage and store them in the object bucket.</p>
+<p>Once we fully achieve this, we should be able to scale our storage as needed.</p>
+<p><img alt="qownnotes-media-ivfHuD" src="../media/qownnotes-media-ivfHuD-490940827.png" /></p>
+<h3 id="step-2-of-4">Step 2 of 4</h3>
+<p>This is stage 2, where we configure the database in a way that it can be managed apart from our compute instance. </p>
+<p><img alt="qownnotes-media-dDNERh" src="../media/qownnotes-media-dDNERh-1102817947.png" /></p>
+<p>With regards to the database, our current setup fully satisfies this best practice.</p>
+<p><img alt="qownnotes-media-JgvypV" src="../media/qownnotes-media-JgvypV-4276595493.png" /></p>
+<h3 id="step-3-of-4">Step 3 of 4</h3>
+<p>This is stage 3, where we have slimmed down our compute instance to do just computing functions. Both data files and databases are already separated from it. We can now create a fleet of compute instances that we can scale up or scale down based on our present need. </p>
+<p>We are <em>not</em> doing this at all as of now. This part is where AWS excels. Not being able to do this takes out a lot of the advantages that AWS has over cheaper cloud platforms.</p>
+<p><img alt="qownnotes-media-UBEqNf" src="../media/qownnotes-media-UBEqNf-1163053651.png" /></p>
+<p>This will need that have the following to work:
+1. a load balancer
+2. a fleet of compute instances
+3. a monitor to signal increasing or decreasing of compute instances </p>
+<p>The following picture shows the AWS load-balancer.</p>
+<p><img alt="qownnotes-media-ZcjcjV" src="../media/qownnotes-media-ZcjcjV-4032466265.png" /></p>
+<p>The following picture shows a fleet of compute instances that only runs 2 instances during low usage times and up to 10 instances during peak usage times.</p>
+<p><img alt="qownnotes-media-lCxuGb" src="../media/qownnotes-media-lCxuGb-246873662.png" /></p>
+<p>The following picture describes the monitor AWS uses to trigger alarms and autoscaling (increase or decrease) of compute instances. It was mentioned in the AWS Summit 2020 that they <strong>recommend increasing compute capacity once 60% is already reached. They also recommend decreasing capacity once utilization falls to 20%</strong>. </p>
+<p><img alt="qownnotes-media-BsQIHS" src="../media/qownnotes-media-BsQIHS-1683147736.png" /></p>
+<h3 id="step-4-of-4">Step 4 of 4</h3>
+<p>This is stage 4, where we describe our AWS configuration in a script and save it. This means that if we want to set everything up again, we can do so easily just be running our script. This makes sure that our configuration is correct every time.</p>
+<p><img alt="qownnotes-media-eFFDWz" src="../media/qownnotes-media-eFFDWz-1077503508.png" /></p>
+<p>This uses AWS Cloud Formation templates.</p>
+<p><img alt="qownnotes-media-YeEstm" src="../media/qownnotes-media-YeEstm-3718185261.png" /></p>
+<h2 id="next-steps">Next Steps</h2>
+<p>There are various things that can go wrong in putting together server infrastructure in the cloud. That is why it is recommended to iterate from simple to a complex architecture. Through every stage, the reliability, ease of management and total cost becomes better and better. </p>
+<p>It would be good to be proactive in this regard. At this point, PSHS needs KHub to fully reach stage 2. The key component to this is being able to separate static content from the compute node. This is very much doable. </p>
+<p>As soon stage 2 is reached, it would be advisable to explore and prototype a solution to reach Stage 3 so as to be future ready.</p>
+<p>It seems that OED/ Nephila is poising to integrate all KHubs in the future. This is evidenced by the current setup where there is only 1 database for all campuses. This means that in case we want to separate the campuses, we will not find it that easy to do  because campuses are sharing database tables. Also, from today's meeting, their plan is to have 1 object bucket for the static content of all campuses. All these point to integrating all campus KHubs together. When that happens, reaching the stage 3 architecture is a must to be feasible. Stage 4 will be necessary to maintain such a configuration in the long run.  </p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+                <p>&copy; 2018 - 2020 Roy Canseco <br> Feedback: 03rvlc+mkdocs@gmail.com</p>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../js/base.js" defer></script>
+        <script src="../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

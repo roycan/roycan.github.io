@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <meta name="author" content="Roy Vincent Luna Canseco">
+        <link rel="canonical" href="https://roycan.gitlab.io/mkdocs/2021-06-khub-linode_migration/">
+        <link rel="shortcut icon" href="../img/favicon.ico">
+        <title>2021 06 khub linode migration - roycan docs</title>
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/docco.min.css">
+
+        <script src="../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="..">roycan docs</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem">
+                                <a href=".." class="nav-link">Home</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="../2019-01-cv/" class="nav-link">About</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">skills <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../2014-01-15-maple-review/" class="dropdown-item"> Quickly relearning Maple </a>
+</li>
+                                    
+<li>
+    <a href="../2014-03-03-joomla-backup/" class="dropdown-item">Backing up a Joomla Site</a>
+</li>
+                                    
+<li>
+    <a href="../2018-07-13-aws-jasperreports/" class="dropdown-item">Jasper Server on AWS Attempt</a>
+</li>
+                                    
+<li>
+    <a href="../2018-08-10-laravel/" class="dropdown-item">PHP Laravel</a>
+</li>
+                                    
+<li>
+    <a href="../2019-01-09-digital-ads/" class="dropdown-item">2019 01 09 digital ads</a>
+</li>
+                                    
+<li>
+    <a href="../2019-01-09-email-marketing/" class="dropdown-item">Email marketing</a>
+</li>
+                                    
+<li>
+    <a href="../2019-01-10-digital-marketing/" class="dropdown-item">Digitial marketing</a>
+</li>
+                                    
+<li>
+    <a href="../2019-01-12-pro-rails-project/" class="dropdown-item">Professional Rails Project Steps</a>
+</li>
+                                    
+<li>
+    <a href="../2019-03-30-se_proj_planning/" class="dropdown-item">This Project Planning from SDLC</a>
+</li>
+                                    
+<li>
+    <a href="../2019-04-xp_virtualbox/" class="dropdown-item">Setting up Networking for WinXP on virtualbox</a>
+</li>
+                                    
+<li>
+    <a href="../2019-03-phalcon_php/" class="dropdown-item">Installing Phalcon PHP in Ubuntu 18.04</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">research <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../2018-07-07-phd-hunt/" class="dropdown-item">To PhD Abroad I Go</a>
+</li>
+                                    
+<li>
+    <a href="../2018-07-08-EUSE-seminar/" class="dropdown-item">End-User Software Engineering</a>
+</li>
+                                    
+<li>
+    <a href="../2018-07-08-phd-hunt/" class="dropdown-item">My PhD Hunt  (day 2)</a>
+</li>
+                                    
+<li>
+    <a href="../2018-07-09-phd-hunt/" class="dropdown-item">My PhD Hunt  (day 3)</a>
+</li>
+                                    
+<li>
+    <a href="../2018-07-10-phd-thoughts/" class="dropdown-item">My PhD Hunt  (day 4)</a>
+</li>
+                                    
+<li>
+    <a href="../2018-07-11-phd-australia/" class="dropdown-item">Australian Uni's w/ good CS PhD Programs </a>
+</li>
+                                    
+<li>
+    <a href="../2018-07-12-phd-hunt/" class="dropdown-item">Deeper look Australian Uni's - part 1</a>
+</li>
+                                    
+<li>
+    <a href="../2018-07-13-phd-hunt/" class="dropdown-item">Deeper look Australian Uni's - part 2</a>
+</li>
+                                    
+<li>
+    <a href="../2018-07-15-phd-hunt/" class="dropdown-item">Deeper look Australian Uni's - part 3 (last)</a>
+</li>
+                                    
+<li>
+    <a href="../2018-07-19-phd-hunt/" class="dropdown-item">PhD Top 3</a>
+</li>
+                                    
+<li>
+    <a href="../2018-07-20-phd-hunt/" class="dropdown-item">Melbourne for PhD</a>
+</li>
+                                    
+<li>
+    <a href="../2019-01-09-marketing-trends-ph/" class="dropdown-item">Philippine Digital Marketing Trends 2018</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">relationships <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../2018-08-27-self-made/" class="dropdown-item"> Billionaire's Habits </a>
+</li>
+                                    
+<li>
+    <a href="../2018-10-19-block_rosary/" class="dropdown-item">Block Rosary</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">teaching <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../2018-09-14-gslides/" class="dropdown-item">Google slides with Audio</a>
+</li>
+                                    
+<li>
+    <a href="../2018-09-16-info_sys/" class="dropdown-item">My Information System Development Philosophy</a>
+</li>
+                                    
+<li>
+    <a href="../2018-09-25-IS_prog-js_dates/" class="dropdown-item">Javascript Date Object</a>
+</li>
+                                    
+<li>
+    <a href="../2018-09-25-js_loops/" class="dropdown-item">Javascript loops</a>
+</li>
+                                    
+<li>
+    <a href="../2018-09-26-mysql_datatypes/" class="dropdown-item">MySQL datatypes</a>
+</li>
+                                    
+<li>
+    <a href="../2018-10-01-WAPP-setup/" class="dropdown-item">WAPP Setup</a>
+</li>
+                                    
+<li>
+    <a href="../2018-10-14-BA186_syllabus/" class="dropdown-item">BA186 SYSTEMS ANALYSIS AND DESIGN</a>
+</li>
+                                    
+<li>
+    <a href="../2018-10-19-configure_git/" class="dropdown-item">Setup Git and Github</a>
+</li>
+                                    
+<li>
+    <a href="../2018-10-19-install_rails/" class="dropdown-item">Install rails in Ubuntu 18.04</a>
+</li>
+                                    
+<li>
+    <a href="../2018-10-19-setup_mysql/" class="dropdown-item">Setting Up MySQL in Ubuntu 18.04</a>
+</li>
+                                    
+<li>
+    <a href="../2018-10-19-setup_postgresql/" class="dropdown-item">Setting Up PostgreSQL in Ubuntu 18.04</a>
+</li>
+                                    
+<li>
+    <a href="../2018-11-01-aws_upkeep/" class="dropdown-item">Setting up an AWS account for Team Development</a>
+</li>
+                                    
+<li>
+    <a href="../2019-02-pisay_application/" class="dropdown-item">Teacher Career Path Evaluation Sheet</a>
+</li>
+                                    
+<li>
+    <a href="../2018-01-IPSE-syllabus/" class="dropdown-item">2018 01 IPSE syllabus</a>
+</li>
+                                    
+<li>
+    <a href="../2019-04-pisay_promotion/" class="dropdown-item">Teacher Career Path Evaluation Sheet</a>
+</li>
+                                    
+<li>
+    <a href="../2019-03-pisay_cs4_setup/" class="dropdown-item">2019 03 pisay cs4 setup</a>
+</li>
+                                    
+<li>
+    <a href="../2020-03-pisay_cs4_setup/" class="dropdown-item">2020 03 pisay cs4 setup</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">projects <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../2019-01-05-pcari-site/" class="dropdown-item">2019 01 05 pcari site</a>
+</li>
+                                    
+<li>
+    <a href="../pcari-site-proposal/" class="dropdown-item">Pcari site proposal</a>
+</li>
+                                    
+<li>
+    <a href="../UP-IC/" class="dropdown-item">UP IC</a>
+</li>
+                                    
+<li>
+    <a href="../2019-01-05-IS-proj-start/" class="dropdown-item">Beginning an Information System Project</a>
+</li>
+                                    
+<li>
+    <a href="../2018-collated_screens/" class="dropdown-item">2018 collated screens</a>
+</li>
+                                    
+<li>
+    <a href="../2018-11-IC-comments/" class="dropdown-item">2018 11 IC comments</a>
+</li>
+                                    
+<li>
+    <a href="../2018-mobile_screens/" class="dropdown-item">2018 mobile screens</a>
+</li>
+                                    
+<li>
+    <a href="../2019-01-16-DENR_TOR/" class="dropdown-item">2019 01 16 DENR TOR</a>
+</li>
+                                    
+<li>
+    <a href="../2019-02-UPPFI-WW-DOD-1/" class="dropdown-item">Definitions of Done - UPPFI-WW web app</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#khub-linode-migration" class="nav-link">KHub linode migration</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#fix-linode" class="nav-link">Fix Linode</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#duplicate-linode" class="nav-link">Duplicate Linode</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#mv-moodle-code-data-and-db" class="nav-link">mv moodle code, data, and DB</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#rm-moodle-code-data-and-db-in-server2" class="nav-link">rm moodle code, data, and DB in server2</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#rm-moodle-code-data-and-db-in-server1" class="nav-link">rm moodle code, data, and DB in server1</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#prepare-for-khub-sync" class="nav-link">Prepare for KHub sync</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#optimize-server-for-moodle" class="nav-link">Optimize server for moodle</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#if-still-slow" class="nav-link">If still slow</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#after-returning-to-khub" class="nav-link">After returning to KHub</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#plan-d" class="nav-link">Plan D  :)</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#appendix" class="nav-link">Appendix</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="khub-linode-migration">KHub linode migration</h1>
+<h2 id="fix-linode">Fix Linode</h2>
+<blockquote>
+<p>root PSmc!20</p>
+<p>sir_roy roypass</p>
+<p><code>$ ssh user@server -o ServerAliveInterval=15</code></p>
+</blockquote>
+<pre><code class="language-shell">$ HOME/.ssh/config
+$ chmod 600 ~/.ssh/config
+</code></pre>
+<p>config:</p>
+<pre><code>Host remotehost
+    HostName remotehost.com
+    ServerAliveInterval 240
+</code></pre>
+<p>or:</p>
+<pre><code>Host *
+    ServerAliveInterval 240
+</code></pre>
+<p>alternatives for <strong>xip.io</strong>:
+* <a href="https://nip.io/">nip.io</a>
+* <a href="https://sslip.io/">sslip.io</a>
+* <a href="https://github.com/Corollarium/localtls">localtls</a></p>
+<p>steps once working:
+* download miscellaneous courses 
+* put in up.alum gdrive</p>
+<h2 id="duplicate-linode">Duplicate Linode</h2>
+<ul>
+<li>change the server name in moodle config and in sites-available</li>
+<li>wait a bit for changes to effect</li>
+</ul>
+<h2 id="mv-moodle-code-data-and-db">mv moodle code, data, and DB</h2>
+<ul>
+<li><code>$ cp -rp</code></li>
+</ul>
+<h2 id="rm-moodle-code-data-and-db-in-server2">rm moodle code, data, and DB in server2</h2>
+<ul>
+<li>setup ssh from server1 to server2 </li>
+<li>rsync moodle code, data, and DB dump to server2</li>
+<li>
+<p>check that it works.</p>
+</li>
+<li>
+<p>--progress :: estimate progress</p>
+</li>
+<li>--delete :: delete extraneous</li>
+</ul>
+<h3 id="recommended-method">Recommended method</h3>
+<p>Turn on maintenance mode:
+<code>Site Administration &gt; Server &gt; Maintenance Mode</code></p>
+<p>Copy moodledata from the old server to the new server:</p>
+<blockquote>
+<p>NB: It is not necessary to copy the contents of these &gt; directories:</p>
+<ul>
+<li>/moodledata/cache</li>
+<li>/moodledata/localcache</li>
+<li>/moodledata/sessions</li>
+<li>/moodledata/temp</li>
+<li>/moodledata/trashdir</li>
+</ul>
+<p>Omitting these files will reduce transfer time substantially.</p>
+<p>Check the file permissions of the copied files. The web server needs read and write access.    </p>
+</blockquote>
+<p>Copy the Moodle code from the old server to the new server     </p>
+<ul>
+<li>check permissions</li>
+<li>the server needs read access </li>
+</ul>
+<p><strong><a href="../rsync/">Note: use rsync</a></strong></p>
+<p>Update config.php with the URL of the new server</p>
+<p>Test the copied site</p>
+<p>Update links containing wwwroot in the database</p>
+<p><strong><em>Note: use</em></strong> <a href="../sed/">sed</a></p>
+<p>Take the site out of maintenance mode:</p>
+<ul>
+<li>When you are happy all has gone well, set up redirects/make DNS changes if required</li>
+</ul>
+<h2 id="rm-moodle-code-data-and-db-in-server1">rm moodle code, data, and DB in server1</h2>
+<ul>
+<li>setup ssh from server2 to server1 </li>
+<li>rsync moodle code, data, and DB dump to server1</li>
+<li>check that it works.</li>
+</ul>
+<h2 id="prepare-for-khub-sync">Prepare for KHub sync</h2>
+<ul>
+<li>install moodle 3.9 with postgresql 11.1 and catalyst objectfs </li>
+<li>check that things are still working</li>
+<li>upgrade to 2cpu 4GB ram linode</li>
+<li>check that things are still working</li>
+<li>increase swap disk</li>
+<li>check that things are still working</li>
+<li>set notification thresholds</li>
+</ul>
+<h3 id="build-fresh-server">Build fresh server</h3>
+<p><strong><em>Note: use <a href="../Build%20a%20fresh%20server/">Build a fresh server</a></em></strong></p>
+<p>If you want to set up a postgresql database like KHub, you can use: <a href="../postgresql/">postgresql 11</a></p>
+<h3 id="set-up-a-dns-record-for-moodle-application">Set up a DNS record for moodle application</h3>
+<p>For users to access your Moodle instance you need to create a subdomain for it, thus, you need to create a DNS A record to achieve this. For this guide, our test domain is testprojects.me, so we need to create a subdomain, for example, learning.testprojects.me.</p>
+<p>So, log into your domain registrar’s web console and access your domain’s advanced settings, click Add New Record of type A, a host should be learning (or any word of your choice), and value should be the public IP address of your Ubuntu server.</p>
+<p><img alt="media-Ltxbpk" src="../media/media-Ltxbpk.png" /></p>
+<h3 id="install-php">install php</h3>
+<p><strong><em>Note: use <a href="../PHP%207.4/">PHP 7.4</a></em></strong></p>
+<h3 id="get-moodle-code">get moodle code</h3>
+<pre><code>cd /opt
+sudo git clone git://git.moodle.org/moodle.git
+cd moodle
+sudo git branch -a
+sudo git branch --track MOODLE_39_STABLE origin/MOODLE_39_STABLE
+sudo git checkout MOODLE_39_STABLE
+</code></pre>
+<pre><code>sudo cp -R /opt/moodle /var/www/
+sudo mkdir /var/www/moodledata
+sudo chown -R www-data /var/www/moodledata
+sudo chmod -R 777 /var/www/moodledata
+sudo chmod -R 0755 /var/www/moodle
+</code></pre>
+<p>Explanation:</p>
+<p>Since we setup a local repository in the previous step, you will copy it to your webroot after any updates and making changes. Having your local repository outside of the webroot, like we have in /opt, you will be able to prepare and stage your upgrades in a more efficient manner. For example, you want to make some changes or add some plug-ins, you would download the plugin and copy it to your local moodle repository. After you have added the plug-in and any other changes you might have made you will need to edit the file located in /opt/moodle/.git/info/exclude. Within that file you want to tell git which files/folders to exclude when it pulls down the updates when you run your next "sudo git pull". An example entry would be the certificate mod located in /opt/moodle/mod/certificate so within the exclude file you want to add "/mod/certificate" below the last comments. You would add additional entries, 1 per line, for each plug-in or file you might have changed. If I were to change the favicon.ico file you would just add "favicon.ico" to the exclude file. Now when you run "sudo git pull" to update moodle to the latest version it will ignore those files and directories and just update the core moodle code. Before copying to your webroot to upgrade you want to make sure and download and copy over the latest versions of the plug-ins you might have added.</p>
+<h3 id="setup-moodle-to-use-postgresql">setup moodle to use postgresql</h3>
+<pre><code>$ cd /var/www/moodle/
+$ sudo cp config-dist.php config.php
+$ sudo vim config.php
+</code></pre>
+<pre><code class="language-php">$CFG-&gt;dbtype    = 'pgsql';      // 'pgsql', 'mariadb', 'mysqli', 'sqlsrv' or 'oci'
+$CFG-&gt;dblibrary = 'native';     // 'native' only at the moment
+$CFG-&gt;dbhost    = 'localhost';  // eg 'localhost' or 'db.isp.com' or IP
+$CFG-&gt;dbname    = 'moodle_db';     // database name, eg moodle
+$CFG-&gt;dbuser    = 'moodle_user';   // your database username
+$CFG-&gt;dbpass    = 'moodle_password';   // your database password
+$CFG-&gt;prefix    = 'mdl_';       // prefix to use for all table names
+</code></pre>
+<p><code>// 'dbcollation' =&gt; 'utf8mb4_unicode_ci',</code></p>
+<pre><code class="language-php">$CFG-&gt;wwwroot   = 'http://khub.example.com';
+$CFG-&gt;dataroot  = '/var/www/moodledata';
+</code></pre>
+<h3 id="set-up-nginx">Set up Nginx</h3>
+<p><strong><em>Note: use <a href="../nginx/">nginx</a></em></strong></p>
+<h3 id="configuring-nginx-to-work-with-php-fpm">Configuring Nginx to work with PHP-FPM</h3>
+<p><strong><em>Note: use <a href="../configure%20Nginx%20with%20PHP-FPM/">configure Nginx with PHP-FPM</a></em></strong></p>
+<h3 id="configuring-nginx-to-serve-moodle-application">Configuring NGINX to Serve Moodle Application</h3>
+<p>For NGINX to server your Moodle site, you need to create a new server block configuration under the NGINX configuration, in the directory /etc/nginx/conf.d/</p>
+<p><code>$ sudo vim /etc/nginx/conf.d/moodle.conf</code></p>
+<p>Copy and paste the following configuration in it, replace <code>backhub.pshsmc.xyz</code> with your subdomain. </p>
+<pre><code class="language-php">server{
+   listen 80;
+    server_name backhub.pshsmc.xyz;
+    root        /var/www/html/moodle;
+    index       index.php;
+
+    location / {
+        try_files $uri $uri/ /index.php?$query_string;
+    }
+
+    location ~ ^(.+\.php)(.*)$ {
+        fastcgi_split_path_info ^(.+\.php)(.*)$;
+        fastcgi_index           index.php;
+        fastcgi_pass           unix:/run/php/php7.4-fpm.sock;
+        include                 /etc/nginx/mime.types;
+        include                 fastcgi_params;
+        fastcgi_param           PATH_INFO       $fastcgi_path_info;
+        fastcgi_param           SCRIPT_FILENAME $document_root$fastcgi_script_name;
+}
+    client_max_body_size 200M;
+}
+</code></pre>
+<p>Next, verify that the NGINX configuration is OK after making the above changes, then gracefully restart the NGINX service.</p>
+<pre><code>$ sudo nginx -t
+$ sudo systemctl reload nginx
+</code></pre>
+<h3 id="completing-moodle-installation-via-web-installer">Completing Moodle Installation via Web Installer</h3>
+<p><img alt="qownnotes-media-gbEpKh" src="../media/qownnotes-media-gbEpKh.png" /></p>
+<h3 id="system-paths-after-install">System paths after install</h3>
+<p>After installing Moodle you should set the system paths, this will provide better performance VS not setting them. Each entry in Moodle will have it's explanation.</p>
+<p>Navigate, on the moodle webpage, to Site Administration &gt; Server &gt; System Paths</p>
+<p>Input the following;</p>
+<p>Path to du: /usr/bin/du</p>
+<p>Path to apsell: /usr/bin/aspell</p>
+<p>Path to dot: /usr/bin/dot</p>
+<p>Save Changes</p>
+<p>Optional if you do not already have an AntiVirus Solution
+We also installed ClamAV  previously</p>
+<p>Navigate to Site Administration &gt; Plugins &gt; Antivirus plugins &gt; Manage antivirus plugins</p>
+<p>Enable ClamAV antivirus</p>
+<p>Click on Settings</p>
+<p>Set the proper settings</p>
+<p>Save changes</p>
+<p>ClamAV Path : <code>/usr/bin/clamscan</code></p>
+<p>Save Changes</p>
+<h3 id="configure-phpini">Configure php.ini</h3>
+<p>Check these settings in your php.ini or .htaccess file (if you're using Apache). For settings which use ON/OFF as their values, you can substitute 1 for ON and 0 for OFF if you prefer. If you change php.ini, don't forget to restart the server.</p>
+<h4 id="settings">Settings</h4>
+<ul>
+<li>memory_limit needs to be at least 96M (although some functions may not work if this low). Moodle will refuse to install if lower. 128M is recommended. Large systems may need an even higher setting.</li>
+<li>session.save_handler needs to be set to FILES.</li>
+<li>file_uploads needs to be ON.</li>
+<li>session.auto_start needs to be OFF.</li>
+<li>The temp folder must be defined and writeable by your webserver user</li>
+<li>Check the error display/logging section. Make sure the settings are appropriate for your server use.</li>
+<li>post_max_size and upload_max_filesize restrict the maximum file size that can be uploaded.</li>
+<li>Check the [mail function] and database section (for your chosen database) to make sure they match your server configuration.</li>
+<li>check max_execution time -&gt; 600</li>
+</ul>
+<p>Find the correct php.ini</p>
+<p><code>php -i | grep php.ini</code></p>
+<p>Site admins can display phpinfo in moodle</p>
+<p><code>Settings &gt; Site administration &gt; Server &gt; PHP info</code></p>
+<h4 id="extensions-and-libraries">Extensions and libraries</h4>
+<p>The iconv extension is required.
+The mbstring extension is required.
+The curl extension is required (required for networking and web services).
+The openssl extension is recommended (required for networking and web services).
+The tokenizer extension is recommended.
+The xmlrpc extension is recommended (required for networking and web services).
+The soap extension is recommended (required for web services).
+The ctype extension is required.
+The zip extension is required.
+The gd extension is recommended (required for manipulating images).
+The simplexml extension is required.
+The spl extension is required.
+The pcre extension is required.
+The dom extension is required.
+The xml extension is required.
+The intl extension is recommended.
+The json extension is required.
+The appropriate extension for your chosen database is also required.
+Other PHP extensions may be required to support optional Moodle functionality, especially external authentication and/or enrolment (e.g. LDAP extension for LDAP authentication and the sockets extension for Chat server).</p>
+<pre><code>sudo systemctl restart php7.4-fpm.service
+sudo systemctl restart nginx
+</code></pre>
+<h3 id="restoring-a-postgresql-db-dump">Restoring a postgresql db dump</h3>
+<pre><code>$ cd
+$ pg_dump moodle_db &gt; moodle-postgre-db.sql
+$ dropdb moodle_db
+$ createdb --owner=moodle_user --encoding=UTF8 moodle_db
+$ cat moodle_dump.sql | grep -i &quot;oldserver.com&quot;
+</code></pre>
+<p>Update links containing wwwroot in the database
+<code>#sed -e 's/oldserver.com/newserver.com/g' oldmysqldump.sql &gt; newmysqldump.sql</code></p>
+<ul>
+<li>-e :: script</li>
+</ul>
+<p><code>#sed -i.bak -e 's/oldserver.com/newserver.com/g' mysqldump.sql</code></p>
+<ul>
+<li>-i.bak :: save the file changes in-place, but backup file first</li>
+</ul>
+<p>Check that it worked:</p>
+<pre><code>$ cat moodle_db.sql | grep -i &quot;oldserver.com&quot; | head
+$ cat moodle_db.sql | grep -i &quot;newserver.com&quot; | head
+
+</code></pre>
+<pre><code class="language-shell">$ psql -U sir_roy -d moodle_db --set  on_error_stop=on -f /opt/backup/backup/moodle_db.sql
+</code></pre>
+<h3 id="create-volume-for-db-files">Create volume for db files</h3>
+<p>To get started with a new volume, you'll want to create a filesystem on it:</p>
+<p><code>mkfs.ext4 "/dev/disk/by-id/scsi-0Linode_Volume_ext-drive"</code></p>
+<p>Once the volume has a filesystem, you can create a mountpoint for it:</p>
+<p><code>mkdir "/mnt/ext-drive"</code></p>
+<p>Then you can mount the new volume:</p>
+<p><code>mount "/dev/disk/by-id/scsi-0Linode_Volume_ext-drive" "/mnt/ext-drive"</code></p>
+<p>If you want the volume to automatically mount every time your Linode boots, you'll want to add a line like the following to your /etc/fstab file:</p>
+<p><code>/dev/disk/by-id/scsi-0Linode_Volume_ext-drive /mnt/ext-drive ext4 defaults,noatime,nofail 0 2</code></p>
+<h3 id="setting-up-https-on-moodle-application-using-lets-encrypt"><a href="https://www.tecmint.com/install-moodle-in-ubuntu/#moodlenginx">Setting Up HTTPS on Moodle Application Using Let’s Encrypt</a></h3>
+<h2 id="optimize-server-for-moodle">Optimize server for moodle</h2>
+<ul>
+<li>set up site backup</li>
+<li>install <em>LBS</em> for baseline monitoring on server</li>
+<li>install firefox <em>YSlow</em> tool for client</li>
+<li>consider stress testing: <a href="https://www.linode.com/docs/tools-reference/tools/load-testing-with-siege/">Load Test Your Web Server with Siege</a></li>
+<li>consider install moodle plugin: <a href="https://edwiser.org/site-monitor/">Edwiser Site Monitor</a></li>
+</ul>
+<h2 id="if-still-slow">If still slow</h2>
+<ul>
+<li>consider transfer to <a href="https://www.cloudways.com/en/moodle-hosting.php#linode">Cloudways</a> for advance cache solutions</li>
+</ul>
+<h2 id="after-returning-to-khub">After returning to KHub</h2>
+<ul>
+<li>consider updating and upgrading ubuntu server</li>
+<li>consider doing postgresql 11 <em>streaming replication</em></li>
+</ul>
+<h2 id="plan-d">Plan D  :)</h2>
+<h3 id="goodls">goodls</h3>
+<h3 id="moosh">moosh</h3>
+<p>setup moosh:</p>
+<p><strong><em>Note: use <a href="../moosh%20-%20Moodle%20Shell/">moosh - Moodle Shell</a></em></strong></p>
+<h2 id="appendix">Appendix</h2>
+<h3 id="mariadb-backup">MariaDB backup</h3>
+<p><strong><em>Note: use <a href="../MariaDB%20backup/">MariaDB backup</a></em></strong></p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+                <p>&copy; 2018 - 2020 Roy Canseco <br> Feedback: 03rvlc+mkdocs@gmail.com</p>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../js/base.js" defer></script>
+        <script src="../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
