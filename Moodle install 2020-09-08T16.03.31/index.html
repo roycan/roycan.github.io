@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
         <meta name="author" content="Roy Vincent Luna Canseco">
-        <link rel="canonical" href="https://roycan.gitlab.io/mkdocs/Moodle%20install%202020-09-08T16.03.31/">
+        <link rel="canonical" href="https://roycan.github.io/Moodle%20install%202020-09-08T16.03.31/">
         <link rel="shortcut icon" href="../img/favicon.ico">
         <title>Moodle install 2020 09 08T16.03.31 - roycan docs</title>
         <link href="../css/bootstrap.min.css" rel="stylesheet">
@@ -232,6 +232,10 @@
                                 <ul class="dropdown-menu">
                                     
 <li>
+    <a href="../KHub%20linode%20migration/" class="dropdown-item">KHub linode migration</a>
+</li>
+                                    
+<li>
     <a href="../2019-01-05-pcari-site/" class="dropdown-item">2019 01 05 pcari site</a>
 </li>
                                     
@@ -422,18 +426,18 @@ sudo apt update
 <pre><code>sudo apt install php7.4-fpm php7.4-common php7.4-mysql php7.4-gmp php7.4-curl php7.4-intl php7.4-mbstring php7.4-soap php7.4-xmlrpc php7.4-gd php7.4-xml php7.4-cli php7.4-zip php7.4-pgsql
 </code></pre>
 <p>After installing PHP 7.4, go and configure some basic settings that may be required for Moodle to function properly.</p>
-<p>sudo nano /etc/php/7.4/fpm/php.ini</p>
-<p>```
- file_uploads = On
+<p><code>sudo nano /etc/php/7.4/fpm/php.ini</code></p>
+<pre><code class="language-php">file_uploads = On
 allow_url_fopen = On
 short_open_tag = On
 memory_limit = 256M
 cgi.fix_pathinfo = 0
 upload_max_filesize = 200M
 max_execution_time = 360
-date.timezone = Asia/Manilaq</p>
-<p>post_max_size = 200M
- ```</p>
+date.timezone = Asia/Manila
+
+post_max_size = 200M
+</code></pre>
 <h2 id="download-moodle-39">Download moodle 3.9</h2>
 <p>I'm choosing to download moodle 3.9 stable. 
 The latest atm is 3.10 stable.
@@ -523,7 +527,7 @@ moodlelms</p>
 
         <footer class="col-md-12">
             <hr>
-                <p>&copy; 2018 - 2020 Roy Canseco <br> Feedback: 03rvlc+mkdocs@gmail.com</p>
+                <p>&copy; 2018 - 2020 Roy Canseco <br> Feedback: roy+mkdocs@pshs.edu.ph</p>
             <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
         </footer>
         <script>
