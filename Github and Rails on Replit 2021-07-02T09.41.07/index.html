@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <meta name="author" content="Roy Vincent Luna Canseco">
+        <link rel="canonical" href="https://roycan.github.io/Github%20and%20Rails%20on%20Replit%202021-07-02T09.41.07/">
+        <link rel="shortcut icon" href="../img/favicon.ico">
+        <title>Github and Rails on Replit 2021 07 02T09.41.07 - roycan docs</title>
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/docco.min.css">
+
+        <script src="../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="..">roycan docs</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem">
+                                <a href=".." class="nav-link">Home</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="../2019-01-cv/" class="nav-link">About</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">skills <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../2014-01-15-maple-review/" class="dropdown-item"> Quickly relearning Maple </a>
+</li>
+                                    
+<li>
+    <a href="../2014-03-03-joomla-backup/" class="dropdown-item">Backing up a Joomla Site</a>
+</li>
+                                    
+<li>
+    <a href="../2018-07-13-aws-jasperreports/" class="dropdown-item">Jasper Server on AWS Attempt</a>
+</li>
+                                    
+<li>
+    <a href="../2018-08-10-laravel/" class="dropdown-item">PHP Laravel</a>
+</li>
+                                    
+<li>
+    <a href="../2019-01-09-digital-ads/" class="dropdown-item">2019 01 09 digital ads</a>
+</li>
+                                    
+<li>
+    <a href="../2019-01-09-email-marketing/" class="dropdown-item">Email marketing</a>
+</li>
+                                    
+<li>
+    <a href="../2019-01-10-digital-marketing/" class="dropdown-item">Digitial marketing</a>
+</li>
+                                    
+<li>
+    <a href="../2019-01-12-pro-rails-project/" class="dropdown-item">Professional Rails Project Steps</a>
+</li>
+                                    
+<li>
+    <a href="../2019-03-30-se_proj_planning/" class="dropdown-item">This Project Planning from SDLC</a>
+</li>
+                                    
+<li>
+    <a href="../2019-04-xp_virtualbox/" class="dropdown-item">Setting up Networking for WinXP on virtualbox</a>
+</li>
+                                    
+<li>
+    <a href="../2019-03-phalcon_php/" class="dropdown-item">Installing Phalcon PHP in Ubuntu 18.04</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">research <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../2018-07-07-phd-hunt/" class="dropdown-item">To PhD Abroad I Go</a>
+</li>
+                                    
+<li>
+    <a href="../2018-07-08-EUSE-seminar/" class="dropdown-item">End-User Software Engineering</a>
+</li>
+                                    
+<li>
+    <a href="../2018-07-08-phd-hunt/" class="dropdown-item">My PhD Hunt  (day 2)</a>
+</li>
+                                    
+<li>
+    <a href="../2018-07-09-phd-hunt/" class="dropdown-item">My PhD Hunt  (day 3)</a>
+</li>
+                                    
+<li>
+    <a href="../2018-07-10-phd-thoughts/" class="dropdown-item">My PhD Hunt  (day 4)</a>
+</li>
+                                    
+<li>
+    <a href="../2018-07-11-phd-australia/" class="dropdown-item">Australian Uni's w/ good CS PhD Programs </a>
+</li>
+                                    
+<li>
+    <a href="../2018-07-12-phd-hunt/" class="dropdown-item">Deeper look Australian Uni's - part 1</a>
+</li>
+                                    
+<li>
+    <a href="../2018-07-13-phd-hunt/" class="dropdown-item">Deeper look Australian Uni's - part 2</a>
+</li>
+                                    
+<li>
+    <a href="../2018-07-15-phd-hunt/" class="dropdown-item">Deeper look Australian Uni's - part 3 (last)</a>
+</li>
+                                    
+<li>
+    <a href="../2018-07-19-phd-hunt/" class="dropdown-item">PhD Top 3</a>
+</li>
+                                    
+<li>
+    <a href="../2018-07-20-phd-hunt/" class="dropdown-item">Melbourne for PhD</a>
+</li>
+                                    
+<li>
+    <a href="../2019-01-09-marketing-trends-ph/" class="dropdown-item">Philippine Digital Marketing Trends 2018</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">relationships <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../2018-08-27-self-made/" class="dropdown-item"> Billionaire's Habits </a>
+</li>
+                                    
+<li>
+    <a href="../2018-10-19-block_rosary/" class="dropdown-item">Block Rosary</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">teaching <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../2018-09-14-gslides/" class="dropdown-item">Google slides with Audio</a>
+</li>
+                                    
+<li>
+    <a href="../2018-09-16-info_sys/" class="dropdown-item">My Information System Development Philosophy</a>
+</li>
+                                    
+<li>
+    <a href="../2018-09-25-IS_prog-js_dates/" class="dropdown-item">Javascript Date Object</a>
+</li>
+                                    
+<li>
+    <a href="../2018-09-25-js_loops/" class="dropdown-item">Javascript loops</a>
+</li>
+                                    
+<li>
+    <a href="../2018-09-26-mysql_datatypes/" class="dropdown-item">MySQL datatypes</a>
+</li>
+                                    
+<li>
+    <a href="../2018-10-01-WAPP-setup/" class="dropdown-item">WAPP Setup</a>
+</li>
+                                    
+<li>
+    <a href="../2018-10-14-BA186_syllabus/" class="dropdown-item">BA186 SYSTEMS ANALYSIS AND DESIGN</a>
+</li>
+                                    
+<li>
+    <a href="../2018-10-19-configure_git/" class="dropdown-item">Setup Git and Github</a>
+</li>
+                                    
+<li>
+    <a href="../2018-10-19-install_rails/" class="dropdown-item">Install rails in Ubuntu 18.04</a>
+</li>
+                                    
+<li>
+    <a href="../2018-10-19-setup_mysql/" class="dropdown-item">Setting Up MySQL in Ubuntu 18.04</a>
+</li>
+                                    
+<li>
+    <a href="../2018-10-19-setup_postgresql/" class="dropdown-item">Setting Up PostgreSQL in Ubuntu 18.04</a>
+</li>
+                                    
+<li>
+    <a href="../2018-11-01-aws_upkeep/" class="dropdown-item">Setting up an AWS account for Team Development</a>
+</li>
+                                    
+<li>
+    <a href="../2019-02-pisay_application/" class="dropdown-item">Teacher Career Path Evaluation Sheet</a>
+</li>
+                                    
+<li>
+    <a href="../2018-01-IPSE-syllabus/" class="dropdown-item">2018 01 IPSE syllabus</a>
+</li>
+                                    
+<li>
+    <a href="../2019-04-pisay_promotion/" class="dropdown-item">Teacher Career Path Evaluation Sheet</a>
+</li>
+                                    
+<li>
+    <a href="../2019-03-pisay_cs4_setup/" class="dropdown-item">2019 03 pisay cs4 setup</a>
+</li>
+                                    
+<li>
+    <a href="../2020-03-pisay_cs4_setup/" class="dropdown-item">2020 03 pisay cs4 setup</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">projects <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../KHub%20linode%20migration/" class="dropdown-item">KHub linode migration</a>
+</li>
+                                    
+<li>
+    <a href="../2019-01-05-pcari-site/" class="dropdown-item">2019 01 05 pcari site</a>
+</li>
+                                    
+<li>
+    <a href="../pcari-site-proposal/" class="dropdown-item">Pcari site proposal</a>
+</li>
+                                    
+<li>
+    <a href="../UP-IC/" class="dropdown-item">UP IC</a>
+</li>
+                                    
+<li>
+    <a href="../2019-01-05-IS-proj-start/" class="dropdown-item">Beginning an Information System Project</a>
+</li>
+                                    
+<li>
+    <a href="../2018-collated_screens/" class="dropdown-item">2018 collated screens</a>
+</li>
+                                    
+<li>
+    <a href="../2018-11-IC-comments/" class="dropdown-item">2018 11 IC comments</a>
+</li>
+                                    
+<li>
+    <a href="../2018-mobile_screens/" class="dropdown-item">2018 mobile screens</a>
+</li>
+                                    
+<li>
+    <a href="../2019-01-16-DENR_TOR/" class="dropdown-item">2019 01 16 DENR TOR</a>
+</li>
+                                    
+<li>
+    <a href="../2019-02-UPPFI-WW-DOD-1/" class="dropdown-item">Definitions of Done - UPPFI-WW web app</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#github-and-rails-on-replit-2021-07-02t094107" class="nav-link">Github and Rails on Replit 2021-07-02T09.41.07</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#41-github" class="nav-link">4.1 GitHub</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#chapter-5-get-started" class="nav-link">Chapter 5 Get Started</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#51-text-editor-and-terminal-applications" class="nav-link">5.1 Text Editor and Terminal Applications</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#52-copying-and-pasting-code" class="nav-link">5.2 Copying and Pasting Code</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#53-your-computer" class="nav-link">5.3 Your Computer</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#54-try-the-terminal" class="nav-link">5.4 Try the Terminal</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#55-installing-ruby" class="nav-link">5.5 Installing Ruby</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#56-your-workspace" class="nav-link">5.6 Your Workspace</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#57-understanding-version-numbers" class="nav-link">5.7 Understanding Version Numbers</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#58-ruby-and-rails-version-check" class="nav-link">5.8 Ruby and Rails Version Check</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#59-rvm" class="nav-link">5.9 RVM</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#510-project-specific-gemset" class="nav-link">5.10 Project-Specific Gemset</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#chapter-6-create-the-application" class="nav-link">Chapter 6 Create the Application</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#61-starter-applications" class="nav-link">6.1 Starter Applications</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#62-workspace-folder-and-rvm-gemset" class="nav-link">6.2 Workspace Folder and RVM Gemset</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#63-use-rails-new-to-build-the-application" class="nav-link">6.3 Use “Rails New” to Build the Application</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#64-make-a-sticky-gemset" class="nav-link">6.4 Make a Sticky Gemset</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#65-test-the-application" class="nav-link">6.5 Test the Application</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#66-get-organized-for-efficiency" class="nav-link">6.6 Get Organized for Efficiency</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="github-and-rails-on-replit-2021-07-02t094107">Github and Rails on Replit 2021-07-02T09.41.07</h1>
+<h2 id="41-github"><a href="#cid19">4.1 GitHub</a></h2>
+<p>Rails developers use <a href="https://github.com/">GitHub</a> for collaboration and remote backup of projects.</p>
+<p>For this tutorial, I suggest you get a <a href="https://github.com/signup/free">free personal GitHub account</a> if you don’t already have one. As a developer, your GitHub account establishes your reputation in the open source community. If you’re seeking a job as a developer, employers will look at your GitHub account. When you work with other developers, they may check to see what you’ve worked on recently. Don’t be reluctant to set up a GitHub account, even if you’re a beginner. It shows you are serious about learning Rails.</p>
+<p>You’ll be asked to provide a username. This can be a nickname or short version of your real name (for example, your Twitter username).</p>
+<p>You’ll be asked to provide an email address. It’s very important that you use the same email address for your GitHub account that you use to configure Git locally (there will be more about configuring Git later). If you create a Heroku account to deploy and host your Rails applications, you should use the same email address.</p>
+<p>After you create your GitHub account, log in and look for the button “Edit Your Profile.” Take a few minutes to add some public information to your account. It is really important to provide your real name and a public email address. Displaying your real name on your GitHub account makes it easy for people to associate you with your work when they meet you in real life, for example at a meetup, a hackathon, or a conference. Providing a public email address makes it possible for other developers to reach you if you ask questions or submit issues. If you can, provide a website address (even just your Twitter or Facebook page). In general, you won’t be exposed to stalkers or spammers (except some recruiters) if you are open about yourself on GitHub.</p>
+<p>Later I’ll show you how to set up and use Git and GitHub.</p>
+<h1 id="chapter-5-get-started"><a href="#cid23">Chapter 5 Get Started</a></h1>
+<p>Before you can start building, you’ll need to install Ruby (the language) and Rails (the gem). I’ll provide links to installation instructions that are up to date. Even if you’ve already installed Rails, please review the instructions to make sure your development environment is set up correctly. Other books and tutorials often skip important details.</p>
+<h2 id="51-text-editor-and-terminal-applications"><a href="#cid24">5.1 Text Editor and Terminal Applications</a></h2>
+<p>I’ve explained how to use a text editor and terminal application in Book One. If you haven’t used the Unix command line before, refer to Book One for an introduction.</p>
+<p>I recommend the <a href="https://atom.io/">Atom</a> text editor but you may use <a href="https://www.sublimetext.com/">Sublime Text</a> or any others that provide syntax highlighting. Refer to Book One for important instructions about setting up the text editor so you can open a file from the command line.</p>
+<h2 id="52-copying-and-pasting-code"><a href="#cid25">5.2 Copying and Pasting Code</a></h2>
+<p>In the next chapter you’ll begin building a Rails application.</p>
+<p>You need to get the code from this tutorial into your computer. You could just read and imagine, but really, building a working application is the only way to learn.</p>
+<p>The most obvious way is to copy and paste from this tutorial into your text editor, assuming you are reading this on your computer (not a tablet or printed pages). It’s a bit tedious and error-prone but you’ll have a good opportunity to examine the code closely.</p>
+<p>Some students like to type in the code, character by character. If you have patience, it’s a worthwhile approach because you’ll become more familiar with the code than by copying and pasting.</p>
+<p>Don’t feel shy about copying code; it’s how you will learn. Working programmers spend a lot of time copying code from others. At first, you will copy a lot of code. As you gain proficiency, you will copy code and adapt it, more extensively as you gain confidence and skill. Only when you’ve been working full-time as a coder for months or years will you find yourself writing code from scratch; even then, when you encounter new problems, you will still look for code examples to copy and adapt.</p>
+<p>Box 5.1. Warning About the PDF and Kindle Versions</p>
+<p>This book is available in several formats, including online (HTML), PDF, ePub (Apple iBooks), and mobi (Kindle) versions.</p>
+<p>Use the online edition of the book if you can. With the online edition, you’ll be able to copy and paste the code without any problem. The ePub version (using Apple iBooks) also preserves line breaks and indentation when copying code.</p>
+<p>Copying without line breaks will cause code errors. You’ll lose line breaks when copying code with the following versions:</p>
+<ul>
+<li>PDF version on macOS using the Preview application</li>
+<li>mobi (Kindle)</li>
+</ul>
+<p>If you use <a href="https://get.adobe.com/reader/">Adobe Acrobat</a> you’ll be able to copy the line breaks (though indenting is lost). You can also open a PDF file in Chrome or Safari web browsers and copy code with line breaks. With the mobi (Kindle) version, you’ll have to carefully reformat the code after pasting into your text editor.</p>
+<p>Indentation makes code more readable, so try to preserve the indentation you see in the code samples. In YAML files (with the file extension <strong>.yml</strong>), indentation is required (your application will break without it).</p>
+<h2 id="53-your-computer"><a href="#cid26">5.3 Your Computer</a></h2>
+<p>You can develop web applications with Rails on computers running Mac OS X, Linux, or Microsoft Windows operating systems. Most Rails developers use macOS or Linux because the underlying Unix operating system has long been the basis for open source programming.</p>
+<p>Later in this chapter, I’ll give links to installation instructions for macOS and Linux.</p>
+<p>For Windows users, I have to say, installing Rails on Windows is frustrating and painful. Readers and workshop students often tell me that they’ve given up on learning Rails because installation of Ruby on Windows is difficult and introduces bugs or creates configuration issues. Even when you succeed in getting Rails to run on Windows, you will encounter gems you cannot install. For these reasons, I urge you to use Cloud9, a browser-based development environment, on your Windows laptop.</p>
+<h3 id="531-hosted-computing"><a href="#uid35">5.3.1 Hosted Computing</a></h3>
+<p>If you are using Windows, or have difficulty installing Ruby on your computer, try using Cloud9.</p>
+<p><a href="https://c9.io/">Cloud9</a> provides a hosted development environment. That means you set up an account and then access a remote computer from your web browser. The Cloud9 service is free for ordinary use. There is no credit card required to set up an account. You’ll only be charged if you add extra computer memory or disk space (which you don’t need for ordinary Rails development).</p>
+<p>The Cloud9 service gives you everything you need for Rails development, including a Unix shell with Ruby pre-installed, plus a browser-based file manager and text editor. Any device that runs a web browser will give you access to Cloud9, including a tablet or smartphone, though you need a broadband connection, a sizable screen, and a keyboard to be productive.</p>
+<h2 id="54-try-the-terminal"><a href="#cid27">5.4 Try the Terminal</a></h2>
+<p>Look for the Terminal application in the following places:</p>
+<ul>
+<li>MacOS: <em>Applications - Utilities - Terminal</em></li>
+<li>Linux: <em>Applications - Accessories - Terminal</em></li>
+<li>Windows: <em>Taskbar Start Button - Command Prompt</em></li>
+</ul>
+<p>On the Mac, search for the macOS Terminal application by pressing the Command-Spacebar combination (which Apple calls “Spotlight Search”) and searching for “Terminal.” The magnifying glass in the upper right corner of your screen will also launch “Spotlight Search.” Or look in the <strong>Applications/Utilities/</strong> folder for the Terminal application. You’ll need to click the name of the application to launch the Terminal.</p>
+<p>For Linux or Windows, <a href="http://cli.learncodethehardway.org/book/">The Command Line Crash Course</a> explains <a href="http://cli.learncodethehardway.org/book/ex1.html">how to launch a terminal application</a>.</p>
+<p>Launch your terminal application now.</p>
+<p>Try out the terminal application by entering a shell command.</p>
+<p>$ whoami</p>
+<p>Don’t type the <code>$</code> character. The <code>$</code> character is a cue that you should enter a shell command. This is a longtime convention that indicates you should enter a command in the terminal application or console.</p>
+<p>The Unix shell command <code>whoami</code> returns your username.</p>
+<p>Don’t type the <code>$</code> prompt.</p>
+<p>You might see:</p>
+<p>command not found: $</p>
+<p>which indicates you typed the <code>$</code> character by mistake.</p>
+<p>If you are new to programming, using a text editor and the shell will seem primitive compared to the complexity and sophistication of Microsoft Word or Photoshop. Software developers edit files with simple text editors and run programs in the shell. That’s all we do. We have to remember the commands we need (or consult a cheatsheet) because there are no graphical menus or toolbars. Yet with nothing more than a text editor and the command line interface, programmers have created everything that you use on your computer.</p>
+<h2 id="55-installing-ruby"><a href="#cid28">5.5 Installing Ruby</a></h2>
+<p>Your first challenge in learning Rails is installing Ruby on your computer.</p>
+<p>Frankly, this can be the most difficult step in learning Rails because no tutorial can sort out the specific configuration of your computer. Get over this hump and everything else becomes easy.</p>
+<p>The focus of this book is learning Rails, not installing Ruby, so to keep the book short and readable, I’m going to give you links to articles that will help you install Ruby.</p>
+<p>You’ll spend at least an hour installing Ruby and Rails, so be sure to allow enough time for the task.</p>
+<h3 id="551-macos"><a href="#uid39">5.5.1 MacOS</a></h3>
+<p>See this article for macOS installation instructions:</p>
+<p><a href="https://railsapps.github.io/installrubyonrails-mac.html"><strong>Install Ruby on Rails - MacOS</strong></a></p>
+<h3 id="552-ubuntu-linux"><a href="#uid40">5.5.2 Ubuntu Linux</a></h3>
+<p>See this article for Ubuntu installation instructions:</p>
+<p><a href="https://railsapps.github.io/installrubyonrails-ubuntu.html"><strong>Install Ruby on Rails - Ubuntu</strong></a></p>
+<h3 id="553-hosted-computing"><a href="#uid41">5.5.3 Hosted Computing</a></h3>
+<p><a href="https://c9.io/">Cloud9</a> is a browser-based development environment. Cloud9 is free for small projects. If you have a fast broadband connection to the Internet, this is your best choice for developing Rails on Windows. And it is a good option if you have any trouble installing Ruby on Mac or Linux because the Cloud9 hosted environment provides everything you need, including a Unix shell with Ruby and RVM pre-installed, plus a browser-based file manager and text editor. Using a hosted development environment is unconventional but leading developers do so and it may be the wave of the future.</p>
+<p>See this article for Cloud9 installation instructions:</p>
+<p><a href="https://railsapps.github.io/rubyonrails-cloud9.html"><strong>Install Ruby on Rails - Cloud9</strong></a></p>
+<p>The article shows how to get started with Cloud9.</p>
+<p>If you use Cloud9, be sure to pick the “Blank” template for your workspace, not the “Ruby” or “Ruby on Rails” templates that provide a prebuilt Rails application. We’re building from scratch in this tutorial.</p>
+<h3 id="554-windows"><a href="#uid42">5.5.4 Windows</a></h3>
+<p>Here are your choices for Windows:</p>
+<ul>
+<li>Use the <a href="https://railsapps.github.io/rubyonrails-cloud9.html">Cloud9</a> hosted development environment</li>
+<li>Install the <a href="https://github.com/railsbridge/railsbridge-virtual-machine">Railsbridge Virtual Machine</a></li>
+<li>Use <a href="http://rubyinstaller.org/">RubyInstaller for Windows</a></li>
+</ul>
+<p>Cloud9 is ideal if you have a fast Internet connection. If not, download the Railsbridge Virtual Machine to create a virtual Linux computer using <a href="https://www.vagrantup.com/">Vagrant</a>. Other tutorials may suggest using <a href="http://railsinstaller.org/">RailsInstaller</a>, but it will not provide an up-to-date version of Ruby or Rails. Also, RVM does not run on Windows.</p>
+<h2 id="56-your-workspace"><a href="#cid29">5.6 Your Workspace</a></h2>
+<p>Take a moment to think about where on your computer you’ll do your work and store your files. You may have a <strong>documents/</strong> folder. You could make a similar folder named <strong>projects/</strong> or <strong>code/</strong> or <strong>workspace/</strong> for your programming projects. Use the Unix <code>mkdir</code> command to create a folder or create it with your file browser.</p>
+<p>If you haven’t done so already, make a folder to contain your programming projects. You don’t need to do this if you already created a <strong>workspace/</strong> folder in the Unix chapter in Book One.</p>
+<p>$ cd ~
+$ pwd
+/Users/danielkehoe
+$ mkdir workspace
+$ cd workspace</p>
+<p>In this tutorial, the terms “folders” and “directories” mean the same thing.</p>
+<p>Use the Unix <code>cd</code> command to change directories.</p>
+<p>When you enter the Unix command <code>cd ~</code>, you’ll move to your home (or “user”) directory. The squiggly <code>~</code> “tilde” character is a Unix shortcut that indicates your home folder.</p>
+<p>The Unix <code>pwd</code> command shows the “present working directory,” where you are.</p>
+<p>The Unix <code>mkdir</code> command creates an empty folder and we move into it with the Unix <code>cd</code> command.</p>
+<h3 id="561-video-option"><a href="#uid46">5.6.1 Video Option</a></h3>
+<p>Watch the four minute video if you have subscribed:</p>
+<ul>
+<li><a href="https://tutorials.railsapps.org/videos/2">UNIX Commands Basics</a></li>
+</ul>
+<h2 id="57-understanding-version-numbers"><a href="#cid30">5.7 Understanding Version Numbers</a></h2>
+<p>Rails follows a convention named <em>semantic versioning</em>:</p>
+<ul>
+<li>The first number denotes a <em>major version</em> (Rails 4)</li>
+<li>The second number denotes a <em>minor release</em> (Rails 4.2)</li>
+<li>The third number denotes a <em>patch level</em> (Rails 4.2.1)</li>
+</ul>
+<p>A major release includes new features, including changes which break backward compatibility. For example, switching from Rails 3.2 to Rails 4.0 required a significant rewrite of every Rails application.</p>
+<p>A minor release introduces new features but doesn’t break anything. For example, Rails 3.2 added the asset pipeline, and Rails 4.2 added the Active Job feature for background processing.</p>
+<p>A patch release fixes bugs but doesn’t introduce significant features. Usually this means you can change the version number in the Gemfile and run <code>bundle update</code> without making any other changes to your application.</p>
+<h2 id="58-ruby-and-rails-version-check"><a href="#cid31">5.8 Ruby and Rails Version Check</a></h2>
+<p>Check that appropriate versions of Ruby and Rails are installed in your development environment. You’ll need:</p>
+<ul>
+<li>The Ruby language (version 2.3 or newer)</li>
+<li>The Rails gem (version 5.1 or newer)</li>
+</ul>
+<p>Open your terminal application and enter:</p>
+<p>$ ruby -v</p>
+<p>You might see:</p>
+<p>ruby 2.4.1p0 (...)</p>
+<p>You’ve got Ruby version 2.4.1, patch level “p0” (Ruby versions add an extra patch level to semantic versioning). If you’ve got a newer version of Ruby, no problem; minor updates to Ruby don’t affect Rails.</p>
+<p>Try:</p>
+<p>$ rails -v</p>
+<p>You might see:</p>
+<p>Rails 5.1.2</p>
+<p>If you see:</p>
+<p>Rails is not currently installed on this system.</p>
+<p>You are not using an RVM gemset where the Rails gem is installed. Go to the <a href="https://railsapps.github.io/installing-rails.html">Installing Rails</a> instructions for your computer if you have not set up Rails. The next section explains more about RVM gemsets which may be all you need to find Rails.</p>
+<p>If you have Rails 4.2 or older versions, you must update to Rails 5.1. See the <a href="https://railsapps.github.io/installing-rails.html">Installing Rails</a> instructions for your computer.</p>
+<p>Versions such as <code>5.0.0.beta3</code> or <code>5.0.0.rc1</code> are beta versions or “release candidates.” You can use a release candidate in the weeks before a final release becomes available.</p>
+<p>If you’ve got Rails 5.1.3 or newer, that’s fine. It means minor bugs have been fixed since this was written, but the book is still current. You can check for the <a href="https://rubygems.org/gems/rails">current version of Rails</a> here.</p>
+<p>Box 5.2. Rails 5.1</p>
+<p>This edition of the book was prepared using Rails 5.1.2. The newest version of the book is listed on the README page of the <a href="https://github.com/RailsApps/learn-rails">learn-rails</a> GitHub repository.</p>
+<h2 id="59-rvm"><a href="#cid32">5.9 RVM</a></h2>
+<p>I promised that this book would introduce you to the practices of professional Rails developers. One of the most important utilities you’ll need in setting up a real-world Rails development environment is RVM, the <a href="https://rvm.io/">Ruby Version Manager</a>.</p>
+<p>RVM lets you switch between different versions of Ruby. Right now, that might not seem important, but as soon as a new version of Ruby is released, you’ll need to upgrade, and it is best to be ready by installing the current version of Ruby with RVM, so you can easily add a new version of Ruby later, and still switch back to older versions as needed.</p>
+<p>RVM also helps you manage your collections of gems, by letting you create multiple <em>gemsets</em>. Each gemset is the collection of gems you need for a specific project. Rails changes frequently; with RVM, you can install a specific version of Rails in a project gemset, along with all the gems you need for the project. When a new version of Rails is released, you can create a new gemset with the new Rails version when you start a new project. Your old project will still have the version of Rails it needs in its own gemset.</p>
+<p>If you’ve followed the instructions in the article <a href="https://railsapps.github.io/installing-rails.html">Installing Rails</a> and installed RVM, you’ll be ready to handle multiple versions of Ruby, and multiple versions of Rails. That’s as it should be. Most professional Rails developers have more than one version of Ruby or Rails, and RVM makes it easy to switch.</p>
+<p>RVM will show you a list of available Ruby versions:</p>
+<p>$ rvm list</p>
+<p>You can see a list of available gemsets associated with the current Ruby version:</p>
+<p>$ rvm gemset list</p>
+<p>You will see an arrow that shows which gemset is active.</p>
+<p>You will see a <code>global</code> gemset as well as any others you have created, such as a gemset for <code>Rails5.0</code>.</p>
+<p>Here’s how to switch between gemsets:</p>
+<p>$ rvm gemset use global</p>
+<p>And switch back to another:</p>
+<p>$ rvm gemset use default</p>
+<p>After you’ve worked on a few Rails applications, you’ll see several project-specific gemsets if you are using RVM in the way most developers do.</p>
+<p>RVM is not the only utility you can use to manage multiple Ruby versions. Some developers like <a href="https://github.com/postmodern/chruby">Chruby</a> or <a href="https://github.com/sstephenson/rbenv">rbenv</a>. Don’t be worried if you hear debates about RVM versus Chruby or rbenv; developers love to compare the merits of their tools. RVM is popular, well-supported, and an excellent utility to help a developer install Ruby and manage gemsets; that’s why we use it.</p>
+<h2 id="510-project-specific-gemset"><a href="#cid33">5.10 Project-Specific Gemset</a></h2>
+<p>For our learn-rails application, we’ll create a project-specific gemset using RVM. We’ll give the gemset the same name as our application.</p>
+<p>By creating a gemset for our tutorial application, we’ll isolate the current version of Rails and the gems we need for this project. Whether you use RVM or another Ruby version manager, this will introduce you to the idea of “sandboxing” (isolating) your development environment so you can avoid conflicts among projects.</p>
+<p>After we create the project-specific gemset, we’ll install the Rails gem into the gemset. Enter these commands:</p>
+<p>$ rvm use <a href="/cdn-cgi/l/email-protection">[email protected]</a> --create
+$ gem install rails</p>
+<p>This will install the newest version of Rails 5.0. It takes a few minutes to automatically install all the gems that are needed for Rails.</p>
+<p>It’s absolutely necessary to create a gemset and install Rails so we can move on to creating the application in the next chapter. If you have trouble at this point, refer to the article <a href="https://railsapps.github.io/installing-rails.html">Installing Rails</a> or the <a href="https://rvm.io/">RVM website</a>. Linux users may need to check instructions for <a href="https://rvm.io/integration/gnome-terminal">Integrating RVM</a>.</p>
+<p>Let’s make sure Rails is ready to run. Open a terminal and type:</p>
+<p>$ rails -v</p>
+<p>You should see the message “Rails 5.1.2” (or something similar).</p>
+<p>Now let’s explore the <code>rails new</code> command and get started building the tutorial application.</p>
+<h1 id="chapter-6-create-the-application"><a href="#cid34">Chapter 6 Create the Application</a></h1>
+<p>In this chapter, we’ll begin building the tutorial application. But first, let’s consider the options you have for starter applications.</p>
+<h2 id="61-starter-applications"><a href="#cid35">6.1 Starter Applications</a></h2>
+<p>Rails provides a <em>framework</em>; that is, a software library that provides utilities, conventions, and organizing principles to allow us to build complex web applications. Without a framework, we’d have to code everything from scratch. Rails gives us the basics we need for many websites.</p>
+<p>Still, the framework doesn’t give us all the features we need for many common types of websites. For example, we might want users to register for an account and log in to access the website (“user management and authentication”). We might want to restrict portions of our website to just administrators (“authorization”). We also might want to add gems that enhance Rails to aid development (gems for testing, for example) or improve the look and feel of our application (the Bootstrap or Foundation front-end frameworks). Developers often mix and match components to make a customized Rails stack.</p>
+<p>Developers often use a <em>starter application</em> instead of assembling an application from scratch. You might call this a “template” but we use that term to refer to the <em>view files</em> that combine HTML with Ruby code to generate web pages. Most experienced developers have one or more starter applications that save time when beginning a new project. The <a href="https://railsapps.github.io/">RailsApps project</a> was launched to provide open source starter applications so developers could collaborate on their starter applications and avoid duplicated effort. After you gain some skill with this tutorial, you might use the RailsApps starter apps to instantly generate a Rails application with features like authentication, authorization, and an attractive design. At the end of this book, you’ll learn about <a href="http://www.railscomposer.com/">Rails Composer</a>, a tool for building starter applications.</p>
+<p>For now, we’ll begin with the Rails default starter application.</p>
+<h2 id="62-workspace-folder-and-rvm-gemset"><a href="#cid36">6.2 Workspace Folder and RVM Gemset</a></h2>
+<p>Are you in the folder named <strong>workspace/</strong> you created earlier?</p>
+<p>$ pwd
+/Users/danielkehoe/workspace/</p>
+<p>If you’re not in your workspace folder, enter a Unix command to move to the folder:</p>
+<p>$ cd ~/workspace</p>
+<p>We already created a project-specific gemset using RVM. Make sure it’s ready to use:</p>
+<p>$ rvm use <a href="/cdn-cgi/l/email-protection">[email protected]</a>
+$ rvm gemset list
+gemsets for ruby-2.4.1...
+ (default)
+ global
+\=&gt; learn-rails</p>
+<p>You should see an arrow pointing to the <code>learn-rails</code> gemset. If not, go back to the previous “Get Started” chapter.</p>
+<h2 id="63-use-rails-new-to-build-the-application"><a href="#cid37">6.3 Use “Rails New” to Build the Application</a></h2>
+<p>Let’s go! We have selected a gemset, we have Rails installed, and we’re in our <strong>workspace/</strong> folder. Let’s build a Rails application!</p>
+<p>To create the Rails default starter application, type:</p>
+<p>$ rails new learn-rails</p>
+<p>This will create a new Rails application named “learn-rails.”</p>
+<p>It takes a few minutes when the build script runs <code>bundle install</code>. Don’t worry; just give it enough time to finish (but no more than five minutes even if your Internet connection is very slow).</p>
+<p>In the future, you can give your application a different name. For this tutorial, it is VERY IMPORTANT that you use the name “learn-rails.” You’ll be copying code that assumes the name is “learn-rails;” it will save you trouble to use this name.</p>
+<p>The <code>rails new</code> command will create ten folders and 93 files.</p>
+<p>It will install 62 gems into your gemset.</p>
+<p>After you create the application, switch to its folder to continue work directly in the application:</p>
+<p>$ cd learn-rails</p>
+<p>This is your project directory. It is also called the application root directory. You’ll spend all your time inside this folder.</p>
+<p>Box 6.1. Spring</p>
+<p>After creating a new Rails application, you may see a message to run a command:</p>
+<p>$ bundle exec spring binstub --all</p>
+<p>The command sets up Spring. Spring is a Rails application preloader. It speeds up development by keeping your application running in the background so you don’t need to stop and restart it when you make changes.</p>
+<p>After you change into the project directory, you can run the command.</p>
+<p>Type the <code>ls</code> command to show the folders and files in a directory. Soon we’ll learn more about each of these folders and files.</p>
+<p>$ ls
+Gemfile      Rakefile     config       lib          test
+Gemfile.lock app          config.ru    log          tmp
+README.md    bin          db           public       vendor</p>
+<h2 id="64-make-a-sticky-gemset"><a href="#cid38">6.4 Make a Sticky Gemset</a></h2>
+<p>RVM gives us a convenient technique to make sure we are always using the correct gemset when we enter the project directory. It will create hidden files to designate the correct Ruby version and project-specific gemset. Enter this command to create the hidden files:</p>
+<p>$ rvm use <a href="/cdn-cgi/l/email-protection">[email protected]</a> --ruby-version</p>
+<p>The <code>–ruby-version</code> argument creates two files, <strong>.ruby-version</strong> and <strong>.ruby-gemset</strong>, that set RVM every time we <code>cd</code> to the project directory. Without these two hidden files, you’d need to remember to enter <code>rvm use [[email protected]](/cdn-cgi/l/email-protection)</code> every time you start work on your project after closing the console.</p>
+<p>If you see “ERROR: Gemset ‘learn-rails’ does not exist”, perhaps you overlooked an earlier step in the <em>Project-Specific Gemset</em> section (in the previous chapter) where we created the learn-rails gemset.</p>
+<p>After creating the two hidden files, check if they are there:</p>
+<p>$ ls -1pa
+./
+../
+.gitignore
+.ruby-gemset
+.ruby-version
+Gemfile
+Gemfile.lock
+README.md
+Rakefile
+app/
+bin/
+config/
+config.ru
+db/
+lib/
+log/
+public/
+test/
+tmp/
+vendor/</p>
+<p>The “a” flag in the Unix <code>ls -1pa</code> command displays hidden files. Each hidden file is listed with a dot (period or full stop) at the beginning of the filename. You’ll notice <code>.ruby-gemset</code> and <code>.ruby-version</code>.</p>
+<p>You’ll also see two “special files” which are not files at all:</p>
+<ul>
+<li><code>./</code> - an alias that represents the current directory</li>
+<li><code>../</code> - an alias that represents the parent directory</li>
+</ul>
+<p>Box 6.2. Hidden Files in Cloud9</p>
+<p>If you’re using Cloud9, you must change preferences to see hidden files. In the window that contains the file list, there is a gear icon (dark in color and difficult to see). Clicking the gear option will give you options:</p>
+<ul>
+<li>Show Root File System</li>
+<li>Show Home in Favorites</li>
+<li>Show Hidden Files</li>
+</ul>
+<p>You must select all three options to see the hidden files.</p>
+<p><img alt="images/figures/23_cloud9_hidden_files" src="http://learn-rails.com/images/figures/learn-rails-2/23_cloud9_hidden_files.jpg" /></p>
+<p>That’s a brief diversion into Unix; let’s try running our new Rails application.</p>
+<h2 id="65-test-the-application"><a href="#cid39">6.5 Test the Application</a></h2>
+<p>You’ve created a simple default web application. It’s ready to run.</p>
+<h3 id="651-launching-the-web-server"><a href="#uid61">6.5.1 Launching the Web Server</a></h3>
+<p>You can launch the application by entering the command:</p>
+<p>$ rails server</p>
+<p>Alternatively, to save typing, you can abbreviate the <code>rails server</code> command:</p>
+<p>$ rails s</p>
+<p>If you are using the Cloud9 hosted service, you’ll need to enter <code>bin/rails server -p $PORT -b $IP</code>.</p>
+<p>You’ll see:</p>
+<p>\=&gt; Booting Puma
+\=&gt; Rails 5.1.2 application starting in development on http://localhost:3000
+\=&gt; Run `rails server -h` for more startup options
+\=&gt; Ctrl-C to shutdown server
+Puma starting in single mode...
+* Version 3.4.0 (ruby 2.4.1-p0), codename: Owl Bowl Brawl
+* Min threads: 5, max threads: 5
+* Environment: development
+* Listening on tcp://localhost:3000
+Use Ctrl-C to stop</p>
+<p>The <code>rails server</code> command launches the <a href="http://puma.io/">Puma web server</a> that is provided with Rails.</p>
+<h3 id="652-errors-for-linux-users"><a href="#uid62">6.5.2 Errors for Linux Users</a></h3>
+<p>If you enter the command <code>rails server</code> and get an error message:</p>
+<p>... Could not find a JavaScript runtime ...</p>
+<p>You need to install Node.js. For help, see <a href="https://railsapps.github.io/installrubyonrails-ubuntu.html">Install Ruby on Rails - Ubuntu</a>.</p>
+<h3 id="653-viewing-in-the-web-browser"><a href="#uid63">6.5.3 Viewing in the Web Browser</a></h3>
+<p>To see your application in action, open a web browser window and navigate to <a href="http://localhost:3000">http://localhost:3000/</a>. You’ll see the Rails default information page.</p>
+<p>Box 6.3. Viewing on a Hosted Platform</p>
+<p>It is easy to see your web application in action on your local computer. If you are using a hosted service such as Cloud9, it is a little more complicated.</p>
+<p>If you are using <strong>Cloud9</strong>, click the “Preview” link in the IDE menu (at the top of the page). There is a “Run” link, too, but it doesn’t work if you have created your Rails application in a folder within the <strong>workspace/</strong> folder. You can also open a browser tab or window and enter the URL for the application, as hosted by Cloud9. When you launch the Rails server, Cloud9 displays a helpful message showing the URL where you can view your application.</p>
+<h3 id="654-watch-log-messages"><a href="#uid65">6.5.4 Watch Log Messages</a></h3>
+<p>Notice that messages scroll in the console window when your browser requests the Rails default web page.</p>
+<p>Open the file <strong>log/development.log</strong> and you’ll see the same messages. When a browser sends requests to the Puma web server, diagnostic messages are written to the console and to the <strong>log/development.log</strong> file. These diagnostic messages are an important tool for troubleshooting when you are developing.</p>
+<h3 id="655-multiple-terminal-windows"><a href="#uid66">6.5.5 Multiple Terminal Windows</a></h3>
+<p>You can keep more than one terminal window open. For convenience, you may want to keep a terminal window open for running the web server and watching diagnostic messages. In the Terminal or iTerm2 applications, Command-t opens additional console sessions in new “tabs.”</p>
+<p>Developers typically open more than one terminal window when they work on a Rails application. They’ll start the server with the <code>rails server</code> command in one window (or tab) and watch the log messages. In another window (or tab), they’ll enter commands as they build the application. They might create folders with a Unix command, run generators, or try out code with the <code>rails console</code> command (you’ll learn about the <code>rails console</code> command in the “Troubleshoot” chapter).</p>
+<p>To some people, the text editor and the terminal window look very similar. When you work on a file in a text editor, you make changes to one file, in one place. The terminal window is very different. Your computer can run multiple programs at once. You can open multiple terminal windows. In each terminal window, you can use the command line to launch a different program. Each program you start in a terminal window is a separate <em>process</em> and multiple processes can run simultaneously. You can end a process by pressing Control-c (in most cases), Control-d (in some cases), or closing the terminal window (almost always). From this perspective, a terminal window is a tool you use to launch processes and your computer is a machine that runs processes.</p>
+<h3 id="656-stop-the-web-server"><a href="#uid67">6.5.6 Stop the Web Server</a></h3>
+<p>You can stop the server with Control-c to return to the command prompt. When we say Control-c, we mean hold down the Control key as you press the letter “c”.</p>
+<p>Most of the time you’ll keep the web server running as you add or edit files in your project. Changes will automatically appear when you refresh the browser or request a new page. There is a tricky exception, however. If you make changes to the Gemfile, or changes to configuration files, the web server must be shut down and relaunched for changes to be activated.</p>
+<p>As a rule of thumb, files that produce web pages can be changed without a restart. This includes any file in the <strong>app/</strong> folder which creates web pages, as well as the <strong>config/routes.rb</strong> file. Changes to files that create the environment for the web application, such as gems or configuration files, and are loaded at web server launch, won’t be seen until the web server is restarted.</p>
+<h2 id="66-get-organized-for-efficiency"><a href="#cid40">6.6 Get Organized for Efficiency</a></h2>
+<p>Before we learn about the Rails directory structure, take a minute to organize your screen real estate. During development, you’ll jump between the console in a terminal application, your text editor, and a web browser window. As a Rails developer, you’ll do this constantly, so think about how you can do this efficiently. Multiple screens make it easy, but even on a laptop you can get organized for efficiency.</p>
+<p><img alt="images/figures/learn-rails-getting-organized" src="http://learn-rails.com/images/figures/learn-rails-2/learn-rails-getting-organized.png" /></p>
+<p>Figure 6.1: Getting organized for efficiency.</p>
+<p>Here’s some ideas. Open a window in the terminal application, place it on the left side of your screen, and stretch it to the maximum vertical height of your screen. Open multiple tabs in your terminal application. Keep one tabbed window open for entering shell commands (like <code>cd</code> or <code>ls</code>) and another terminal window open for running the <code>rails server</code> command and viewing the log output.</p>
+<p>Place your text editor window next to the terminal window and stretch it to full vertical height. If you are using Atom or Sublime Text, you can open two editor panels side-by-side. Some developers find it helpful to leave the file browser panel open to navigate the project directory; others hide the file browser panel to save space.</p>
+<p>If you have enough screen space, leave your web browser open and place it next to your text editor. If your screen space is limited, you may have to overlap the web browser with the text editor, but position your web browser window so you can bring it to the front with a single click. You’ll need multiple tabs open in your web browser. Unless you like constant distraction, close Gmail, Facebook, Twitter, and Hacker News. Open tabs for <a href="http://localhost:3000/">http://localhost:3000/</a>, this tutorial, and additional references or documentation.</p>
+<p>On the Mac, there are window management utilities that reposition windows with just a click or keyboard command; I use <a href="http://manytricks.com/moom/">Moom</a> but you can find others if you search for “mac window management utilities.”</p>
+<p>This is just a guide; I’m sure you can improve upon these suggestions.</p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+                <p>&copy; 2018 - 2020 Roy Canseco <br> Feedback: roy+mkdocs@pshs.edu.ph</p>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../js/base.js" defer></script>
+        <script src="../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
