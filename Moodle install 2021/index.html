@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <meta name="author" content="Roy Vincent Luna Canseco">
+        <link rel="canonical" href="https://roycan.github.io/Moodle%20install%202021/">
+        <link rel="shortcut icon" href="../img/favicon.ico">
+        <title>Moodle install 2021 - roycan docs</title>
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/docco.min.css">
+
+        <script src="../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="..">roycan docs</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem">
+                                <a href=".." class="nav-link">Home</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="../2019-01-cv/" class="nav-link">About</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">skills <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../2014-01-15-maple-review/" class="dropdown-item"> Quickly relearning Maple </a>
+</li>
+                                    
+<li>
+    <a href="../2014-03-03-joomla-backup/" class="dropdown-item">Backing up a Joomla Site</a>
+</li>
+                                    
+<li>
+    <a href="../2018-07-13-aws-jasperreports/" class="dropdown-item">Jasper Server on AWS Attempt</a>
+</li>
+                                    
+<li>
+    <a href="../2018-08-10-laravel/" class="dropdown-item">PHP Laravel</a>
+</li>
+                                    
+<li>
+    <a href="../2019-01-09-digital-ads/" class="dropdown-item">2019 01 09 digital ads</a>
+</li>
+                                    
+<li>
+    <a href="../2019-01-09-email-marketing/" class="dropdown-item">Email marketing</a>
+</li>
+                                    
+<li>
+    <a href="../2019-01-10-digital-marketing/" class="dropdown-item">Digitial marketing</a>
+</li>
+                                    
+<li>
+    <a href="../2019-01-12-pro-rails-project/" class="dropdown-item">Professional Rails Project Steps</a>
+</li>
+                                    
+<li>
+    <a href="../2019-03-30-se_proj_planning/" class="dropdown-item">This Project Planning from SDLC</a>
+</li>
+                                    
+<li>
+    <a href="../2019-04-xp_virtualbox/" class="dropdown-item">Setting up Networking for WinXP on virtualbox</a>
+</li>
+                                    
+<li>
+    <a href="../2019-03-phalcon_php/" class="dropdown-item">Installing Phalcon PHP in Ubuntu 18.04</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">research <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../2018-07-07-phd-hunt/" class="dropdown-item">To PhD Abroad I Go</a>
+</li>
+                                    
+<li>
+    <a href="../2018-07-08%20EUSE%20Seminar/" class="dropdown-item">2018 07 08 EUSE Seminar</a>
+</li>
+                                    
+<li>
+    <a href="../2018-07-08-phd-hunt/" class="dropdown-item">My PhD Hunt  (day 2)</a>
+</li>
+                                    
+<li>
+    <a href="../2018-07-09-phd-hunt/" class="dropdown-item">My PhD Hunt  (day 3)</a>
+</li>
+                                    
+<li>
+    <a href="../2018-07-10-phd-thoughts/" class="dropdown-item">My PhD Hunt  (day 4)</a>
+</li>
+                                    
+<li>
+    <a href="../2018-07-11-phd-australia/" class="dropdown-item">Australian Uni's w/ good CS PhD Programs </a>
+</li>
+                                    
+<li>
+    <a href="../2018-07-12-phd-hunt/" class="dropdown-item">Deeper look Australian Uni's - part 1</a>
+</li>
+                                    
+<li>
+    <a href="../2018-07-13-phd-hunt/" class="dropdown-item">Deeper look Australian Uni's - part 2</a>
+</li>
+                                    
+<li>
+    <a href="../2018-07-15-phd-hunt/" class="dropdown-item">Deeper look Australian Uni's - part 3 (last)</a>
+</li>
+                                    
+<li>
+    <a href="../2018-07-19-phd-hunt/" class="dropdown-item">PhD Top 3</a>
+</li>
+                                    
+<li>
+    <a href="../2018-07-20-phd-hunt/" class="dropdown-item">Melbourne for PhD</a>
+</li>
+                                    
+<li>
+    <a href="../2019-01-09-marketing-trends-ph/" class="dropdown-item">Philippine Digital Marketing Trends 2018</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">relationships <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../2018-08-27-self-made/" class="dropdown-item"> Billionaire's Habits </a>
+</li>
+                                    
+<li>
+    <a href="../2018-10-19-block_rosary/" class="dropdown-item">Block Rosary</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">teaching <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../Q4%20Removals%20Plan%202021-06-18T09.54.33/" class="dropdown-item">Q4 Removals Plan 2021 06 18T09.54.33</a>
+</li>
+                                    
+<li>
+    <a href="../2018-09-14-gslides/" class="dropdown-item">Google slides with Audio</a>
+</li>
+                                    
+<li>
+    <a href="../2018-09-16-info_sys/" class="dropdown-item">My Information System Development Philosophy</a>
+</li>
+                                    
+<li>
+    <a href="../2018-09-25-IS_prog-js_dates/" class="dropdown-item">Javascript Date Object</a>
+</li>
+                                    
+<li>
+    <a href="../2018-09-25-js_loops/" class="dropdown-item">Javascript loops</a>
+</li>
+                                    
+<li>
+    <a href="../2018-09-26-mysql_datatypes/" class="dropdown-item">MySQL datatypes</a>
+</li>
+                                    
+<li>
+    <a href="../2018-10-01-WAPP-setup/" class="dropdown-item">WAPP Setup</a>
+</li>
+                                    
+<li>
+    <a href="../2018-10-14-BA186_syllabus/" class="dropdown-item">BA186 SYSTEMS ANALYSIS AND DESIGN</a>
+</li>
+                                    
+<li>
+    <a href="../2018-10-19-configure_git/" class="dropdown-item">Setup Git and Github</a>
+</li>
+                                    
+<li>
+    <a href="../2018-10-19-install_rails/" class="dropdown-item">Install rails in Ubuntu 18.04</a>
+</li>
+                                    
+<li>
+    <a href="../2018-10-19-setup_mysql/" class="dropdown-item">Setting Up MySQL in Ubuntu 18.04</a>
+</li>
+                                    
+<li>
+    <a href="../2018-10-19-setup_postgresql/" class="dropdown-item">Setting Up PostgreSQL in Ubuntu 18.04</a>
+</li>
+                                    
+<li>
+    <a href="../2018-11-01-aws_upkeep/" class="dropdown-item">Setting up an AWS account for Team Development</a>
+</li>
+                                    
+<li>
+    <a href="../2019-02-pisay_application/" class="dropdown-item">Teacher Career Path Evaluation Sheet</a>
+</li>
+                                    
+<li>
+    <a href="../2018-01-IPSE-syllabus/" class="dropdown-item">2018 01 IPSE syllabus</a>
+</li>
+                                    
+<li>
+    <a href="../2019-03-pisay_cs4_setup/" class="dropdown-item">2019 03 pisay cs4 setup</a>
+</li>
+                                    
+<li>
+    <a href="../2020-03-pisay_cs4_setup/" class="dropdown-item">2020 03 pisay cs4 setup</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">projects <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../2019-01-05-pcari-site/" class="dropdown-item">2019 01 05 pcari site</a>
+</li>
+                                    
+<li>
+    <a href="../pcari-site-proposal/" class="dropdown-item">Pcari site proposal</a>
+</li>
+                                    
+<li>
+    <a href="../UP-IC/" class="dropdown-item">UP IC</a>
+</li>
+                                    
+<li>
+    <a href="../2019-01-05-IS-proj-start/" class="dropdown-item">Beginning an Information System Project</a>
+</li>
+                                    
+<li>
+    <a href="../2018-collated_screens/" class="dropdown-item">2018 collated screens</a>
+</li>
+                                    
+<li>
+    <a href="../2018-11-IC-comments/" class="dropdown-item">2018 11 IC comments</a>
+</li>
+                                    
+<li>
+    <a href="../2018-mobile_screens/" class="dropdown-item">2018 mobile screens</a>
+</li>
+                                    
+<li>
+    <a href="../2019-01-16-DENR_TOR/" class="dropdown-item">2019 01 16 DENR TOR</a>
+</li>
+                                    
+<li>
+    <a href="../2019-02-UPPFI-WW-DOD-1/" class="dropdown-item">Definitions of Done - UPPFI-WW web app</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#moodle-install-2021" class="nav-link">Moodle install 2021</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#prepare-ubuntu-2004-lts" class="nav-link">Prepare Ubuntu 20.04 LTS</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#install-nginx-http-server" class="nav-link">Install Nginx HTTP Server</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#install-mariadb-database-server" class="nav-link">Install MariaDB Database Server</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#install-php74-and-related-php-modules" class="nav-link">Install PHP7.4 and Related PHP Modules</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#download-moodle-39" class="nav-link">Download moodle 3.9</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#configure-nginx" class="nav-link">Configure Nginx</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#update-firewall-settings" class="nav-link">Update firewall settings</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#enable-the-moodle-site" class="nav-link">Enable the Moodle site</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#lets-encrypt-wildcard-ssl-certificates" class="nav-link">Let’s Encrypt Wildcard SSL Certificates</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#set-up-moodle" class="nav-link">Set up moodle</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="moodle-install-2021">Moodle install 2021</h1>
+<p>Let’s say we start from the beginning so it’s more clear,</p>
+<h2 id="prepare-ubuntu-2004-lts">Prepare Ubuntu 20.04 LTS</h2>
+<p>Rebuild linode using Ubuntu 20.04 LTS</p>
+<pre><code>ubuntu20.04LTSpassword
+
+adduser sir_roy
+</code></pre>
+<p>add password for linode</p>
+<pre><code>sudo apt install -y htop net-tools
+</code></pre>
+<p>Setting Up a Basic Firewall</p>
+<pre><code>sudo ufw allow OpenSSH &amp;&amp; sudo ufw enable &amp;&amp; sudo ufw status numbered
+</code></pre>
+<h3 id="configure-firewall-and-time">Configure Firewall and Time</h3>
+<p>https://www.digitalocean.com/community/tutorials/ufw-essentials-common-firewall-rules-and-commands</p>
+<p><a href="../Build%20a%20fresh%20server/">Build a fresh server</a></p>
+<p>It might be good to setup ssh keys</p>
+<p>First, you need to update your system</p>
+<pre><code>sudo apt update &amp;&amp; sudo apt -y upgrade &amp;&amp; sudo apt -y autoremove &amp;&amp; sudo reboot
+</code></pre>
+<h2 id="install-nginx-http-server">Install Nginx HTTP Server</h2>
+<pre><code>sudo apt install -y nginx &amp;&amp; sudo systemctl enable nginx
+</code></pre>
+<p>After installing Nginx, the commands below can be used to stop, start and enable Nginx service to always startup when your computer boots.</p>
+<pre><code>sudo systemctl stop nginx.service
+sudo systemctl start nginx.service
+sudo systemctl enable nginx.service
+</code></pre>
+<h2 id="install-mariadb-database-server">Install MariaDB Database Server</h2>
+<p>This is if using the default MariaDB,</p>
+<pre><code>sudo apt install -y mariadb-server mariadb-client &amp;&amp; sudo systemctl enable mariadb &amp;&amp; sudo mysql_secure_installation
+</code></pre>
+<p>After installing, the commands below can be used to stop, start and enable MariaDB service to always start up when the server boots.</p>
+<pre><code>sudo systemctl stop mariadb.service
+sudo systemctl start mariadb.service
+sudo systemctl enable mariadb.service
+</code></pre>
+<p>After that, run the commands below to secure MariaDB server.</p>
+<pre><code>sudo mysql_secure_installation
+</code></pre>
+<pre><code>Enter current password for root (enter for none): Just press the Enter
+Set root password? [Y/n]: Y
+New password: Enter MariaDBpassword
+Re-enter new password: Repeat MariaDBpassword
+Re-enter new password: Repeat MariaDBpassword
+Remove anonymous users? [Y/n]: Y
+Disallow root login remotely? [Y/n]: n
+Remove test database and access to it? [Y/n]: Y
+Reload privilege tables now? [Y/n]: Y
+</code></pre>
+<p>Next, run the commands below to open MySQL default configuration file.</p>
+<pre><code> sudo nano /etc/mysql/mariadb.conf.d/50-server.cnf
+</code></pre>
+<p>Now to add some configuration to your instance. 
+You just add the following lines at the innodb part of the script.</p>
+<pre><code>default_storage_engine = innodb
+innodb_file_per_table = 1
+innodb_file_format = Barracuda
+innodb_large_prefix = 1
+</code></pre>
+<pre><code>sudo systemctl restart mariadb.service
+</code></pre>
+<p>Now we need to create a Database for our Moodle installation. Enter your MariaDB instance like</p>
+<pre><code>sudo mysql -u root -p
+</code></pre>
+<p>enter MariaDBpassword</p>
+<p>Then create a database and configure it for usage</p>
+<pre><code>    CREATE DATABASE moodle_db;
+    CREATE USER 'moodle_user'@'localhost' IDENTIFIED BY 'moodle_password';
+
+    GRANT ALL ON moodle_db.* TO 'moodle_user'@'localhost' IDENTIFIED BY 'moodle_password' WITH GRANT OPTION;
+
+    FLUSH PRIVILEGES;
+    EXIT;
+</code></pre>
+<h2 id="install-php74-and-related-php-modules">Install PHP7.4 and Related PHP Modules</h2>
+<pre><code>sudo apt-get install -y software-properties-common
+sudo add-apt-repository -y ppa:ondrej/php
+sudo apt update
+sudo apt install -y php7.4-fpm php7.4-common php7.4-mysql php7.4-gmp php7.4-curl php7.4-intl php7.4-mbstring php7.4-soap php7.4-xmlrpc php7.4-gd php7.4-xml php7.4-cli php7.4-zip php7.4-pgsql
+</code></pre>
+<p>After installing PHP 7.4, go and configure some basic settings that may be required for Moodle to function properly.</p>
+<pre><code>sudo nano /etc/php/7.4/fpm/php.ini
+</code></pre>
+<pre><code class="language-php">file_uploads = On
+allow_url_fopen = On
+short_open_tag = On
+memory_limit = 256M
+cgi.fix_pathinfo = 0
+upload_max_filesize = 200M
+max_execution_time = 360
+date.timezone = Asia/Singapore
+
+post_max_size = 200M
+</code></pre>
+<h2 id="download-moodle-39">Download moodle 3.9</h2>
+<p>I'm choosing to download moodle 3.9 stable (LTS). 
+The latest atm is 3.11 stable.
+The oldest supported is 3.9</p>
+<pre><code>    sudo apt -y install git curl ghostscript
+    cd /var/www/
+    sudo git clone -b MOODLE_39_STABLE git://git.moodle.org/moodle.git moodle
+</code></pre>
+<p>Then run the commands below to set the correct permissions for Moodle to function.</p>
+<pre><code>sudo mkdir -p /var/www/moodledata
+sudo chown -R www-data:www-data /var/www/
+sudo chmod -R 755 /var/www/
+sudo chown www-data:www-data /var/www/moodledata
+</code></pre>
+<h2 id="configure-nginx">Configure Nginx</h2>
+<p>You can type the following to create the file needed</p>
+<pre><code>sudo nano /etc/nginx/sites-available/moodle
+</code></pre>
+<ul>
+<li>Make sure to edit the <strong>server_name</strong> accordingly</li>
+</ul>
+<pre><code> server {
+    listen 80;
+    listen [::]:80;
+    root /var/www/moodle;
+    index  index.php index.html index.htm;
+    server_name  moodle.170.187.225.220.nip.io;
+
+    client_max_body_size 200M;
+    autoindex off;
+    location / {
+        try_files $uri $uri/ =404;
+    }
+
+    location /dataroot/ {
+      internal;
+      alias /var/www/moodledata/;
+    }
+
+    location ~ [^/].php(/|$) {
+        include snippets/fastcgi-php.conf;
+        fastcgi_pass unix:/run/php/php7.4-fpm.sock;
+        fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
+        include fastcgi_params;
+    }
+}
+</code></pre>
+<h2 id="update-firewall-settings">Update firewall settings</h2>
+<pre><code> sudo ufw allow ssh
+ sudo ufw allow 22
+ sudo ufw allow http
+ sudo ufw allow 80
+ sudo ufw allow https
+ sudo ufw allow 443
+ sudo ufw allow proto tcp from any to any port 80,443
+
+ sudo ufw allow 3306
+ sudo ufw allow 5432
+
+ sudo ufw allow 25
+ sudo ufw allow 465
+ sudo ufw allow 587 
+</code></pre>
+<h2 id="enable-the-moodle-site">Enable the Moodle site</h2>
+<pre><code>sudo ln -s /etc/nginx/sites-available/moodle /etc/nginx/sites-enabled/  &amp;&amp; sudo systemctl restart nginx
+</code></pre>
+<p>Restart Nginx</p>
+<pre><code>sudo systemctl restart nginx.service
+
+sudo apt install ghostscript
+</code></pre>
+<p>Just check that the moodle site is enabled using the following link. Don't install yet.    </p>
+<p><a href="http://moodle.170.187.225.220.nip.io/">http://moodle.170.187.225.220.nip.io/</a></p>
+<h2 id="lets-encrypt-wildcard-ssl-certificates">Let’s Encrypt Wildcard SSL Certificates</h2>
+<pre><code>sudo apt-get install letsencrypt
+</code></pre>
+<p>For wildcard certificates, the only challenge method Let’s Encrypt accepts is the DNS challenge, which we can invoke via the preferred-challenges=dns flag.</p>
+<p>So, to generate a wildcard cert for domain <strong>pshsmc.xyz</strong>, you run the commands below:</p>
+<pre><code>sudo certbot certonly --manual --preferred-challenges=dns --email admin@example.com --server https://acme-v02.api.letsencrypt.org/directory --agree-tos -d pshsmc.xyz -d *.pshsmc.xyz
+</code></pre>
+<ul>
+<li>-certonly:                                     Obtain or renew a certificate, but do not install</li>
+<li>–manual:                                    Obtain certificates interactively</li>
+<li>–preferred-challenges=dns:      Use dns to authenticate domain ownership</li>
+<li>–server:                                      Specify the endpoint to use to generate</li>
+<li>–agree-tos:                                 Agree to the ACME server’s subscriber terms</li>
+<li>-d:                                               Domain name to provide certificates for</li>
+</ul>
+<p>After executing the command above, Let’s Encrypt will provide a text string to add a text record to your DNS entry…</p>
+<p>Example:</p>
+<pre><code>Saving debug log to /var/log/letsencrypt/letsencrypt.log
+Plugins selected: Authenticator manual, Installer None
+
+-------------------------------------------------------------------------------
+Would you be willing to share your email address with the Electronic Frontier
+Foundation, a founding partner of the Let's Encrypt project and the non-profit
+organization that develops Certbot? We'd like to send you email about EFF and
+our work to encrypt the web, protect its users and defend digital rights.
+-------------------------------------------------------------------------------
+(Y)es/(N)o: y
+Obtaining a new certificate
+Performing the following challenges:
+dns-01 challenge for example.com
+
+-------------------------------------------------------------------------------
+NOTE: The IP of this machine will be publicly logged as having requested this
+certificate. If you're running certbot in manual mode on a machine that is not
+your server, please ensure you're okay with that.
+
+Are you OK with your IP being logged?
+-------------------------------------------------------------------------------
+(Y)es/(N)o: y
+
+-------------------------------------------------------------------------------
+Please deploy a DNS TXT record under the name
+_acme-challenge.example.com with the following value:
+
+x4MrZ6y-JqFJQRmq_lGi9ReRQHPa1aTC9J2O7wDKzq8
+
+Before continuing, verify the record is deployed.
+</code></pre>
+<p>Go to your DNS provider portal and add a text record for the string above and save…</p>
+<p>Wait a few mins before continuing from the prompt.</p>
+<p>Some DNS providers take a wile to propagate changes so it may depend on your provider’s platform.</p>
+<p>After the changes above and Let’s encrypt is able to validate that you own the domain, you should see a successful message as below:</p>
+<pre><code>IMPORTANT NOTES:
+ - Congratulations! Your certificate and chain have been saved at:
+   /etc/letsencrypt/live/example.com/fullchain.pem
+   Your key file has been saved at:
+   /etc/letsencrypt/live/example.com/privkey.pem
+   Your cert will expire on 2020-01-09. To obtain a new or tweaked
+   version of this certificate in the future, simply run certbot
+   again. To non-interactively renew *all* of your certificates, run
+   &quot;certbot renew&quot;
+</code></pre>
+<p>The wildcard certificate is now generated and ready to be used.</p>
+<p>To verify that the certificate is ready, run the commands below:</p>
+<pre><code>sudo certbot certificates
+</code></pre>
+<p>That should display similar screen as below:</p>
+<pre><code>Found the following certs:
+  Certificate Name: example.com
+    Domains: *.example.com
+    Expiry Date: 2020-01-05 07:48:04+00:00 (VALID: 85 days)
+    Certificate Path: /etc/letsencrypt/live/example.com/fullchain.pem
+    Private Key Path: /etc/letsencrypt/live/example.com/privkey.pem
+</code></pre>
+<p>Now, Let’s Encrypt’s certificates are valid for 90 days… You’ll want to setup a crob job to automate the renewal process… To do that, open crontab and add the entry below:</p>
+<pre><code>sudo crontab -e
+</code></pre>
+<p>Then add the line below and save…</p>
+<p><code>0 1 * * * /usr/bin/certbot renew &gt;&gt; /var/log/letsencrypt/renew.log</code></p>
+<p>Save and you’re done!</p>
+<p>With Let’s Encrypt installed, reopen Nginx VirtualHost file created above and add Let’s Encrypt configurations to secure your website.</p>
+<p>Run the commands below open the file.</p>
+<pre><code>sudo nano /etc/nginx/sites-available/moodle
+</code></pre>
+<p>Then add the highlighted lines to the VirtualHost file as shown below:</p>
+<pre><code>server {
+    listen 80;
+    listen [::]:80;
+    server_name *.example.com;
+    return 301 https://$host$request_uri;
+}
+server {
+    listen 443 ssl http2;
+    listen [::] 443 ssl http2;
+    root /var/www/moodle;
+    index  index.php index.html index.htm;
+    server_name  example.com www.example.com;
+
+
+
+    ssl_certificate /etc/letsencrypt/live/example.com/fullchain.pem;
+    ssl_certificate_key /etc/letsencrypt/live/example.com/privkey.pem;
+    ssl_trusted_certificate /etc/letsencrypt/live/example.com/chain.pem;
+    ssl_protocols TLSv1 TLSv1.1 TLSv1.2 TLSv1.3;
+    ssl_ciphers 'TLS13+AESGCM+AES128:ECDHE-ECDSA-CHACHA20-POLY1305:ECDHE-RSA-CHACHA20-POLY1305:ECDHE-ECDSA-AES128-GCM-SHA256:ECDHE-RSA-AES128-GCM-SHA256:ECDHE-ECDSA-AES256-GCM-SHA384:ECDHE-RSA-AES256-GCM-SHA384:DHE-RSA-AES128-GCM-SHA256:DHE-RSA-AES256-GCM-SHA384:ECDHE-ECDSA-AES128-SHA256:ECDHE-RSA-AES128-SHA256:ECDHE-ECDSA-AES128-SHA:ECDHE-RSA-AES256-SHA384:ECDHE-RSA-AES128-SHA:ECDHE-ECDSA-AES256-SHA384:ECDHE-ECDSA-AES256-SHA:ECDHE-RSA-AES256-SHA:DHE-RSA-AES128-SHA256:DHE-RSA-AES128-SHA:DHE-RSA-AES256-SHA256:DHE-RSA-AES256-SHA:ECDHE-ECDSA-DES-CBC3-SHA:ECDHE-RSA-DES-CBC3-SHA:EDH-RSA-DES-CBC3-SHA:AES128-GCM-SHA256:AES256-GCM-SHA384:AES128-SHA256:AES256-SHA256:AES128-SHA:AES256-SHA:DES-CBC3-SHA:!DSS';
+    ssl_prefer_server_ciphers on;
+    ssl_session_cache shared:SSL:50m;
+    ssl_session_timeout 1d;
+    ssl_session_tickets off;
+    ssl_ecdh_curve X25519:sect571r1:secp521r1:secp384r1;
+
+    client_max_body_size 100M;
+    autoindex off;
+    location / {
+        try_files $uri $uri/ =404;
+    }
+
+    location /dataroot/ {
+       internal;
+       alias /var/www/moodledata/;
+    }
+
+    location ~ [^/].php(/|$) {
+        include snippets/fastcgi-php.conf;
+        fastcgi_pass unix:/run/php/php7.4-fpm.sock;
+        fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
+        include fastcgi_params;
+    }
+}
+
+</code></pre>
+<p>If you want to permanently redirect to the root domain name, just add this:</p>
+<pre><code>    if ($host != &quot;example.com&quot;) {
+      return 301 https://example.com$request_uri;
+    }
+</code></pre>
+<p>Test SSL:</p>
+<p>https://www.ssllabs.com/ssltest/analyze.html</p>
+<h2 id="set-up-moodle">Set up moodle</h2>
+<p>http://moodle.170.187.225.220.nip.io/</p>
+<p><img alt="qownnotes-media-SGEvsJ" src="media/qownnotes-media-SGEvsJ.png" /></p>
+<pre><code> language: english
+ Data directory: /var/www/moodledata
+</code></pre>
+<p>directory is writeable by 'www-data'</p>
+<pre><code>database: MariaDB (native/mariadb)
+</code></pre>
+<p><img alt="qownnotes-media-IMVKTn" src="../media/qownnotes-media-IMVKTn-476817539.png" /></p>
+<p><img alt="qownnotes-media-lMGuTq" src="../media/qownnotes-media-lMGuTq-1877180170.png" /></p>
+<p>Moodle Learning Management System
+moodlelms</p>
+<p>Asia/Manila </p>
+<p>self-registration on</p>
+<p>I agree to the Privacy notice and data processing agreement</p>
+<p>Site administration-&gt; Server -&gt; System Paths
+* /usr/bin/ghostscript
+* save changes</p>
+<p>Restart VPS</p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+                <p>&copy; 2018 - 2020 Roy Canseco <br> Feedback: roy+mkdocs@pshs.edu.ph</p>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../js/base.js" defer></script>
+        <script src="../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
