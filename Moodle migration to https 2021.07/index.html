@@ -6,9 +6,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
         <meta name="author" content="Roy Vincent Luna Canseco">
-        <link rel="canonical" href="https://roycan.github.io/MariaDB%20backup/">
+        <link rel="canonical" href="https://roycan.github.io/Moodle%20migration%20to%20https%202021.07/">
         <link rel="shortcut icon" href="../img/favicon.ico">
-        <title>MariaDB backup - roycan docs</title>
+        <title>Moodle migration to https 2021.07 - roycan docs</title>
         <link href="../css/bootstrap.min.css" rel="stylesheet">
         <link href="../css/font-awesome.min.css" rel="stylesheet">
         <link href="../css/base.css" rel="stylesheet">
@@ -294,8 +294,44 @@
     <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
         <ul class="nav flex-column">
             
-            <li class="nav-item" data-level="1"><a href="#mariadb-backup" class="nav-link">MariaDB backup</a>
+            <li class="nav-item" data-level="1"><a href="#moodle-migration-to-https-202107" class="nav-link">Moodle migration to https 2021.07</a>
               <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#backup-the-wiki-and-backhub-servers" class="nav-link">backup the wiki and  backhub servers</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#dump-the-moodle-database" class="nav-link">dump the moodle database</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#tar-moodle-moodledata-db_dump" class="nav-link">tar moodle, moodledata, db_dump</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#rsync-files-to-the-clone-server" class="nav-link">rsync files to the clone server</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#install-to-file-locations-and-ownerships" class="nav-link">install to file locations and ownerships</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#restore-db_dump-to-a-new-db" class="nav-link">restore db_dump to a new db</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#see-if-the-site-is-accessible-from-the-internet" class="nav-link">see if the site is accessible from the internet</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#replace-the-host-in-the-db" class="nav-link">replace the host in the db</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#convert-to-https" class="nav-link">convert to https</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
               </ul>
             </li>
         </ul>
@@ -303,45 +339,38 @@
 </div></div>
                     <div class="col-md-9" role="main">
 
-<h1 id="mariadb-backup">MariaDB backup</h1>
-<ul>
-<li><code>mysqldump -u -p</code></li>
-<li>restore DB:   <code>moodle &lt; moodle.sql</code></li>
-</ul>
-<pre><code>cd /var/www
-mkdir backup
-cp -pr moodle backup/
-cp -rp moodledata backup/
-cd 
-sudo mysqldump -u root -p moodle_db &gt; moodle_db.sql
-sudo mysql -u root -p 
+<h1 id="moodle-migration-to-https-202107">Moodle migration to https 2021.07</h1>
+<h2 id="backup-the-wiki-and-backhub-servers">backup the wiki and  backhub servers</h2>
+<h2 id="dump-the-moodle-database">dump the moodle database</h2>
+<pre><code>sudo mysqldump --allow-keywords --opt -u root -p moodle_db &gt; moodle_db2.sql
 </code></pre>
-<pre><code>show databases
-drop database moodle_db
-create database moodle_db
-</code></pre>
-<pre><code>cd
-sudo mysql -u root -p moodle_db &lt; moodle_db.sql
-</code></pre>
-<p>Backup the Moodle database on the old server:
-<code>mysqldump -h example.com -u myusername -p'mypassword' -C -Q -e --create-options mydatabasename &gt; moodle-database.sql</code></p>
 <ul>
-<li>-h :: hostname</li>
-<li>-C :: compress</li>
-<li>-Q :: quote identifiers</li>
-<li>-e :: extended-insert (speed up)</li>
-<li>--create-options :: include all mysql-specific table options</li>
+<li>--opt :: same as specifying --add-drop-table, --add-locks, --create-options, --disable-keys, --extended-insert, --lock-tables, --quick, and --set-charset</li>
+<li>--allow-keywords :: Allow creation of column names that are keywords. This works by prefixing each column name with the table name.</li>
 </ul>
-<p><code>mysqldump --allow-keywords --opt -uMySQL_USERNAME -pPASSWORD DATABASE | ssh USER@DOMAIN "mysql -uMySQL_USERNAME -pPASSWORD DATABASE"</code></p>
+<h2 id="tar-moodle-moodledata-db_dump">tar moodle, moodledata, db_dump</h2>
+<p>compress into archive:</p>
+<pre><code>sudo tar -cvzf MOODLE_FOLDER MOODLE_FOLDER.tar.gz
+</code></pre>
+<p>expand into folder:</p>
+<pre><code>sudo tar -xvzf MOODLE_FOLDER.tar.gz -C MOODLE_FOLDER
+</code></pre>
+<h2 id="rsync-files-to-the-clone-server">rsync files to the clone server</h2>
+<pre><code>sudo rsync -av --progress -e ssh SOURCE USER@SERVER:FOLDER
+</code></pre>
+<h2 id="install-to-file-locations-and-ownerships">install to file locations and ownerships</h2>
 <ul>
-<li>--allow-keywords :: allow creation of column names that are keywords</li>
-<li>--opt ::  Shorthand for --add-drop-table --add-locks --create-options --disable-keys --extended-insert --lock-tables --quick --set-charset</li>
+<li>backup clone's moodle and moodledata directories</li>
 </ul>
-<p>Restore the database backup to the new server:
-<code>mysql -p new_database &lt; moodle-database.sql</code>
-uick --set-charset</p>
-<p>Restore the database backup to the new server:
-<code>mysql -p new_database &lt; moodle-database.sql</code></p></div>
+<h2 id="restore-db_dump-to-a-new-db">restore db_dump to a new db</h2>
+<h2 id="see-if-the-site-is-accessible-from-the-internet">see if the site is accessible from the internet</h2>
+<h2 id="replace-the-host-in-the-db">replace the host in the db</h2>
+<ul>
+<li>sed<pre><code>#sed -e 's/oldserver.com/newserver.com/g' oldmysqldump.sql &gt; newmysqldump.sql
+</code></pre>
+</li>
+</ul>
+<h2 id="convert-to-https">convert to https</h2></div>
             </div>
         </div>
 

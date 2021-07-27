@@ -6,9 +6,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
         <meta name="author" content="Roy Vincent Luna Canseco">
-        <link rel="canonical" href="https://roycan.github.io/MariaDB%20backup/">
+        <link rel="canonical" href="https://roycan.github.io/Configuring%20Git%20in%20Ubuntu/">
         <link rel="shortcut icon" href="../img/favicon.ico">
-        <title>MariaDB backup - roycan docs</title>
+        <title>Configuring Git in Ubuntu - roycan docs</title>
         <link href="../css/bootstrap.min.css" rel="stylesheet">
         <link href="../css/font-awesome.min.css" rel="stylesheet">
         <link href="../css/base.css" rel="stylesheet">
@@ -294,7 +294,7 @@
     <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
         <ul class="nav flex-column">
             
-            <li class="nav-item" data-level="1"><a href="#mariadb-backup" class="nav-link">MariaDB backup</a>
+            <li class="nav-item" data-level="1"><a href="#configuring-git-in-ubuntu" class="nav-link">Configuring Git in Ubuntu</a>
               <ul class="nav flex-column">
               </ul>
             </li>
@@ -303,45 +303,23 @@
 </div></div>
                     <div class="col-md-9" role="main">
 
-<h1 id="mariadb-backup">MariaDB backup</h1>
-<ul>
-<li><code>mysqldump -u -p</code></li>
-<li>restore DB:   <code>moodle &lt; moodle.sql</code></li>
-</ul>
-<pre><code>cd /var/www
-mkdir backup
-cp -pr moodle backup/
-cp -rp moodledata backup/
-cd 
-sudo mysqldump -u root -p moodle_db &gt; moodle_db.sql
-sudo mysql -u root -p 
+<h1 id="configuring-git-in-ubuntu">Configuring Git in Ubuntu</h1>
+<p>If you don't already have a Github account, make sure to <a href="github.com">register</a>. </p>
+<p>Change the parts in caps:</p>
+<pre><code>git config --global color.ui true
+git config --global user.name &quot;YOUR NAME&quot;
+git config --global user.email &quot;YOUR@EMAIL.com&quot;
+ssh-keygen -t rsa -b 4096 -C &quot;YOUR@EMAIL.com&quot;
 </code></pre>
-<pre><code>show databases
-drop database moodle_db
-create database moodle_db
+<p>The next step is to take the newly generated SSH key and add it to your Github account. You want to copy and paste the output of the following command and <a href="https://github.com/settings/ssh">paste it here</a>. </p>
+<pre><code>cat ~/.ssh/id_rsa.pub
 </code></pre>
-<pre><code>cd
-sudo mysql -u root -p moodle_db &lt; moodle_db.sql
+<p>Once you've done this, you can check and see if it worked:</p>
+<pre><code>ssh -T git@github.com
 </code></pre>
-<p>Backup the Moodle database on the old server:
-<code>mysqldump -h example.com -u myusername -p'mypassword' -C -Q -e --create-options mydatabasename &gt; moodle-database.sql</code></p>
-<ul>
-<li>-h :: hostname</li>
-<li>-C :: compress</li>
-<li>-Q :: quote identifiers</li>
-<li>-e :: extended-insert (speed up)</li>
-<li>--create-options :: include all mysql-specific table options</li>
-</ul>
-<p><code>mysqldump --allow-keywords --opt -uMySQL_USERNAME -pPASSWORD DATABASE | ssh USER@DOMAIN "mysql -uMySQL_USERNAME -pPASSWORD DATABASE"</code></p>
-<ul>
-<li>--allow-keywords :: allow creation of column names that are keywords</li>
-<li>--opt ::  Shorthand for --add-drop-table --add-locks --create-options --disable-keys --extended-insert --lock-tables --quick --set-charset</li>
-</ul>
-<p>Restore the database backup to the new server:
-<code>mysql -p new_database &lt; moodle-database.sql</code>
-uick --set-charset</p>
-<p>Restore the database backup to the new server:
-<code>mysql -p new_database &lt; moodle-database.sql</code></p></div>
+<p>You should get a message like this: </p>
+<pre><code>Hi roycan! You've successfully authenticated, but GitHub does not provide shell access.
+</code></pre></div>
             </div>
         </div>
 

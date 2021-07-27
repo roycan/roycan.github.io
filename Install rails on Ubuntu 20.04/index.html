@@ -6,9 +6,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
         <meta name="author" content="Roy Vincent Luna Canseco">
-        <link rel="canonical" href="https://roycan.github.io/MariaDB%20backup/">
+        <link rel="canonical" href="https://roycan.github.io/Install%20rails%20on%20Ubuntu%2020.04/">
         <link rel="shortcut icon" href="../img/favicon.ico">
-        <title>MariaDB backup - roycan docs</title>
+        <title>Install rails on Ubuntu 20.04 - roycan docs</title>
         <link href="../css/bootstrap.min.css" rel="stylesheet">
         <link href="../css/font-awesome.min.css" rel="stylesheet">
         <link href="../css/base.css" rel="stylesheet">
@@ -294,8 +294,36 @@
     <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
         <ul class="nav flex-column">
             
-            <li class="nav-item" data-level="1"><a href="#mariadb-backup" class="nav-link">MariaDB backup</a>
+            <li class="nav-item" data-level="1"><a href="#install-rails-on-ubuntu-2004" class="nav-link">Install rails on Ubuntu 20.04</a>
               <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#install-nodejs-and-yarn" class="nav-link">Install node.js and yarn</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#install-rbenv" class="nav-link">Install rbenv</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#install-ruby" class="nav-link">Install ruby</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#skip-downloading-the-documentation" class="nav-link">Skip downloading the documentation</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#install-rails" class="nav-link">Install rails</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#install-bundler" class="nav-link">Install bundler</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#make-a-project" class="nav-link">Make a project</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
               </ul>
             </li>
         </ul>
@@ -303,45 +331,82 @@
 </div></div>
                     <div class="col-md-9" role="main">
 
-<h1 id="mariadb-backup">MariaDB backup</h1>
-<ul>
-<li><code>mysqldump -u -p</code></li>
-<li>restore DB:   <code>moodle &lt; moodle.sql</code></li>
-</ul>
-<pre><code>cd /var/www
-mkdir backup
-cp -pr moodle backup/
-cp -rp moodledata backup/
-cd 
-sudo mysqldump -u root -p moodle_db &gt; moodle_db.sql
-sudo mysql -u root -p 
+<h1 id="install-rails-on-ubuntu-2004">Install rails on Ubuntu 20.04</h1>
+<p>Let's use Ruby 3.0.1
+Let's use Rails 6.1.3.2</p>
+<h2 id="install-nodejs-and-yarn">Install node.js and yarn</h2>
+<p>We will use the code from their Github repo.
+The Ubuntu packaged versions didn't work for me. </p>
+<pre><code>sudo apt install curl
+curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
+curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
+echo &quot;deb https://dl.yarnpkg.com/debian/ stable main&quot; | sudo tee /etc/apt/sources.list.d/yarn.list
+
+sudo apt-get update
+sudo apt-get install git-core zlib1g-dev build-essential libssl-dev libreadline-dev libyaml-dev libsqlite3-dev sqlite3 libxml2-dev libxslt1-dev libcurl4-openssl-dev software-properties-common libffi-dev nodejs yarn
 </code></pre>
-<pre><code>show databases
-drop database moodle_db
-create database moodle_db
+<h2 id="install-rbenv">Install rbenv</h2>
+<p><code>rbenv</code> is used to setup a ruby environment. 
+It can allow to install a different ruby version per project.</p>
+<h3 id="dont-use-official-installation">[don't use] Official Installation</h3>
+<p>Follow the official installation guide</p>
+<p>https://github.com/rbenv/rbenv#installation</p>
+<h3 id="dont-use-ubuntu-package">[don't use] Ubuntu Package</h3>
+<pre><code>    $ sudo apt install rbenv
 </code></pre>
+<h3 id="use-github-repositories">[use] Github repositories</h3>
+<p>However, we don't want to use the packaged rbenv and ruby-build because there are more updated versions. 
+So instead we use the versions stored in Github.</p>
 <pre><code>cd
-sudo mysql -u root -p moodle_db &lt; moodle_db.sql
+git clone https://github.com/rbenv/rbenv.git ~/.rbenv
+echo 'export PATH=&quot;$HOME/.rbenv/bin:$PATH&quot;' &gt;&gt; ~/.bashrc
+echo 'eval &quot;$(rbenv init -)&quot;' &gt;&gt; ~/.bashrc
+exec $SHELL
+
+git clone https://github.com/rbenv/ruby-build.git ~/.rbenv/plugins/ruby-build
+echo 'export PATH=&quot;$HOME/.rbenv/plugins/ruby-build/bin:$PATH&quot;' &gt;&gt; ~/.bashrc
+exec $SHELL
+
+rbenv install 3.0.1
+rbenv global 3.0.1
+ruby -v
 </code></pre>
-<p>Backup the Moodle database on the old server:
-<code>mysqldump -h example.com -u myusername -p'mypassword' -C -Q -e --create-options mydatabasename &gt; moodle-database.sql</code></p>
-<ul>
-<li>-h :: hostname</li>
-<li>-C :: compress</li>
-<li>-Q :: quote identifiers</li>
-<li>-e :: extended-insert (speed up)</li>
-<li>--create-options :: include all mysql-specific table options</li>
-</ul>
-<p><code>mysqldump --allow-keywords --opt -uMySQL_USERNAME -pPASSWORD DATABASE | ssh USER@DOMAIN "mysql -uMySQL_USERNAME -pPASSWORD DATABASE"</code></p>
-<ul>
-<li>--allow-keywords :: allow creation of column names that are keywords</li>
-<li>--opt ::  Shorthand for --add-drop-table --add-locks --create-options --disable-keys --extended-insert --lock-tables --quick --set-charset</li>
-</ul>
-<p>Restore the database backup to the new server:
-<code>mysql -p new_database &lt; moodle-database.sql</code>
-uick --set-charset</p>
-<p>Restore the database backup to the new server:
-<code>mysql -p new_database &lt; moodle-database.sql</code></p></div>
+<h2 id="install-ruby">Install ruby</h2>
+<p>See the available versions</p>
+<pre><code>rbenv install --list
+</code></pre>
+<p>Install your version of choice. Change x.x.x.</p>
+<pre><code>$ rbenv install x.x.x
+</code></pre>
+<h3 id="in-case-the-ruby-version-you-want-isnt-in-the-list">In case the ruby version you want isn't in the list</h3>
+<pre><code>cd
+git clone https://github.com/rbenv/rbenv.git ~/.rbenv
+echo 'export PATH=&quot;$HOME/.rbenv/bin:$PATH&quot;' &gt;&gt; ~/.bashrc
+echo 'eval &quot;$(rbenv init -)&quot;' &gt;&gt; ~/.bashrc
+exec $SHELL
+
+git clone https://github.com/rbenv/ruby-build.git ~/.rbenv/plugins/ruby-build
+echo 'export PATH=&quot;$HOME/.rbenv/plugins/ruby-build/bin:$PATH&quot;' &gt;&gt; ~/.bashrc
+exec $SHELL
+
+rbenv install 3.0.1
+rbenv global 3.0.1
+ruby -v
+</code></pre>
+<h2 id="skip-downloading-the-documentation">Skip downloading the documentation</h2>
+<pre><code>$ echo "gem: --no-document" &gt;&gt; ~/.gemrc
+</code></pre>
+<h2 id="install-rails">Install rails</h2>
+<pre><code>gem install rails -v 6.1.3.2
+rbenv rehash
+rails -v
+</code></pre>
+<h2 id="install-bundler">Install bundler</h2>
+<pre><code>$ gem install bundler
+</code></pre>
+<h2 id="make-a-project">Make a project</h2>
+<pre><code>rails new PROJECT-NAME
+</code></pre></div>
             </div>
         </div>
 

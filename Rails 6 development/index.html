@@ -6,9 +6,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
         <meta name="author" content="Roy Vincent Luna Canseco">
-        <link rel="canonical" href="https://roycan.github.io/MariaDB%20backup/">
+        <link rel="canonical" href="https://roycan.github.io/Rails%206%20development/">
         <link rel="shortcut icon" href="../img/favicon.ico">
-        <title>MariaDB backup - roycan docs</title>
+        <title>Rails 6 development - roycan docs</title>
         <link href="../css/bootstrap.min.css" rel="stylesheet">
         <link href="../css/font-awesome.min.css" rel="stylesheet">
         <link href="../css/base.css" rel="stylesheet">
@@ -294,8 +294,20 @@
     <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
         <ul class="nav flex-column">
             
-            <li class="nav-item" data-level="1"><a href="#mariadb-backup" class="nav-link">MariaDB backup</a>
+            <li class="nav-item" data-level="1"><a href="#rails-6-development" class="nav-link">Rails 6 development</a>
               <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#create-a-github-repo-for-the-project" class="nav-link">Create a github repo for the project</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#go-to-linode-and-install-rails" class="nav-link">Go to Linode and install rails</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#make-new-project" class="nav-link">Make new project</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
               </ul>
             </li>
         </ul>
@@ -303,45 +315,18 @@
 </div></div>
                     <div class="col-md-9" role="main">
 
-<h1 id="mariadb-backup">MariaDB backup</h1>
-<ul>
-<li><code>mysqldump -u -p</code></li>
-<li>restore DB:   <code>moodle &lt; moodle.sql</code></li>
-</ul>
-<pre><code>cd /var/www
-mkdir backup
-cp -pr moodle backup/
-cp -rp moodledata backup/
-cd 
-sudo mysqldump -u root -p moodle_db &gt; moodle_db.sql
-sudo mysql -u root -p 
-</code></pre>
-<pre><code>show databases
-drop database moodle_db
-create database moodle_db
-</code></pre>
-<pre><code>cd
-sudo mysql -u root -p moodle_db &lt; moodle_db.sql
-</code></pre>
-<p>Backup the Moodle database on the old server:
-<code>mysqldump -h example.com -u myusername -p'mypassword' -C -Q -e --create-options mydatabasename &gt; moodle-database.sql</code></p>
-<ul>
-<li>-h :: hostname</li>
-<li>-C :: compress</li>
-<li>-Q :: quote identifiers</li>
-<li>-e :: extended-insert (speed up)</li>
-<li>--create-options :: include all mysql-specific table options</li>
-</ul>
-<p><code>mysqldump --allow-keywords --opt -uMySQL_USERNAME -pPASSWORD DATABASE | ssh USER@DOMAIN "mysql -uMySQL_USERNAME -pPASSWORD DATABASE"</code></p>
-<ul>
-<li>--allow-keywords :: allow creation of column names that are keywords</li>
-<li>--opt ::  Shorthand for --add-drop-table --add-locks --create-options --disable-keys --extended-insert --lock-tables --quick --set-charset</li>
-</ul>
-<p>Restore the database backup to the new server:
-<code>mysql -p new_database &lt; moodle-database.sql</code>
-uick --set-charset</p>
-<p>Restore the database backup to the new server:
-<code>mysql -p new_database &lt; moodle-database.sql</code></p></div>
+<h1 id="rails-6-development">Rails 6 development</h1>
+<h2 id="create-a-github-repo-for-the-project">Create a github repo for the project</h2>
+<h2 id="go-to-linode-and-install-rails">Go to Linode and install rails</h2>
+<h2 id="make-new-project">Make new project</h2>
+<p>Change the 'x' to numbers that fit your situation  </p>
+<pre><code>rails new PROJECT-NAME
+cd PROJECT-NAME
+rails s -b x.x.x.x -p 300x
+
+
+git remote add origin GITHUB-REPO
+</code></pre></div>
             </div>
         </div>
 
