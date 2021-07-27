@@ -304,19 +304,19 @@
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-level="2"><a href="#day-3" class="nav-link">Day 3</a>
+            <li class="nav-item" data-level="2"><a href="#day-3-installing-moodle-the-easy-way" class="nav-link">Day 3 - installing moodle the easy way</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-level="2"><a href="#day-4" class="nav-link">Day 4</a>
+            <li class="nav-item" data-level="2"><a href="#day-4-securing-moodle-the-easy-way" class="nav-link">Day 4 - securing moodle the easy way</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-level="2"><a href="#day-5" class="nav-link">Day 5</a>
+            <li class="nav-item" data-level="2"><a href="#day-5-config-moodle-for-large-uploads" class="nav-link">Day 5 - config moodle for large uploads</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-level="2"><a href="#day-6" class="nav-link">Day 6</a>
+            <li class="nav-item" data-level="2"><a href="#day-6-" class="nav-link">Day 6 -</a>
               <ul class="nav flex-column">
               </ul>
             </li>
@@ -325,18 +325,6 @@
               </ul>
             </li>
             <li class="nav-item" data-level="2"><a href="#day-8" class="nav-link">Day 8</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#day-6-" class="nav-link">Day 6 -</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#day-7_1" class="nav-link">Day 7</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#day-8_1" class="nav-link">Day 8</a>
               <ul class="nav flex-column">
               </ul>
             </li>
@@ -375,7 +363,7 @@
 </ul>
 <h3 id="rsync">rsync</h3>
 <h3 id="tar">tar</h3>
-<h2 id="day-3">Day 3</h2>
+<h2 id="day-3-installing-moodle-the-easy-way">Day 3 - installing moodle the easy way</h2>
 <ul>
 <li>Present a roy-tutorial on installing moodle on a VPS</li>
 <li>Create nanodes for everyone</li>
@@ -388,15 +376,16 @@
 </blockquote>
 </li>
 </ul>
-<h2 id="day-4">Day 4</h2>
+<h2 id="day-4-securing-moodle-the-easy-way">Day 4 - securing moodle the easy way</h2>
 <ul>
-<li>Do the DNS setup in CloudFlare </li>
+<li>Do the DNS setup </li>
+<li>use Let's Encrypt</li>
 <li>update config.php and sites-available/moodle</li>
 <li>Check for https</li>
 <li>Finish Moodle installation</li>
 <li>Log in as admin</li>
 </ul>
-<h2 id="day-5">Day 5</h2>
+<h2 id="day-5-config-moodle-for-large-uploads">Day 5 - config moodle for large uploads</h2>
 <ul>
 <li>Create a course</li>
 <li>rsync a large course into the server</li>
@@ -404,7 +393,26 @@
 <li>adjust config.php to increase upload size</li>
 <li>Restore a large course</li>
 </ul>
-<h2 id="day-6">Day 6</h2>
+<h3 id="phpini">php.ini</h3>
+<p>Find the correct php.ini</p>
+<p><code>php -i | grep php.ini</code></p>
+<p>Site admins can display phpinfo in moodle</p>
+<p><code>Settings &gt; Site administration &gt; Server &gt; PHP info</code></p>
+<h3 id="php-settings">PHP settings</h3>
+<pre><code>sudo nano /etc/php/7.4/fpm/php.ini
+</code></pre>
+<pre><code class="language-php">file_uploads = On
+allow_url_fopen = On
+short_open_tag = On
+memory_limit = 256M
+cgi.fix_pathinfo = 0
+upload_max_filesize = 200M
+max_execution_time = 360
+date.timezone = Asia/Singapore
+
+post_max_size = 200M
+</code></pre>
+<h2 id="day-6-">Day 6 -</h2>
 <ul>
 <li>install moosh</li>
 <li>sudo -u www-data watch moosh top</li>
@@ -424,34 +432,6 @@
 <li>run the bulk_create_restore script</li>
 </ul>
 <h2 id="day-8">Day 8</h2>
-<p>Try Ruby    t_open_tag = On
-memory_limit = 256M
-cgi.fix_pathinfo = 0
-upload_max_filesize = 200M
-max_execution_time = 360
-date.timezone = Asia/Singapore</p>
-<p>post_max_size = 200M
-```</p>
-<h2 id="day-6-">Day 6 -</h2>
-<ul>
-<li>install moosh</li>
-<li>sudo -u www-data watch moosh top</li>
-<li>sudo -u www-data moosh course-list</li>
-<li>check database</li>
-<li>sudo -u www-data moosh course-delete</li>
-<li>go over the backup script</li>
-</ul>
-<h2 id="day-7_1">Day 7</h2>
-<ul>
-<li>go over the bulk_create_restore script</li>
-<li>install goodls</li>
-<li>get api key</li>
-<li>download .mbz directory</li>
-<li>realpath</li>
-<li>redirection: &gt;</li>
-<li>run the bulk_create_restore script</li>
-</ul>
-<h2 id="day-8_1">Day 8</h2>
 <p>Try Ruby    </p></div>
             </div>
         </div>
