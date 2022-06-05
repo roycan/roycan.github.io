@@ -1,0 +1,54 @@
+/*The section below is the website's modifications for this particular page*/
+#body {
+	height: 1925px;
+}
+
+#contentSquare {
+	height: 1750px;
+	padding: 40px;
+	width: 620px;
+}
+
+#sideButtonContainer {
+	margin-top: -2159px;
+}
+
+
+/* The code below is for the styling of all the text */
+#contentSquare h1 {
+	color: #fcc761;
+	text-shadow: 2px 2px #A32523;
+	text-align: center;
+	font-size: 38px;
+	font-family: alloy, georgia;
+}
+
+#contentSquare h3 {
+	color: #010530;
+}
+
+#contentSquare a:hover {
+	color: #010530;
+}
+
+#contentSquare li, #contentSquare a {
+	color: #272e84;
+	transition: 0.3s;
+}
+
+#contentSquare li, #contentSquare h3 {
+	font-family: write, georgia;
+	margin-top: 15px;
+}
+
+#note {	
+	margin-top: 40px !important;
+	text-align: center;
+}
+
+#brain {
+	margin-top: -30px;
+	margin-left: 203px;
+	width: 200px;
+	height: 200px;
+}

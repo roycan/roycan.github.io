@@ -1,0 +1,80 @@
+/*The section below is the website's modifications for this particular page*/
+#body {
+	height: 685px;
+}
+
+#contentSquare {
+	height: 510px;
+	padding: 40px;
+	width: 620px;
+}
+
+#contentSquare h1 {
+	color: #fcc761;
+	text-shadow: 2px 2px #A32523;
+	text-align: center;
+	font-size: 38px;
+	font-family: alloy, georgia;
+}
+
+#sideButtonContainer {
+	margin-top: -919px;
+}
+
+/* The code below is for the text of this page. */
+
+#totalPlayed {
+	color: #010530;
+	margin-top: 15px;
+	font-family: write, georgia;
+}
+
+#contentSquare h2 {
+	color: #010530;
+	margin-top: -20px;
+	text-align: center;
+	font-size: 18px;
+	font-family: write, georgia;
+}
+
+/* The code below is for the styling of the leaderboard. */
+
+table {
+	 width: 100%;
+	 margin-top: 35px;
+	 color: #010530;
+	 border-collapse: collapse;
+	 border-bottom: 2px solid #fcc761;
+	 border-left: 2px solid #fcc761;
+	 border-right: 2px solid #fcc761;
+	 box-shadow: 0 0 20px rgba(0, 0, 0, 0.16);
+	 background-color: white;
+	 text-align: center;
+	 font-family: write, georgia;
+}
+
+th {
+	height: 25px;
+	border-bottom: 2px solid #fcc761;
+	background-color: #fcc761;
+	font-weight: bold;
+}
+
+tr {
+	height: 30px;
+	border-bottom: 2px dashed #fcc761;
+	transition: 0.4s;
+}
+
+#emphasized {
+	font-weight: bold;
+}
+
+tr:hover {
+	background-color: #F4F1F1;
+}
+
+td {
+	padding: 12px, 15px;
+}
+

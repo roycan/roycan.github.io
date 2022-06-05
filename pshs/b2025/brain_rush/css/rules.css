@@ -1,0 +1,98 @@
+/*The section below is the website's modifications for this particular page*/
+#body {
+	height: 1740px;
+}
+
+#contentSquare {
+	height: 1565px;
+	padding: 40px;
+	width: 620px;
+}
+
+#sideButtonContainer {
+	margin-top: -1974px;
+}
+
+/* The code below is for styling the text. */
+#contentSquare h1 {
+	color: #fcc761;
+	text-shadow: 2px 2px #A32523;
+	text-align: center;
+	font-size: 38px;
+	font-family: alloy, georgia;
+}
+
+#details {
+	position: relative;
+	padding: 35px;
+	height: 500px;
+	width: 87.5%;
+	border: 5px solid #fcc761;
+	border-radius: 10px;
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
+	color: #010530;
+	background-color: white;
+	text-align: justify;
+	font-family: write, georgia;
+}
+
+#contentSquare p {
+	color: #010530;
+	text-align: justify;
+	font-family: write, georgia;
+}
+
+#contentSquare a {
+	color: #A32523;
+}
+
+#contentSquare a:hover {
+	color: #fcc761;
+}
+
+#contentSquare h2 {
+	color: #fcc761;
+	text-shadow: 1.3px 1.3px #A32523;
+	font-family: write, georgia;
+}
+
+ul {
+	margin-top: -5px;
+	margin-left: -10px;
+	color: #272e84;
+	font-family: write, georgia;
+}
+		
+/* This for deciding whether or not to give the user permission to play. */
+hr {
+	border-top: 2px dashed #fcc761;
+	border-right: none;
+	border-left: none;
+	border-bottom: none;
+}
+
+form {
+	color: #010530;
+	font-family: write, georgia;
+}
+
+#grantPermission {
+	font-size: 12px;
+}
+
+#allow {
+	padding: 3px;
+	border: none;
+	border-radius: 2px;
+	color: white;
+	background-color: #010530;
+	font-size: 13px;
+	font-family: write, georgia;
+	transition: 0.3s;
+	cursor: pointer;
+}
+
+#allow:hover {
+	color: #010530;
+	background-color: white;
+}

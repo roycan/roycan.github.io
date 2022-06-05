@@ -1,0 +1,106 @@
+/*The section below is the website's modifications for this particular page*/
+#body {
+	height: 900px;
+}
+
+#contentSquare {
+	height: 725px;
+	padding: 40px;
+	width: 620px;
+}
+
+#sideButtonContainer {
+	margin-top: -1134px;
+}
+
+/* This is the styling for the welcome section. */
+#contentSquare h1 {
+	color: #fcc761;
+	text-shadow: 2px 2px #A32523;
+	text-align: center;
+	font-size: 50px;
+	font-family: alloy, georgia;
+}
+
+#welcomeImage {
+	width: 100%;
+	border-radius: 10px;
+}
+
+#welcomeText {
+	margin-top: -260px;
+}
+
+#subText {
+	margin-top: -25px;
+	color: #fcc761;
+	text-shadow: 1px 1px #A32523;
+	text-align: center;
+	font-size: 19px;
+	font-family: write, georgia;
+}
+
+/* This is for the text of the home page. */
+#readMore {
+	margin-top: 7px;
+	margin-left: 265px;
+	padding: 7px;
+	border: none;
+	border-radius: 2px;
+	color: white;
+	background-color: #fcc761;
+	font-size: 16px;
+	font-family: write, georgia;
+	transition: 0.3s;
+	cursor: pointer;
+}
+
+#readMore:hover {
+	color: #fcc761;
+	background-color: white;
+}
+
+#details {
+	position: relative;
+	padding: 35px;
+	margin-top: -244px;
+	height: 347px;
+	width: 87.5%;
+	border: 5px solid #fcc761;
+	border-radius: 10px;
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
+	color: #010530;
+	background-color: white;
+	text-align: justify;
+	font-family: write, georgia;
+	opacity: 0;
+	visibility: hidden;
+}
+
+#details a {
+	color: #fcc761;
+}
+
+#details a:hover {
+	color: #A32523;
+}
+
+#rundown {
+	color: #fcc761;
+	text-shadow: 1.3px 1.3px #A32523;
+	font-family: write, georgia;
+}
+
+#indentation2 {
+	text-indent: 45px;
+	color: #010530;
+	text-align: justify;
+	font-family: write, georgia;
+}
+
+.note {
+	color: #010530;
+	text-align: center;
+	font-weight: bold;
+	font-family: write, georgia;
+}	
