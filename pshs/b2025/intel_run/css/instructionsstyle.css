@@ -1,0 +1,54 @@
+body {
+	background-image: url(../images/instructionsbackground.png);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: 100% 100%;
+	animation-name: instructions;
+  animation-duration: 30s;
+}
+h1 {
+	text-align: center;
+	font-family: 'Press Start 2P', cursive;
+	font-size: 100px;
+	color: #178CA4;
+	text-shadow: 5px 5px #F9F7F0;
+}
+h2 {
+	text-align: center;
+	font-family: 'Press Start 2P', cursive;
+	font-size: 40px;
+	color: #178CA4;
+	text-shadow: 5px 5px black;
+}
+h3 {
+	text-align: center;
+	font-family: 'Press Start 2P', cursive;
+	font-size: 20px;
+	color: #F3D849;
+	text-shadow: 3px 3px black;
+	padding: 5%;
+}
+.center {
+	text-align: center;
+}
+button {
+	font-family: 'Press Start 2P', cursive;
+	font-size: 30px;
+	padding: 15px;
+	border: 20px #18B7BE inset;
+	border-radius: 10px;
+	color: #072A40;
+	background-color: #F9F7F0;
+}
+button:hover {
+	font-size: 40px;
+	padding: 25px;
+	border: 20px #18B7BE outset;
+	color: #F9F7F0;
+	background-color: #072A40;
+	transition: 0.5s;
+}
+@keyframes instructions {
+	from {transform: translate(0px, 0px);}
+	to {transform: translate(0px, -500px);}
+}

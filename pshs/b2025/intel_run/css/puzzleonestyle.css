@@ -1,0 +1,90 @@
+* {
+	font-family: 'Press Start 2P', cursive;
+	margin: 10px;
+}
+body {
+  background-image: 
+  url(../images/puzzleonebackground.jpg);
+  background-repeat: no-repeat;
+	background-attachment: fixed;
+  background-size: 100% 100%;
+}
+
+.folder {
+    height: 100px;
+    width: 125px;
+}
+
+.gun {
+    height: 100px;
+    width: 136.2px;
+}
+
+.knife {
+    height: 100px;
+    width: 119.8px;
+}
+
+p {
+  display: inline;
+  color: #F9F7F0;
+	text-shadow: 2px 2px black;
+}
+
+button {
+	font-family: 'Press Start 2P', cursive;
+	font-size: 20px;
+	padding: 15px;
+	border: 20px #18B7BE inset;
+	border-radius: 10px;
+	color: #072A40;
+	background-color: #F9F7F0;
+}
+
+button:hover {
+	font-size: 25px;
+	padding: 15px;
+	border: 20px #18B7BE outset;
+	color: #F9F7F0;
+	background-color: #072A40;
+	transition: 0.5s;
+}
+
+input {
+	background-color: #F9F7F0;
+	border: 10px inset #344648;
+	border-radius: 10px;
+	font-size: 20px;
+	width: 600px;
+	padding: 10px;
+}
+
+input.submit {
+	color: #F9F7F0;
+	width: 500px;
+	font-size: 15px;
+	background-color: #18B7BE;
+	border: 10px inset #344648;
+	border-radius: 10px;
+	padding: 10px;
+}
+
+input.reset {
+	color: #F9F7F0;
+	width: 300px;
+	font-size: 15px;
+	background-color: #18B7BE;
+	border: 10px inset #344648;
+	border-radius: 10px;
+	padding: 10px;
+}
+
+input.submit:hover, input.reset:hover {
+	font-size: 25px;
+	padding: 25px;
+	width: 600px;
+	border: 20px #18B7BE outset;
+	color: #F9F7F0;
+	background-color: #072A40;
+	transition: 0.5s;
+}

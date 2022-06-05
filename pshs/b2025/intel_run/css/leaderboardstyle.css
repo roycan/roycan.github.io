@@ -1,0 +1,57 @@
+* {
+	font-family: 'Press Start 2P', cursive;
+	margin: 10px;
+}
+
+body {
+    background-image: 
+    url(../images/puzzlesixbackground.jpg);
+    background-repeat: no-repeat;
+	  background-attachment: fixed;
+	  background-size: 100% 100%;
+}
+
+button {
+	font-size: 30px;
+	padding: 15px;
+	border: 20px #18B7BE inset;
+	border-radius: 10px;
+	color: #072A40;
+	background-color: #F9F7F0;
+}
+button:hover {
+	font-size: 40px;
+	padding: 25px;
+	border: 20px #18B7BE outset;
+	color: #F9F7F0;
+	background-color: #072A40;
+	transition: 0.5s;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 25%;
+}
+
+p {
+  color: #F9F7F0;
+}
+
+h1 {
+	text-align: center;
+	font-family: 'Press Start 2P', cursive;
+	font-size: 100px;
+	color: #178CA4;
+	text-shadow: 5px 5px #F9F7F0;
+}
+
+h2 {
+	text-align: center;
+	font-family: 'Press Start 2P', cursive;
+	font-size: 50px;
+	color: #F9F7F0;
+	text-shadow: 5px 5px black;
+}
+

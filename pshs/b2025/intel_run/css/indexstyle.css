@@ -1,0 +1,49 @@
+* {
+	margin: 50px;
+}
+body {
+	background-image: url(../images/indexbackground.png);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: 100% 100%;
+}
+h1 {
+	text-align: center;
+	font-family: 'Press Start 2P', cursive;
+	font-size: 100px;
+	color: #178CA4;
+	text-shadow: 5px 5px #F9F7F0;
+}
+h4 {
+	text-align: center;
+	font-family: 'Press Start 2P', cursive;
+	font-size: 18px;
+	color: #F3D849;
+	text-shadow: 1px 1px black;
+}
+.center {
+	text-align: center;
+}
+button {
+	font-family: 'Press Start 2P', cursive;
+	font-size: 50px;
+	padding: 15px;
+	border: 20px #18B7BE inset;
+	border-radius: 10px;
+	color: #072A40;
+	background-color: #F9F7F0;
+	margin: -20px;
+}
+button:hover {
+	font-size: 60px;
+	padding: 25px;
+	border: 20px #18B7BE outset;
+	color: #F9F7F0;
+	background-color: #072A40;
+	transition: 0.5s;
+	margin-bottom: -50px;
+}
+audio::-webkit-media-controls-panel {
+	background-color: #C3CBD6;
+	border: 5px #18B7BE inset;
+}

@@ -1,0 +1,108 @@
+<DOCTYPE html>
+<head>
+  <title>Intel Run: Puzzle No. 4!</title>
+
+   <meta charset="UTF-8">
+
+   <meta name="author" content="My Name">
+
+   <meta name="keywords" content="HTML, CSS, JavaScript">
+
+   <meta name="revised" content="28-06-2020">
+
+   <link href="../css/puzzlefourstyle.css" rel="stylesheet type="text/css"> 
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  
+   <body>
+		 <div align="center">
+    <!-- Plays music -->
+		  <audio id="player" controls autoplay loop>
+	      <source src="../music/puzzleone.mp3" type="audio/mp3">
+	    </audio>
+	  </div>
+		 
+     <p> Walking into the room, you notice two objects of interest: a 3x3 grid and a numpad beside it. </p>
+     <!-- first row of the grid, has 3 cells -->
+    <img src = '../images/grid.png'>
+    <img src = '../images/grid.png'>
+     <!-- gives you a clue when clicked on -->
+    <img src = '../images/grid.png' onclick="puz4GiveClue1()">
+    </br>
+     
+     <!-- second row of the grid, has 3 cells -->
+    <img src = '../images/grid.png'>
+     <!-- Gives you a clue when clicked on -->
+    <img src = '../images/grid.png' onclick="puz4GiveClue2()">
+    <img src = '../images/grid.png'>
+    </br>
+     
+     <!-- third row of the grid, has 3 cells -->
+     <!-- Gives you a clue when clicked on -->
+    <img src = '../images/grid.png' onclick="puz4GiveClue3()">
+    <img src = '../images/grid.png'>
+    <img src = '../images/grid.png'>
+    </br>
+
+    <form>
+      <input type="number" id="puzNum4Ans">
+    </form>
+
+    <a href="puzzlethree.html">
+			   <button type="button">Previous Page</button>
+		</a>
+
+    <a onclick="rightOrWrong4()">
+      <button type="button">Submit your answer!</button>
+    </a>
+     
+
+
+     <script>
+       var scorefourtest=0;  
+       
+       function puz4GiveClue1() {
+         alert("x-y");
+       }
+
+       function puz4GiveClue2() {
+         alert("x=4");
+       }
+
+       function puz4GiveClue3() {
+         alert("y=3");
+       }
+
+			 scorefourtest = 0;
+
+    function rightOrWrong2() {  
+        if (goToNextPage == 1) {
+          window.open("puzzlethree.html","_self");
+        }  
+        else {
+					var scoretwo = parseInt(scoretwotest);
+          var scoretwo = scoretwo + 1;
+					localStorage.setItem("scoretwo", scoretwo);
+          alert("You are incorrect.");
+          return false;
+        }
+    }		
+			 
+        function rightOrWrong4() {
+         if (puzNum4Ans.value == 1) {
+           alert("The middle grid cell opens, revealing a flask containing purple liquid. You down the drink, and see your body slowly dissapearing: you have become invisible.");
+           window.open("puzzlefive.html","_self")
+         }
+
+         else {
+           alert("Nothing happens.");
+					 var scorefour = parseInt(scorefourtest);
+					 var scorefour = scorefour + 1;
+					 localStorage.setItem("scorefour", scorefour);
+         }
+       } 
+     </script>
+   </body>
+</head>

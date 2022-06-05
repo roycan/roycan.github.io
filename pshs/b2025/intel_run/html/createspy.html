@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Intel Run: Create the Spy!</title>
+  <link href="../css/createspystyle.css" rel="stylesheet" type="text/css" />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<h1>Create Your Spy!</h1>
+	<div align="center">
+    <!-- Plays music -->
+		<audio id="player" controls autoplay loop>
+	    <source src="../music/createspy.mp3" type="audio/mp3">
+	  </audio>
+	</div>
+  <!-- All of this is just character customization -->
+  <!-- checkAnswers() sees if any input area is blank. If so, you cannot progress to the next page. If all of the input areas have been filled in, you will progress to the next page -->
+	<form onsubmit="return checkAnswers();">
+		<fieldset form="espionageinformation">
+			<legend>Espionage Information</legend>
+			<label for="fullname">Full Name:</label><br/>
+	    <input type="text" id="fullname" name="fullname"
+        class="inputArea" onblur="return noinput(id);" onfocus="return noinput(id);">
+			<br>
+			<label for="codename">Codename:</label><br/>
+	    <input type="text" id="codename" name="codename" class="inputArea"onblur="return noinput(id);" onfocus="return noinput(id);">
+			<br>
+		</fieldset>
+		
+		<fieldset form="personalinformation">
+			<legend>Personal Information</legend>
+			<label for="age">Age:</label><br/>
+	    <input type="number" id="age" name="age" class="inputArea" onblur="return noinput(id);" onfocus="return noinput(id);">
+			<br>
+			<label for="gender">Gender:</label>
+			<select name="gender" id="gender" onblur="return noinput(id);" onfocus="return noinput(id);">
+				<option value="Male">Male</option>
+				<option value="Female">Female</option>
+				<option value="Female">Non-binary</option>
+				<option value="Others">Others</option>
+			</select>
+			<br>
+		</fieldset>
+		
+		<fieldset form="characteristics">
+			<legend>Characteristics</legend>
+			<label for="haircolor">Hair Color:</label><br/>
+	    <input type="text" id="haircolor" name="haircolor" class="inputArea" onblur="return noinput(id);" onfocus="return noinput(id);">
+			<br>
+			<label for="eyecolor">Eye Color:</label><br/>
+	    <input type="text" id="eyecolor" name="eyecolor" class="inputArea" onblur="return noinput(id);" onfocus="return noinput(id);">
+		</fieldset>
+		<br>
+
+    <!-- Note -->
+    <div id="note">
+      <h4>Submitting will now take you to the first puzzle!</h4>
+    </div>
+    
+    <!-- Submit and reset buttons -->
+		<input type="submit" class="submit" value="Submit Data">
+		<input type="reset" class="reset" value="Reset Data">
+    </br>
+    
+    <!-- Sends you to the previous page -->
+    <a href="instructions.html">
+			<button type="button">I want to go back!</button>
+		</a>
+		</a>
+	</form>
+  <script>
+		function noinput(a) {
+			x = document.getElementById(a).value;
+			if (x == "") {
+				document.getElementById(a).style.borderColor = "#FF7400";
+			}
+			else {
+				document.getElementById(a).style.borderColor = "#00FFDF";
+			}
+		}
+
+    function checkAnswers() {
+      var answers = document.getElementsByClassName('inputArea');
+
+      for(var i=0; i< answers.length; i++){
+       if (answers[i].value === '') {
+         alert("You need to fill in this blank!");
+         return false;
+       }
+        else {
+          travelRulesPuz1(); 
+        }
+      }
+    }
+		
+    function travelRulesPuz1(){
+      window.open("puzzleone.html");
+    }
+		
+		var fullname = document.getElementById("fullname");
+    var fullname2 = localStorage.getItem("fullname");
+
+		var codename = document.getElementById("codename");
+    var codename2 = localStorage.getItem("codename");
+		
+	</script>
+</body>
+</html>

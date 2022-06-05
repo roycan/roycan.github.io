@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>  
+<head>
+ <title>Intel Run: Puzzle No. 3!</title>
+	
+ <meta charset="UTF-8">
+
+ <meta name="author" content="My Name">
+
+ <meta name="keywords" content="HTML, CSS, JavaScript">
+
+ <meta name="revised" content="28-06-2020">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+ <link href="../css/puzzlethreestyle.css" rel="stylesheet type="text/css"> 
+
+	<div align="center">
+    <!-- Plays music -->
+		  <audio id="player" controls autoplay loop>
+	      <source src="../music/puzzleone.mp3" type="audio/mp3">
+	    </audio>
+	  </div>
+
+	<p>Click on the doors to go to the next room. </p>
+  <img src='../images/doorClosed.jpg' onclick="changeImageTrue()" id="correctDoor" alt = "door1">
+  <img src='../images/doorClosed.jpg' onclick="return imageFalse()" alt = "door2">
+  
+  <img src='../images/doorClosed.jpg' onclick="return imageFalse()" alt = "door 3">
+  
+  <img src='../images/doorClosed.jpg' onclick="return imageFalse()" alt = "door 4">
+  
+  <img src='../images/doorClosed.jpg' onclick="return imageFalse()" alt = "door 5">
+  
+  <p id="riddleText"> </p>
+  
+  <a href="puzzletwo.html">
+			<button type="button">Previous Page</button>
+	</a>
+
+  <a onclick="rightOrWrong3()">
+    <button type="button">Submit your answer!</button>
+  </a>
+  </br>
+  
+<body>
+  <script>
+    var scorethreetest=0;  
+    function changeImageTrue() {
+      correctDoor.src="../images/doorOpened.jpg";
+      riddleText.innerHTML="The knob turns and breaks off, and within it you find a note that reads: 'What goes through a door and never goes in and never comes out? Scramble the following letters: EEHYLOK. Answer in all CAPS.' Beyond the door, you see another locked door with a number pad beside it."
+      var riddleAnswer=document.createElement("INPUT");
+      riddleAnswer.setAttribute("type", "password");
+      riddleAnswer.id = "correctAnswer";
+      document.body.appendChild(riddleAnswer);   
+    }
+
+    function rightOrWrong3(){   
+      if (correctAnswer.value == 'KEYHOLE') {
+        alert("You are correct!");
+        window.open("puzzlefour.html","_self");
+      }
+        
+      else {
+        const element=document.getElementById("correctAnswer");
+        element.remove();
+        document.location.reload();
+        alert("You are incorrect.");
+      }
+    } 
+
+    function rightOrWrong2() {  
+        if (goToNextPage == 1) {
+          window.open("puzzlefour.html","_self");
+        }  
+        else {
+				  var scorethree = parseInt(scorethreetest);
+          var scorethree = scorethree + 1;
+					localStorage.setItem("scorethree", scorethree);
+          alert("You are incorrect.");
+          return false;
+        }
+    }		
+
+    function imageFalse() {
+      alert("The knob did not turn.");
+    }
+  </script>
+</body>  
+  
+</head>  
+</html>
+

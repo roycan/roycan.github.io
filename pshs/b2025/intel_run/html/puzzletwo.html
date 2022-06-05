@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>  
+<head>
+ <title> Intel Run: Puzzle No. 2!</title>
+	
+ <meta charset="UTF-8">
+
+ <meta name="author" content="My Name">
+
+ <meta name="keywords" content="HTML, CSS, JavaScript">
+
+ <meta name="revised" content="28-06-2020">
+
+ <link href="../css/puzzletwostyle.css" rel="stylesheet type="text/css"> 
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  
+<body>
+  <div align="center">
+    <!-- Plays music -->
+		  <audio id="player" controls autoplay loop>
+	      <source src="../music/puzzleone.mp3" type="audio/mp3">
+	    </audio>
+	  </div>
+
+	<p>Hover on the plants to find the right letter to select. </p>
+  <img src='../images/potPlant.jpg' onmouseover="this.src='../images/nothing.jpg'">
+  
+  <img src='../images/potPlant.jpg' onmouseover="this.src='../images/nothing.jpg'">
+  
+  <img src='../images/potPlant.jpg' onmouseover="this.src='../images/nothing.jpg'">
+  
+  <img src='../images/potPlant.jpg' onmouseover="this.src='../images/letterAns.jpg'">
+  
+  <img src='../images/potPlant.jpg' onmouseover="this.src='../images/nothing.jpg'">
+  
+  <img src='../images/potPlant.jpg' onmouseover="this.src='../images/nothing.jpg'">
+  
+  <img src='../images/potPlant.jpg' onmouseover="this.src='../images/nothing.jpg'">
+  
+  <img src='../images/potPlant.jpg' onmouseover="this.src='../images/nothing.jpg'">
+  
+  <img src='../images/potPlant.jpg' onmouseover="this.src='../images/nothing.jpg'">
+  
+  <img src='../images/potPlant.jpg' onmouseover="this.src='../images/nothing.jpg'">
+  </br>
+
+  <form>
+    <label for="option1">A.</label>
+    <input type="radio" id="option1" name="letter">
+    </br>
+    
+    <label for="option2">B.</label>
+    <input type="radio" id="option2" name="letter">
+    </br>
+    
+    <label for="option3">C.</label>
+    <input type="radio" id="option3" name="letter">
+    </br>
+    
+    <label for="option4">D.</label>
+    <input type="radio" id="option4" name="letter">
+    </br>
+    
+    <label for="option5">E.</label>
+    <input type="radio" id="option5" name="letter">
+    </br>
+    
+    <label for="option6">F.</label>
+    <!-- changes the value of goToNextPage, allowing you to continue onto the next puzzle -->
+    <input type="radio" id="option6" 
+onfocus="return giveValue();" name="letter">
+    </br>
+    
+    <label for="option7">G.</label>
+    <input type="radio" id="option7" name="letter">
+    </br>
+    
+    <label for="option8">H.</label>
+    <input type="radio" id="option8" name="letter">
+    </br>
+    
+    <label for="option9">I.</label>
+    <input type="radio" id="option9" name="letter">
+    </br>
+    
+    <label for="option10">J.</label>
+    <input type="radio" id="option10" name="letter">  
+    </br>  
+  </form>
+
+  <a href="puzzleone.html">
+			<button type="button">Previous Page</button>
+	</a>
+
+  <!-- There is no alert in this page because for some reason it wouldn't pop up again immediately after pressing "ok". It would stop doing that when "_self" was removed weirdly enough -->
+  
+  <script>
+    var goToNextPage = 2;
+    var scoretwotest=0;  
+		
+		function giveValue() {
+      goToNextPage = 1;   
+      rightOrWrong2();
+    }
+    
+    function rightOrWrong2() {  
+        if (goToNextPage == 1) {
+          window.open("puzzlethree.html","_self");
+        }  
+        else {
+					var scoretwo = parseInt(scoretwotest);
+          var scoretwo = scoretwo + 1;
+					localStorage.setItem("scoretwo", scoretwo);
+          alert("You are incorrect.");
+          return false;
+        }
+    }		
+    
+    /* function rightOrWrong2() {  
+        if (puzNum1Ans.value == 1) {
+          alert("You are correct!");
+          window.open("puzzletwo.html","_self"); 
+        }  
+        else {
+					var scorefour = parseInt(scoreonetest);
+          var scoreone = scoreone + 1;
+					localStorage.setItem("scoreone", scoreone);
+          alert("You are incorrect.");
+          return false;
+        }
+    }		   */
+
+    /* function rightOrWrong2() {
+     if (goToNextPage == 1) {
+       window.open("puzzlethree.html","_self");
+     }
+     else {
+       alert("You were incorrect.");
+			 var scoretwo = scoretwo + 1;
+			 localStorage.setItem("scoretwo", scoretwo);
+     }
+    } */
+  </script>
+</body>  
+  
+</head>  
+</html>

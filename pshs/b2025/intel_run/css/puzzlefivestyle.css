@@ -1,0 +1,38 @@
+* {
+	font-family: 'Press Start 2P', cursive;
+	margin: 10px;
+}
+
+body {
+    background-image: 
+    url(../images/puzzlefivebackground.png);
+    background-repeat: no-repeat;
+	  background-attachment: fixed;
+	  background-size: 100% 100%;
+}
+
+button {
+	font-size: 30px;
+	padding: 15px;
+	border: 20px #18B7BE inset;
+	border-radius: 10px;
+	color: #072A40;
+	background-color: #F9F7F0;
+}
+button:hover {
+	font-size: 40px;
+	padding: 25px;
+	border: 20px #18B7BE outset;
+	color: #F9F7F0;
+	background-color: #072A40;
+	transition: 0.5s;
+}
+
+img {
+    height: 100px;
+    width: 125px;
+}
+
+p {
+  color: #F9F7F0;
+}

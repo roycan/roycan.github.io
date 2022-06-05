@@ -1,0 +1,121 @@
+<DOCTYPE html>
+<html>
+<head>
+  <title>Intel Run: Puzzle No. 1!</title>	
+  
+  <meta charset="UTF-8">	
+  
+	<meta name="author" content="My Name">
+  
+  <meta name="keywords" content="HTML, CSS, 
+    JavaScript">
+  
+  <meta name="revised" content="28-06-2020">
+  
+  <link href="../css/puzzleonestyle.css" rel="stylesheet" type="text/css"> 
+  
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  
+</head>
+   <body>
+		<div align="center">
+    <!-- Plays music -->
+		  <audio id="player" controls autoplay loop>
+	      <source src="../music/puzzleone.mp3" type="audio/mp3">
+	    </audio>
+	  </div>
+    <!-- Equation Number 1 -->
+     <img class="folder" src = '../images/folder.png'>
+     <p>+</p>
+     <img class="folder"src = '../images/folder.png'>
+     <p>+</p>
+     <img class="folder"src = '../images/folder.png'>
+     <p>= 30</p>
+     </br></br>
+    <!-- Equation Number 2 --> 
+     <img class="gun"src = '../images/gun.png'>
+     <p>-</p>
+     <img class="folder" src = '../images/folder.png'>
+     <p>= 10</p>
+     </br></br>
+    <!-- Equation Number 3 -->
+     <img class="gun"src='../images/gun.png'>
+     <p>x</p>
+     <img class="knife"src='../images/knife.png'>
+     <p>= 80</p>
+   </br></br>
+    <!-- Equation Number 4 -->
+     <p>(</p>
+     <img class="folder"src = '../images/folder.png'>
+     <p>-</p>
+     <img class="knife"src = '../images/knife.png'>
+     <p>)</p>
+     <p>x</p>
+     <img class="gun"src = '../images/gun.png'>
+     <p>= ?</p>
+   </br>
+   </br> 
+     <p>What is the difference between the answer of the previous equation and 119?</p>
+
+     <!-- Determines if you are correct. If you are, then you will be sent to puzzle 2 --> 
+     <form onsubmit="return rightOrWrong1();">
+       
+       <input type="number" id="puzNum1Ans" onblur="return noinput(id);" onfocus="return noinput(id);">
+       </br>
+       
+       <input type="reset" class="reset" value="Reset Answer">
+       </br>
+
+     <p id="secondProblem"></p>
+
+
+
+     <!-- Sends you to the previous page -->
+       <a href="createspy.html">
+			   <button type="button">Previous Page</button>
+		   </a>
+
+     <!-- Sends you to the next page and checks if your input is empty -->
+       <a onclick="rightOrWrong1()">
+         <button type="button">Submit your answer!</button>
+       </a>
+       
+     </form>
+
+     <script>
+			 
+       var scoreonetest=0;  
+			 
+       function rightOrWrong1() {  
+           if (puzNum1Ans.value == 1) {
+             alert("You are correct!");
+             window.open("puzzletwo.html","_self"); 
+           }  
+           else {
+						 var scoreone = parseInt(scoreonetest);
+             var scoreone = scoreone + 1;
+						 localStorage.setItem("scoreone", scoreone);
+             alert("You are incorrect.");
+             return false;
+           }
+       }
+       
+			 function noinput(a) {
+			   x = document.getElementById(a).value;
+			   if (x == "") {
+				   document.getElementById(a).style.borderColor = "#FF7400";
+			    }
+			    else {
+				   document.getElementById(a).style.borderColor = "#00FFDF";
+			    }
+		    }
+     </script>     
+   </body>
+	
+ </head>
+  
+</html>

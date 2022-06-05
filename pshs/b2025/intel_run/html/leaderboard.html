@@ -1,0 +1,49 @@
+<DOCTYPE html>
+<head>
+  <title>Intel Run: Leaderboard!</title>
+  
+  <meta charset="UTF-8">
+    
+  <meta name="author" content="My Name">
+
+  <meta name="keywords" content="HTML, CSS, JavaScript">
+
+  <meta name="revised" content="28-06-2020">
+
+  <link href="../css/leaderboardstyle.css" rel="stylesheet type="text/css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  
+  <body>
+    <div align="center">
+    <!-- Plays Music -->
+		<audio id="player" controls autoplay loop>
+	    <source src="../music/index.mp3" type="audio/mp3">
+	  </audio>
+	</div>
+  </body>
+  <p>Congratulations! You found the briefcase your organization needed. This will be beneficial to your country. Thank you for your service!</p>
+	<p>Meanwhile, view your report below to see how you did.</p>
+  
+	<h1>Report 2022060216</h1>
+  <img src="../images/card.png">
+  <script>
+		var scoreone = localStorage.getItem("scoreone");
+		var scoretwo = localStorage.getItem("scoretwo");
+		var scorethree = localStorage.getItem("scorethree");
+		var scorefour = localStorage.getItem("scorefour");
+		var scorefive = localStorage.getItem("scorefive");
+
+		var scoreoneplus = parseInt(scoreone);
+		var scoretwoplus = parseInt(scoretwo);
+		var scorethreeplus = parseInt(scorethree);
+		var scorefourplus = parseInt(scorefour);
+		var scorefiveplus = parseInt(scorefive);
+		
+		let score = scoreoneplus + scoretwoplus + scorethreeplus + scorefourplus + scorefiveplus;
+		document.write("<h2> Score: " + (150 - score) + "</h2>");
+		
+  </script>
+  
+</head>

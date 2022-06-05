@@ -1,0 +1,68 @@
+<DOCTYPE html>
+<head>
+  <title>Intel Run: Puzzle No. 5!</title>
+  
+  <meta charset="UTF-8">
+    
+  <meta name="author" content="My Name">
+
+  <meta name="keywords" content="HTML, CSS, JavaScript">
+
+  <meta name="revised" content="28-06-2020">
+
+  <link href="../css/puzzlefivestyle.css" rel="stylesheet type="text/css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  
+  <body>
+		<div align="center">
+    <!-- Plays music -->
+		  <audio id="player" controls autoplay loop>
+	      <source src="../music/puzzleone.mp3" type="audio/mp3">
+	    </audio>
+	  </div>
+		
+    <!-- Clicking on the true mirrors simply reflects the note's image -->
+    <p>Click on the mirrors to reflect a note that you are holding. When clicking on the false mirror, where the hidden door is, it will not have a reflection of the note, and will subsequently be broken. </p>
+    <img src="../images/mirror.png" onclick="trueMirror()">
+    <img src="../images/mirror.png" onclick="trueMirror()">
+    
+    <!-- when clicking on the false mirror, it will not have a reflection of the note, and will subsequently be broken -->
+    <img src="../images/mirror.png" id="faultyMirror"
+      onclick="changeMirror()">
+    
+    <img src="../images/mirror.png" onclick="trueMirror()">
+    <img src="../images/mirror.png" onclick="trueMirror()">
+  </body>
+
+  <script>
+    var scorefivetest=0;  
+    
+    function trueMirror () {
+     alert("The mirror clearly reflects the note and the numbers on it right back to you.");
+			var scorefive = scorefive + 1;
+			localStorage.setItem("scorefive", scorefive);
+    }
+    
+    function changeMirror() {
+     alert("Holding the note in front of the mirror, you notice that there isn't a reflection. You punch it as hard as you can, and lo and behold there's a passage behind it.");
+    faultyMirror.src="../images/shatteredMirror.jpg";
+    window.open("leaderboard.html", "_self");
+    }
+
+    function rightOrWrong2() {  
+        if (goToNextPage == 1) {
+          window.open("puzzlethree.html","_self");
+        }  
+        else {
+					var scorefive = parseInt(scorefivetest);
+          var scorefive = scorefive + 1;
+					localStorage.setItem("scorefive", scorefive);
+          alert("You are incorrect.");
+          return false;
+        }
+    }		
+  </script>
+  
+</head>
