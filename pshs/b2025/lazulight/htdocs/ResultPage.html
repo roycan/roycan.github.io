@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <link rel="stylesheet" href="../css/poggers.css">
+        <meta charset="utf-8">
+        <meta name="author" content="BERMUDO, Aryenne Kiersten">
+        <meta name="keywords" content="HTML, JavaScript">
+        <meta name="revised" content="June 3, 2022">
+        <title>Results!</title>
+    </head>
+
+    <body onload="result()">
+
+        <div id="wrapper">
+
+            <div id="banner"></div>
+
+            <p></p>
+
+            <p class="subtitle">You are...</p>
+            <p class="result" id="finalResult"> </p>
+
+            <p></p>
+
+            <div class="description" id="descPhoto"></div>
+            
+        </div>
+
+        <script>
+
+            // retrieve variables in storage
+            var PomuFinal=localStorage.getItem("pomuScore");
+            var EliraFinal=localStorage.getItem("eliraScore");
+            var FinanaFinal=localStorage.getItem("finanaScore");
+
+            function result(){
+
+                // prevent ties
+                if (FinanaFinal == EliraFinal) {
+                    var rand_no = Math.floor(Math.random()*2);
+                    if (rand_no == 1) {
+                        FinanaFinal += 1;
+                    } 
+                    else {
+                        EliraFinal += 1;
+                    }
+                }
+
+                if (PomuFinal == FinanaFinal) {
+                    var rand_no = Math.floor(Math.random()*2);
+                    if (rand_no == 1) {
+                        FinanaFinal += 1;
+                    } 
+                    else {
+                        PomuFinal += 1;
+                    }
+                }
+
+                if (PomuFinal == EliraFinal) {
+                    var rand_no = Math.floor(Math.random()*2);
+                    if (rand_no == 1) {
+                        EliraFinal += 1;
+                    } 
+                    else {
+                        PomuFinal += 1;
+                    }
+                }
+
+                //compare scores to see who is highest, then changes the html to whoever you got
+                if (PomuFinal>EliraFinal&&PomuFinal>FinanaFinal){
+                    document.getElementById("finalResult").innerHTML="Pomu Rainpuff";
+                    document.getElementById("descPhoto").innerHTML="<img class=\"icon\" src=\"../images/PomuIcon.png\">";
+                }
+                else if (EliraFinal>PomuFinal&&EliraFinal>FinanaFinal){
+                    document.getElementById("finalResult").innerHTML="Elira Pendora";
+                    document.getElementById("descPhoto").innerHTML="<img class=\"icon\" src=\"../images/EliraIcon.png\">";
+                }
+                else if (FinanaFinal>PomuFinal&&FinanaFinal>EliraFinal){
+                    document.getElementById("finalResult").innerHTML="Finana Ryugu";
+                    document.getElementById("descPhoto").innerHTML="<img class=\"icon\" src=\"../images/FinanaIcon.png\">";
+                }
+                
+            }
+
+            // clear local storage for next attempt
+            localStorage.clear("PScore");
+            localStorage.clear("EScore");
+            localStorage.clear("FScore");
+
+        </script>
+
+    </body>
+
+</html>

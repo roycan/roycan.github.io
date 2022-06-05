@@ -1,0 +1,95 @@
+
+body {
+    text-align: center;
+}
+
+fieldset {
+    background-color: rgb(213, 228, 221);
+    width: 20%;
+    height: 20%;
+    border-radius: 10%;
+    margin: auto;
+    text-align: justify;
+    margin-bottom: 50px;
+}
+
+#banner {
+    margin: auto;
+    width: 750px;
+    height: 120px;
+    background-image: url(../images/LazuBanner.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#wrapper {
+    margin-left:auto;
+    margin-right:auto;
+    width: 1150px;
+}
+
+.title {
+    color: rgb(194, 167, 43);
+    font-family: 'Times New Roman', serif;
+    font-size: 300%;
+    margin-bottom: -10px;
+}
+
+.result {
+    color: rgb(194, 167, 43);
+    font-family: 'Times New Roman', serif;
+    font-size: 400%;
+    margin-top: -20px;
+}
+
+.subtitle {
+    color: rgb(126, 193, 160);
+}
+
+.start {
+    width: 350px;
+    padding: 10px;
+    text-align: center;
+}
+
+img.imagebutton {
+    text-align: center;
+    width: 200px;
+    height: 200px;
+    transition: 0.5s ease;
+    margin-left: 470px;
+}
+
+img.imagebutton:hover {
+    opacity: 90%;
+    transform: scale(1.1);
+}
+
+label {
+    color: rgb(144, 127, 51);
+}
+
+.description {
+    margin: auto;
+    text-align: center;
+    background-color: rgb(213, 228, 221);
+    border-radius: 10%;
+    width: 400px;
+    height: 400px;
+    margin-top: -55px;
+}
+
+img.icon {
+    text-align: center;
+    transition: 0.5s ease;
+    height: 70%;
+    width: 70%;
+    margin: auto;
+    margin-top: 60px;
+}
+
+img.icon:hover {
+    opacity: 90%;
+    transform: scale(1.1);
+}
