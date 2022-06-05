@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="html, css, javascript">
+    <meta name="author" content="Daniel Jacob M. Calim">
+    <meta name="author" content="AJ Antino">
+    <meta name="author" content="Sean Badiola">
+    <meta name="revised" content="13-05-2022">
+
+    <title>About Us</title>
+    <style>
+        :root{
+            --white: #F6F6F2;
+            --grn: #6FB3B8;
+            --white-grn: #BADFE7;
+            --light-grn: #C2EDCE;
+            --blue-grn: #388087;
+            --grayBd: 2px solid #454141;
+            --red: #FF3B3F;
+         }
+        p{
+            font-size: medium;
+            text-align: center;
+        }
+        .description {
+            background-color: var(--grn);
+            border: var(--grayBd)
+        }
+        body {
+            box-sizing: border-box;
+            font-family: Verdana;
+            font-size: x-large;
+        }
+        body{
+            padding:0;
+            margin:0;
+            display:flex;
+            justify-content:center;
+            align-items: center;
+            width:100vw;
+            height:100vh;
+            background-color:var(--white)
+        }
+        .container{
+            width:800px;
+            max-width:80%;
+            border-radius: 5px;
+            border: var(--grayBd);
+            padding:10px;
+            background-color:var(--white-grn)
+        }  
+        .homepage{
+            text-align: center;
+            font-size: 30px;
+            font-weight: bolder;
+            color: #545454;
+            background-color:var(--light-grn);
+            border: var(--grayBd);
+        }
+        .description{
+            text-align:center;
+            font-size:20px;
+            margin: 10px 0;
+        }
+        .websites{
+            display: grid;
+            margin:0 20%;
+            gap: 5px;
+        }
+        .link{
+            border:1px solid ;
+            border-radius:5px;
+            background-color: #FF3B3F;
+            text-decoration: none;
+            color: inherit;     
+            text-align:center;
+            margin-bottom: 3px
+        }
+        .bottom{
+            position: absolute;
+            padding: 2px 5% 2px 5%;
+            bottom:0px;
+            background-color: var(--blue-grn);
+            height: 20px;
+            width: 60%;
+            margin: 0 14% 5px 14%;
+            display: flex;
+            height: fit-content;
+            justify-content:space-between;
+            border: var(--grayBd)
+        }
+        
+        .fb {
+            background: url('../image/sprite.png') no-repeat -226px -129px;
+            width: 33px;
+            height: 32px;
+        }
+        div.fb:hover {
+            background: url('../image/sprite.png') no-repeat -226px -55px;
+            width: 33px;
+            height: 32px;
+        }
+
+        .gh {
+            background: url('../image/sprite.png') no-repeat -456px -129px;
+            width: 32px;
+            height: 33px; 
+        }
+        div.gh:hover {
+            background: url('../image/sprite.png') no-repeat -456px -54px;
+            width: 32px;
+            height: 33px; 
+        }
+        
+        .social{
+            font-size: medium;
+            border: var(--grayBd);
+            border-radius: 5px;
+            width:250px;
+            height:fit-content;
+            background-color: var(--light-grn);
+            display:flex;
+            align-items: center;
+            justify-content:center;
+        }
+        a{
+            font-size: medium;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="homepage"> About Us </div>
+        <div class="description">
+        <p class="author"> Made by Daniel Jacob Calim, AJ Antino, Sean Badiola</p>
+        <p class="purpose1">We are aim to create a quiz type reviewer which would help the students review various topics on the novel El Filibusterismo. </p>
+        <p class="purpose2">We realized that students have a lot of requirements to do and thus weren't able to create reviewers. This website aims to fulfill that role by being an interactive reviewer.</p>
+        </div>
+        <div class="websites">
+            <a class="link" href="../index.html">Go back to Homepage</a>
+        </div>    
+    </div>
+
+    <div class="bottom">
+        <div class="social"> 
+            <div> Daniel Jacob Calim </div>
+            <a href="https://www.facebook.com/profile.php?id=100010425093981" ><div class="fb"></div></a>
+		    <a href="https://github.com/Sedomui12345"><div class="gh"></div></a>
+        </div>
+        <div class="social"> 
+            <div> AJ Antino </div>
+            <a href="https://www.facebook.com/aj.antino" ><div class="fb"></div></a>
+		    <a href="https://github.com/AJAntino1" ><div class="gh"></div></a>
+        </div>
+        <div class="social"> 
+            <div> Sean Badiola </div>
+            <a href="https://www.facebook.com/sean.badiola.7" ><div class="fb"></div></a>
+		    <a href="https://github.com/naenae-b" ><div class="gh"></div></a>
+        </div>
+    </div>
+</body>
+</html>

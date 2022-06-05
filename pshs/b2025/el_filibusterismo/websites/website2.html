@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="keywords" content="html, css, javascript">
+  <meta name="author" content="Daniel Jacob M. Calim">
+  <meta name="author" content="AJ Antino">
+  <meta name="author" content="Sean Badiola">
+  <meta name="revised" content="13-05-2022">
+  
+  <script src="../script/script.js"></script>
+  <title>Quiz App</title>
+  <style>
+    :root{
+      --bg: #F6F6F2;
+      --form: #6FB3B8;
+      --qstn: #BADFE7;
+      --choice: #C2EDCE;
+      --bottom: #388087;
+      --grayBd: 2px solid #454141;
+    }
+    body{
+      align-items: center;
+      justify-content: center;
+      font-family: "Comic Sans MS", "Comic Sans", sans-serif;
+      font-weight: 500;
+      font-size: large;
+      background-color: var(--bg);
+    }
+    .bottom{
+      position: absolute;
+      padding: 10px 5% 15px 5%;
+      bottom:0px;
+      background-color: var(--bottom);
+      height: 20px;
+      width: 60%;
+      margin: 0 14% 5px 14%;
+      display: flex;
+      justify-content:space-between;
+      border: var(--grayBd)
+    }
+    .choicesGroup{
+      padding:5px 3px;
+      display:grid ;
+      gap: 3px;
+      border: 0;
+    }
+    .container{
+      border-radius: 5px;
+      border: 2px solid black;
+      padding:10px;
+      background-color: var(--qstn);
+    }
+    #next-button{
+      float:right;
+    }
+    a{
+      text-decoration: none;
+      color: black;
+      font-size:medium;
+    }
+    .main-part{
+      margin:7% 15% 0 15%;
+      align-items: center;
+      border: var(--grayBd);
+    }
+    .question{
+      background-color: var(--choice);
+      border-bottom: var(--grayBd);;
+      height: 50px;
+      padding:5px;
+    }
+    .submit-cont{
+      height:max-content;
+      height: 40px;
+      background-color: var(--form);
+      display: flex;
+      justify-content:space-around;
+      align-items: center;
+      border-top: var(--grayBd)
+    }
+    .btn{
+      font-size:20px;
+      font-weight:300;
+      height:fit-content;
+      margin-bottom: 3px;
+    }
+    .btn-1{
+      font-size: 20px;
+    }
+    .form{
+      background-color: var(--bottom);
+    }
+    
+    </style>
+  </head>
+  <body>
+    <div class="main-part">
+      <div id="question" class="question">1. Ano ang planong inimungkahi ni Simounpara mapabilis ang takbo ng mga bapor na katulad ng Tabo?</div> 
+
+      <form name="form" class="form" onsubmit="validate(); return false;">
+        <fieldset id="chc-set" class="choicesGroup" >
+          <div class="container">
+            <input id="choice1" type="radio" name="choice" value="A">
+            <label class="ans" for="answer1" id="btn1">Ipaganda ang imprastraktura ng mga lawa</label></br>
+          </div>
+
+          <div class="container">
+            <input id="choice2" type="radio" name="choice" value="B">
+            <label class="ans" for="answer2" id="btn2">Bumili ng bagong mga Tabor mula sa mga Tsino</label></br>
+          </div>
+
+          <div class="container">
+            <input id="choice3" type="radio" name="choice" value="C">
+            <label class="ans" for="answer3" id="btn3">Magpalaki ng mga itik</label></br>
+          </div>
+
+          <div class="container">
+            <input id="choice4" type="radio" name="choice" value="D">
+            <label class="ans" for="answer4" id="btn4">Gumawa ng bagong canal gamit ang sapilitang paggawa</label></br>
+          </div>
+        </fieldset>
+
+        <div class="submit-cont">
+        <input id="submit" type="submit" class="btn-1">
+        <input type="reset" class="btn-1">
+        </div>
+      </form>
+    </div>
+
+    
+    <footer class="bottom">
+      <button class="btn" id="prev-button"><a href="../index.html"> Back to Homepage</a></button>
+      <div>
+      <button class="btn" id="next-button" onclick="next()"> Next Question</button>
+      <button class="btn" onclick="prev()">Previous Question</button></div>
+    </footer>
+
+  </body>
+  </html>
