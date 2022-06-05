@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hangman by Nicole Magadia</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+  
+    <link rel="stylesheet" href="css/game.css">
+ 
+
+    <style>
+        body,
+        html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        
+        .wrapper {
+            position: relative;
+            padding: 20px;
+        }
+        
+        .big-card {
+            border: 10px solid #773344;
+            background-color: white;
+            border-radius: 100px;
+            padding: 100px;
+            font-family: Cambria;
+            height: auto;
+            text-align: center;
+            color: #0B0014;
+            width: 600px;
+            margin: 5% auto;
+            width: 60%;
+            padding: 10px;
+            background: url(images/square-bg.png) repeat;
+        }
+        
+        .parallax {
+            top: 0;
+            position: relative;
+            height: 100%;
+            background-image: url("images/header-bg.jpg");
+            /* Create the parallax scrolling effect */
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 100%;
+        }
+        
+        input,
+        select {
+            border: 5px solid grey;
+            padding: 20px 15px;
+            font-size: 16px;
+            border-radius: 10px;
+        }
+        
+        button {
+            background-color: #D44D5C;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: white;
+        }
+        /** image to change when user plays */
+        
+        .hangman-image {
+            margin: 0 10%;
+            width: auto;
+            height: 20%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper parallax">
+        <div class=" ">
+
+            <div class="big-card">
+                <h1>Hi <span id="player-display"></span>! Welcome to Nicole's Hangman</h1>
+
+                <p>Use the alphabet below to guess the word.<a href="players.html">View Top Players</a></p>
+                <div class="game-canvas">
+
+
+                    <div class="hangman-image right ">
+                        <img id="next-hangman" src="images/hang.png">
+                    </div>
+                    <p id="mylives"></p>
+
+                    <p id="catagoryName"></p>
+
+                    <div id="hold" class="guesses-letter">
+
+                    </div>
+
+                    <!-- alphabet buttons -->
+                    <div id="buttons">
+                    </div>
+                    <h2 id="total_points"></h2>
+                    <div class="container">
+                        <button id="reset">Play again</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script src="js/data.js"></script>
+    <script src="js/hangman.js"></script>
+
+</body>
+
+</html>

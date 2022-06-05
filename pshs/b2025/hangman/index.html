@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hangman by Nicole Magadia</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+    
+  <style>
+        body,
+        html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        
+        .wrapper {
+            position: relative;
+            padding: 20px;
+        }
+        
+        .big-card {
+            border: 10px solid #773344;
+            border-radius: 100px;
+            padding: 100px;
+            font-family: Cambria;
+            height: auto;
+            text-align: center;
+            color: #0B0014;
+            margin: 5% auto;
+            width: 50%;
+            padding: 10px;
+            background: url(images/square-bg.png) repeat;
+        }
+        
+        .parallax {
+            top: 0;
+            position: relative;
+            height: 100%;
+            background-image: url("images/header-bg.jpg");
+            /* Create the parallax scrolling effect */
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 100%;
+        }
+        
+        input,
+        select {
+            border: 5px solid grey;
+            padding: 20px 15px;
+            font-size: 16px;
+            border-radius: 10px;
+            width: 250px;
+        }
+        
+        button {
+            background-color: #D44D5C;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: white;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="wrapper parallax">
+        <div class=" ">
+
+            <div class="big-card">
+                <h1>Welcome to Nicole's Hangman</h1>
+                <p>Use the alphabet below to guess the word.</p>
+                <div class="left">
+                    <form onsubmit="return maybeRegisterUserToPlay(); ">
+                        <h3>Please register to play!</3>
+                            <p>
+                                <label for="fullname">Full Name: </label> <br>
+                                <input type="text" name="fullname" id="fullname" required></p>
+                            <p>
+                                <label for="email">Email: </label> <br>
+                                <input type="email" name="email" id="email" required></p>
+
+                            <p>
+
+                            <button type="submit">Press To Start</button>
+
+                    </form>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    <script src="js/register.js"></script>
+</body>
+
+</html>
