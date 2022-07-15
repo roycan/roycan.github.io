@@ -1,9 +1,8 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
     <meta charset="UTF-8">
-    <title>BA186</title>
+    <title>Page Title</title>
     <meta name="author" content="Roy Canseco">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="">
@@ -20,6 +19,10 @@
 <!-- Mermaid Diagrams -->   
     <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
     
+<!-- Latex Math -->  
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+</script> 
 
 <!-- Data Tables -->
 <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
@@ -35,189 +38,77 @@
     </script>
 
 
-
-
 <body>
 
 <!-- Navigation (Stays on Top) -->
 <div class="w3-top w3-bar w3-black">
-  <a href="index.html" class="w3-bar-item w3-button">Home</a>
-  <a href="#about" class="w3-bar-item w3-button">About</a>
-  <a href="members.html" class="w3-bar-item w3-button">Members</a>
-</div>
+    <a href="index.html" class="w3-bar-item w3-button">Home</a>
+    <a href="about.html" class="w3-bar-item w3-button">About</a>
+    <a href="members.html" class="w3-bar-item w3-button">Members</a>
+  
+  </div>
 
 <!-- Start Content -->
 <div class="w3-container w3-padding-32">
 
+ <h1>BA 186 - Visual Representation of Our Times </h1>
+ <h2>University of the Philippines - Diliman</h2>
+ <p>Lecturer: Roy Canseco  
+    <br> Created: July 2022, Last Updated: July 2022
+</p>
+ 
+  
+ 
+ 
+ 
+ <div class="w3-cell-row w3-panel">
+    <div class="w3-container w3-red w3-mobile w3-panel w3-center w3-cell w3-cell-top">
+        <h2 class="w3-card">SY 2020-2021</h2>
+        <img src="images/2020-2021.png" class="w3-image" onclick="open_members_2020_2021()">
+      </div>
 
-    <div class="w3-container">
-        <h1> Visual Representation of our Times </h1>
-        <h2> Poster Slideshow - 2nd Sem SY 2021-2022</h2>
-        <p>Lecturer: Roy Canseco  
-            <br> Created: July 2022, Last Updated: July 2022
-        </p>
-
-        <hr>      
+    <div class="w3-container w3-blue w3-mobile w3-panel w3-center w3-cell w3-cell-bottom">
+        <h2 class="w3-card">SY 2021-2022</h2>
+        <img src="images/2021-2022.png" class="w3-image" onclick="open_members_2021_2022()">
+    </div>
+    
     </div>
     
     
-      <div class="w3-content" style="max-width:1200px">
-        <img class="mySlides" src="images/image01.png" style="width:100%;display:none">
-        <img class="mySlides" src="images/image02.png" style="width:100%">
-        <img class="mySlides" src="images/image03.png" style="width:100%;display:none">
-        <img class="mySlides" src="images/image04.png" style="width:100%;display:none">
-        <img class="mySlides" src="images/image05.png" style="width:100%;display:none">
-        <img class="mySlides" src="images/image06.png" style="width:100%;display:none">
-        <img class="mySlides" src="images/image07.png" style="width:100%;display:none">
-        <img class="mySlides" src="images/image08.png" style="width:100%;display:none">
-        <img class="mySlides" src="images/image09.png" style="width:100%;display:none">
-        <img class="mySlides" src="images/image10.png" style="width:100%;display:none">
-        <img class="mySlides" src="images/image11.png" style="width:100%;display:none">
-        <img class="mySlides" src="images/image12.png" style="width:100%;display:none">
-        <img class="mySlides" src="images/image13.png" style="width:100%;display:none">
-        <img class="mySlides" src="images/image14.png" style="width:100%;display:none">
-        <img class="mySlides" src="images/image15.png" style="width:100%;display:none">
-        <img class="mySlides" src="images/image16.png" style="width:100%;display:none">
-        <img class="mySlides" src="images/image17.png" style="width:100%;display:none">
-        <img class="mySlides" src="images/image18.png" style="width:100%;display:none">
-        <img class="mySlides" src="images/image19.png" style="width:100%;display:none">
-        <img class="mySlides" src="images/image20.png" style="width:100%;display:none">
-        <img class="mySlides" src="images/image21.png" style="width:100%;display:none">
-        <img class="mySlides" src="images/image22.png" style="width:100%;display:none">
-        <img class="mySlides" src="images/image23.png" style="width:100%;display:none">
-        <img class="mySlides" src="images/image24.png" style="width:100%;display:none">
-        <img class="mySlides" src="images/image25.png" style="width:100%;display:none">
-        <img class="mySlides" src="images/image26.png" style="width:100%;display:none">
-        <img class="mySlides" src="images/image27.png" style="width:100%;display:none">
-        <img class="mySlides" src="images/image28.png" style="width:100%;display:none">
-        <img class="mySlides" src="images/image29.png" style="width:100%;display:none">
-        <img class="mySlides" src="images/image30.png" style="width:100%;display:none">
-        <img class="mySlides" src="images/image31.png" style="width:100%;display:none">
-        <img class="mySlides" src="images/image32.png" style="width:100%;display:none">
-        <img class="mySlides" src="images/image33.png" style="width:100%;display:none">
-        <img class="mySlides" src="images/image34.png" style="width:100%;display:none">
-        <img class="mySlides" src="images/image35.png" style="width:100%;display:none">
-        <img class="mySlides" src="images/image36.png" style="width:100%;display:none">
-        <img class="mySlides" src="images/image37.png" style="width:100%;display:none">
-        <img class="mySlides" src="images/image38.png" style="width:100%;display:none">
-        <img class="mySlides" src="images/image39.png" style="width:100%;display:none">
-        <img class="mySlides" src="images/image40.png" style="width:100%;display:none">
-        <img class="mySlides" src="images/image41.png" style="width:100%;display:none">
-        <img class="mySlides" src="images/image42.png" style="width:100%;display:none">
-      
-        <div class="w3-row-padding w3-section">
-          <div class="w3-col s2">
-            <img class="demo w3-opacity w3-hover-opacity-off" src="images/image01.png" style="width:100%;cursor:pointer" onclick="currentDiv(1)">
-          </div>
-          <div class="w3-col s2">
-            <img class="demo w3-opacity w3-hover-opacity-off" src="images/image02.png" style="width:100%;cursor:pointer" onclick="currentDiv(2)">
-          </div>
-          <div class="w3-col s2">
-            <img class="demo w3-opacity w3-hover-opacity-off" src="images/image03.png" style="width:100%;cursor:pointer" onclick="currentDiv(3)">
-          </div>
-          <div class="w3-col s2">
-            <img class="demo w3-opacity w3-hover-opacity-off" src="images/image04.png" style="width:100%;cursor:pointer" onclick="currentDiv(4)">
-          </div>
-          <div class="w3-col s2">
-            <img class="demo w3-opacity w3-hover-opacity-off" src="images/image05.png" style="width:100%;cursor:pointer" onclick="currentDiv(5)">
-          </div>
-          <div class="w3-col s2">
-            <img class="demo w3-opacity w3-hover-opacity-off" src="images/image06.png" style="width:100%;cursor:pointer" onclick="currentDiv(6)">
-          </div>
-          <div class="w3-col s2">
-            <img class="demo w3-opacity w3-hover-opacity-off" src="images/image07.png" style="width:100%;cursor:pointer" onclick="currentDiv(7)">
-          </div>
-          <div class="w3-col s2">
-            <img class="demo w3-opacity w3-hover-opacity-off" src="images/image08.png" style="width:100%;cursor:pointer" onclick="currentDiv(8)">
-          </div>
-          <div class="w3-col s2">
-            <img class="demo w3-opacity w3-hover-opacity-off" src="images/image09.png" style="width:100%;cursor:pointer" onclick="currentDiv(9)">
-          </div>
-          <div class="w3-col s2">
-            <img class="demo w3-opacity w3-hover-opacity-off" src="images/image10.png" style="width:100%;cursor:pointer" onclick="currentDiv(10)">
-          </div>
-          <div class="w3-col s2">
-            <img class="demo w3-opacity w3-hover-opacity-off" src="images/image11.png" style="width:100%;cursor:pointer" onclick="currentDiv(11)">
-          </div>
-          <div class="w3-col s2">
-            <img class="demo w3-opacity w3-hover-opacity-off" src="images/image12.png" style="width:100%;cursor:pointer" onclick="currentDiv(12)">
-          </div>
-          <div class="w3-col s2">
-            <img class="demo w3-opacity w3-hover-opacity-off" src="images/image13.png" style="width:100%;cursor:pointer" onclick="currentDiv(13)">
-          </div>
-          <div class="w3-col s2">
-            <img class="demo w3-opacity w3-hover-opacity-off" src="images/image14.png" style="width:100%;cursor:pointer" onclick="currentDiv(14)">
-          </div>
-          <div class="w3-col s2">
-            <img class="demo w3-opacity w3-hover-opacity-off" src="images/image15.png" style="width:100%;cursor:pointer" onclick="currentDiv(15)">
-          </div>
-          <div class="w3-col s2">
-            <img class="demo w3-opacity w3-hover-opacity-off" src="images/image16.png" style="width:100%;cursor:pointer" onclick="currentDiv(16)">
-          </div>
-          <div class="w3-col s2">
-            <img class="demo w3-opacity w3-hover-opacity-off" src="images/image17.png" style="width:100%;cursor:pointer" onclick="currentDiv(17)">
-          </div>
-          <div class="w3-col s2">
-            <img class="demo w3-opacity w3-hover-opacity-off" src="images/image18.png" style="width:100%;cursor:pointer" onclick="currentDiv(18)">
-          </div>
-          <div class="w3-col s2">
-            <img class="demo w3-opacity w3-hover-opacity-off" src="images/image19.png" style="width:100%;cursor:pointer" onclick="currentDiv(19)">
-          </div>
-          <div class="w3-col s2">
-            <img class="demo w3-opacity w3-hover-opacity-off" src="images/image20.png" style="width:100%;cursor:pointer" onclick="currentDiv(20)">
-          </div>
-          <div class="w3-col s2">
-            <img class="demo w3-opacity w3-hover-opacity-off" src="images/image21.png" style="width:100%;cursor:pointer" onclick="currentDiv(21)">
-          </div>
-          <div class="w3-col s2">
-            <img class="demo w3-opacity w3-hover-opacity-off" src="images/image22.png" style="width:100%;cursor:pointer" onclick="currentDiv(22)">
-          </div>
-          <div class="w3-col s2">
-            <img class="demo w3-opacity w3-hover-opacity-off" src="images/image23.png" style="width:100%;cursor:pointer" onclick="currentDiv(23)">
-          </div>
-          <div class="w3-col s2">
-            <img class="demo w3-opacity w3-hover-opacity-off" src="images/image24.png" style="width:100%;cursor:pointer" onclick="currentDiv(24)">
-          </div>
-
-
-
-
-        </div>
-      </div>
-      
-      <script>
-      function currentDiv(n) {
-        showDivs(slideIndex = n);
-      }
-      
-      function showDivs(n) {
-        var i;
-        var x = document.getElementsByClassName("mySlides");
-        var dots = document.getElementsByClassName("demo");
-        if (n > x.length) {slideIndex = 1}
-        if (n < 1) {slideIndex = x.length}
-        for (i = 0; i < x.length; i++) {
-          x[i].style.display = "none";
-        }
-        for (i = 0; i < dots.length; i++) {
-          dots[i].className = dots[i].className.replace(" w3-opacity-off", "");
-        }
-        x[slideIndex-1].style.display = "block";
-        dots[slideIndex-1].className += " w3-opacity-off";
-      }
-      </script>
-      
-
-
-
-
-
-
-<p class="w3-center w3-padding"> <i class=" fa fa-copyright"> </i> 2022 Sir Roy and Students</p> 
-
+ 
+ 
+ 
+ 
+ 
+ 
+<p class="w3-center w3-padding"> <i class=" fa fa-copyright"> </i> 2022 Sir Roy </p> 
+  
 <!-- End Content -->
-    
+  
 </div>
+
+
+
+<script>
+
+    function open_members_2020_2021(){
+        pss = prompt("Enter password: ");
+        if (pss == "1234poiu"){
+            window.location="https://photos.app.goo.gl/F43TbcH7hpVLL34o6";
+        }
+    }
+
+    function open_members_2021_2022(){
+        pss = prompt("Enter password: ");
+        if (pss == "1234poiu"){
+            window.location="https://photos.app.goo.gl/W2botVg4aQiN6H5G7";
+        }
+    }
+
+</script>
+
+
+
 </body>
 
 </html>
